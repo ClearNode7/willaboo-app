@@ -1,0 +1,150 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 113,
+  "boxShadow": "none",
+  "canFreezeColumn": true,
+  "columnOrder": [
+    "bedrijfsnaam",
+    "datum",
+    "status",
+    "referentie"
+  ],
+  "columnUpdatedAt": 1778772820262,
+  "columnWidthMap": {
+    "bedrijfsnaam": 200,
+    "datum": 120,
+    "referentie": 100,
+    "status": 110
+  },
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "isEditableCellsValid": true,
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "onRowSelected": "",
+  "onSave": "",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "bedrijfsnaam": {
+      "alias": "bedrijfsnaam",
+      "columnType": "text",
+      "computedValue": "",
+      "horizontalAlignment": "LEFT",
+      "id": "bedrijfsnaam",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Klant",
+      "originalId": "bedrijfsnaam",
+      "sticky": "",
+      "validation": {},
+      "width": 200
+    },
+    "datum": {
+      "alias": "datum",
+      "columnType": "text",
+      "computedValue": "",
+      "horizontalAlignment": "LEFT",
+      "id": "datum",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Datum",
+      "originalId": "datum",
+      "sticky": "",
+      "validation": {},
+      "width": 120
+    },
+    "id": {
+      "alias": "id",
+      "columnType": "text",
+      "computedValue": "",
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": false,
+      "label": "ID",
+      "originalId": "id",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "referentie": {
+      "alias": "referentie",
+      "columnType": "text",
+      "computedValue": "",
+      "horizontalAlignment": "LEFT",
+      "id": "referentie",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Volgnummer",
+      "originalId": "referentie",
+      "sticky": "",
+      "validation": {},
+      "width": 100
+    },
+    "status": {
+      "alias": "status",
+      "columnType": "text",
+      "computedValue": "",
+      "horizontalAlignment": "LEFT",
+      "id": "status",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Status",
+      "originalId": "status",
+      "sticky": "",
+      "validation": {},
+      "width": 110
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "tableData": "{{recenteOrders.data}}",
+  "topRow": 63,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "widgetId": "9d74fb464",
+  "widgetName": "tblRecenteOrders"
+}

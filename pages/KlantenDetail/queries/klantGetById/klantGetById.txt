@@ -1,0 +1,8 @@
+SELECT id, weergave_naam,
+  klant_type::text AS klant_type, status::text AS status,
+  bedrijfsnaam, kvk, btwnummer, aanhef::text AS aanhef,
+  titulatuur::text AS titulatuur, initialen, voornaam,
+  tussenvoegsel, achternaam, email, telefoon
+FROM klanten_view
+WHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid
+  AND deletedon IS NULL

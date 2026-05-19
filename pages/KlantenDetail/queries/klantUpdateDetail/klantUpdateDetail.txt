@@ -1,0 +1,18 @@
+UPDATE public.klanten SET
+  klant_type    = CAST('{{SelKlantType.selectedOptionValue}}' AS public.klant_type),
+  status        = CAST('{{SelKlantStatus.selectedOptionValue}}' AS public.klant_status),
+  bedrijfsnaam  = NULLIF('{{InpBedrijfsnaam.text}}', ''),
+  kvk           = NULLIF('{{InpKvk.text}}', ''),
+  btwnummer     = NULLIF('{{InpBtwnummer.text}}', ''),
+  aanhef        = CAST(NULLIF('{{SelAanhef.selectedOptionValue}}', '') AS public.aanhef),
+  titulatuur    = CAST(NULLIF('{{SelTitulatuur.selectedOptionValue}}', '') AS public.titulatuur),
+  initialen     = NULLIF('{{InpInitialen.text}}', ''),
+  voornaam      = NULLIF('{{InpVoornaam.text}}', ''),
+  tussenvoegsel = NULLIF('{{InpTussenvoegsel.text}}', ''),
+  achternaam    = NULLIF('{{InpAchternaam.text}}', ''),
+  email         = NULLIF('{{InpEmail.text}}', ''),
+  telefoon      = NULLIF('{{InpTelefoon.text}}', ''),
+  modifiedon    = NOW(),
+  modifiedby    = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),
+                           '00000000-0000-0000-0000-000000000001'::uuid)
+WHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid RETURNING id

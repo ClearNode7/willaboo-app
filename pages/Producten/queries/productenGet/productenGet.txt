@@ -1,0 +1,5 @@
+SELECT p.id, p.naam, p.sku, p.prijs_excl, p.btw_pct, p.beschrijving,
+  TO_CHAR(p.createdon, 'DD-MM-YYYY') AS createdon
+FROM public.producten p
+WHERE p.deletedon IS NULL
+ORDER BY p.naam;

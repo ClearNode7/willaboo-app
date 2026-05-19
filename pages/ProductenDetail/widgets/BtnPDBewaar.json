@@ -1,0 +1,28 @@
+{
+  "animateLoading": true,
+  "borderRadius": "4px",
+  "bottomRow": 42,
+  "buttonColor": "#03B365",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 2,
+  "onClick": "{{productUpdateDetail.run(() => showAlert('Opgeslagen ✓','success'), () => showAlert('Fout','error'))}}",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 13,
+  "text": "Bewaar",
+  "topRow": 37,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "201ddcc7c",
+  "widgetName": "BtnPDBewaar"
+}

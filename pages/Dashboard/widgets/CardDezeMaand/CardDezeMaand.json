@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "white",
+  "borderRadius": "4px",
+  "bottomRow": 32,
+  "boxShadow": "0px 1px 3px rgba(0,0,0,0.1)",
+  "children": [
+    {
+      "bottomRow": 200,
+      "dynamicBindingPathList": [],
+      "dynamicTriggerPathList": [],
+      "isLoading": false,
+      "leftColumn": 0,
+      "parentColumnSpace": 1,
+      "parentId": "08p1jiryl",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 380,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "2o4vr7tpo",
+      "widgetName": "Canvas_CardDezeMaand"
+    }
+  ],
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 32,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 46,
+  "topRow": 12,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "08p1jiryl",
+  "widgetName": "CardDezeMaand"
+}

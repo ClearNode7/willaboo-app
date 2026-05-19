@@ -1,0 +1,295 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 56,
+  "boxShadow": "none",
+  "canFreezeColumn": true,
+  "columnOrder": [
+    "volgnummer",
+    "klant_naam",
+    "status",
+    "notities",
+    "createdon",
+    "klant_email",
+    "btn_orderregels"
+  ],
+  "columnUpdatedAt": 1778530947979,
+  "columnWidthMap": {
+    "btn_orderregels": 130,
+    "createdon": 140,
+    "klant_email": 200,
+    "klant_naam": 200,
+    "notities": 220,
+    "status": 110,
+    "volgnummer": 60
+  },
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.volgnummer.computedValue"
+    },
+    {
+      "key": "primaryColumns.status.computedValue"
+    },
+    {
+      "key": "primaryColumns.klant_naam.computedValue"
+    },
+    {
+      "key": "primaryColumns.notities.computedValue"
+    },
+    {
+      "key": "primaryColumns.createdon.computedValue"
+    },
+    {
+      "key": "primaryColumns.klant_email.computedValue"
+    },
+    {
+      "key": "primaryColumns.klant_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.btn_orderregels.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.btn_orderregels.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "isEditableCellsValid": true,
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "onRowSelected": "",
+  "onSave": "{{orderStatusUpdate.run(() => { ordersGet.run(); showAlert('Opgeslagen', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "btn_orderregels": {
+      "alias": "btn_orderregels",
+      "allowCellWrapping": false,
+      "borderRadius": "4px",
+      "buttonColor": "#03B365",
+      "buttonLabel": "Orderregels",
+      "buttonVariant": "PRIMARY",
+      "columnType": "button",
+      "computedValue": "{{currentRow.id}}",
+      "horizontalAlignment": "CENTER",
+      "id": "btn_orderregels",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Acties",
+      "onClick": "{{navigateTo('OrderDetail', {orderId: currentRow.id}, 'SAME_WINDOW')}}",
+      "originalId": "btn_orderregels",
+      "sticky": "",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 130
+    },
+    "createdon": {
+      "alias": "createdon",
+      "columnType": "text",
+      "computedValue": "{{tblOrders.processedTableData.map((r) => (r.createdon || \"\"))}}",
+      "id": "createdon",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Aangemaakt op",
+      "originalId": "createdon",
+      "sticky": "",
+      "validation": {},
+      "width": 140
+    },
+    "id": {
+      "alias": "id",
+      "columnType": "text",
+      "computedValue": "{{tblOrders.processedTableData.map((currentRow, currentIndex) => currentRow[\"id\"])}}",
+      "id": "id",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": false,
+      "label": "id",
+      "originalId": "id",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "klant_email": {
+      "alias": "klant_email",
+      "columnType": "text",
+      "computedValue": "{{tblOrders.processedTableData.map((currentRow, currentIndex) => currentRow[\"klant_email\"])}}",
+      "id": "klant_email",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "E-mail klant",
+      "originalId": "klant_email",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "klant_id": {
+      "alias": "klant_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tblOrders.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"klant_id\"])) : klant_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "",
+      "id": "klant_id",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "klant_id",
+      "notation": "standard",
+      "originalId": "klant_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "",
+      "width": 150
+    },
+    "klant_naam": {
+      "alias": "klant_naam",
+      "columnType": "text",
+      "computedValue": "{{tblOrders.processedTableData.map((currentRow, currentIndex) => currentRow[\"klant_naam\"])}}",
+      "id": "klant_naam",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Klant",
+      "originalId": "klant_naam",
+      "sticky": "",
+      "validation": {},
+      "width": 200
+    },
+    "notities": {
+      "alias": "notities",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tblOrders.processedTableData.map((currentRow, currentIndex) => currentRow[\"notities\"])}}",
+      "id": "notities",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": true,
+      "label": "Notities",
+      "originalId": "notities",
+      "sticky": "",
+      "validation": {},
+      "width": 220
+    },
+    "status": {
+      "alias": "status",
+      "columnType": "text",
+      "computedValue": "{{tblOrders.processedTableData.map((currentRow, currentIndex) => currentRow[\"status\"])}}",
+      "id": "status",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": true,
+      "label": "Status",
+      "originalId": "status",
+      "selectOptions": [
+        {
+          "label": "Concept",
+          "value": "concept"
+        },
+        {
+          "label": "Bevestigd",
+          "value": "bevestigd"
+        },
+        {
+          "label": "Betaald",
+          "value": "betaald"
+        },
+        {
+          "label": "Verzonden",
+          "value": "verzonden"
+        },
+        {
+          "label": "Geannuleerd",
+          "value": "geannuleerd"
+        }
+      ],
+      "sticky": "",
+      "validation": {},
+      "width": 110
+    },
+    "volgnummer": {
+      "alias": "volgnummer",
+      "columnType": "number",
+      "computedValue": "{{tblOrders.processedTableData.map((currentRow, currentIndex) => currentRow[\"volgnummer\"])}}",
+      "id": "volgnummer",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "Nr.",
+      "originalId": "volgnummer",
+      "sticky": "",
+      "validation": {},
+      "width": 60
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "tableData": "{{ordersGet.data}}",
+  "topRow": 9,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "widgetId": "vjx3ezu8l",
+  "widgetName": "tblOrders"
+}

@@ -1,0 +1,6 @@
+UPDATE public.orders SET
+  status     = CAST('{{SelectOrderStatus.selectedOptionValue}}' AS public.order_status),
+  notities   = NULLIF('{{InputOrderNotities.text}}', ''),
+  modifiedon = NOW(),
+  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)
+WHERE id = '{{tblOrders.selectedRow.id}}'

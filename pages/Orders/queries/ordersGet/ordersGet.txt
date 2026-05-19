@@ -1,0 +1,14 @@
+SELECT
+  o.id,
+	  o.volgnummer,
+		  o.status::text AS status,
+			  o.notities,
+				  TO_CHAR(o.createdon, 'DD-MM-YYYY HH24:MI') AS createdon,
+					  COALESCE(k.bedrijfsnaam, k.voornaam || ' ' || k.achternaam) AS klant_naam,
+						  k.email AS klant_email,
+							  k.id AS klant_id
+								FROM orders o
+								JOIN klanten k ON k.id = o.klant_id
+								WHERE o.deletedon IS NULL
+								ORDER BY o.createdon DESC
+								LIMIT 100;

@@ -1,0 +1,29 @@
+{
+  "gitSyncId": "69f23d0ae8d23e3922706103_7a741823-5b80-495b-91f4-75e8a20103c7",
+  "unpublishedPage": {
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "bottomRow": 950,
+          "dynamicBindingPathList": [],
+          "isLoading": false,
+          "leftColumn": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "renderMode": "CANVAS",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 110,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 94,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Orders",
+    "slug": "orders"
+  }
+}

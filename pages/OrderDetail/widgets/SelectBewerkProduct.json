@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "bottomRow": 61,
+  "bottomRowBeforeCollapse": 61,
+  "defaultOptionValue": "{{tblOrderRegels.selectedRow?.product_id || orderRegelsGet.data[0]?.product_id || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": "{{orderRegelsGet.data?.length > 0}}",
+  "label": "Product",
+  "labelText": "Product",
+  "leftColumn": 1,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 61,
+  "originalTopRow": 57,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Kies product",
+  "renderMode": "CANVAS",
+  "rightColumn": 30,
+  "sourceData": "{{productenGet.data.map(p => ({label: p.naam, value: p.id}))}}",
+  "topRow": 57,
+  "topRowBeforeCollapse": 57,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ae6bdc870",
+  "widgetName": "SelectBewerkProduct"
+}

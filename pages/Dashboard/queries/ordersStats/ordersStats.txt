@@ -1,0 +1,16 @@
+SELECT
+  COUNT(*) FILTER (WHERE createdon >= CURRENT_DATE) AS vandaag,
+  COUNT(*) FILTER (WHERE createdon >= date_trunc('week', CURRENT_TIMESTAMP)) AS deze_week,
+  COUNT(*) FILTER (WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)) AS deze_maand,
+  (SELECT COUNT(*) FROM klanten
+   WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)
+   AND deletedon IS NULL) AS nieuwe_klanten,
+  COUNT(*) FILTER (WHERE status IN ('concept', 'bevestigd')) AS open_orders,
+  COALESCE(ROUND(SUM(totaal_incl) FILTER (
+    WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)
+  )::numeric, 2), 0) AS omzet_maand,
+  COALESCE(ROUND(SUM(totaal_incl) FILTER (
+    WHERE EXTRACT(YEAR FROM createdon) = EXTRACT(YEAR FROM CURRENT_DATE)
+  )::numeric, 2), 0) AS omzet_ytd,
+  (SELECT COUNT(*) FROM voorraad_per_product_view WHERE huidige_voorraad < 10) AS lage_voorraad
+FROM orders WHERE deletedon IS NULL;

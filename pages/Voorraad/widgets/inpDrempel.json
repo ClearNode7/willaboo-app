@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 72,
+  "bottomRowBeforeCollapse": 73,
+  "defaultText": "{{tblVoorraad.selectedRow?.min_voorraad}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "NUMBER",
+  "isLoading": false,
+  "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+  "label": "",
+  "leftColumn": 36,
+  "originalBottomRow": 73,
+  "originalTopRow": 65,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "bijv. 10",
+  "renderMode": "CANVAS",
+  "rightColumn": 48,
+  "shouldAllowAutofill": false,
+  "topRow": 64,
+  "topRowBeforeCollapse": 65,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "991420906",
+  "widgetName": "inpDrempel"
+}

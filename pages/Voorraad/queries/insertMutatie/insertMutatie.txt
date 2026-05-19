@@ -1,0 +1,8 @@
+INSERT INTO voorraad_mutaties (product_id, type, aantal, opmerking, createdby)
+VALUES (
+  '{{selProduct.selectedOptionValue}}'::uuid,
+  'in',
+  {{inpAantal.text}}::numeric,
+  '{{inpOpmerking.text}}',
+  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)
+)

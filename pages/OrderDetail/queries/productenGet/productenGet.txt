@@ -1,0 +1,4 @@
+SELECT id, naam, eenheid::text AS eenheid, prijs_excl, btw_pct
+FROM public.producten
+WHERE deletedon IS NULL
+ORDER BY naam

@@ -1,0 +1,10 @@
+SELECT 
+  v.product_naam,
+  v.eenheid,
+  v.huidige_voorraad,
+  COALESCE(p.min_voorraad, 10) AS min_voorraad,
+  v.product_id
+FROM voorraad_per_product_view v
+JOIN producten p ON p.id = v.product_id
+WHERE p.deletedon IS NULL
+ORDER BY v.product_naam ASC

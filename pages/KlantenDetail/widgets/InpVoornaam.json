@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 18,
+  "defaultText": "{{klantGetById.data[0]?.voornaam || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "TEXT",
+  "isLoading": false,
+  "isRequired": false,
+  "isSpellCheck": false,
+  "isVisible": true,
+  "label": "Voornaam",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "topRow": 13,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "9e1c37cd7",
+  "widgetName": "InpVoornaam"
+}

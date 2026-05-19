@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "bottomRow": 69,
+  "defaultOptionValue": "{{tblOrders.selectedRow?.status || 'concept'}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": "{{!!tblOrders.selectedRow?.id}}",
+  "label": "",
+  "leftColumn": 2,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 29,
+  "sourceData": [
+    {
+      "label": "Concept",
+      "value": "concept"
+    },
+    {
+      "label": "Bevestigd",
+      "value": "bevestigd"
+    },
+    {
+      "label": "Betaald",
+      "value": "betaald"
+    },
+    {
+      "label": "Verzonden",
+      "value": "verzonden"
+    },
+    {
+      "label": "Geannuleerd",
+      "value": "geannuleerd"
+    }
+  ],
+  "topRow": 63,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8a0fba73d",
+  "widgetName": "SelectOrderStatus"
+}

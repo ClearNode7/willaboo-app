@@ -1,0 +1,287 @@
+{
+  "animateLoading": true,
+  "bottomRow": 45,
+  "columnOrder": [
+    "product_naam",
+    "aantal",
+    "eenheid",
+    "prijs_excl",
+    "btw_pct",
+    "regel_totaal_incl",
+    "id",
+    "product_id",
+    "regel_totaal_excl"
+  ],
+  "columnUpdatedAt": 1778527634235,
+  "columnWidthMap": {
+    "eenheid": 94
+  },
+  "defaultPageSize": 10,
+  "defaultSelectedRowIndex": 0,
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.product_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.product_naam.computedValue"
+    },
+    {
+      "key": "primaryColumns.aantal.computedValue"
+    },
+    {
+      "key": "primaryColumns.eenheid.computedValue"
+    },
+    {
+      "key": "primaryColumns.prijs_excl.computedValue"
+    },
+    {
+      "key": "primaryColumns.btw_pct.computedValue"
+    },
+    {
+      "key": "primaryColumns.regel_totaal_incl.computedValue"
+    },
+    {
+      "key": "primaryColumns.regel_totaal_excl.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "enableServerSideFiltering": false,
+  "inlineEditingSaveOption": "CUSTOM",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": false,
+  "leftColumn": 1,
+  "onRowSelected": "{{resetWidget('InpBewerkAantal').then(()=>resetWidget('InpBewerkPrijs').then(()=>resetWidget('InpBewerkBtw')))}}",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "aantal": {
+      "alias": "aantal",
+      "columnType": "number",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"aantal\"])}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "aantal",
+      "index": 1,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Aantal",
+      "originalId": "aantal",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 80
+    },
+    "btw_pct": {
+      "alias": "btw_pct",
+      "columnType": "number",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"btw_pct\"])}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "btw_pct",
+      "index": 4,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "BTW %",
+      "originalId": "btw_pct",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 80
+    },
+    "eenheid": {
+      "alias": "eenheid",
+      "columnType": "text",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"eenheid\"])}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "eenheid",
+      "index": 2,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Eenheid",
+      "originalId": "eenheid",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 94
+    },
+    "id": {
+      "alias": "id",
+      "columnType": "text",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"id\"])}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 7,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "id",
+      "originalId": "id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "prijs_excl": {
+      "alias": "prijs_excl",
+      "columnType": "currency",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"prijs_excl\"])}}",
+      "currencyCode": "EUR",
+      "decimals": 2,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "prijs_excl",
+      "index": 3,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Prijs excl.",
+      "originalId": "prijs_excl",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 100
+    },
+    "product_id": {
+      "alias": "product_id",
+      "columnType": "text",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"product_id\"])}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "product_id",
+      "index": 8,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "product_id",
+      "originalId": "product_id",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "product_naam": {
+      "alias": "product_naam",
+      "columnType": "text",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"product_naam\"])}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "product_naam",
+      "index": 0,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Product",
+      "originalId": "product_naam",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 200
+    },
+    "regel_totaal_excl": {
+      "alias": "regel_totaal_excl",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"regel_totaal_excl\"])}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "",
+      "id": "regel_totaal_excl",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Totaal excl.",
+      "notation": "standard",
+      "originalId": "regel_totaal_excl",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "",
+      "width": 150
+    },
+    "regel_totaal_incl": {
+      "alias": "regel_totaal_incl",
+      "columnType": "currency",
+      "computedValue": "{{tblOrderRegels.processedTableData.map((currentRow) => currentRow[\"regel_totaal_incl\"])}}",
+      "currencyCode": "EUR",
+      "decimals": 2,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "regel_totaal_incl",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDiscardVisible": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Totaal incl.",
+      "originalId": "regel_totaal_incl",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 110
+    }
+  },
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "tableData": "{{orderRegelsGet.data}}",
+  "topRow": 8,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "widgetId": "1f75602eb",
+  "widgetName": "tblOrderRegels"
+}

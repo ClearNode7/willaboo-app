@@ -1,0 +1,4 @@
+SELECT id, naam, sku, prijs_excl, btw_pct, beschrijving
+FROM public.producten
+WHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid
+  AND deletedon IS NULL

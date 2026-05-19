@@ -1,0 +1,255 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 54,
+  "boxShadow": "none",
+  "canFreezeColumn": false,
+  "columnOrder": [
+    "naam",
+    "prijs_excl",
+    "btw_pct",
+    "sku",
+    "createdon",
+    "btn_detail"
+  ],
+  "columnUpdatedAt": 1778254054391,
+  "columnWidthMap": {
+    "btn_detail": 120,
+    "btw_pct": 80,
+    "createdon": 140,
+    "naam": 200,
+    "prijs_excl": 110,
+    "sku": 120
+  },
+  "defaultPageSize": 10,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.naam.computedValue"
+    },
+    {
+      "key": "primaryColumns.prijs_excl.computedValue"
+    },
+    {
+      "key": "primaryColumns.sku.computedValue"
+    },
+    {
+      "key": "primaryColumns.createdon.computedValue"
+    },
+    {
+      "key": "primaryColumns.beschrijving.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.btw_pct.computedValue"
+    },
+    {
+      "key": "primaryColumns.btn_detail.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.btn_detail.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "enableServerSideFiltering": false,
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": true,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumnId": "id",
+  "primaryColumns": {
+    "beschrijving": {
+      "alias": "beschrijving",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"beschrijving\"])}}",
+      "horizontalAlignment": "LEFT",
+      "id": "beschrijving",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": false,
+      "label": "Beschrijving",
+      "originalId": "beschrijving",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "btn_detail": {
+      "alias": "btn_detail",
+      "allowCellWrapping": false,
+      "borderRadius": "4px",
+      "buttonColor": "#03B365",
+      "buttonLabel": "Bewerken",
+      "buttonVariant": "PRIMARY",
+      "columnType": "button",
+      "computedValue": "{{currentRow.id}}",
+      "horizontalAlignment": "CENTER",
+      "id": "btn_detail",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Bewerken",
+      "onClick": "{{navigateTo('ProductenDetail', {productId: currentRow.id}, 'SAME_WINDOW')}}",
+      "originalId": "btn_detail",
+      "sticky": "",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 120
+    },
+    "btw_pct": {
+      "alias": "btw_pct",
+      "columnType": "number",
+      "computedValue": "{{tblProducten.processedTableData.map((r)=>(r.btw_pct||0))}}",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "btw_pct",
+      "index": 6,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isVisible": true,
+      "label": "BTW %",
+      "originalId": "btw_pct",
+      "textSize": "0.875rem",
+      "verticalAlignment": "CENTER",
+      "width": 90
+    },
+    "createdon": {
+      "alias": "createdon",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"createdon\"])}}",
+      "horizontalAlignment": "LEFT",
+      "id": "createdon",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": true,
+      "label": "Aangemaakt op",
+      "originalId": "createdon",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "id": {
+      "alias": "id",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"id\"])}}",
+      "horizontalAlignment": "LEFT",
+      "id": "id",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": false,
+      "label": "id",
+      "originalId": "id",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "naam": {
+      "alias": "naam",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"naam\"])}}",
+      "horizontalAlignment": "LEFT",
+      "id": "naam",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": true,
+      "label": "Product",
+      "originalId": "naam",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "prijs_excl": {
+      "alias": "prijs_excl",
+      "allowCellWrapping": false,
+      "columnType": "currency",
+      "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"prijs_excl\"])}}",
+      "currencyCode": "EUR",
+      "horizontalAlignment": "RIGHT",
+      "id": "prijs_excl",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": true,
+      "label": "Prijs excl.",
+      "originalId": "prijs_excl",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    },
+    "sku": {
+      "alias": "sku",
+      "allowCellWrapping": false,
+      "columnType": "text",
+      "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"sku\"])}}",
+      "horizontalAlignment": "LEFT",
+      "id": "sku",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isEditable": false,
+      "isVisible": true,
+      "label": "Artikelcode",
+      "originalId": "sku",
+      "sticky": "",
+      "validation": {},
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "tableData": "{{productenGet.data}}",
+  "topRow": 9,
+  "type": "TABLE_WIDGET_V2",
+  "version": 1,
+  "widgetId": "de63351dd",
+  "widgetName": "tblProducten"
+}

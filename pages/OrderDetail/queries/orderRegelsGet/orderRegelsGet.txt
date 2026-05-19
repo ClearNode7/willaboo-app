@@ -1,0 +1,6 @@
+SELECT id, product_id, product_naam, aantal, eenheid::text, prijs_excl, btw_pct,
+       regel_totaal_excl, regel_totaal_incl
+FROM public.order_regels_view
+WHERE order_id = '{{appsmith.URL.queryParams.orderId}}'
+  AND deletedon IS NULL
+ORDER BY createdon

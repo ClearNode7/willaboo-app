@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "bottomRow": 32,
+  "defaultOptionValue": "{{klantGetById.data[0]?.titulatuur || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "label": "Titulatuur",
+  "labelPosition": "Top",
+  "labelText": "Titulatuur",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 33,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": [
+    {
+      "label": "(geen)",
+      "value": ""
+    },
+    {
+      "label": "Dr.",
+      "value": "Dr."
+    },
+    {
+      "label": "Ir.",
+      "value": "Ir."
+    },
+    {
+      "label": "Mr.",
+      "value": "Mr."
+    },
+    {
+      "label": "Prof.",
+      "value": "Prof."
+    }
+  ],
+  "topRow": 27,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "eb8077505",
+  "widgetName": "SelTitulatuur"
+}

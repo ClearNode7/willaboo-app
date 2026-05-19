@@ -1,0 +1,1 @@
+SELECT id, naam FROM producten ORDER BY naam ASC

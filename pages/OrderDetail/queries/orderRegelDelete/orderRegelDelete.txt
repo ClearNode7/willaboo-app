@@ -1,0 +1,5 @@
+UPDATE public.order_regels SET
+  deletedon = now(),
+  deletedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)
+WHERE id = '{{tblOrderRegels.selectedRow.id}}'
+  AND deletedon IS NULL

@@ -1,0 +1,31 @@
+{
+  "animateLoading": true,
+  "bottomRow": 89,
+  "defaultText": "{{tblOrders.selectedRow?.notities || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "MULTI_LINE_TEXT",
+  "isLoading": false,
+  "isVisible": "{{!!tblOrders.selectedRow?.id}}",
+  "label": "",
+  "leftColumn": 2,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Optionele notities",
+  "renderMode": "CANVAS",
+  "rightColumn": 29,
+  "shouldAllowAutofill": false,
+  "topRow": 74,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "44931f5d2",
+  "widgetName": "InputOrderNotities"
+}

@@ -1,0 +1,23 @@
+SELECT
+  id,
+  weergave_naam,
+  klant_type::text AS klant_type,
+  status::text     AS status,
+  bedrijfsnaam,
+  kvk,
+  btwnummer,
+  geslacht::text   AS geslacht,
+  aanhef,
+  titulatuur,
+  initialen,
+  voornaam,
+  tussenvoegsel,
+  achternaam,
+  email,
+  telefoon,
+  TO_CHAR(createdon, 'DD-MM-YYYY HH24:MI') AS createdon,
+  TO_CHAR(modifiedon, 'DD-MM-YYYY HH24:MI') AS modifiedon
+FROM klanten_view
+WHERE deletedon IS NULL
+AND ('{{selStatus.selectedOptionValue}}' = '' OR status::text = '{{selStatus.selectedOptionValue}}')
+ORDER BY weergave_naam

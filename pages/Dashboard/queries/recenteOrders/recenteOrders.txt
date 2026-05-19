@@ -1,0 +1,11 @@
+SELECT
+  o.id::text,
+  k.bedrijfsnaam,
+  TO_CHAR(o.createdon, 'DD-MM-YYYY') AS datum,
+  o.status::text,
+  o.volgnummer::text AS referentie
+FROM orders o
+JOIN klanten k ON k.id = o.klant_id
+WHERE o.deletedon IS NULL
+ORDER BY o.createdon DESC
+LIMIT 10;

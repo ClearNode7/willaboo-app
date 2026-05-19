@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "bottomRow": 32,
+  "defaultOptionValue": "{{klantGetById.data[0]?.aanhef || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "label": "Aanhef",
+  "labelPosition": "Top",
+  "labelText": "Aanhef",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "serverSideFiltering": false,
+  "sourceData": [
+    {
+      "label": "Dhr.",
+      "value": "Dhr."
+    },
+    {
+      "label": "Mw.",
+      "value": "Mw."
+    }
+  ],
+  "topRow": 27,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fa0848cc5",
+  "widgetName": "SelAanhef"
+}

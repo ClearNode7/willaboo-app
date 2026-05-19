@@ -1,0 +1,59 @@
+{
+  "animateLoading": true,
+  "bottomRow": 67,
+  "defaultOptionValue": "innerbox",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Eenheid",
+  "leftColumn": 47,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "sourceData": [
+    {
+      "label": "stuk",
+      "value": "stuk"
+    },
+    {
+      "label": "doos",
+      "value": "doos"
+    },
+    {
+      "label": "pak",
+      "value": "pak"
+    },
+    {
+      "label": "innerbox",
+      "value": "innerbox"
+    },
+    {
+      "label": "kg",
+      "value": "kg"
+    },
+    {
+      "label": "gram",
+      "value": "gram"
+    },
+    {
+      "label": "liter",
+      "value": "liter"
+    }
+  ],
+  "topRow": 63,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "a562bfa86",
+  "widgetName": "SelectNieuwEenheid"
+}

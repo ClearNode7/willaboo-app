@@ -1,0 +1,32 @@
+{
+  "animateLoading": true,
+  "bottomRow": 11,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontSize": "1.25rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "text": "{{klantGetById.data[0]?.weergave_naam || 'Klant'}}",
+  "textAlign": "LEFT",
+  "textColor": "#555555",
+  "topRow": 7,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "7a5235815",
+  "widgetName": "TxtKDNaam"
+}

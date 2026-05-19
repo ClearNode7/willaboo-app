@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "bottomRow": 52,
+  "defaultOptionValue": "{{klantGetById.data[0]?.klant_type || 'particulier'}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "label": "Klant type",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "serverSideFiltering": false,
+  "sourceData": [
+    {
+      "label": "Particulier",
+      "value": "particulier"
+    },
+    {
+      "label": "Zakelijk",
+      "value": "zakelijk"
+    }
+  ],
+  "topRow": 47,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "577bc341d",
+  "widgetName": "SelKlantType"
+}

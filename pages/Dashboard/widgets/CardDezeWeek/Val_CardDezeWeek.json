@@ -1,0 +1,29 @@
+{
+  "animateLoading": true,
+  "bottomRow": 18,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontSize": "2rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 3,
+  "overflow": "NONE",
+  "parentColumnSpace": 5.9375,
+  "parentId": "bon67n578",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "text": "{{ordersStats.data[0].deze_week}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 9,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "rtyustj8i",
+  "widgetName": "Val_CardDezeWeek"
+}

@@ -1,0 +1,28 @@
+{
+  "animateLoading": true,
+  "bottomRow": 74,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{!!tblOrders.selectedRow?.id}}",
+  "leftColumn": 2,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 5,
+  "text": "Notities",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 69,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "287b2e9f9",
+  "widgetName": "TxtLblNotities"
+}

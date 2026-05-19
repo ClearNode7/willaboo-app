@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 63,
+  "bottomRowBeforeCollapse": 63,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+  "leftColumn": 36,
+  "originalBottomRow": 63,
+  "originalTopRow": 58,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 45,
+  "text": "Min. voorraad voor: **{{tblVoorraad.selectedRow?.product_naam}}**",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 58,
+  "topRowBeforeCollapse": 58,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "184ca1b4e",
+  "widgetName": "lblDrempelTitel"
+}

@@ -1,0 +1,27 @@
+{
+  "animateLoading": true,
+  "bottomRow": 77,
+  "defaultText": "{{productenGet.data.find(p=>p.id===SelectNieuwProduct.selectedOptionValue)?.btw_pct || 0}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "NUMBER",
+  "isLoading": false,
+  "isVisible": true,
+  "label": "BTW %",
+  "leftColumn": 47,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "topRow": 69,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "4bd59827f",
+  "widgetName": "InpNieuwBtw"
+}

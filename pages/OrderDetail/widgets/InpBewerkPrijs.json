@@ -1,0 +1,34 @@
+{
+  "animateLoading": true,
+  "bottomRow": 73,
+  "bottomRowBeforeCollapse": 73,
+  "defaultText": "{{tblOrderRegels.selectedRow?.prijs_excl || orderRegelsGet.data[0]?.prijs_excl || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "NUMBER",
+  "isLoading": false,
+  "isVisible": "{{orderRegelsGet.data?.length > 0}}",
+  "label": "Prijs excl.",
+  "leftColumn": 1,
+  "originalBottomRow": 73,
+  "originalTopRow": 68,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 14,
+  "topRow": 68,
+  "topRowBeforeCollapse": 68,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "d8f0e69b0",
+  "widgetName": "InpBewerkPrijs"
+}

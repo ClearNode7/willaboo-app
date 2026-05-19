@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "white",
+  "borderRadius": "4px",
+  "bottomRow": 54,
+  "boxShadow": "0px 1px 3px rgba(0,0,0,0.1)",
+  "children": [
+    {
+      "bottomRow": 200,
+      "dynamicBindingPathList": [],
+      "dynamicTriggerPathList": [],
+      "isLoading": false,
+      "leftColumn": 0,
+      "parentColumnSpace": 1,
+      "parentId": "e0b186287",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 380,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "c1cba3249",
+      "widgetName": "Canvas_CardLageVoorraad"
+    }
+  ],
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 47,
+  "parentColumnSpace": 19.125,
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "topRow": 34,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "e0b186287",
+  "widgetName": "CardLageVoorraad"
+}

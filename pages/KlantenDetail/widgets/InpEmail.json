@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 39,
+  "defaultText": "{{klantGetById.data[0]?.email || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "EMAIL",
+  "isLoading": false,
+  "isRequired": false,
+  "isSpellCheck": false,
+  "isVisible": true,
+  "label": "Email",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "topRow": 34,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "a03c8adba",
+  "widgetName": "InpEmail"
+}

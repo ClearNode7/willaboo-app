@@ -1,0 +1,35 @@
+{
+  "animateLoading": true,
+  "bottomRow": 61,
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Product",
+  "labelText": "Product",
+  "leftColumn": 33,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Kies product",
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "sourceData": "{{productenGet.data.map(p => ({label: p.naam, value: p.id}))}}",
+  "topRow": 57,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "c526ee1cd",
+  "widgetName": "SelectNieuwProduct"
+}

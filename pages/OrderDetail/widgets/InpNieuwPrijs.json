@@ -1,0 +1,27 @@
+{
+  "animateLoading": true,
+  "bottomRow": 73,
+  "defaultText": "{{productenGet.data.find(p=>p.id===SelectNieuwProduct.selectedOptionValue)?.prijs_excl || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "NUMBER",
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Prijs excl.",
+  "leftColumn": 33,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 46,
+  "topRow": 69,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "0fe40b7d5",
+  "widgetName": "InpNieuwPrijs"
+}

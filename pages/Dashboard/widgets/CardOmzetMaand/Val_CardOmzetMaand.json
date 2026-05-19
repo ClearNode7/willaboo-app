@@ -1,0 +1,29 @@
+{
+  "animateLoading": true,
+  "bottomRow": 18,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontSize": "2rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 3,
+  "overflow": "NONE",
+  "parentColumnSpace": 5.9375,
+  "parentId": "5c84ea78d",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "text": "{{Number(ordersStats.data[0].omzet_maand).toLocaleString('nl-NL',{minimumFractionDigits:2,maximumFractionDigits:2})}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 9,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "14552f94a",
+  "widgetName": "Val_CardOmzetMaand"
+}

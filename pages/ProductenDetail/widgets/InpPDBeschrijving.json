@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 32,
+  "defaultText": "{{productGetById.data[0]?.beschrijving || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "TEXT",
+  "isLoading": false,
+  "isRequired": false,
+  "isSpellCheck": false,
+  "isVisible": true,
+  "label": "Beschrijving",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 27,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "997f801ff",
+  "widgetName": "InpPDBeschrijving"
+}

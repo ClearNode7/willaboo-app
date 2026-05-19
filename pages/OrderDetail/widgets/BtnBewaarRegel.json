@@ -1,0 +1,36 @@
+{
+  "animateLoading": true,
+  "borderRadius": "4px",
+  "bottomRow": 80,
+  "bottomRowBeforeCollapse": 80,
+  "buttonColor": "#03b365",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isLoading": false,
+  "isVisible": "{{orderRegelsGet.data?.length > 0}}",
+  "leftColumn": 1,
+  "onClick": "{{orderRegelUpdate.run(()=>{orderRegelsGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+  "originalBottomRow": 80,
+  "originalTopRow": 74,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 7,
+  "text": "Bewaar regel",
+  "topRow": 74,
+  "topRowBeforeCollapse": 74,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ac34d1e6e",
+  "widgetName": "BtnBewaarRegel"
+}

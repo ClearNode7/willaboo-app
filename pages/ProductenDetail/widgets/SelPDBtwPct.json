@@ -1,0 +1,46 @@
+{
+  "animateLoading": true,
+  "bottomRow": 25,
+  "defaultOptionValue": "{{String(productGetById.data[0]?.btw_pct ?? 21)}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "label": "BTW-tarief",
+  "labelPosition": "Top",
+  "labelText": "BTW tarief",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 33,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": [
+    {
+      "label": "Vrijgesteld 0%",
+      "value": "0"
+    },
+    {
+      "label": "Laag 9%",
+      "value": "9"
+    },
+    {
+      "label": "Hoog 21%",
+      "value": "21"
+    }
+  ],
+  "topRow": 20,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fbc325ebc",
+  "widgetName": "SelPDBtwPct"
+}

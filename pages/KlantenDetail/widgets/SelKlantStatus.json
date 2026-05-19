@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "bottomRow": 52,
+  "defaultOptionValue": "{{klantGetById.data[0]?.status || 'actief'}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "label": "Status",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 33,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": [
+    {
+      "label": "Actief",
+      "value": "actief"
+    },
+    {
+      "label": "Inactief",
+      "value": "inactief"
+    }
+  ],
+  "topRow": 47,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "c87d56789",
+  "widgetName": "SelKlantStatus"
+}

@@ -1,0 +1,37 @@
+{
+  "animateLoading": true,
+  "borderRadius": "4px",
+  "bottomRow": 68,
+  "bottomRowBeforeCollapse": 73,
+  "buttonColor": "#22c55e",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isLoading": false,
+  "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+  "leftColumn": 49,
+  "onClick": "{{updateDrempel.run(() => { getVoorraad.run(); showAlert('Drempelwaarde opgeslagen ✓', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+  "originalBottomRow": 73,
+  "originalTopRow": 65,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 54,
+  "text": "Opslaan",
+  "topRow": 64,
+  "topRowBeforeCollapse": 65,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "0720ed90c",
+  "widgetName": "btnDrempelOpslaan"
+}

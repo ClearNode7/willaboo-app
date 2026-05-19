@@ -1,0 +1,3 @@
+UPDATE producten
+SET min_voorraad = {{inpDrempel.text}}::numeric
+WHERE id = '{{tblVoorraad.selectedRow.product_id}}'::uuid

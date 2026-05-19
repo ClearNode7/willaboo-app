@@ -1,0 +1,23 @@
+{
+  "animateLoading": true,
+  "bottomRow": 67,
+  "defaultText": "1",
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [],
+  "inputType": "NUMBER",
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Aantal",
+  "leftColumn": 33,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 46,
+  "topRow": 63,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "169fca271",
+  "widgetName": "InpNieuwAantal"
+}

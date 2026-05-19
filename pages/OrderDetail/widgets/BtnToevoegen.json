@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "borderRadius": "4px",
+  "bottomRow": 80,
+  "buttonColor": "#03B365",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "add",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 33,
+  "onClick": "{{orderRegelInsert.run(()=>{orderRegelsGet.run();resetWidget('SelectNieuwProduct');resetWidget('InpNieuwAantal');resetWidget('SelectNieuwEenheid');resetWidget('InpNieuwPrijs');resetWidget('InpNieuwBtw');showAlert('Toegevoegd ✓','success');},()=>showAlert('Fout bij toevoegen','error'))}}",
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 39,
+  "text": "Toevoegen regel",
+  "topRow": 74,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "e5a06eca0",
+  "widgetName": "BtnToevoegen"
+}

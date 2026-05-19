@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "bottomRow": 68,
+  "bottomRowBeforeCollapse": 68,
+  "defaultOptionValue": "{{tblOrderRegels.selectedRow?.eenheid || orderRegelsGet.data[0]?.eenheid || 'doos'}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": "{{orderRegelsGet.data?.length > 0}}",
+  "label": "Eenheid",
+  "leftColumn": 16,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 68,
+  "originalTopRow": 63,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 30,
+  "sourceData": [
+    {
+      "label": "stuk",
+      "value": "stuk"
+    },
+    {
+      "label": "doos",
+      "value": "doos"
+    },
+    {
+      "label": "pak",
+      "value": "pak"
+    },
+    {
+      "label": "innerbox",
+      "value": "innerbox"
+    },
+    {
+      "label": "kg",
+      "value": "kg"
+    },
+    {
+      "label": "gram",
+      "value": "gram"
+    },
+    {
+      "label": "liter",
+      "value": "liter"
+    }
+  ],
+  "topRow": 63,
+  "topRowBeforeCollapse": 63,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "822c84808",
+  "widgetName": "SelectBewerkEenheid"
+}

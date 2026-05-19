@@ -1,0 +1,32 @@
+{
+  "animateLoading": true,
+  "bottomRow": 54,
+  "bottomRowBeforeCollapse": 54,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{orderRegelsGet.data?.length > 0}}",
+  "leftColumn": 1,
+  "originalBottomRow": 54,
+  "originalTopRow": 48,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "text": "Bewerk geselecteerde regel",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 48,
+  "topRowBeforeCollapse": 48,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "73e06c6ef",
+  "widgetName": "TxtBewerkTitel"
+}

@@ -1,0 +1,34 @@
+{
+  "animateLoading": true,
+  "bottomRow": 68,
+  "bottomRowBeforeCollapse": 68,
+  "defaultText": "{{tblOrderRegels.selectedRow?.aantal || orderRegelsGet.data[0]?.aantal || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "NUMBER",
+  "isLoading": false,
+  "isVisible": "{{orderRegelsGet.data?.length > 0}}",
+  "label": "Aantal",
+  "leftColumn": 1,
+  "originalBottomRow": 68,
+  "originalTopRow": 63,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 14,
+  "topRow": 63,
+  "topRowBeforeCollapse": 63,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "026b009ea",
+  "widgetName": "InpBewerkAantal"
+}

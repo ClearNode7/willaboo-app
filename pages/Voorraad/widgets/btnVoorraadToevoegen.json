@@ -1,0 +1,32 @@
+{
+  "animateLoading": true,
+  "borderRadius": "4px",
+  "bottomRow": 86,
+  "buttonColor": "#22c55e",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "add",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 2,
+  "onClick": "{{insertMutatie.run(() => { getVoorraad.run(); showAlert('Voorraad bijgewerkt!', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+  "originalBottomRow": 109,
+  "originalTopRow": 103,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 8,
+  "text": "Voorraad toevoegen",
+  "topRow": 80,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "1e0845897",
+  "widgetName": "btnVoorraadToevoegen"
+}

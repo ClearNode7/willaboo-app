@@ -1,0 +1,29 @@
+{
+  "animateLoading": true,
+  "bottomRow": 18,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontSize": "2rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 3,
+  "overflow": "NONE",
+  "parentColumnSpace": 5.9375,
+  "parentId": "2o4vr7tpo",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "text": "{{ordersStats.data[0].deze_maand}}",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 9,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "p5cm6j1y2",
+  "widgetName": "Val_CardDezeMaand"
+}

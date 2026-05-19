@@ -1,0 +1,32 @@
+{
+  "animateLoading": true,
+  "bottomRow": 70,
+  "defaultOptionValue": "{{tblOrders.selectedRow?.status || 'concept'}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "label": "Product",
+  "leftColumn": 2,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 91,
+  "originalTopRow": 83,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "rightColumn": 17,
+  "sourceData": "{{getProductenVoorDropdown.data.map(p => ({label: p.naam, value: p.id}))}}",
+  "topRow": 65,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "858698a40",
+  "widgetName": "selProduct"
+}

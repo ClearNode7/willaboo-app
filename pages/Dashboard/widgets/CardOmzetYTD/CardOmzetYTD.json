@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "white",
+  "borderRadius": "4px",
+  "bottomRow": 54,
+  "boxShadow": "0px 1px 3px rgba(0,0,0,0.1)",
+  "children": [
+    {
+      "bottomRow": 200,
+      "dynamicBindingPathList": [],
+      "dynamicTriggerPathList": [],
+      "isLoading": false,
+      "leftColumn": 0,
+      "parentColumnSpace": 1,
+      "parentId": "d543e6d79",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "rightColumn": 380,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "dbc2be607",
+      "widgetName": "Canvas_CardOmzetYTD"
+    }
+  ],
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 32,
+  "parentColumnSpace": 19.125,
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 46,
+  "topRow": 34,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "d543e6d79",
+  "widgetName": "CardOmzetYTD"
+}

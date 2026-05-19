@@ -1,0 +1,10 @@
+INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)
+VALUES (
+  '{{appsmith.URL.queryParams.orderId}}',
+  '{{SelectNieuwProduct.selectedOptionValue}}',
+  {{InpNieuwAantal.text || 1}},
+  CAST('{{SelectNieuwEenheid.selectedOptionValue || "doos"}}' AS public.product_eenheid),
+  {{InpNieuwPrijs.text || 0}}::numeric,
+  {{InpNieuwBtw.text || 0}}::numeric,
+  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)
+)

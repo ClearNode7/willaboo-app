@@ -1,0 +1,13 @@
+UPDATE public.order_regels SET
+  product_id = '{{SelectBewerkProduct.selectedOptionValue}}',
+  aantal     = CASE WHEN '{{InpBewerkAantal.text}}' = '' THEN aantal
+                    ELSE '{{InpBewerkAantal.text}}'::integer END,
+  eenheid    = CAST('{{SelectBewerkEenheid.selectedOptionValue}}' AS public.product_eenheid),
+  prijs_excl = CASE WHEN '{{InpBewerkPrijs.text}}' = '' THEN prijs_excl
+                    ELSE '{{InpBewerkPrijs.text}}'::numeric END,
+  btw_pct    = CASE WHEN '{{InpBewerkBtw.text}}' = '' THEN btw_pct
+                    ELSE '{{InpBewerkBtw.text}}'::numeric END,
+  modifiedon = now(),
+  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)
+WHERE id = '{{tblOrderRegels.selectedRow.id}}'
+  AND deletedon IS NULL

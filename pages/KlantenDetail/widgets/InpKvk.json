@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 59,
+  "defaultText": "{{klantGetById.data[0]?.kvk || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "TEXT",
+  "isLoading": false,
+  "isRequired": false,
+  "isSpellCheck": false,
+  "isVisible": true,
+  "label": "KvK-nummer",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 33,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 54,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "8095800b2",
+  "widgetName": "InpKvk"
+}

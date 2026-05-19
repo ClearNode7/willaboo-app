@@ -1,0 +1,30 @@
+{
+  "animateLoading": true,
+  "bottomRow": 18,
+  "defaultText": "{{klantGetById.data[0]?.achternaam || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "inputType": "TEXT",
+  "isLoading": false,
+  "isRequired": false,
+  "isSpellCheck": false,
+  "isVisible": true,
+  "label": "Achternaam",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 33,
+  "parentColumnSpace": 19.125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "topRow": 13,
+  "type": "INPUT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "bfe44bf8c",
+  "widgetName": "InpAchternaam"
+}

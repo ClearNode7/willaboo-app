@@ -1,0 +1,13 @@
+UPDATE public.producten SET
+  naam         = '{{InpPDNaam.text}}',
+  sku          = NULLIF('{{InpPDSku.text}}', ''),
+  beschrijving = NULLIF('{{InpPDBeschrijving.text}}', ''),
+  prijs_excl   = CASE WHEN '{{InpPDPrijs.text}}' = '' THEN prijs_excl
+                      ELSE '{{InpPDPrijs.text}}'::numeric END,
+  btw_pct      = CASE WHEN '{{SelPDBtwPct.selectedOptionValue}}' = '' THEN btw_pct
+                      ELSE '{{SelPDBtwPct.selectedOptionValue}}'::integer END,
+  modifiedon   = now(),
+  modifiedby   = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),
+                           '00000000-0000-0000-0000-000000000001'::uuid)
+WHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid
+  AND deletedon IS NULL
