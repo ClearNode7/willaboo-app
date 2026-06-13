@@ -1,0 +1,130 @@
+﻿{
+    "_id":  "6a060bb8a02d0a78f91329c0",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "_mig4a",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "createdAt":  "2026-05-14T17:51:52.908Z",
+                                                 "updatedAt":  "2026-05-14T17:51:53.013Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69fb954dc8eed02aabb4c92c",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  30000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "\nCREATE OR REPLACE FUNCTION public.fn_orderregel_update_voorraad()\nRETURNS trigger LANGUAGE plpgsql SECURITY DEFINER AS $$\nDECLARE v_volgnummer integer;\nBEGIN\n    SELECT volgnummer INTO v_volgnummer FROM public.orders\n    WHERE id = NEW.order_id AND status = \u0027bevestigd\u0027;\n    IF v_volgnummer IS NULL THEN RETURN NEW; END IF;\n    IF OLD.deletedon IS NULL AND NEW.deletedon IS NOT NULL THEN\n        INSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\n        VALUES (NEW.product_id, NEW.order_id, \u0027in\u0027::public.voorraad_mutatie_type, NEW.aantal,\n                \u0027Automatisch teruggeBoekt bij verwijdering uit bevestigde order #\u0027 || v_volgnummer,\n                NEW.modifiedby);\n        RETURN NEW;\n    END IF;\n    IF OLD.deletedon IS NOT NULL AND NEW.deletedon IS NULL THEN\n        INSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\n        VALUES (NEW.product_id, NEW.order_id, \u0027uit\u0027::public.voorraad_mutatie_type, -NEW.aantal,\n                \u0027Automatisch afgeboekt bij herstel van bevestigde order #\u0027 || v_volgnummer,\n                NEW.modifiedby);\n        RETURN NEW;\n    END IF;\n    IF NEW.deletedon IS NULL AND NEW.aantal \u003c\u003e OLD.aantal THEN\n        INSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\n        VALUES (NEW.product_id, NEW.order_id, \u0027correctie\u0027::public.voorraad_mutatie_type,\n                -(NEW.aantal - OLD.aantal),\n                \u0027Correctie bij aantalwijziging op bevestigde order #\u0027 || v_volgnummer\n                || \u0027 (\u0027 || OLD.aantal || \u0027 → \u0027 || NEW.aantal || \u0027)\u0027,\n                NEW.modifiedby);\n        RETURN NEW;\n    END IF;\n    RETURN NEW;\nEND; $$\n",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "runBehaviour":  "MANUAL",
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false
+                          },
+    "publishedAction":  {
+                            "datasource":  {
+                                               "createdAt":  "2026-05-14T17:51:52.908Z",
+                                               "updatedAt":  "2026-05-14T17:51:53.013Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false
+                        },
+    "baseId":  "6a060bb8a02d0a78f91329c0",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_3680a33b-93b0-410f-81f8-998c2854855f",
+    "createdAt":  "2026-05-14T17:51:52.908Z",
+    "updatedAt":  "2026-05-14T17:51:53.013Z",
+    "deleted":  false,
+    "deletedAt":  "2026-05-14T17:51:53.013Z",
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
+}

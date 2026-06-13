@@ -1,0 +1,161 @@
+﻿{
+    "_id":  "6a06064ea02d0a78f9132991",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "insertMutatie",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-06-12T14:39:47.495Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "6a06063ea02d0a78f913298f",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "INSERT INTO voorraad_mutaties (product_id, type, aantal, opmerking, createdby)\nVALUES (\n  \u0027{{selProduct.selectedOptionValue}}\u0027::uuid,\n  \u0027in\u0027,\n  {{inpAantal.text}}::numeric,\n  \u0027{{inpOpmerking.text}}\u0027,\n  COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\n)"
+                                                      },
+                              "executeOnLoad":  false,
+                              "runBehaviour":  "MANUAL",
+                              "dynamicBindingPathList":  [
+                                                             {
+                                                                 "key":  "actionConfiguration.body"
+                                                             }
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "inpOpmerking.text",
+                                                   "inpAantal.text",
+                                                   "appsmith.user.email",
+                                                   "selProduct.selectedOptionValue"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "createdAt":  "2026-05-14T17:28:46.080Z"
+                          },
+    "publishedAction":  {
+                            "name":  "insertMutatie",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-06-12T14:39:47.495Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "6a06063ea02d0a78f913298f",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "INSERT INTO voorraad_mutaties (product_id, type, aantal, opmerking, createdby)\nVALUES (\n  \u0027{{selProduct.selectedOptionValue}}\u0027::uuid,\n  \u0027in\u0027,\n  {{inpAantal.text}}::numeric,\n  \u0027{{inpOpmerking.text}}\u0027,\n  COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\n)"
+                                                    },
+                            "executeOnLoad":  false,
+                            "runBehaviour":  "MANUAL",
+                            "dynamicBindingPathList":  [
+                                                           {
+                                                               "key":  "actionConfiguration.body"
+                                                           }
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "inpOpmerking.text",
+                                                 "inpAantal.text",
+                                                 "appsmith.user.email",
+                                                 "selProduct.selectedOptionValue"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-14T17:28:46.080Z"
+                        },
+    "baseId":  "6a06064ea02d0a78f9132991",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_21802cc8-2e6a-41f6-bf16-8c7b1e666bee",
+    "createdAt":  "2026-05-14T17:28:46.080Z",
+    "updatedAt":  "2026-06-12T14:39:47.495Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
+}

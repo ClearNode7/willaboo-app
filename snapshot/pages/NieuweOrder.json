@@ -1,0 +1,512 @@
+﻿{
+    "_id":  "6a2c124c87160c133e882bf4",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "unpublishedPage":  {
+                            "name":  "NieuweOrder",
+                            "slug":  "nieuweorder",
+                            "layouts":  [
+                                            {
+                                                "_id":  "6a2c124c87160c133e882bf3",
+                                                "viewMode":  false,
+                                                "dsl":  {
+                                                            "widgetName":  "MainContainer",
+                                                            "backgroundColor":  "none",
+                                                            "rightColumn":  1224,
+                                                            "snapColumns":  64,
+                                                            "detachFromLayout":  true,
+                                                            "widgetId":  "0",
+                                                            "topRow":  0,
+                                                            "bottomRow":  380,
+                                                            "containerStyle":  "none",
+                                                            "snapRows":  110,
+                                                            "parentRowSpace":  1,
+                                                            "type":  "CANVAS_WIDGET",
+                                                            "canExtend":  true,
+                                                            "version":  94,
+                                                            "minHeight":  1120,
+                                                            "parentColumnSpace":  1,
+                                                            "dynamicBindingPathList":  [
+
+                                                                                       ],
+                                                            "leftColumn":  0,
+                                                            "children":  [
+                                                                             {
+                                                                                 "widgetName":  "TxtNieuweOrderTitel",
+                                                                                 "topRow":  4,
+                                                                                 "bottomRow":  10,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "TEXT_WIDGET",
+                                                                                 "topRowBeforeCollapse":  8,
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+
+                                                                                                            ],
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "isVisible"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "text":  "Nieuwe order",
+                                                                                 "key":  "nv1eo5x8mh",
+                                                                                 "rightColumn":  7,
+                                                                                 "textAlign":  "LEFT",
+                                                                                 "widgetId":  "b2rjwrv7xy",
+                                                                                 "bottomRowBeforeCollapse":  14,
+                                                                                 "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                                 "fontStyle":  "BOLD",
+                                                                                 "version":  1,
+                                                                                 "textColor":  "#231F20",
+                                                                                 "parentId":  "0",
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "isLoading":  false,
+                                                                                 "originalTopRow":  8,
+                                                                                 "originalBottomRow":  14,
+                                                                                 "fontSize":  "1.25rem"
+                                                                             },
+                                                                             {
+                                                                                 "widgetName":  "TxtLblNieuweKlant",
+                                                                                 "topRow":  11,
+                                                                                 "bottomRow":  16,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "TEXT_WIDGET",
+                                                                                 "topRowBeforeCollapse":  51,
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+
+                                                                                                            ],
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "isVisible"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "text":  "Klant",
+                                                                                 "key":  "oq7m7tqzhc",
+                                                                                 "rightColumn":  4,
+                                                                                 "textAlign":  "LEFT",
+                                                                                 "widgetId":  "nnhdwxo2l9",
+                                                                                 "bottomRowBeforeCollapse":  56,
+                                                                                 "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                                 "fontStyle":  "BOLD",
+                                                                                 "version":  1,
+                                                                                 "textColor":  "#231F20",
+                                                                                 "parentId":  "0",
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "isLoading":  false,
+                                                                                 "originalTopRow":  51,
+                                                                                 "originalBottomRow":  56,
+                                                                                 "fontSize":  "0.875rem"
+                                                                             },
+                                                                             {
+                                                                                 "widgetName":  "SelectNieuweOrderKlant",
+                                                                                 "dynamicPropertyPathList":  [
+                                                                                                                 {
+                                                                                                                     "key":  "sourceData"
+                                                                                                                 }
+                                                                                                             ],
+                                                                                 "topRow":  16,
+                                                                                 "bottomRow":  20,
+                                                                                 "labelText":  "",
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "SELECT_WIDGET",
+                                                                                 "topRowBeforeCollapse":  57,
+                                                                                 "defaultOptionValue":  "",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+
+                                                                                                            ],
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "sourceData"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "isVisible"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "placeholderText":  "Kies klant",
+                                                                                 "sourceData":  "{{klantenSelectGet.data.map(k =\u003e ({label: k.naam, value: k.id}))}}",
+                                                                                 "key":  "qf4lheg6kz",
+                                                                                 "rightColumn":  20,
+                                                                                 "widgetId":  "lsnuevqvay",
+                                                                                 "optionValue":  "value",
+                                                                                 "bottomRowBeforeCollapse":  61,
+                                                                                 "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                                 "label":  "Klant",
+                                                                                 "version":  1,
+                                                                                 "parentId":  "0",
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "isLoading":  false,
+                                                                                 "optionLabel":  "label",
+                                                                                 "originalTopRow":  57,
+                                                                                 "originalBottomRow":  61
+                                                                             },
+                                                                             {
+                                                                                 "widgetName":  "BtnOrderAanmaken",
+                                                                                 "onClick":  "{{orderInsert.run((r)=\u003e{navigateTo(\u0027OrderDetail\u0027, {orderId: r[0].id});},()=\u003eshowAlert(\u0027Fout bij aanmaken order\u0027,\u0027error\u0027))}}",
+                                                                                 "buttonColor":  "#03B365",
+                                                                                 "topRow":  16,
+                                                                                 "bottomRow":  20,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "BUTTON_WIDGET",
+                                                                                 "topRowBeforeCollapse":  57,
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "onClick"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "leftColumn":  21,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "isVisible"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "text":  "Order aanmaken",
+                                                                                 "key":  "smcmupswtc",
+                                                                                 "rightColumn":  27,
+                                                                                 "iconName":  "add",
+                                                                                 "widgetId":  "hc4e2f804z",
+                                                                                 "bottomRowBeforeCollapse":  61,
+                                                                                 "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                                 "version":  1,
+                                                                                 "parentId":  "0",
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "isLoading":  false,
+                                                                                 "originalTopRow":  57,
+                                                                                 "borderRadius":  "4px",
+                                                                                 "originalBottomRow":  61,
+                                                                                 "buttonVariant":  "PRIMARY",
+                                                                                 "iconAlign":  "left"
+                                                                             }
+                                                                         ]
+                                                        },
+                                                "layoutOnLoadActions":  [
+                                                                            [
+                                                                                {
+                                                                                    "_id":  "6a2c094ec0934275fd44ba89",
+                                                                                    "name":  "klantenSelectGet",
+                                                                                    "confirmBeforeExecute":  false,
+                                                                                    "pluginType":  "DB",
+                                                                                    "jsonPathKeys":  [
+
+                                                                                                     ],
+                                                                                    "timeoutInMillisecond":  10000
+                                                                                }
+                                                                            ]
+                                                                        ],
+                                                "layoutOnLoadActionErrors":  [
+
+                                                                             ],
+                                                "widgetNames":  [
+                                                                    "TxtLblNieuweKlant",
+                                                                    "BtnOrderAanmaken",
+                                                                    "TxtNieuweOrderTitel",
+                                                                    "SelectNieuweOrderKlant",
+                                                                    "MainContainer"
+                                                                ],
+                                                "allOnPageLoadActionNames":  [
+
+                                                                             ],
+                                                "actionsUsedInDynamicBindings":  [
+                                                                                     "klantenSelectGet"
+                                                                                 ],
+                                                "validOnPageLoadActions":  true
+                                            }
+                                        ],
+                            "isHidden":  true
+                        },
+    "baseId":  "6a2c124c87160c133e882bf4",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_25fa2eb4-c9de-421d-913f-9d53959fb1ed",
+    "createdAt":  "2026-06-12T14:06:04.616Z",
+    "updatedAt":  "2026-06-12T14:39:47.372Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:pages":  {
+                                         "permission":  "read:pages",
+                                         "permissionGroups":  [
+                                                                  "69f23d0ae8d23e39227060ff",
+                                                                  "69f23d0ae8d23e3922706100",
+                                                                  "69f23d0ae8d23e3922706101"
+                                                              ]
+                                     },
+                      "manage:pages":  {
+                                           "permission":  "manage:pages",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "create:pageActions":  {
+                                                 "permission":  "create:pageActions",
+                                                 "permissionGroups":  [
+                                                                          "69f23d0ae8d23e39227060ff",
+                                                                          "69f23d0ae8d23e3922706100"
+                                                                      ]
+                                             },
+                      "delete:pages":  {
+                                           "permission":  "delete:pages",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "delete:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "manage:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "create:pageActions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewPage",
+    "publishedPage":  {
+                          "name":  "NieuweOrder",
+                          "slug":  "nieuweorder",
+                          "layouts":  [
+                                          {
+                                              "_id":  "6a2c124c87160c133e882bf3",
+                                              "viewMode":  false,
+                                              "dsl":  {
+                                                          "widgetName":  "MainContainer",
+                                                          "backgroundColor":  "none",
+                                                          "rightColumn":  1224,
+                                                          "snapColumns":  64,
+                                                          "detachFromLayout":  true,
+                                                          "widgetId":  "0",
+                                                          "topRow":  0,
+                                                          "bottomRow":  380,
+                                                          "containerStyle":  "none",
+                                                          "snapRows":  110,
+                                                          "parentRowSpace":  1,
+                                                          "type":  "CANVAS_WIDGET",
+                                                          "canExtend":  true,
+                                                          "version":  94,
+                                                          "minHeight":  1120,
+                                                          "parentColumnSpace":  1,
+                                                          "dynamicBindingPathList":  [
+
+                                                                                     ],
+                                                          "leftColumn":  0,
+                                                          "children":  [
+                                                                           {
+                                                                               "widgetName":  "TxtNieuweOrderTitel",
+                                                                               "topRow":  4,
+                                                                               "bottomRow":  10,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "TEXT_WIDGET",
+                                                                               "topRowBeforeCollapse":  8,
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+
+                                                                                                          ],
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "isVisible"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "text":  "Nieuwe order",
+                                                                               "key":  "nv1eo5x8mh",
+                                                                               "rightColumn":  7,
+                                                                               "textAlign":  "LEFT",
+                                                                               "widgetId":  "b2rjwrv7xy",
+                                                                               "bottomRowBeforeCollapse":  14,
+                                                                               "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                               "fontStyle":  "BOLD",
+                                                                               "version":  1,
+                                                                               "textColor":  "#231F20",
+                                                                               "parentId":  "0",
+                                                                               "renderMode":  "CANVAS",
+                                                                               "isLoading":  false,
+                                                                               "originalTopRow":  8,
+                                                                               "originalBottomRow":  14,
+                                                                               "fontSize":  "1.25rem"
+                                                                           },
+                                                                           {
+                                                                               "widgetName":  "TxtLblNieuweKlant",
+                                                                               "topRow":  11,
+                                                                               "bottomRow":  16,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "TEXT_WIDGET",
+                                                                               "topRowBeforeCollapse":  51,
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+
+                                                                                                          ],
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "isVisible"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "text":  "Klant",
+                                                                               "key":  "oq7m7tqzhc",
+                                                                               "rightColumn":  4,
+                                                                               "textAlign":  "LEFT",
+                                                                               "widgetId":  "nnhdwxo2l9",
+                                                                               "bottomRowBeforeCollapse":  56,
+                                                                               "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                               "fontStyle":  "BOLD",
+                                                                               "version":  1,
+                                                                               "textColor":  "#231F20",
+                                                                               "parentId":  "0",
+                                                                               "renderMode":  "CANVAS",
+                                                                               "isLoading":  false,
+                                                                               "originalTopRow":  51,
+                                                                               "originalBottomRow":  56,
+                                                                               "fontSize":  "0.875rem"
+                                                                           },
+                                                                           {
+                                                                               "widgetName":  "SelectNieuweOrderKlant",
+                                                                               "dynamicPropertyPathList":  [
+                                                                                                               {
+                                                                                                                   "key":  "sourceData"
+                                                                                                               }
+                                                                                                           ],
+                                                                               "topRow":  16,
+                                                                               "bottomRow":  20,
+                                                                               "labelText":  "",
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "SELECT_WIDGET",
+                                                                               "topRowBeforeCollapse":  57,
+                                                                               "defaultOptionValue":  "",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+
+                                                                                                          ],
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "sourceData"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "isVisible"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "placeholderText":  "Kies klant",
+                                                                               "sourceData":  "{{klantenSelectGet.data.map(k =\u003e ({label: k.naam, value: k.id}))}}",
+                                                                               "key":  "qf4lheg6kz",
+                                                                               "rightColumn":  20,
+                                                                               "widgetId":  "lsnuevqvay",
+                                                                               "optionValue":  "value",
+                                                                               "bottomRowBeforeCollapse":  61,
+                                                                               "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                               "label":  "Klant",
+                                                                               "version":  1,
+                                                                               "parentId":  "0",
+                                                                               "renderMode":  "CANVAS",
+                                                                               "isLoading":  false,
+                                                                               "optionLabel":  "label",
+                                                                               "originalTopRow":  57,
+                                                                               "originalBottomRow":  61
+                                                                           },
+                                                                           {
+                                                                               "widgetName":  "BtnOrderAanmaken",
+                                                                               "onClick":  "{{orderInsert.run((r)=\u003e{navigateTo(\u0027OrderDetail\u0027, {orderId: r[0].id});},()=\u003eshowAlert(\u0027Fout bij aanmaken order\u0027,\u0027error\u0027))}}",
+                                                                               "buttonColor":  "#03B365",
+                                                                               "topRow":  16,
+                                                                               "bottomRow":  20,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "BUTTON_WIDGET",
+                                                                               "topRowBeforeCollapse":  57,
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "onClick"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "leftColumn":  21,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "isVisible"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "text":  "Order aanmaken",
+                                                                               "key":  "smcmupswtc",
+                                                                               "rightColumn":  27,
+                                                                               "iconName":  "add",
+                                                                               "widgetId":  "hc4e2f804z",
+                                                                               "bottomRowBeforeCollapse":  61,
+                                                                               "isVisible":  "{{!appsmith.URL.queryParams.orderId}}",
+                                                                               "version":  1,
+                                                                               "parentId":  "0",
+                                                                               "renderMode":  "CANVAS",
+                                                                               "isLoading":  false,
+                                                                               "originalTopRow":  57,
+                                                                               "borderRadius":  "4px",
+                                                                               "originalBottomRow":  61,
+                                                                               "buttonVariant":  "PRIMARY",
+                                                                               "iconAlign":  "left"
+                                                                           }
+                                                                       ]
+                                                      },
+                                              "layoutOnLoadActions":  [
+                                                                          [
+                                                                              {
+                                                                                  "_id":  "6a2c094ec0934275fd44ba89",
+                                                                                  "name":  "klantenSelectGet",
+                                                                                  "confirmBeforeExecute":  false,
+                                                                                  "pluginType":  "DB",
+                                                                                  "jsonPathKeys":  [
+
+                                                                                                   ],
+                                                                                  "timeoutInMillisecond":  10000
+                                                                              }
+                                                                          ]
+                                                                      ],
+                                              "layoutOnLoadActionErrors":  [
+
+                                                                           ],
+                                              "widgetNames":  [
+                                                                  "TxtLblNieuweKlant",
+                                                                  "BtnOrderAanmaken",
+                                                                  "TxtNieuweOrderTitel",
+                                                                  "SelectNieuweOrderKlant",
+                                                                  "MainContainer"
+                                                              ],
+                                              "allOnPageLoadActionNames":  [
+
+                                                                           ],
+                                              "actionsUsedInDynamicBindings":  [
+                                                                                   "klantenSelectGet"
+                                                                               ],
+                                              "validOnPageLoadActions":  true
+                                          }
+                                      ],
+                          "isHidden":  true
+                      }
+}

@@ -1,0 +1,177 @@
+﻿{
+    "_id":  "6a022ce4a02d0a78f9132883",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "orderRegelUpdate",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-06-12T14:39:47.499Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "6a022cbaa02d0a78f913287e",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "UPDATE public.order_regels SET\n  product_id = \u0027{{SelectBewerkProduct.selectedOptionValue}}\u0027,\n  aantal     = CASE WHEN \u0027{{InpBewerkAantal.text}}\u0027 = \u0027\u0027 THEN aantal\n                    ELSE \u0027{{InpBewerkAantal.text}}\u0027::integer END,\n  eenheid    = CAST(\u0027{{SelectBewerkEenheid.selectedOptionValue}}\u0027 AS public.product_eenheid),\n  prijs_excl = CASE WHEN \u0027{{InpBewerkPrijs.text}}\u0027 = \u0027\u0027 THEN prijs_excl\n                    ELSE \u0027{{InpBewerkPrijs.text}}\u0027::numeric END,\n  btw_pct    = CASE WHEN \u0027{{InpBewerkBtw.text}}\u0027 = \u0027\u0027 THEN btw_pct\n                    ELSE \u0027{{InpBewerkBtw.text}}\u0027::numeric END,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\nWHERE id = \u0027{{tblOrderRegels.selectedRow.id}}\u0027\n  AND deletedon IS NULL",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  false
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "executeOnLoad":  false,
+                              "runBehaviour":  "MANUAL",
+                              "dynamicBindingPathList":  [
+                                                             {
+                                                                 "key":  "body"
+                                                             }
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "SelectBewerkProduct.selectedOptionValue",
+                                                   "InpBewerkBtw.text",
+                                                   "InpBewerkPrijs.text",
+                                                   "tblOrderRegels.selectedRow.id",
+                                                   "appsmith.user.email",
+                                                   "SelectBewerkEenheid.selectedOptionValue",
+                                                   "InpBewerkAantal.text"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "createdAt":  "2026-05-11T19:24:20.142Z"
+                          },
+    "publishedAction":  {
+                            "name":  "orderRegelUpdate",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-06-12T14:39:47.499Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "6a022cbaa02d0a78f913287e",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "UPDATE public.order_regels SET\n  product_id = \u0027{{SelectBewerkProduct.selectedOptionValue}}\u0027,\n  aantal     = CASE WHEN \u0027{{InpBewerkAantal.text}}\u0027 = \u0027\u0027 THEN aantal\n                    ELSE \u0027{{InpBewerkAantal.text}}\u0027::integer END,\n  eenheid    = CAST(\u0027{{SelectBewerkEenheid.selectedOptionValue}}\u0027 AS public.product_eenheid),\n  prijs_excl = CASE WHEN \u0027{{InpBewerkPrijs.text}}\u0027 = \u0027\u0027 THEN prijs_excl\n                    ELSE \u0027{{InpBewerkPrijs.text}}\u0027::numeric END,\n  btw_pct    = CASE WHEN \u0027{{InpBewerkBtw.text}}\u0027 = \u0027\u0027 THEN btw_pct\n                    ELSE \u0027{{InpBewerkBtw.text}}\u0027::numeric END,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\nWHERE id = \u0027{{tblOrderRegels.selectedRow.id}}\u0027\n  AND deletedon IS NULL",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  false
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "executeOnLoad":  false,
+                            "runBehaviour":  "MANUAL",
+                            "dynamicBindingPathList":  [
+                                                           {
+                                                               "key":  "body"
+                                                           }
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "SelectBewerkProduct.selectedOptionValue",
+                                                 "InpBewerkBtw.text",
+                                                 "InpBewerkPrijs.text",
+                                                 "tblOrderRegels.selectedRow.id",
+                                                 "appsmith.user.email",
+                                                 "SelectBewerkEenheid.selectedOptionValue",
+                                                 "InpBewerkAantal.text"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-11T19:24:20.142Z"
+                        },
+    "baseId":  "6a022ce4a02d0a78f9132883",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_ed4699bb-1c0f-4dab-97c4-e3603e60b709",
+    "createdAt":  "2026-05-11T19:24:20.142Z",
+    "updatedAt":  "2026-06-12T14:39:47.499Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
+}
