@@ -1,165 +1,149 @@
-﻿{
-    "_id":  "69fb911cc8eed02aabb4c928",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "JS",
-    "pluginId":  "69f21d015fbcf7f394507fef",
-    "unpublishedAction":  {
-                              "name":  "onPageLoad",
-                              "fullyQualifiedName":  "JSObject1.onPageLoad",
-                              "datasource":  {
-                                                 "name":  "UNUSED_DATASOURCE",
-                                                 "pluginId":  "69f21d015fbcf7f394507fef",
-                                                 "workspaceId":  "69f23d0ae8d23e39227060fe",
-                                                 "createdAt":  "2026-05-06T19:06:04.039Z",
-                                                 "updatedAt":  "2026-06-12T14:39:47.413Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69f4a8e70c9a91129f30eb6d",
-                              "collectionId":  "69fb90c7c8eed02aabb4c927",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "async () =\u003e {\n  await storeValue(\u0027isNewKlant\u0027, false);\n}",
-                                                          "jsArguments":  [
-
-                                                                          ]
-                                                      },
-                              "runBehaviour":  "ON_PAGE_LOAD",
-                              "dynamicBindingPathList":  [
-                                                             {
-                                                                 "key":  "body"
-                                                             }
-                                                         ],
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-                                                   "async () =\u003e {\n  await storeValue(\u0027isNewKlant\u0027, false);\n}"
-                                               ],
-                              "userSetOnLoad":  true,
-                              "confirmBeforeExecute":  false,
-                              "createdAt":  "2026-05-06T19:06:04.039Z"
-                          },
-    "publishedAction":  {
-                            "name":  "onPageLoad",
-                            "fullyQualifiedName":  "JSObject1.onPageLoad",
-                            "datasource":  {
-                                               "name":  "UNUSED_DATASOURCE",
-                                               "pluginId":  "69f21d015fbcf7f394507fef",
-                                               "workspaceId":  "69f23d0ae8d23e39227060fe",
-                                               "createdAt":  "2026-05-06T19:06:04.039Z",
-                                               "updatedAt":  "2026-06-12T14:39:47.413Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "69f4a8e70c9a91129f30eb6d",
-                            "collectionId":  "69fb90c7c8eed02aabb4c927",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "async () =\u003e {\n  await storeValue(\u0027isNewKlant\u0027, false);\n}",
-                                                        "jsArguments":  [
-
-                                                                        ]
-                                                    },
-                            "runBehaviour":  "ON_PAGE_LOAD",
-                            "dynamicBindingPathList":  [
-                                                           {
-                                                               "key":  "body"
-                                                           }
-                                                       ],
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-                                                 "async () =\u003e {\n  await storeValue(\u0027isNewKlant\u0027, false);\n}"
-                                             ],
-                            "userSetOnLoad":  true,
-                            "confirmBeforeExecute":  false,
-                            "createdAt":  "2026-05-06T19:06:04.039Z"
-                        },
-    "baseId":  "69fb911cc8eed02aabb4c928",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_b0587c3f-0588-4f2d-a928-21ca789de6f7",
-    "createdAt":  "2026-05-06T19:06:04.039Z",
-    "updatedAt":  "2026-06-12T14:39:47.413Z",
-    "deleted":  false,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction"
+{
+  "_id": "69fb911cc8eed02aabb4c928",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "JS",
+  "pluginId": "69f21d015fbcf7f394507fef",
+  "unpublishedAction": {
+    "name": "onPageLoad",
+    "fullyQualifiedName": "JSObject1.onPageLoad",
+    "datasource": {
+      "name": "UNUSED_DATASOURCE",
+      "pluginId": "69f21d015fbcf7f394507fef",
+      "workspaceId": "69f23d0ae8d23e39227060fe",
+      "createdAt": "2026-05-06T19:06:04.039Z",
+      "updatedAt": "2026-06-12T14:39:47.413Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69f4a8e70c9a91129f30eb6d",
+    "collectionId": "69fb90c7c8eed02aabb4c927",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "async () => {\n  await storeValue('isNewKlant', false);\n}",
+      "jsArguments": []
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "async () => {\n  await storeValue('isNewKlant', false);\n}"
+    ],
+    "userSetOnLoad": true,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-06T19:06:04.039Z"
+  },
+  "publishedAction": {
+    "name": "onPageLoad",
+    "fullyQualifiedName": "JSObject1.onPageLoad",
+    "datasource": {
+      "name": "UNUSED_DATASOURCE",
+      "pluginId": "69f21d015fbcf7f394507fef",
+      "workspaceId": "69f23d0ae8d23e39227060fe",
+      "createdAt": "2026-05-06T19:06:04.039Z",
+      "updatedAt": "2026-06-12T14:39:47.413Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69f4a8e70c9a91129f30eb6d",
+    "collectionId": "69fb90c7c8eed02aabb4c927",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "async () => {\n  await storeValue('isNewKlant', false);\n}",
+      "jsArguments": []
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "async () => {\n  await storeValue('isNewKlant', false);\n}"
+    ],
+    "userSetOnLoad": true,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-06T19:06:04.039Z"
+  },
+  "baseId": "69fb911cc8eed02aabb4c928",
+  "gitSyncId": "69f23d0ae8d23e3922706103_b0587c3f-0588-4f2d-a928-21ca789de6f7",
+  "createdAt": "2026-05-06T19:06:04.039Z",
+  "updatedAt": "2026-06-12T14:39:47.413Z",
+  "deleted": false,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction"
 }

@@ -1,130 +1,118 @@
-﻿{
-    "_id":  "6a06025da02d0a78f9132972",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "_diag12",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "createdAt":  "2026-05-14T17:11:57.197Z",
-                                                 "updatedAt":  "2026-05-14T17:11:57.341Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69fb954dc8eed02aabb4c92c",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  15000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "SELECT \n  (SELECT COUNT(*) FROM information_schema.routines WHERE routine_name=\u0027fn_order_bevestigd_voorraad\u0027) as trigger_func_exists,\n  (SELECT COUNT(*) FROM information_schema.triggers WHERE trigger_name=\u0027trg_order_bevestigd_voorraad\u0027) as trigger_exists,\n  (SELECT COUNT(*) FROM public.voorraad_mutaties WHERE order_id IN (SELECT id FROM orders WHERE volgnummer=148)) as mutaties_148,\n  (SELECT COALESCE(SUM(aantal),0) FROM public.voorraad_mutaties WHERE product_id IN (SELECT id FROM producten WHERE lower(naam) LIKE \u0027%bomb%\u0027)) as bombs_mutaties_sum",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "MANUAL",
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false
-                          },
-    "publishedAction":  {
-                            "datasource":  {
-                                               "createdAt":  "2026-05-14T17:11:57.197Z",
-                                               "updatedAt":  "2026-05-14T17:11:57.341Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false
-                        },
-    "baseId":  "6a06025da02d0a78f9132972",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_531f42e1-7f26-447a-a481-5b4179b65ce2",
-    "createdAt":  "2026-05-14T17:11:57.197Z",
-    "updatedAt":  "2026-05-14T17:11:57.341Z",
-    "deleted":  false,
-    "deletedAt":  "2026-05-14T17:11:57.340Z",
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction"
+{
+  "_id": "6a06025da02d0a78f9132972",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "_diag12",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-05-14T17:11:57.197Z",
+      "updatedAt": "2026-05-14T17:11:57.341Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 15000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT \n  (SELECT COUNT(*) FROM information_schema.routines WHERE routine_name='fn_order_bevestigd_voorraad') as trigger_func_exists,\n  (SELECT COUNT(*) FROM information_schema.triggers WHERE trigger_name='trg_order_bevestigd_voorraad') as trigger_exists,\n  (SELECT COUNT(*) FROM public.voorraad_mutaties WHERE order_id IN (SELECT id FROM orders WHERE volgnummer=148)) as mutaties_148,\n  (SELECT COALESCE(SUM(aantal),0) FROM public.voorraad_mutaties WHERE product_id IN (SELECT id FROM producten WHERE lower(naam) LIKE '%bomb%')) as bombs_mutaties_sum",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "publishedAction": {
+    "datasource": {
+      "createdAt": "2026-05-14T17:11:57.197Z",
+      "updatedAt": "2026-05-14T17:11:57.341Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "baseId": "6a06025da02d0a78f9132972",
+  "gitSyncId": "69f23d0ae8d23e3922706103_531f42e1-7f26-447a-a481-5b4179b65ce2",
+  "createdAt": "2026-05-14T17:11:57.197Z",
+  "updatedAt": "2026-05-14T17:11:57.341Z",
+  "deleted": false,
+  "deletedAt": "2026-05-14T17:11:57.340Z",
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction"
 }

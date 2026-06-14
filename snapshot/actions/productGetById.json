@@ -1,163 +1,151 @@
-﻿{
-    "_id":  "6a02c6e3a02d0a78f91328f7",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "productGetById",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "updatedAt":  "2026-06-12T14:39:47.421Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "6a02c6e2a02d0a78f91328f6",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "SELECT id, naam, sku, prijs_excl, btw_pct, beschrijving\nFROM public.producten\nWHERE id = \u0027{{appsmith.URL.queryParams.productId}}\u0027::uuid\n  AND deletedon IS NULL",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "ON_PAGE_LOAD",
-                              "dynamicBindingPathList":  [
-                                                             {
-                                                                 "key":  "body"
-                                                             }
-                                                         ],
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-                                                   "appsmith.URL.queryParams.productId"
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false,
-                              "createdAt":  "2026-05-12T06:21:23.113Z"
-                          },
-    "publishedAction":  {
-                            "name":  "productGetById",
-                            "datasource":  {
-                                               "_id":  "69f23e5ae8d23e3922706106",
-                                               "name":  "Supabase (dev)",
-                                               "pluginId":  "69f21d005fbcf7f394507fde",
-                                               "updatedAt":  "2026-06-12T14:39:47.421Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "6a02c6e2a02d0a78f91328f6",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "SELECT id, naam, sku, prijs_excl, btw_pct, beschrijving\nFROM public.producten\nWHERE id = \u0027{{appsmith.URL.queryParams.productId}}\u0027::uuid\n  AND deletedon IS NULL",
-                                                        "pluginSpecifiedTemplates":  [
-                                                                                         {
-                                                                                             "value":  true
-                                                                                         }
-                                                                                     ]
-                                                    },
-                            "runBehaviour":  "ON_PAGE_LOAD",
-                            "dynamicBindingPathList":  [
-                                                           {
-                                                               "key":  "body"
-                                                           }
-                                                       ],
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-                                                 "appsmith.URL.queryParams.productId"
-                                             ],
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false,
-                            "createdAt":  "2026-05-12T06:21:23.113Z"
-                        },
-    "baseId":  "6a02c6e3a02d0a78f91328f7",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_e5f970e6-6226-4898-a2d8-dbbb74a0953b",
-    "createdAt":  "2026-05-12T06:21:23.113Z",
-    "updatedAt":  "2026-06-12T14:39:47.421Z",
-    "deleted":  false,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction"
+{
+  "_id": "6a02c6e3a02d0a78f91328f7",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "productGetById",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-06-12T14:39:47.421Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "6a02c6e2a02d0a78f91328f6",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT id, naam, sku, prijs_excl, btw_pct, beschrijving\nFROM public.producten\nWHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid\n  AND deletedon IS NULL",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "appsmith.URL.queryParams.productId"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-12T06:21:23.113Z"
+  },
+  "publishedAction": {
+    "name": "productGetById",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-06-12T14:39:47.421Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "6a02c6e2a02d0a78f91328f6",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT id, naam, sku, prijs_excl, btw_pct, beschrijving\nFROM public.producten\nWHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid\n  AND deletedon IS NULL",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "appsmith.URL.queryParams.productId"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-12T06:21:23.113Z"
+  },
+  "baseId": "6a02c6e3a02d0a78f91328f7",
+  "gitSyncId": "69f23d0ae8d23e3922706103_e5f970e6-6226-4898-a2d8-dbbb74a0953b",
+  "createdAt": "2026-05-12T06:21:23.113Z",
+  "updatedAt": "2026-06-12T14:39:47.421Z",
+  "deleted": false,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction"
 }

@@ -1,732 +1,656 @@
-﻿{
-    "_id":  "6a2c1c3e5e9f879de244ba89",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "unpublishedPage":  {
-                            "name":  "NieuwProduct",
-                            "slug":  "nieuwproduct",
-                            "layouts":  [
-                                            {
-                                                "_id":  "6a2c1c3e5e9f879de244ba8a",
-                                                "viewMode":  false,
-                                                "dsl":  {
-                                                            "widgetName":  "MainContainer",
-                                                            "backgroundColor":  "none",
-                                                            "rightColumn":  1224,
-                                                            "snapColumns":  64,
-                                                            "detachFromLayout":  true,
-                                                            "widgetId":  "0",
-                                                            "topRow":  0,
-                                                            "bottomRow":  530,
-                                                            "containerStyle":  "none",
-                                                            "snapRows":  110,
-                                                            "parentRowSpace":  1,
-                                                            "type":  "CANVAS_WIDGET",
-                                                            "canExtend":  true,
-                                                            "version":  94,
-                                                            "minHeight":  2000,
-                                                            "parentColumnSpace":  1,
-                                                            "dynamicBindingPathList":  [
-
-                                                                                       ],
-                                                            "leftColumn":  0,
-                                                            "children":  [
-                                                                             {
-                                                                                 "widgetName":  "TxtNieuwProductTitel",
-                                                                                 "rightColumn":  30,
-                                                                                 "textAlign":  "LEFT",
-                                                                                 "widgetId":  "brjwpt2ot8",
-                                                                                 "topRow":  1,
-                                                                                 "bottomRow":  7,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isVisible":  true,
-                                                                                 "type":  "TEXT_WIDGET",
-                                                                                 "fontStyle":  "BOLD",
-                                                                                 "version":  1,
-                                                                                 "textColor":  "#231F20",
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "fontSize":  "1.25rem",
-                                                                                 "text":  "Nieuw product",
-                                                                                 "key":  "5lvnw9z641"
-                                                                             },
-                                                                             {
-                                                                                 "labelTextSize":  "0.875rem",
-                                                                                 "isRequired":  false,
-                                                                                 "widgetName":  "InpNieuwNaam",
-                                                                                 "rightColumn":  31,
-                                                                                 "widgetId":  "8n5wwn2xci",
-                                                                                 "topRow":  8,
-                                                                                 "bottomRow":  13,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isVisible":  true,
-                                                                                 "label":  "Productnaam",
-                                                                                 "type":  "INPUT_WIDGET_V2",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "labelPosition":  "Top",
-                                                                                 "isSpellCheck":  false,
-                                                                                 "inputType":  "TEXT",
-                                                                                 "key":  "r052fp82is"
-                                                                             },
-                                                                             {
-                                                                                 "labelTextSize":  "0.875rem",
-                                                                                 "isRequired":  false,
-                                                                                 "widgetName":  "InpNieuwSku",
-                                                                                 "rightColumn":  31,
-                                                                                 "widgetId":  "613yg4frqx",
-                                                                                 "topRow":  16,
-                                                                                 "bottomRow":  21,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isVisible":  true,
-                                                                                 "label":  "Artikelcode (SKU)",
-                                                                                 "type":  "INPUT_WIDGET_V2",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "labelPosition":  "Top",
-                                                                                 "isSpellCheck":  false,
-                                                                                 "inputType":  "TEXT",
-                                                                                 "key":  "f9gl88sct9"
-                                                                             },
-                                                                             {
-                                                                                 "labelTextSize":  "0.875rem",
-                                                                                 "isRequired":  false,
-                                                                                 "widgetName":  "InpNieuwPrijs",
-                                                                                 "rightColumn":  31,
-                                                                                 "widgetId":  "rpi71hexc7",
-                                                                                 "topRow":  24,
-                                                                                 "bottomRow":  29,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isVisible":  true,
-                                                                                 "label":  "Prijs excl. BTW",
-                                                                                 "type":  "INPUT_WIDGET_V2",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "labelPosition":  "Top",
-                                                                                 "isSpellCheck":  false,
-                                                                                 "inputType":  "TEXT",
-                                                                                 "key":  "96r0fpoqkn"
-                                                                             },
-                                                                             {
-                                                                                 "labelTextSize":  "0.875rem",
-                                                                                 "isRequired":  false,
-                                                                                 "widgetName":  "InpNieuwBeschrijving",
-                                                                                 "rightColumn":  31,
-                                                                                 "widgetId":  "tjyz1q129f",
-                                                                                 "topRow":  32,
-                                                                                 "bottomRow":  37,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isVisible":  true,
-                                                                                 "label":  "Beschrijving",
-                                                                                 "type":  "INPUT_WIDGET_V2",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "labelPosition":  "Top",
-                                                                                 "isSpellCheck":  false,
-                                                                                 "inputType":  "TEXT",
-                                                                                 "key":  "drs2ic740q"
-                                                                             },
-                                                                             {
-                                                                                 "widgetName":  "SelectNieuwBtwPct",
-                                                                                 "topRow":  40,
-                                                                                 "bottomRow":  45,
-                                                                                 "labelText":  "BTW tarief",
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "SELECT_WIDGET",
-                                                                                 "serverSideFiltering":  false,
-                                                                                 "defaultOptionValue":  "21",
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "labelPosition":  "Top",
-                                                                                 "sourceData":  [
-                                                                                                    {
-                                                                                                        "label":  "Vrijgesteld 0%",
-                                                                                                        "value":  "0"
-                                                                                                    },
-                                                                                                    {
-                                                                                                        "label":  "Laag 9%",
-                                                                                                        "value":  "9"
-                                                                                                    },
-                                                                                                    {
-                                                                                                        "label":  "Hoog 21%",
-                                                                                                        "value":  "21"
-                                                                                                    }
-                                                                                                ],
-                                                                                 "key":  "gjqtveokuh",
-                                                                                 "labelTextSize":  "0.875rem",
-                                                                                 "isRequired":  false,
-                                                                                 "rightColumn":  31,
-                                                                                 "widgetId":  "1z009jj3x6",
-                                                                                 "optionValue":  "value",
-                                                                                 "isVisible":  true,
-                                                                                 "label":  "BTW-tarief",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "optionLabel":  "label"
-                                                                             },
-                                                                             {
-                                                                                 "widgetName":  "BtnProductAanmaken",
-                                                                                 "onClick":  "{{ (InpNieuwNaam.text \u0026\u0026 InpNieuwPrijs.text) ? productInsert.run((r)=\u003e{showAlert(\u0027Product aangemaakt ✓\u0027,\u0027success\u0027); navigateTo(\u0027Producten\u0027, {}, \u0027SAME_WINDOW\u0027);},()=\u003eshowAlert(\u0027Fout bij aanmaken product\u0027,\u0027error\u0027)) : showAlert(\u0027Vul een naam en prijs in\u0027,\u0027error\u0027) }}",
-                                                                                 "buttonColor":  "#03B365",
-                                                                                 "dynamicPropertyPathList":  [
-                                                                                                                 {
-                                                                                                                     "key":  "onClick"
-                                                                                                                 }
-                                                                                                             ],
-                                                                                 "topRow":  48,
-                                                                                 "bottomRow":  53,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "BUTTON_WIDGET",
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "onClick"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "text":  "Product aanmaken",
-                                                                                 "key":  "no7oecr7vc",
-                                                                                 "rightColumn":  14,
-                                                                                 "iconName":  "add",
-                                                                                 "widgetId":  "crvw7tk5gu",
-                                                                                 "isVisible":  true,
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "borderRadius":  "4px",
-                                                                                 "buttonVariant":  "PRIMARY",
-                                                                                 "iconAlign":  "left"
-                                                                             },
-                                                                             {
-                                                                                 "widgetName":  "BtnNieuwProductTerug",
-                                                                                 "onClick":  "{{navigateTo(\u0027Producten\u0027, {}, \u0027SAME_WINDOW\u0027)}}",
-                                                                                 "buttonColor":  "#03B365",
-                                                                                 "dynamicPropertyPathList":  [
-                                                                                                                 {
-                                                                                                                     "key":  "onClick"
-                                                                                                                 }
-                                                                                                             ],
-                                                                                 "topRow":  48,
-                                                                                 "bottomRow":  53,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "BUTTON_WIDGET",
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "onClick"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "leftColumn":  16,
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "text":  "← Terug naar Producten",
-                                                                                 "key":  "bnpterug1",
-                                                                                 "rightColumn":  30,
-                                                                                 "widgetId":  "bnpterugw1",
-                                                                                 "isVisible":  true,
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "borderRadius":  "4px",
-                                                                                 "buttonVariant":  "SECONDARY",
-                                                                                 "iconAlign":  "left"
-                                                                             }
-                                                                         ]
-                                                        },
-                                                "layoutOnLoadActions":  [
-
-                                                                        ],
-                                                "layoutOnLoadActionErrors":  [
-
-                                                                             ],
-                                                "widgetNames":  [
-                                                                    "InpNieuwPrijs",
-                                                                    "TxtNieuwProductTitel",
-                                                                    "InpNieuwNaam",
-                                                                    "BtnProductAanmaken",
-                                                                    "InpNieuwBeschrijving",
-                                                                    "InpNieuwSku",
-                                                                    "SelectNieuwBtwPct",
-                                                                    "MainContainer",
-                                                                    "BtnNieuwProductTerug"
-                                                                ],
-                                                "allOnPageLoadActionNames":  [
-
-                                                                             ],
-                                                "actionsUsedInDynamicBindings":  [
-
-                                                                                 ],
-                                                "validOnPageLoadActions":  true
-                                            }
-                                        ],
-                            "isHidden":  true
-                        },
-    "publishedPage":  {
-                          "name":  "NieuwProduct",
-                          "slug":  "nieuwproduct",
-                          "layouts":  [
-                                          {
-                                              "_id":  "6a2c1c3e5e9f879de244ba8a",
-                                              "viewMode":  false,
-                                              "dsl":  {
-                                                          "widgetName":  "MainContainer",
-                                                          "backgroundColor":  "none",
-                                                          "rightColumn":  1224,
-                                                          "snapColumns":  64,
-                                                          "detachFromLayout":  true,
-                                                          "widgetId":  "0",
-                                                          "topRow":  0,
-                                                          "bottomRow":  530,
-                                                          "containerStyle":  "none",
-                                                          "snapRows":  110,
-                                                          "parentRowSpace":  1,
-                                                          "type":  "CANVAS_WIDGET",
-                                                          "canExtend":  true,
-                                                          "version":  94,
-                                                          "minHeight":  2000,
-                                                          "parentColumnSpace":  1,
-                                                          "dynamicBindingPathList":  [
-
-                                                                                     ],
-                                                          "leftColumn":  0,
-                                                          "children":  [
-                                                                           {
-                                                                               "widgetName":  "TxtNieuwProductTitel",
-                                                                               "rightColumn":  30,
-                                                                               "textAlign":  "LEFT",
-                                                                               "widgetId":  "brjwpt2ot8",
-                                                                               "topRow":  1,
-                                                                               "bottomRow":  7,
-                                                                               "parentRowSpace":  10,
-                                                                               "isVisible":  true,
-                                                                               "type":  "TEXT_WIDGET",
-                                                                               "fontStyle":  "BOLD",
-                                                                               "version":  1,
-                                                                               "textColor":  "#231F20",
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "fontSize":  "1.25rem",
-                                                                               "text":  "Nieuw product",
-                                                                               "key":  "5lvnw9z641"
-                                                                           },
-                                                                           {
-                                                                               "labelTextSize":  "0.875rem",
-                                                                               "isRequired":  false,
-                                                                               "widgetName":  "InpNieuwNaam",
-                                                                               "rightColumn":  31,
-                                                                               "widgetId":  "8n5wwn2xci",
-                                                                               "topRow":  8,
-                                                                               "bottomRow":  13,
-                                                                               "parentRowSpace":  10,
-                                                                               "isVisible":  true,
-                                                                               "label":  "Productnaam",
-                                                                               "type":  "INPUT_WIDGET_V2",
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "labelPosition":  "Top",
-                                                                               "isSpellCheck":  false,
-                                                                               "inputType":  "TEXT",
-                                                                               "key":  "r052fp82is"
-                                                                           },
-                                                                           {
-                                                                               "labelTextSize":  "0.875rem",
-                                                                               "isRequired":  false,
-                                                                               "widgetName":  "InpNieuwSku",
-                                                                               "rightColumn":  31,
-                                                                               "widgetId":  "613yg4frqx",
-                                                                               "topRow":  16,
-                                                                               "bottomRow":  21,
-                                                                               "parentRowSpace":  10,
-                                                                               "isVisible":  true,
-                                                                               "label":  "Artikelcode (SKU)",
-                                                                               "type":  "INPUT_WIDGET_V2",
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "labelPosition":  "Top",
-                                                                               "isSpellCheck":  false,
-                                                                               "inputType":  "TEXT",
-                                                                               "key":  "f9gl88sct9"
-                                                                           },
-                                                                           {
-                                                                               "labelTextSize":  "0.875rem",
-                                                                               "isRequired":  false,
-                                                                               "widgetName":  "InpNieuwPrijs",
-                                                                               "rightColumn":  31,
-                                                                               "widgetId":  "rpi71hexc7",
-                                                                               "topRow":  24,
-                                                                               "bottomRow":  29,
-                                                                               "parentRowSpace":  10,
-                                                                               "isVisible":  true,
-                                                                               "label":  "Prijs excl. BTW",
-                                                                               "type":  "INPUT_WIDGET_V2",
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "labelPosition":  "Top",
-                                                                               "isSpellCheck":  false,
-                                                                               "inputType":  "TEXT",
-                                                                               "key":  "96r0fpoqkn"
-                                                                           },
-                                                                           {
-                                                                               "labelTextSize":  "0.875rem",
-                                                                               "isRequired":  false,
-                                                                               "widgetName":  "InpNieuwBeschrijving",
-                                                                               "rightColumn":  31,
-                                                                               "widgetId":  "tjyz1q129f",
-                                                                               "topRow":  32,
-                                                                               "bottomRow":  37,
-                                                                               "parentRowSpace":  10,
-                                                                               "isVisible":  true,
-                                                                               "label":  "Beschrijving",
-                                                                               "type":  "INPUT_WIDGET_V2",
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "labelPosition":  "Top",
-                                                                               "isSpellCheck":  false,
-                                                                               "inputType":  "TEXT",
-                                                                               "key":  "drs2ic740q"
-                                                                           },
-                                                                           {
-                                                                               "widgetName":  "SelectNieuwBtwPct",
-                                                                               "topRow":  40,
-                                                                               "bottomRow":  45,
-                                                                               "labelText":  "BTW tarief",
-                                                                               "parentRowSpace":  10,
-                                                                               "type":  "SELECT_WIDGET",
-                                                                               "serverSideFiltering":  false,
-                                                                               "defaultOptionValue":  "21",
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "labelPosition":  "Top",
-                                                                               "sourceData":  [
-                                                                                                  {
-                                                                                                      "label":  "Vrijgesteld 0%",
-                                                                                                      "value":  "0"
-                                                                                                  },
-                                                                                                  {
-                                                                                                      "label":  "Laag 9%",
-                                                                                                      "value":  "9"
-                                                                                                  },
-                                                                                                  {
-                                                                                                      "label":  "Hoog 21%",
-                                                                                                      "value":  "21"
-                                                                                                  }
-                                                                                              ],
-                                                                               "key":  "gjqtveokuh",
-                                                                               "labelTextSize":  "0.875rem",
-                                                                               "isRequired":  false,
-                                                                               "rightColumn":  31,
-                                                                               "widgetId":  "1z009jj3x6",
-                                                                               "optionValue":  "value",
-                                                                               "isVisible":  true,
-                                                                               "label":  "BTW-tarief",
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "optionLabel":  "label"
-                                                                           },
-                                                                           {
-                                                                               "widgetName":  "BtnProductAanmaken",
-                                                                               "onClick":  "{{ (InpNieuwNaam.text \u0026\u0026 InpNieuwPrijs.text) ? productInsert.run((r)=\u003e{showAlert(\u0027Product aangemaakt ✓\u0027,\u0027success\u0027); navigateTo(\u0027Producten\u0027, {}, \u0027SAME_WINDOW\u0027);},()=\u003eshowAlert(\u0027Fout bij aanmaken product\u0027,\u0027error\u0027)) : showAlert(\u0027Vul een naam en prijs in\u0027,\u0027error\u0027) }}",
-                                                                               "buttonColor":  "#03B365",
-                                                                               "dynamicPropertyPathList":  [
-                                                                                                               {
-                                                                                                                   "key":  "onClick"
-                                                                                                               }
-                                                                                                           ],
-                                                                               "topRow":  48,
-                                                                               "bottomRow":  53,
-                                                                               "parentRowSpace":  10,
-                                                                               "type":  "BUTTON_WIDGET",
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-                                                                                                              {
-                                                                                                                  "key":  "onClick"
-                                                                                                              }
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "text":  "Product aanmaken",
-                                                                               "key":  "no7oecr7vc",
-                                                                               "rightColumn":  14,
-                                                                               "iconName":  "add",
-                                                                               "widgetId":  "crvw7tk5gu",
-                                                                               "isVisible":  true,
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "borderRadius":  "4px",
-                                                                               "buttonVariant":  "PRIMARY",
-                                                                               "iconAlign":  "left"
-                                                                           },
-                                                                           {
-                                                                               "widgetName":  "BtnNieuwProductTerug",
-                                                                               "onClick":  "{{navigateTo(\u0027Producten\u0027, {}, \u0027SAME_WINDOW\u0027)}}",
-                                                                               "buttonColor":  "#03B365",
-                                                                               "dynamicPropertyPathList":  [
-                                                                                                               {
-                                                                                                                   "key":  "onClick"
-                                                                                                               }
-                                                                                                           ],
-                                                                               "topRow":  48,
-                                                                               "bottomRow":  53,
-                                                                               "parentRowSpace":  10,
-                                                                               "type":  "BUTTON_WIDGET",
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-                                                                                                              {
-                                                                                                                  "key":  "onClick"
-                                                                                                              }
-                                                                                                          ],
-                                                                               "leftColumn":  16,
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "text":  "← Terug naar Producten",
-                                                                               "key":  "bnpterug1",
-                                                                               "rightColumn":  30,
-                                                                               "widgetId":  "bnpterugw1",
-                                                                               "isVisible":  true,
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "borderRadius":  "4px",
-                                                                               "buttonVariant":  "SECONDARY",
-                                                                               "iconAlign":  "left"
-                                                                           }
-                                                                       ]
-                                                      },
-                                              "layoutOnLoadActions":  [
-
-                                                                      ],
-                                              "layoutOnLoadActionErrors":  [
-
-                                                                           ],
-                                              "widgetNames":  [
-                                                                  "InpNieuwPrijs",
-                                                                  "TxtNieuwProductTitel",
-                                                                  "InpNieuwNaam",
-                                                                  "BtnProductAanmaken",
-                                                                  "InpNieuwBeschrijving",
-                                                                  "InpNieuwSku",
-                                                                  "SelectNieuwBtwPct",
-                                                                  "MainContainer",
-                                                                  "BtnNieuwProductTerug"
-                                                              ],
-                                              "allOnPageLoadActionNames":  [
-
-                                                                           ],
-                                              "actionsUsedInDynamicBindings":  [
-
-                                                                               ],
-                                              "validOnPageLoadActions":  true
-                                          }
-                                      ],
-                          "isHidden":  true
-                      },
-    "baseId":  "6a2c1c3e5e9f879de244ba89",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_6e1cf8e7-5417-4f69-a378-b5599ef79f58",
-    "createdAt":  "2026-06-12T14:48:30.650Z",
-    "updatedAt":  "2026-06-13T14:16:27.572Z",
-    "deleted":  false,
-    "policyMap":  {
-                      "read:pages":  {
-                                         "permission":  "read:pages",
-                                         "permissionGroups":  [
-                                                                  "69f23d0ae8d23e39227060ff",
-                                                                  "69f23d0ae8d23e3922706100",
-                                                                  "69f23d0ae8d23e3922706101"
-                                                              ]
-                                     },
-                      "manage:pages":  {
-                                           "permission":  "manage:pages",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "create:pageActions":  {
-                                                 "permission":  "create:pageActions",
-                                                 "permissionGroups":  [
-                                                                          "69f23d0ae8d23e39227060ff",
-                                                                          "69f23d0ae8d23e3922706100"
-                                                                      ]
-                                             },
-                      "delete:pages":  {
-                                           "permission":  "delete:pages",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "delete:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "manage:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "create:pageActions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewPage"
+{
+  "_id": "6a2c1c3e5e9f879de244ba89",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "unpublishedPage": {
+    "name": "NieuwProduct",
+    "slug": "nieuwproduct",
+    "layouts": [
+      {
+        "_id": "6a2c1c3e5e9f879de244ba8a",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 530,
+          "containerStyle": "none",
+          "snapRows": 110,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 94,
+          "minHeight": 2000,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "TxtNieuwProductTitel",
+              "rightColumn": 30,
+              "textAlign": "LEFT",
+              "widgetId": "brjwpt2ot8",
+              "topRow": 1,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "TEXT_WIDGET",
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "fontSize": "1.25rem",
+              "text": "Nieuw product",
+              "key": "5lvnw9z641"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwNaam",
+              "rightColumn": 31,
+              "widgetId": "8n5wwn2xci",
+              "topRow": 8,
+              "bottomRow": 13,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Productnaam",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "r052fp82is"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwSku",
+              "rightColumn": 31,
+              "widgetId": "613yg4frqx",
+              "topRow": 16,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Artikelcode (SKU)",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "f9gl88sct9"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwPrijs",
+              "rightColumn": 31,
+              "widgetId": "rpi71hexc7",
+              "topRow": 24,
+              "bottomRow": 29,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Prijs excl. BTW",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "96r0fpoqkn"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwBeschrijving",
+              "rightColumn": 31,
+              "widgetId": "tjyz1q129f",
+              "topRow": 32,
+              "bottomRow": 37,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Beschrijving",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "drs2ic740q"
+            },
+            {
+              "widgetName": "SelectNieuwBtwPct",
+              "topRow": 40,
+              "bottomRow": 45,
+              "labelText": "BTW tarief",
+              "parentRowSpace": 10,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "defaultOptionValue": "21",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "labelPosition": "Top",
+              "sourceData": [
+                {
+                  "label": "Vrijgesteld 0%",
+                  "value": "0"
+                },
+                {
+                  "label": "Laag 9%",
+                  "value": "9"
+                },
+                {
+                  "label": "Hoog 21%",
+                  "value": "21"
+                }
+              ],
+              "key": "gjqtveokuh",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "rightColumn": 31,
+              "widgetId": "1z009jj3x6",
+              "optionValue": "value",
+              "isVisible": true,
+              "label": "BTW-tarief",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "optionLabel": "label"
+            },
+            {
+              "widgetName": "BtnProductAanmaken",
+              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt ✓','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
+              "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "topRow": 48,
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Product aanmaken",
+              "key": "no7oecr7vc",
+              "rightColumn": 14,
+              "iconName": "add",
+              "widgetId": "crvw7tk5gu",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "4px",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left"
+            },
+            {
+              "widgetName": "BtnNieuwProductTerug",
+              "onClick": "{{navigateTo('Producten', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "topRow": 48,
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 16,
+              "dynamicBindingPathList": [],
+              "text": "← Terug naar Producten",
+              "key": "bnpterug1",
+              "rightColumn": 30,
+              "widgetId": "bnpterugw1",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "4px",
+              "buttonVariant": "SECONDARY",
+              "iconAlign": "left"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "InpNieuwPrijs",
+          "TxtNieuwProductTitel",
+          "InpNieuwNaam",
+          "BtnProductAanmaken",
+          "InpNieuwBeschrijving",
+          "InpNieuwSku",
+          "SelectNieuwBtwPct",
+          "MainContainer",
+          "BtnNieuwProductTerug"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [],
+        "validOnPageLoadActions": true
+      }
+    ],
+    "isHidden": true
+  },
+  "publishedPage": {
+    "name": "NieuwProduct",
+    "slug": "nieuwproduct",
+    "layouts": [
+      {
+        "_id": "6a2c1c3e5e9f879de244ba8a",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 530,
+          "containerStyle": "none",
+          "snapRows": 110,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 94,
+          "minHeight": 2000,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "TxtNieuwProductTitel",
+              "rightColumn": 30,
+              "textAlign": "LEFT",
+              "widgetId": "brjwpt2ot8",
+              "topRow": 1,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "TEXT_WIDGET",
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "fontSize": "1.25rem",
+              "text": "Nieuw product",
+              "key": "5lvnw9z641"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwNaam",
+              "rightColumn": 31,
+              "widgetId": "8n5wwn2xci",
+              "topRow": 8,
+              "bottomRow": 13,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Productnaam",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "r052fp82is"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwSku",
+              "rightColumn": 31,
+              "widgetId": "613yg4frqx",
+              "topRow": 16,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Artikelcode (SKU)",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "f9gl88sct9"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwPrijs",
+              "rightColumn": 31,
+              "widgetId": "rpi71hexc7",
+              "topRow": 24,
+              "bottomRow": 29,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Prijs excl. BTW",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "96r0fpoqkn"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpNieuwBeschrijving",
+              "rightColumn": 31,
+              "widgetId": "tjyz1q129f",
+              "topRow": 32,
+              "bottomRow": 37,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Beschrijving",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [],
+              "leftColumn": 2,
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "inputType": "TEXT",
+              "key": "drs2ic740q"
+            },
+            {
+              "widgetName": "SelectNieuwBtwPct",
+              "topRow": 40,
+              "bottomRow": 45,
+              "labelText": "BTW tarief",
+              "parentRowSpace": 10,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "defaultOptionValue": "21",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "labelPosition": "Top",
+              "sourceData": [
+                {
+                  "label": "Vrijgesteld 0%",
+                  "value": "0"
+                },
+                {
+                  "label": "Laag 9%",
+                  "value": "9"
+                },
+                {
+                  "label": "Hoog 21%",
+                  "value": "21"
+                }
+              ],
+              "key": "gjqtveokuh",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "rightColumn": 31,
+              "widgetId": "1z009jj3x6",
+              "optionValue": "value",
+              "isVisible": true,
+              "label": "BTW-tarief",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "optionLabel": "label"
+            },
+            {
+              "widgetName": "BtnProductAanmaken",
+              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt ✓','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
+              "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "topRow": 48,
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Product aanmaken",
+              "key": "no7oecr7vc",
+              "rightColumn": 14,
+              "iconName": "add",
+              "widgetId": "crvw7tk5gu",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "4px",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left"
+            },
+            {
+              "widgetName": "BtnNieuwProductTerug",
+              "onClick": "{{navigateTo('Producten', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "topRow": 48,
+              "bottomRow": 53,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 16,
+              "dynamicBindingPathList": [],
+              "text": "← Terug naar Producten",
+              "key": "bnpterug1",
+              "rightColumn": 30,
+              "widgetId": "bnpterugw1",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "4px",
+              "buttonVariant": "SECONDARY",
+              "iconAlign": "left"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "InpNieuwPrijs",
+          "TxtNieuwProductTitel",
+          "InpNieuwNaam",
+          "BtnProductAanmaken",
+          "InpNieuwBeschrijving",
+          "InpNieuwSku",
+          "SelectNieuwBtwPct",
+          "MainContainer",
+          "BtnNieuwProductTerug"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [],
+        "validOnPageLoadActions": true
+      }
+    ],
+    "isHidden": true
+  },
+  "baseId": "6a2c1c3e5e9f879de244ba89",
+  "gitSyncId": "69f23d0ae8d23e3922706103_6e1cf8e7-5417-4f69-a378-b5599ef79f58",
+  "createdAt": "2026-06-12T14:48:30.650Z",
+  "updatedAt": "2026-06-13T14:16:27.572Z",
+  "deleted": false,
+  "policyMap": {
+    "read:pages": {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:pages": {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "create:pageActions": {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:pages": {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewPage"
 }

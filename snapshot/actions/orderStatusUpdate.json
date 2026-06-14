@@ -1,163 +1,151 @@
-﻿{
-    "_id":  "6a022ce4a02d0a78f9132882",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "orderStatusUpdate",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "createdAt":  "2026-05-11T19:24:20.082Z",
-                                                 "updatedAt":  "2026-05-12T17:49:57.231Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "6a022cbaa02d0a78f913287e",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "UPDATE public.orders SET\n  status     = CAST({{SelectOrderStatus.selectedOptionValue}} AS public.order_status),\n  notities   = NULLIF({{InputOrderNotities.text}}, \u0027\u0027),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\nWHERE id = \u0027{{appsmith.URL.queryParams.orderId}}\u0027"
-                                                      },
-                              "executeOnLoad":  false,
-                              "runBehaviour":  "MANUAL",
-                              "dynamicBindingPathList":  [
-                                                             {
-                                                                 "key":  "body"
-                                                             }
-                                                         ],
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-                                                   "InputOrderNotities.text",
-                                                   "SelectOrderStatus.selectedOptionValue",
-                                                   "appsmith.URL.queryParams.orderId",
-                                                   "appsmith.user.email"
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false,
-                              "deletedAt":  "2026-05-12T17:49:57.231Z"
-                          },
-    "publishedAction":  {
-                            "name":  "orderStatusUpdate",
-                            "datasource":  {
-                                               "_id":  "69f23e5ae8d23e3922706106",
-                                               "name":  "Supabase (dev)",
-                                               "pluginId":  "69f21d005fbcf7f394507fde",
-                                               "createdAt":  "2026-05-11T19:24:20.082Z",
-                                               "updatedAt":  "2026-05-12T17:49:57.231Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "6a022cbaa02d0a78f913287e",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "UPDATE public.orders SET\n  status     = CAST({{SelectOrderStatus.selectedOptionValue}} AS public.order_status),\n  notities   = NULLIF({{InputOrderNotities.text}}, \u0027\u0027),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\nWHERE id = \u0027{{appsmith.URL.queryParams.orderId}}\u0027"
-                                                    },
-                            "executeOnLoad":  false,
-                            "runBehaviour":  "MANUAL",
-                            "dynamicBindingPathList":  [
-                                                           {
-                                                               "key":  "body"
-                                                           }
-                                                       ],
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-                                                 "InputOrderNotities.text",
-                                                 "SelectOrderStatus.selectedOptionValue",
-                                                 "appsmith.URL.queryParams.orderId",
-                                                 "appsmith.user.email"
-                                             ],
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false
-                        },
-    "baseId":  "6a022ce4a02d0a78f9132882",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_e9cf3d5b-a298-461d-ac38-4cd9a6e0557b",
-    "createdAt":  "2026-05-11T19:24:20.082Z",
-    "updatedAt":  "2026-05-12T17:49:57.231Z",
-    "deleted":  true,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction",
-    "deletedAt":  "2026-05-12T17:49:57.422Z"
+{
+  "_id": "6a022ce4a02d0a78f9132882",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "orderStatusUpdate",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-05-11T19:24:20.082Z",
+      "updatedAt": "2026-05-12T17:49:57.231Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "6a022cbaa02d0a78f913287e",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.orders SET\n  status     = CAST({{SelectOrderStatus.selectedOptionValue}} AS public.order_status),\n  notities   = NULLIF({{InputOrderNotities.text}}, ''),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.orderId}}'"
+    },
+    "executeOnLoad": false,
+    "runBehaviour": "MANUAL",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "InputOrderNotities.text",
+      "SelectOrderStatus.selectedOptionValue",
+      "appsmith.URL.queryParams.orderId",
+      "appsmith.user.email"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "deletedAt": "2026-05-12T17:49:57.231Z"
+  },
+  "publishedAction": {
+    "name": "orderStatusUpdate",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-05-11T19:24:20.082Z",
+      "updatedAt": "2026-05-12T17:49:57.231Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "6a022cbaa02d0a78f913287e",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.orders SET\n  status     = CAST({{SelectOrderStatus.selectedOptionValue}} AS public.order_status),\n  notities   = NULLIF({{InputOrderNotities.text}}, ''),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.orderId}}'"
+    },
+    "executeOnLoad": false,
+    "runBehaviour": "MANUAL",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "InputOrderNotities.text",
+      "SelectOrderStatus.selectedOptionValue",
+      "appsmith.URL.queryParams.orderId",
+      "appsmith.user.email"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "baseId": "6a022ce4a02d0a78f9132882",
+  "gitSyncId": "69f23d0ae8d23e3922706103_e9cf3d5b-a298-461d-ac38-4cd9a6e0557b",
+  "createdAt": "2026-05-11T19:24:20.082Z",
+  "updatedAt": "2026-05-12T17:49:57.231Z",
+  "deleted": true,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:49:57.422Z"
 }

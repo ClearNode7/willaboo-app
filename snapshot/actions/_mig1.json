@@ -1,130 +1,118 @@
-﻿{
-    "_id":  "6a060bb7a02d0a78f91329bb",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "_mig1",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "createdAt":  "2026-05-14T17:51:51.613Z",
-                                                 "updatedAt":  "2026-05-14T17:51:51.798Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69fb954dc8eed02aabb4c92c",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  30000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "\nALTER TABLE public.producten\n  ADD COLUMN IF NOT EXISTS min_voorraad numeric(10,2) DEFAULT 10\n    CONSTRAINT producten_min_voorraad_chk \n    CHECK (min_voorraad IS NULL OR min_voorraad \u003e= 0)\n",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "MANUAL",
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false
-                          },
-    "publishedAction":  {
-                            "datasource":  {
-                                               "createdAt":  "2026-05-14T17:51:51.613Z",
-                                               "updatedAt":  "2026-05-14T17:51:51.798Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false
-                        },
-    "baseId":  "6a060bb7a02d0a78f91329bb",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_5d415277-14c4-49ed-a20c-6e8c1e909b04",
-    "createdAt":  "2026-05-14T17:51:51.613Z",
-    "updatedAt":  "2026-05-14T17:51:51.798Z",
-    "deleted":  false,
-    "deletedAt":  "2026-05-14T17:51:51.798Z",
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction"
+{
+  "_id": "6a060bb7a02d0a78f91329bb",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "_mig1",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-05-14T17:51:51.613Z",
+      "updatedAt": "2026-05-14T17:51:51.798Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 30000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "\nALTER TABLE public.producten\n  ADD COLUMN IF NOT EXISTS min_voorraad numeric(10,2) DEFAULT 10\n    CONSTRAINT producten_min_voorraad_chk \n    CHECK (min_voorraad IS NULL OR min_voorraad >= 0)\n",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "publishedAction": {
+    "datasource": {
+      "createdAt": "2026-05-14T17:51:51.613Z",
+      "updatedAt": "2026-05-14T17:51:51.798Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "baseId": "6a060bb7a02d0a78f91329bb",
+  "gitSyncId": "69f23d0ae8d23e3922706103_5d415277-14c4-49ed-a20c-6e8c1e909b04",
+  "createdAt": "2026-05-14T17:51:51.613Z",
+  "updatedAt": "2026-05-14T17:51:51.798Z",
+  "deleted": false,
+  "deletedAt": "2026-05-14T17:51:51.798Z",
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction"
 }
