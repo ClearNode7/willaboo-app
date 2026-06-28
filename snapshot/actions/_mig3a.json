@@ -1,5 +1,7 @@
 {
-  "_id": "6a060bb8a02d0a78f91329be",
+  "_id": {
+    "$oid": "6a060bb8a02d0a78f91329be"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,11 +9,17 @@
   "unpublishedAction": {
     "name": "_mig3a",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T17:51:52.501Z",
-      "updatedAt": "2026-05-14T17:51:52.611Z",
+      "createdAt": {
+        "$date": "2026-05-14T17:51:52.501Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-14T17:51:52.611Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -37,8 +45,12 @@
   },
   "publishedAction": {
     "datasource": {
-      "createdAt": "2026-05-14T17:51:52.501Z",
-      "updatedAt": "2026-05-14T17:51:52.611Z",
+      "createdAt": {
+        "$date": "2026-05-14T17:51:52.501Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-14T17:51:52.611Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -48,10 +60,16 @@
   },
   "baseId": "6a060bb8a02d0a78f91329be",
   "gitSyncId": "69f23d0ae8d23e3922706103_2757d008-d0a1-4722-b65a-da4d3e9055b6",
-  "createdAt": "2026-05-14T17:51:52.501Z",
-  "updatedAt": "2026-05-14T17:51:52.611Z",
+  "createdAt": {
+    "$date": "2026-05-14T17:51:52.501Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-14T17:51:52.611Z"
+  },
   "deleted": false,
-  "deletedAt": "2026-05-14T17:51:52.611Z",
+  "deletedAt": {
+    "$date": "2026-05-14T17:51:52.611Z"
+  },
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",

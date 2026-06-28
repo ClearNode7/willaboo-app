@@ -1,5 +1,7 @@
 {
-  "_id": "69f726cc65418fc157f17a52",
+  "_id": {
+    "$oid": "69f726cc65418fc157f17a52"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,10 +9,14 @@
   "unpublishedAction": {
     "name": "klantUpdate",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-05-12T17:25:29.437Z",
+      "updatedAt": {
+        "$date": "2026-05-12T17:25:29.437Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -52,16 +58,24 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-12T17:25:29.437Z",
-    "createdAt": "2026-05-03T10:43:23.968Z"
+    "deletedAt": {
+      "$date": "2026-05-12T17:25:29.437Z"
+    },
+    "createdAt": {
+      "$date": "2026-05-03T10:43:23.968Z"
+    }
   },
   "publishedAction": {
     "name": "klantUpdate",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-05-12T17:25:29.437Z",
+      "updatedAt": {
+        "$date": "2026-05-12T17:25:29.437Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -103,12 +117,18 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-03T10:43:23.968Z"
+    "createdAt": {
+      "$date": "2026-05-03T10:43:23.968Z"
+    }
   },
   "baseId": "69f726cc65418fc157f17a52",
   "gitSyncId": "69f23d0ae8d23e3922706103_5ddb57bd-aa88-4c64-8b98-d709a5d09eea",
-  "createdAt": "2026-05-03T10:43:23.968Z",
-  "updatedAt": "2026-05-12T17:25:29.437Z",
+  "createdAt": {
+    "$date": "2026-05-03T10:43:23.968Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-12T17:25:29.437Z"
+  },
   "deleted": true,
   "policyMap": {
     "read:actions": {
@@ -173,5 +193,7 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-12T17:25:35.949Z"
+  "deletedAt": {
+    "$date": "2026-05-12T17:25:35.949Z"
+  }
 }

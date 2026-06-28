@@ -1,12 +1,16 @@
 {
-  "_id": "6a2c1c3e5e9f879de244ba89",
+  "_id": {
+    "$oid": "6a2c1c3e5e9f879de244ba89"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "NieuwProduct",
     "slug": "nieuwproduct",
     "layouts": [
       {
-        "_id": "6a2c1c3e5e9f879de244ba8a",
+        "_id": {
+          "$oid": "6a2c1c3e5e9f879de244ba8a"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -298,7 +302,9 @@
     "slug": "nieuwproduct",
     "layouts": [
       {
-        "_id": "6a2c1c3e5e9f879de244ba8a",
+        "_id": {
+          "$oid": "6a2c1c3e5e9f879de244ba8a"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -587,8 +593,12 @@
   },
   "baseId": "6a2c1c3e5e9f879de244ba89",
   "gitSyncId": "69f23d0ae8d23e3922706103_6e1cf8e7-5417-4f69-a378-b5599ef79f58",
-  "createdAt": "2026-06-12T14:48:30.650Z",
-  "updatedAt": "2026-06-13T14:16:27.572Z",
+  "createdAt": {
+    "$date": "2026-06-12T14:48:30.650Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-13T14:16:27.572Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:pages": {

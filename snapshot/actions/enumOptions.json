@@ -1,5 +1,7 @@
 {
-  "_id": "69f72cfe65418fc157f17a54",
+  "_id": {
+    "$oid": "69f72cfe65418fc157f17a54"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,10 +9,14 @@
   "unpublishedAction": {
     "name": "enumOptions",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-05-12T17:25:28.908Z",
+      "updatedAt": {
+        "$date": "2026-05-12T17:25:28.908Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -34,16 +40,24 @@
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-12T17:25:28.907Z",
-    "createdAt": "2026-05-03T11:09:50.569Z"
+    "deletedAt": {
+      "$date": "2026-05-12T17:25:28.907Z"
+    },
+    "createdAt": {
+      "$date": "2026-05-03T11:09:50.569Z"
+    }
   },
   "publishedAction": {
     "name": "enumOptions",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-05-12T17:25:28.908Z",
+      "updatedAt": {
+        "$date": "2026-05-12T17:25:28.908Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -67,12 +81,18 @@
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-03T11:09:50.569Z"
+    "createdAt": {
+      "$date": "2026-05-03T11:09:50.569Z"
+    }
   },
   "baseId": "69f72cfe65418fc157f17a54",
   "gitSyncId": "69f23d0ae8d23e3922706103_eb4f92af-c990-4d1a-bbee-b6b205e19910",
-  "createdAt": "2026-05-03T11:09:50.569Z",
-  "updatedAt": "2026-05-12T17:25:28.908Z",
+  "createdAt": {
+    "$date": "2026-05-03T11:09:50.569Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-12T17:25:28.908Z"
+  },
   "deleted": true,
   "policyMap": {
     "read:actions": {
@@ -137,5 +157,7 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-12T17:25:35.949Z"
+  "deletedAt": {
+    "$date": "2026-05-12T17:25:35.949Z"
+  }
 }

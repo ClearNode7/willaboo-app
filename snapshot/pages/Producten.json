@@ -1,12 +1,16 @@
 {
-  "_id": "69fdcf5fc8eed02aabb4c9a5",
+  "_id": {
+    "$oid": "69fdcf5fc8eed02aabb4c9a5"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "Producten",
     "slug": "producten",
     "layouts": [
       {
-        "_id": "6a0cb9d90daa883b44e34ae7",
+        "_id": {
+          "$oid": "6a0cb9d90daa883b44e34ae7"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -516,7 +520,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "69fdf918c8eed02aabb4c9a7",
+              "_id": {
+                "$oid": "69fdf918c8eed02aabb4c9a7"
+              },
               "name": "productenGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -550,7 +556,9 @@
     "slug": "producten",
     "layouts": [
       {
-        "_id": "6a0cb9d90daa883b44e34ae7",
+        "_id": {
+          "$oid": "6a0cb9d90daa883b44e34ae7"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -1060,7 +1068,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "69fdf918c8eed02aabb4c9a7",
+              "_id": {
+                "$oid": "69fdf918c8eed02aabb4c9a7"
+              },
               "name": "productenGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1091,8 +1101,12 @@
   },
   "baseId": "69fdcf5fc8eed02aabb4c9a5",
   "gitSyncId": "69f23d0ae8d23e3922706103_59239775-b130-452e-a3c7-92aa671cbd03",
-  "createdAt": "2026-05-08T11:56:15.296Z",
-  "updatedAt": "2026-06-13T14:43:50.571Z",
+  "createdAt": {
+    "$date": "2026-05-08T11:56:15.296Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-13T14:43:50.571Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:pages": {

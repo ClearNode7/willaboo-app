@@ -1,5 +1,7 @@
 {
-  "_id": "6a2c094ec0934275fd44ba89",
+  "_id": {
+    "$oid": "6a2c094ec0934275fd44ba89"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,11 +9,17 @@
   "unpublishedAction": {
     "name": "klantenSelectGet",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-06-11T17:57:06.044Z",
-      "updatedAt": "2026-06-12T14:39:47.488Z",
+      "createdAt": {
+        "$date": "2026-06-11T17:57:06.044Z"
+      },
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.488Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -37,8 +45,12 @@
   },
   "baseId": "6a2c094ec0934275fd44ba89",
   "gitSyncId": "69f23d0ae8d23e3922706103_c1614ad4-39f8-4447-a6e8-88a8b0f95aa1",
-  "createdAt": "2026-06-12T13:27:42.888Z",
-  "updatedAt": "2026-06-12T14:39:47.488Z",
+  "createdAt": {
+    "$date": "2026-06-12T13:27:42.888Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-12T14:39:47.488Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:actions": {
@@ -106,11 +118,17 @@
   "publishedAction": {
     "name": "klantenSelectGet",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-06-11T17:57:06.044Z",
-      "updatedAt": "2026-06-12T14:39:47.488Z",
+      "createdAt": {
+        "$date": "2026-06-11T17:57:06.044Z"
+      },
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.488Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []

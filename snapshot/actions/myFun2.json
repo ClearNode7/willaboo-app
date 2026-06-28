@@ -1,5 +1,7 @@
 {
-  "_id": "69fb90c7c8eed02aabb4c926",
+  "_id": {
+    "$oid": "69fb90c7c8eed02aabb4c926"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "JS",
@@ -11,8 +13,12 @@
       "name": "UNUSED_DATASOURCE",
       "pluginId": "69f21d015fbcf7f394507fef",
       "workspaceId": "69f23d0ae8d23e39227060fe",
-      "createdAt": "2026-05-06T19:04:39.144Z",
-      "updatedAt": "2026-05-06T19:06:04.037Z",
+      "createdAt": {
+        "$date": "2026-05-06T19:04:39.144Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-06T19:06:04.037Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -40,13 +46,21 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-06T19:04:39.144Z",
-    "updatedAt": "2026-05-06T19:04:39.155Z"
+    "createdAt": {
+      "$date": "2026-05-06T19:04:39.144Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T19:04:39.155Z"
+    }
   },
   "publishedAction": {
     "datasource": {
-      "createdAt": "2026-05-06T19:04:39.144Z",
-      "updatedAt": "2026-05-06T19:06:04.037Z",
+      "createdAt": {
+        "$date": "2026-05-06T19:04:39.144Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-06T19:06:04.037Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -56,10 +70,16 @@
   },
   "baseId": "69fb90c7c8eed02aabb4c926",
   "gitSyncId": "69f23d0ae8d23e3922706103_7522f580-fa38-4d76-96ae-9d903cdd56fb",
-  "createdAt": "2026-05-06T19:04:39.144Z",
-  "updatedAt": "2026-05-06T19:06:04.037Z",
+  "createdAt": {
+    "$date": "2026-05-06T19:04:39.144Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-06T19:06:04.037Z"
+  },
   "deleted": false,
-  "deletedAt": "2026-05-06T19:06:04.037Z",
+  "deletedAt": {
+    "$date": "2026-05-06T19:06:04.037Z"
+  },
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",

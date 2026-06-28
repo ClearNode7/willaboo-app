@@ -1,12 +1,16 @@
 {
-  "_id": "6a023eada02d0a78f91328e7",
+  "_id": {
+    "$oid": "6a023eada02d0a78f91328e7"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "ProductenDetail",
     "slug": "productendetail",
     "layouts": [
       {
-        "_id": "6a023eada02d0a78f91328e6",
+        "_id": {
+          "$oid": "6a023eada02d0a78f91328e6"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -393,7 +397,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "6a023eada02d0a78f91328e8",
+              "_id": {
+                "$oid": "6a023eada02d0a78f91328e8"
+              },
               "name": "productGetById",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -424,7 +430,9 @@
         "validOnPageLoadActions": true
       }
     ],
-    "deletedAt": "2026-05-12T06:20:15.099Z",
+    "deletedAt": {
+      "$date": "2026-05-12T06:20:15.099Z"
+    },
     "isHidden": true
   },
   "publishedPage": {
@@ -432,7 +440,9 @@
     "slug": "productendetail",
     "layouts": [
       {
-        "_id": "6a023eada02d0a78f91328e6",
+        "_id": {
+          "$oid": "6a023eada02d0a78f91328e6"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -819,7 +829,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "6a023eada02d0a78f91328e8",
+              "_id": {
+                "$oid": "6a023eada02d0a78f91328e8"
+              },
               "name": "productGetById",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -854,8 +866,12 @@
   },
   "baseId": "6a023eada02d0a78f91328e7",
   "gitSyncId": "69f23d0ae8d23e3922706103_17e6d715-5afe-4750-afd2-0ed496dc103e",
-  "createdAt": "2026-05-11T20:40:13.120Z",
-  "updatedAt": "2026-05-12T06:20:15.130Z",
+  "createdAt": {
+    "$date": "2026-05-11T20:40:13.120Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-12T06:20:15.130Z"
+  },
   "deleted": true,
   "policyMap": {
     "read:pages": {
@@ -920,5 +936,7 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewPage",
-  "deletedAt": "2026-05-12T06:21:23.819Z"
+  "deletedAt": {
+    "$date": "2026-05-12T06:21:23.819Z"
+  }
 }

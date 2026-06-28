@@ -1,5 +1,7 @@
 {
-  "_id": "69f4a9a50c9a91129f30eb72",
+  "_id": {
+    "$oid": "69f4a9a50c9a91129f30eb72"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,10 +9,14 @@
   "unpublishedAction": {
     "name": "KlantenGet",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.404Z",
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.404Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -40,15 +46,21 @@
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-01T13:24:53.394Z"
+    "createdAt": {
+      "$date": "2026-05-01T13:24:53.394Z"
+    }
   },
   "publishedAction": {
     "name": "KlantenGet",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.404Z",
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.404Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -78,12 +90,18 @@
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-01T13:24:53.394Z"
+    "createdAt": {
+      "$date": "2026-05-01T13:24:53.394Z"
+    }
   },
   "baseId": "69f4a9a50c9a91129f30eb72",
   "gitSyncId": "69f23d0ae8d23e3922706103_7196435b-2b83-4be8-bb30-ad520dba0fa0",
-  "createdAt": "2026-05-01T13:24:53.394Z",
-  "updatedAt": "2026-06-12T14:39:47.404Z",
+  "createdAt": {
+    "$date": "2026-05-01T13:24:53.394Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-12T14:39:47.404Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:actions": {

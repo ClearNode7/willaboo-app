@@ -1,12 +1,16 @@
 {
-  "_id": "69f23d0ae8d23e3922706105",
+  "_id": {
+    "$oid": "69f23d0ae8d23e3922706105"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "Klanten",
     "slug": "klanten",
     "layouts": [
       {
-        "_id": "69f23d0ae8d23e3922706104",
+        "_id": {
+          "$oid": "69f23d0ae8d23e3922706104"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -207,11 +211,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": {
-                        "high": 413,
-                        "low": -475219449,
-                        "unsigned": false
-                      },
+                      "columnUpdatedAt": 1777641241095,
                       "primaryColumnId": "id",
                       "columnSizeMap": {
                         "task": 245,
@@ -2851,7 +2851,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "69f23ee9e8d23e392270610d",
+              "_id": {
+                "$oid": "69f23ee9e8d23e392270610d"
+              },
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2893,7 +2895,9 @@
         "validOnPageLoadActions": true
       }
     ],
-    "deletedAt": "2026-05-01T13:23:29.954Z",
+    "deletedAt": {
+      "$date": "2026-05-01T13:23:29.954Z"
+    },
     "isHidden": false
   },
   "publishedPage": {
@@ -2901,7 +2905,9 @@
     "slug": "page1",
     "layouts": [
       {
-        "_id": "69f23d0ae8d23e3922706104",
+        "_id": {
+          "$oid": "69f23d0ae8d23e3922706104"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -2934,8 +2940,12 @@
   },
   "baseId": "69f23d0ae8d23e3922706105",
   "gitSyncId": "69f23d0ae8d23e3922706103_f4e77fc5-cca1-47aa-b797-1447af99cd0b",
-  "createdAt": "2026-04-29T17:16:58.520Z",
-  "updatedAt": "2026-05-01T13:23:30.001Z",
+  "createdAt": {
+    "$date": "2026-04-29T17:16:58.520Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-01T13:23:30.001Z"
+  },
   "deleted": true,
   "policyMap": {
     "read:pages": {
@@ -3000,5 +3010,7 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewPage",
-  "deletedAt": "2026-05-06T17:56:27.401Z"
+  "deletedAt": {
+    "$date": "2026-05-06T17:56:27.401Z"
+  }
 }

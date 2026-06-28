@@ -1,5 +1,7 @@
 {
-  "_id": "69ff8dc5c8eed02aabb4c9de",
+  "_id": {
+    "$oid": "69ff8dc5c8eed02aabb4c9de"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "pluginType": "JS",
   "pluginId": "69f21d015fbcf7f394507fef",
@@ -10,8 +12,12 @@
       "name": "UNUSED_DATASOURCE",
       "pluginId": "69f21d015fbcf7f394507fef",
       "workspaceId": "69f23d0ae8d23e39227060fe",
-      "createdAt": "2026-05-09T19:40:53.252Z",
-      "updatedAt": "2026-05-09T19:42:34.992Z",
+      "createdAt": {
+        "$date": "2026-05-09T19:40:53.252Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-09T19:42:34.992Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -40,9 +46,15 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-09T19:42:34.984Z",
-    "createdAt": "2026-05-09T19:40:53.252Z",
-    "updatedAt": "2026-05-09T19:40:53.285Z"
+    "deletedAt": {
+      "$date": "2026-05-09T19:42:34.984Z"
+    },
+    "createdAt": {
+      "$date": "2026-05-09T19:40:53.252Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-09T19:40:53.285Z"
+    }
   },
   "publishedAction": {
     "name": "run",
@@ -51,8 +63,12 @@
       "name": "UNUSED_DATASOURCE",
       "pluginId": "69f21d015fbcf7f394507fef",
       "workspaceId": "69f23d0ae8d23e39227060fe",
-      "createdAt": "2026-05-09T19:40:53.252Z",
-      "updatedAt": "2026-05-09T19:42:34.992Z",
+      "createdAt": {
+        "$date": "2026-05-09T19:40:53.252Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-09T19:42:34.992Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -81,13 +97,21 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-09T19:40:53.252Z",
-    "updatedAt": "2026-05-09T19:40:53.285Z"
+    "createdAt": {
+      "$date": "2026-05-09T19:40:53.252Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-09T19:40:53.285Z"
+    }
   },
   "baseId": "69ff8dc5c8eed02aabb4c9de",
   "gitSyncId": "69f23d0ae8d23e3922706103_85f1d341-8333-4bef-a1bf-155417d4048c",
-  "createdAt": "2026-05-09T19:40:53.252Z",
-  "updatedAt": "2026-05-09T19:42:34.992Z",
+  "createdAt": {
+    "$date": "2026-05-09T19:40:53.252Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-09T19:42:34.992Z"
+  },
   "deleted": true,
   "policyMap": {
     "read:actions": {
@@ -152,5 +176,7 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-09T19:43:40.952Z"
+  "deletedAt": {
+    "$date": "2026-05-09T19:43:40.952Z"
+  }
 }

@@ -1,5 +1,7 @@
 {
-  "_id": "6a2c094ec0934275fd44ba8a",
+  "_id": {
+    "$oid": "6a2c094ec0934275fd44ba8a"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,11 +9,17 @@
   "unpublishedAction": {
     "name": "orderInsert",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-06-11T17:57:06.044Z",
-      "updatedAt": "2026-06-12T14:39:47.494Z",
+      "createdAt": {
+        "$date": "2026-06-11T17:57:06.044Z"
+      },
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.494Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -40,8 +48,12 @@
   },
   "baseId": "6a2c094ec0934275fd44ba8a",
   "gitSyncId": "69f23d0ae8d23e3922706103_e2784dad-6772-4703-81ae-0991211d5beb",
-  "createdAt": "2026-06-12T13:27:42.898Z",
-  "updatedAt": "2026-06-12T14:39:47.494Z",
+  "createdAt": {
+    "$date": "2026-06-12T13:27:42.898Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-12T14:39:47.494Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:actions": {
@@ -109,11 +121,17 @@
   "publishedAction": {
     "name": "orderInsert",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-06-11T17:57:06.044Z",
-      "updatedAt": "2026-06-12T14:39:47.494Z",
+      "createdAt": {
+        "$date": "2026-06-11T17:57:06.044Z"
+      },
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.494Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
