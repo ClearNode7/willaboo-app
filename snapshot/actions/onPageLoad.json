@@ -1,7 +1,5 @@
 {
-  "_id": {
-    "$oid": "69fb911cc8eed02aabb4c928"
-  },
+  "_id": "69fb911cc8eed02aabb4c928",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "JS",
@@ -13,12 +11,8 @@
       "name": "UNUSED_DATASOURCE",
       "pluginId": "69f21d015fbcf7f394507fef",
       "workspaceId": "69f23d0ae8d23e39227060fe",
-      "createdAt": {
-        "$date": "2026-05-06T19:06:04.039Z"
-      },
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.413Z"
-      },
+      "createdAt": "2026-05-06T19:06:04.039Z",
+      "updatedAt": "2026-06-12T14:39:47.413Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -45,9 +39,7 @@
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-06T19:06:04.039Z"
-    }
+    "createdAt": "2026-05-06T19:06:04.039Z"
   },
   "publishedAction": {
     "name": "onPageLoad",
@@ -56,12 +48,8 @@
       "name": "UNUSED_DATASOURCE",
       "pluginId": "69f21d015fbcf7f394507fef",
       "workspaceId": "69f23d0ae8d23e39227060fe",
-      "createdAt": {
-        "$date": "2026-05-06T19:06:04.039Z"
-      },
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.413Z"
-      },
+      "createdAt": "2026-05-06T19:06:04.039Z",
+      "updatedAt": "2026-06-12T14:39:47.413Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -88,18 +76,12 @@
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-06T19:06:04.039Z"
-    }
+    "createdAt": "2026-05-06T19:06:04.039Z"
   },
   "baseId": "69fb911cc8eed02aabb4c928",
   "gitSyncId": "69f23d0ae8d23e3922706103_b0587c3f-0588-4f2d-a928-21ca789de6f7",
-  "createdAt": {
-    "$date": "2026-05-06T19:06:04.039Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.413Z"
-  },
+  "createdAt": "2026-05-06T19:06:04.039Z",
+  "updatedAt": "2026-06-12T14:39:47.413Z",
   "deleted": false,
   "policyMap": {
     "read:actions": {

@@ -1,16 +1,12 @@
 {
-  "_id": {
-    "$oid": "69fb954dc8eed02aabb4c92c"
-  },
+  "_id": "69fb954dc8eed02aabb4c92c",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "Orders",
     "slug": "orders",
     "layouts": [
       {
-        "_id": {
-          "$oid": "6a0cb9d90daa883b44e34ae5"
-        },
+        "_id": "6a0cb9d90daa883b44e34ae5",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -596,9 +592,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": {
-                "$oid": "69fb9596c8eed02aabb4c92d"
-              },
+              "_id": "69fb9596c8eed02aabb4c92d",
               "name": "ordersGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -633,9 +627,7 @@
     "slug": "orders",
     "layouts": [
       {
-        "_id": {
-          "$oid": "6a0cb9d90daa883b44e34ae5"
-        },
+        "_id": "6a0cb9d90daa883b44e34ae5",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -1221,9 +1213,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": {
-                "$oid": "69fb9596c8eed02aabb4c92d"
-              },
+              "_id": "69fb9596c8eed02aabb4c92d",
               "name": "ordersGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1255,12 +1245,8 @@
   },
   "baseId": "69fb954dc8eed02aabb4c92c",
   "gitSyncId": "69f23d0ae8d23e3922706103_7a741823-5b80-495b-91f4-75e8a20103c7",
-  "createdAt": {
-    "$date": "2026-05-06T19:23:57.415Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.372Z"
-  },
+  "createdAt": "2026-05-06T19:23:57.415Z",
+  "updatedAt": "2026-06-12T14:39:47.372Z",
   "deleted": false,
   "policyMap": {
     "read:pages": {

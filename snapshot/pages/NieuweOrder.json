@@ -1,16 +1,12 @@
 {
-  "_id": {
-    "$oid": "6a2c124c87160c133e882bf4"
-  },
+  "_id": "6a2c124c87160c133e882bf4",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "NieuweOrder",
     "slug": "nieuweorder",
     "layouts": [
       {
-        "_id": {
-          "$oid": "6a2c124c87160c133e882bf3"
-        },
+        "_id": "6a2c124c87160c133e882bf3",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -185,9 +181,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": {
-                "$oid": "6a2c094ec0934275fd44ba89"
-              },
+              "_id": "6a2c094ec0934275fd44ba89",
               "name": "klantenSelectGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -215,12 +209,8 @@
   },
   "baseId": "6a2c124c87160c133e882bf4",
   "gitSyncId": "69f23d0ae8d23e3922706103_25fa2eb4-c9de-421d-913f-9d53959fb1ed",
-  "createdAt": {
-    "$date": "2026-06-12T14:06:04.616Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.372Z"
-  },
+  "createdAt": "2026-06-12T14:06:04.616Z",
+  "updatedAt": "2026-06-12T14:39:47.372Z",
   "deleted": false,
   "policyMap": {
     "read:pages": {
@@ -290,9 +280,7 @@
     "slug": "nieuweorder",
     "layouts": [
       {
-        "_id": {
-          "$oid": "6a2c124c87160c133e882bf3"
-        },
+        "_id": "6a2c124c87160c133e882bf3",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -467,9 +455,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": {
-                "$oid": "6a2c094ec0934275fd44ba89"
-              },
+              "_id": "6a2c094ec0934275fd44ba89",
               "name": "klantenSelectGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",

@@ -1,7 +1,5 @@
 {
-  "_id": {
-    "$oid": "6a06064ea02d0a78f9132991"
-  },
+  "_id": "6a06064ea02d0a78f9132991",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -9,14 +7,10 @@
   "unpublishedAction": {
     "name": "insertMutatie",
     "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
+      "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.495Z"
-      },
+      "updatedAt": "2026-06-12T14:39:47.495Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -45,21 +39,15 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-14T17:28:46.080Z"
-    }
+    "createdAt": "2026-05-14T17:28:46.080Z"
   },
   "publishedAction": {
     "name": "insertMutatie",
     "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
+      "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.495Z"
-      },
+      "updatedAt": "2026-06-12T14:39:47.495Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -88,18 +76,12 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-14T17:28:46.080Z"
-    }
+    "createdAt": "2026-05-14T17:28:46.080Z"
   },
   "baseId": "6a06064ea02d0a78f9132991",
   "gitSyncId": "69f23d0ae8d23e3922706103_21802cc8-2e6a-41f6-bf16-8c7b1e666bee",
-  "createdAt": {
-    "$date": "2026-05-14T17:28:46.080Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.495Z"
-  },
+  "createdAt": "2026-05-14T17:28:46.080Z",
+  "updatedAt": "2026-06-12T14:39:47.495Z",
   "deleted": false,
   "policyMap": {
     "read:actions": {

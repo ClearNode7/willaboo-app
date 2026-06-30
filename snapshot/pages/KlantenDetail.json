@@ -1,16 +1,12 @@
 {
-  "_id": {
-    "$oid": "6a023eaca02d0a78f91328e3"
-  },
+  "_id": "6a023eaca02d0a78f91328e3",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "KlantenDetail",
     "slug": "klantendetail",
     "layouts": [
       {
-        "_id": {
-          "$oid": "6a023eaca02d0a78f91328e2"
-        },
+        "_id": "6a023eaca02d0a78f91328e2",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -799,9 +795,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": {
-                "$oid": "6a023eaca02d0a78f91328e4"
-              },
+              "_id": "6a023eaca02d0a78f91328e4",
               "name": "klantGetById",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -841,9 +835,7 @@
         "validOnPageLoadActions": true
       }
     ],
-    "deletedAt": {
-      "$date": "2026-05-12T06:20:14.946Z"
-    },
+    "deletedAt": "2026-05-12T06:20:14.946Z",
     "isHidden": true
   },
   "publishedPage": {
@@ -851,9 +843,7 @@
     "slug": "klantendetail",
     "layouts": [
       {
-        "_id": {
-          "$oid": "6a023eaca02d0a78f91328e2"
-        },
+        "_id": "6a023eaca02d0a78f91328e2",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -1642,9 +1632,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": {
-                "$oid": "6a023eaca02d0a78f91328e4"
-              },
+              "_id": "6a023eaca02d0a78f91328e4",
               "name": "klantGetById",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1688,12 +1676,8 @@
   },
   "baseId": "6a023eaca02d0a78f91328e3",
   "gitSyncId": "69f23d0ae8d23e3922706103_209f5aab-019f-498e-99e3-7902c9c03320",
-  "createdAt": {
-    "$date": "2026-05-11T20:40:12.041Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T06:20:14.995Z"
-  },
+  "createdAt": "2026-05-11T20:40:12.041Z",
+  "updatedAt": "2026-05-12T06:20:14.995Z",
   "deleted": true,
   "policyMap": {
     "read:pages": {
@@ -1758,7 +1742,5 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewPage",
-  "deletedAt": {
-    "$date": "2026-05-12T06:21:23.819Z"
-  }
+  "deletedAt": "2026-05-12T06:21:23.819Z"
 }

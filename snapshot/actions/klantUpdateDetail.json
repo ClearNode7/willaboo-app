@@ -1,7 +1,5 @@
 {
-  "_id": {
-    "$oid": "6a02c6e2a02d0a78f91328f4"
-  },
+  "_id": "6a02c6e2a02d0a78f91328f4",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -9,14 +7,10 @@
   "unpublishedAction": {
     "name": "klantUpdateDetail",
     "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
+      "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.492Z"
-      },
+      "updatedAt": "2026-06-12T14:39:47.492Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -60,21 +54,15 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-12T06:21:22.050Z"
-    }
+    "createdAt": "2026-05-12T06:21:22.050Z"
   },
   "publishedAction": {
     "name": "klantUpdateDetail",
     "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
+      "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.492Z"
-      },
+      "updatedAt": "2026-06-12T14:39:47.492Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -118,18 +106,12 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-12T06:21:22.050Z"
-    }
+    "createdAt": "2026-05-12T06:21:22.050Z"
   },
   "baseId": "6a02c6e2a02d0a78f91328f4",
   "gitSyncId": "69f23d0ae8d23e3922706103_febe9e87-3b8f-43f4-a3e7-ef47592852a0",
-  "createdAt": {
-    "$date": "2026-05-12T06:21:22.050Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.492Z"
-  },
+  "createdAt": "2026-05-12T06:21:22.050Z",
+  "updatedAt": "2026-06-12T14:39:47.492Z",
   "deleted": false,
   "policyMap": {
     "read:actions": {

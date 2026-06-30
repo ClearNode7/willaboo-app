@@ -1,7 +1,5 @@
 {
-  "_id": {
-    "$oid": "6a022ce4a02d0a78f9132882"
-  },
+  "_id": "6a022ce4a02d0a78f9132882",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -9,17 +7,11 @@
   "unpublishedAction": {
     "name": "orderStatusUpdate",
     "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
+      "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-05-11T19:24:20.082Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-12T17:49:57.231Z"
-      },
+      "createdAt": "2026-05-11T19:24:20.082Z",
+      "updatedAt": "2026-05-12T17:49:57.231Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -48,24 +40,16 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": {
-      "$date": "2026-05-12T17:49:57.231Z"
-    }
+    "deletedAt": "2026-05-12T17:49:57.231Z"
   },
   "publishedAction": {
     "name": "orderStatusUpdate",
     "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
+      "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-05-11T19:24:20.082Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-12T17:49:57.231Z"
-      },
+      "createdAt": "2026-05-11T19:24:20.082Z",
+      "updatedAt": "2026-05-12T17:49:57.231Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -97,12 +81,8 @@
   },
   "baseId": "6a022ce4a02d0a78f9132882",
   "gitSyncId": "69f23d0ae8d23e3922706103_e9cf3d5b-a298-461d-ac38-4cd9a6e0557b",
-  "createdAt": {
-    "$date": "2026-05-11T19:24:20.082Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T17:49:57.231Z"
-  },
+  "createdAt": "2026-05-11T19:24:20.082Z",
+  "updatedAt": "2026-05-12T17:49:57.231Z",
   "deleted": true,
   "policyMap": {
     "read:actions": {
@@ -167,7 +147,5 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": {
-    "$date": "2026-05-12T17:49:57.422Z"
-  }
+  "deletedAt": "2026-05-12T17:49:57.422Z"
 }

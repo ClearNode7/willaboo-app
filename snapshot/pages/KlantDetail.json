@@ -1,16 +1,12 @@
 {
-  "_id": {
-    "$oid": "69f4a9070c9a91129f30eb6f"
-  },
+  "_id": "69f4a9070c9a91129f30eb6f",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "KlantDetail",
     "slug": "klantdetail",
     "layouts": [
       {
-        "_id": {
-          "$oid": "69f4a9070c9a91129f30eb6e"
-        },
+        "_id": "69f4a9070c9a91129f30eb6e",
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -210,16 +206,10 @@
   },
   "baseId": "69f4a9070c9a91129f30eb6f",
   "gitSyncId": "69f23d0ae8d23e3922706103_31166e36-b0df-43c4-b1bc-ea29edd1b53a",
-  "createdAt": {
-    "$date": "2026-05-01T13:22:15.846Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-02T11:37:22.666Z"
-  },
+  "createdAt": "2026-05-01T13:22:15.846Z",
+  "updatedAt": "2026-05-02T11:37:22.666Z",
   "deleted": false,
-  "deletedAt": {
-    "$date": "2026-05-02T11:37:22.657Z"
-  },
+  "deletedAt": "2026-05-02T11:37:22.657Z",
   "policyMap": {
     "read:pages": {
       "permission": "read:pages",
