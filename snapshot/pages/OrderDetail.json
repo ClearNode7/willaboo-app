@@ -677,7 +677,7 @@
             },
             {
               "widgetName": "BtnBewaarRegel",
-              "onClick": "{{orderRegelUpdate.run(()=>{orderRegelsGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+              "onClick": "{{orderRegelUpdate.run(()=>{orderRegelsGet.run();showAlert('Opgeslagen \u2713','success');},()=>showAlert('Fout bij opslaan','error'))}}",
               "buttonColor": "#03b365",
               "topRow": 80,
               "bottomRow": 86,
@@ -957,7 +957,7 @@
             },
             {
               "widgetName": "BtnToevoegen",
-              "onClick": "{{orderRegelInsert.run(()=>{orderRegelsGet.run();resetWidget('SelectNieuwProduct');resetWidget('InpNieuwAantal');resetWidget('SelectNieuwEenheid');resetWidget('InpNieuwPrijs');resetWidget('InpNieuwBtw');showAlert('Toegevoegd ✓','success');},()=>showAlert('Fout bij toevoegen','error'))}}",
+              "onClick": "{{orderRegelInsert.run(()=>{orderRegelsGet.run();resetWidget('SelectNieuwProduct');resetWidget('InpNieuwAantal');resetWidget('SelectNieuwEenheid');resetWidget('InpNieuwPrijs');resetWidget('InpNieuwBtw');showAlert('Toegevoegd \u2713','success');},()=>showAlert('Fout bij toevoegen','error'))}}",
               "buttonColor": "#03B365",
               "topRow": 78,
               "bottomRow": 84,
@@ -1727,7 +1727,7 @@
             },
             {
               "widgetName": "BtnBewaarRegel",
-              "onClick": "{{orderRegelUpdate.run(()=>{orderRegelsGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+              "onClick": "{{orderRegelUpdate.run(()=>{orderRegelsGet.run();showAlert('Opgeslagen \u2713','success');},()=>showAlert('Fout bij opslaan','error'))}}",
               "buttonColor": "#03b365",
               "topRow": 80,
               "bottomRow": 86,
@@ -2007,7 +2007,7 @@
             },
             {
               "widgetName": "BtnToevoegen",
-              "onClick": "{{orderRegelInsert.run(()=>{orderRegelsGet.run();resetWidget('SelectNieuwProduct');resetWidget('InpNieuwAantal');resetWidget('SelectNieuwEenheid');resetWidget('InpNieuwPrijs');resetWidget('InpNieuwBtw');showAlert('Toegevoegd ✓','success');},()=>showAlert('Fout bij toevoegen','error'))}}",
+              "onClick": "{{orderRegelInsert.run(()=>{orderRegelsGet.run();resetWidget('SelectNieuwProduct');resetWidget('InpNieuwAantal');resetWidget('SelectNieuwEenheid');resetWidget('InpNieuwPrijs');resetWidget('InpNieuwBtw');showAlert('Toegevoegd \u2713','success');},()=>showAlert('Fout bij toevoegen','error'))}}",
               "buttonColor": "#03B365",
               "topRow": 78,
               "bottomRow": 84,

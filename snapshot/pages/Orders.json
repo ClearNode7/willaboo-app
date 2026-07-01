@@ -449,7 +449,7 @@
             },
             {
               "widgetName": "BtnOrderBewaar",
-              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen \u2713','success');},()=>showAlert('Fout bij opslaan','error'))}}",
               "buttonColor": "#03B365",
               "topRow": 89,
               "bottomRow": 95,
@@ -1070,7 +1070,7 @@
             },
             {
               "widgetName": "BtnOrderBewaar",
-              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen \u2713','success');},()=>showAlert('Fout bij opslaan','error'))}}",
               "buttonColor": "#03B365",
               "topRow": 89,
               "bottomRow": 95,
