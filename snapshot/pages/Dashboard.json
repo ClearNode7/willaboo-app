@@ -620,7 +620,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet deze maand (\u20ac)"
+                      "text": "Omzet deze maand (€)"
                     },
                     {
                       "widgetName": "Val_CardOmzetMaand",
@@ -720,7 +720,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet YTD (\u20ac)"
+                      "text": "Omzet YTD (€)"
                     },
                     {
                       "widgetName": "Val_CardOmzetYTD",
@@ -1725,7 +1725,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet deze maand (\u20ac)"
+                      "text": "Omzet deze maand (€)"
                     },
                     {
                       "widgetName": "Val_CardOmzetMaand",
@@ -1825,7 +1825,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet YTD (\u20ac)"
+                      "text": "Omzet YTD (€)"
                     },
                     {
                       "widgetName": "Val_CardOmzetYTD",

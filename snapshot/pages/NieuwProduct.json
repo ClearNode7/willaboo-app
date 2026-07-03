@@ -202,7 +202,7 @@
             },
             {
               "widgetName": "BtnProductAanmaken",
-              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt \u2713','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
+              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt ✓','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
               "buttonColor": "#03B365",
               "dynamicPropertyPathList": [
                 {
@@ -258,7 +258,7 @@
               ],
               "leftColumn": 16,
               "dynamicBindingPathList": [],
-              "text": "\u2190 Terug naar Producten",
+              "text": "← Terug naar Producten",
               "key": "bnpterug1",
               "rightColumn": 30,
               "widgetId": "bnpterugw1",
@@ -494,7 +494,7 @@
             },
             {
               "widgetName": "BtnProductAanmaken",
-              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt \u2713','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
+              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt ✓','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
               "buttonColor": "#03B365",
               "dynamicPropertyPathList": [
                 {
@@ -550,7 +550,7 @@
               ],
               "leftColumn": 16,
               "dynamicBindingPathList": [],
-              "text": "\u2190 Terug naar Producten",
+              "text": "← Terug naar Producten",
               "key": "bnpterug1",
               "rightColumn": 30,
               "widgetId": "bnpterugw1",
