@@ -1,5 +1,7 @@
-﻿{
-  "_id": "69fb9596c8eed02aabb4c92d",
+{
+  "_id": {
+    "$oid": "69fb9596c8eed02aabb4c92d"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,10 +9,14 @@
   "unpublishedAction": {
     "name": "ordersGet",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.420Z",
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.420Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -34,15 +40,21 @@
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-06T19:25:10.483Z"
+    "createdAt": {
+      "$date": "2026-05-06T19:25:10.483Z"
+    }
   },
   "publishedAction": {
     "name": "ordersGet",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.420Z",
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.420Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -66,12 +78,18 @@
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-06T19:25:10.483Z"
+    "createdAt": {
+      "$date": "2026-05-06T19:25:10.483Z"
+    }
   },
   "baseId": "69fb9596c8eed02aabb4c92d",
   "gitSyncId": "69f23d0ae8d23e3922706103_478b42f3-403c-4f3e-b462-d15f3eb7c95e",
-  "createdAt": "2026-05-06T19:25:10.483Z",
-  "updatedAt": "2026-06-12T14:39:47.420Z",
+  "createdAt": {
+    "$date": "2026-05-06T19:25:10.483Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-12T14:39:47.420Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:actions": {

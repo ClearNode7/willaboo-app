@@ -1,5 +1,7 @@
-﻿{
-  "_id": "6a022ce4a02d0a78f9132884",
+{
+  "_id": {
+    "$oid": "6a022ce4a02d0a78f9132884"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -7,10 +9,14 @@
   "unpublishedAction": {
     "name": "orderRegelInsert",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.500Z",
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.500Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -42,15 +48,21 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.208Z"
+    "createdAt": {
+      "$date": "2026-05-11T19:24:20.208Z"
+    }
   },
   "publishedAction": {
     "name": "orderRegelInsert",
     "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
+      "_id": {
+        "$oid": "69f23e5ae8d23e3922706106"
+      },
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.500Z",
+      "updatedAt": {
+        "$date": "2026-06-12T14:39:47.500Z"
+      },
       "deleted": false,
       "policyMap": {},
       "policies": []
@@ -82,12 +94,18 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.208Z"
+    "createdAt": {
+      "$date": "2026-05-11T19:24:20.208Z"
+    }
   },
   "baseId": "6a022ce4a02d0a78f9132884",
   "gitSyncId": "69f23d0ae8d23e3922706103_879afb4c-921e-4e12-9022-4e7c96e59eaf",
-  "createdAt": "2026-05-11T19:24:20.208Z",
-  "updatedAt": "2026-06-12T14:39:47.500Z",
+  "createdAt": {
+    "$date": "2026-05-11T19:24:20.208Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-12T14:39:47.500Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:actions": {

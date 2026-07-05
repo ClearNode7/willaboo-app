@@ -1,12 +1,16 @@
-﻿{
-  "_id": "69fc3d09c8eed02aabb4c939",
+{
+  "_id": {
+    "$oid": "69fc3d09c8eed02aabb4c939"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "Dashboard",
     "slug": "dashboard",
     "layouts": [
       {
-        "_id": "6a0cb9d90daa883b44e34ae6",
+        "_id": {
+          "$oid": "6a0cb9d90daa883b44e34ae6"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -1024,11 +1028,7 @@
               "responsiveBehavior": "fill",
               "borderRadius": "0px",
               "isVisiblePagination": true,
-              "columnUpdatedAt": {
-                "high": 414,
-                "low": 656359718,
-                "unsigned": false
-              },
+              "columnUpdatedAt": 1778772820262,
               "primaryColumnId": "id",
               "defaultSelectedRowIndices": [
                 0
@@ -1039,7 +1039,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "6a05da83a02d0a78f9132921",
+              "_id": {
+                "$oid": "6a05da83a02d0a78f9132921"
+              },
               "name": "recenteOrders",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1049,7 +1051,9 @@
           ],
           [
             {
-              "_id": "69fc3d54c8eed02aabb4c93f",
+              "_id": {
+                "$oid": "69fc3d54c8eed02aabb4c93f"
+              },
               "name": "ordersStats",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1111,7 +1115,9 @@
     "slug": "dashboard",
     "layouts": [
       {
-        "_id": "6a0cb9d90daa883b44e34ae6",
+        "_id": {
+          "$oid": "6a0cb9d90daa883b44e34ae6"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -2129,11 +2135,7 @@
               "responsiveBehavior": "fill",
               "borderRadius": "0px",
               "isVisiblePagination": true,
-              "columnUpdatedAt": {
-                "high": 414,
-                "low": 656359718,
-                "unsigned": false
-              },
+              "columnUpdatedAt": 1778772820262,
               "primaryColumnId": "id",
               "defaultSelectedRowIndices": [
                 0
@@ -2144,7 +2146,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "6a05da83a02d0a78f9132921",
+              "_id": {
+                "$oid": "6a05da83a02d0a78f9132921"
+              },
               "name": "recenteOrders",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2154,7 +2158,9 @@
           ],
           [
             {
-              "_id": "69fc3d54c8eed02aabb4c93f",
+              "_id": {
+                "$oid": "69fc3d54c8eed02aabb4c93f"
+              },
               "name": "ordersStats",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2213,8 +2219,12 @@
   },
   "baseId": "69fc3d09c8eed02aabb4c939",
   "gitSyncId": "69f23d0ae8d23e3922706103_1d57922c-3e3e-4524-bf3a-473315cd09e0",
-  "createdAt": "2026-05-07T07:19:37.631Z",
-  "updatedAt": "2026-06-12T14:39:47.371Z",
+  "createdAt": {
+    "$date": "2026-05-07T07:19:37.631Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-12T14:39:47.371Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:pages": {

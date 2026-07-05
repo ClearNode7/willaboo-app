@@ -1,12 +1,16 @@
-﻿{
-  "_id": "6a022cbaa02d0a78f913287e",
+{
+  "_id": {
+    "$oid": "6a022cbaa02d0a78f913287e"
+  },
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
     "name": "OrderDetail",
     "slug": "orderdetail",
     "layouts": [
       {
-        "_id": "6a0cb9d90daa883b44e34ae8",
+        "_id": {
+          "$oid": "6a0cb9d90daa883b44e34ae8"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -998,7 +1002,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "6a022ce3a02d0a78f9132880",
+              "_id": {
+                "$oid": "6a022ce3a02d0a78f9132880"
+              },
               "name": "orderRegelsGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1010,7 +1016,9 @@
           ],
           [
             {
-              "_id": "6a022ce4a02d0a78f9132881",
+              "_id": {
+                "$oid": "6a022ce4a02d0a78f9132881"
+              },
               "name": "productenGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1056,7 +1064,9 @@
     "slug": "orderdetail",
     "layouts": [
       {
-        "_id": "6a0cb9d90daa883b44e34ae8",
+        "_id": {
+          "$oid": "6a0cb9d90daa883b44e34ae8"
+        },
         "viewMode": false,
         "dsl": {
           "widgetName": "MainContainer",
@@ -2048,7 +2058,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "_id": "6a022ce3a02d0a78f9132880",
+              "_id": {
+                "$oid": "6a022ce3a02d0a78f9132880"
+              },
               "name": "orderRegelsGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2060,7 +2072,9 @@
           ],
           [
             {
-              "_id": "6a022ce4a02d0a78f9132881",
+              "_id": {
+                "$oid": "6a022ce4a02d0a78f9132881"
+              },
               "name": "productenGet",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -2103,8 +2117,12 @@
   },
   "baseId": "6a022cbaa02d0a78f913287e",
   "gitSyncId": "69f23d0ae8d23e3922706103_9b301d4b-8b76-47d4-9d88-81c072e97f4b",
-  "createdAt": "2026-05-11T19:23:38.131Z",
-  "updatedAt": "2026-06-13T14:34:22.625Z",
+  "createdAt": {
+    "$date": "2026-05-11T19:23:38.131Z"
+  },
+  "updatedAt": {
+    "$date": "2026-06-13T14:34:22.625Z"
+  },
   "deleted": false,
   "policyMap": {
     "read:pages": {
