@@ -1,4 +1,4 @@
-{
+﻿{
   "_id": "6a2c1c3e5e9f879de244ba89",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
@@ -202,7 +202,7 @@
             },
             {
               "widgetName": "BtnProductAanmaken",
-              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt ✓','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
+              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt Ô£ô','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
               "buttonColor": "#03B365",
               "dynamicPropertyPathList": [
                 {
@@ -258,7 +258,7 @@
               ],
               "leftColumn": 16,
               "dynamicBindingPathList": [],
-              "text": "← Terug naar Producten",
+              "text": "ÔåÉ Terug naar Producten",
               "key": "bnpterug1",
               "rightColumn": 30,
               "widgetId": "bnpterugw1",
@@ -494,7 +494,7 @@
             },
             {
               "widgetName": "BtnProductAanmaken",
-              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt ✓','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
+              "onClick": "{{ (InpNieuwNaam.text && InpNieuwPrijs.text) ? productInsert.run((r)=>{showAlert('Product aangemaakt Ô£ô','success'); navigateTo('Producten', {}, 'SAME_WINDOW');},()=>showAlert('Fout bij aanmaken product','error')) : showAlert('Vul een naam en prijs in','error') }}",
               "buttonColor": "#03B365",
               "dynamicPropertyPathList": [
                 {
@@ -550,7 +550,7 @@
               ],
               "leftColumn": 16,
               "dynamicBindingPathList": [],
-              "text": "← Terug naar Producten",
+              "text": "ÔåÉ Terug naar Producten",
               "key": "bnpterug1",
               "rightColumn": 30,
               "widgetId": "bnpterugw1",

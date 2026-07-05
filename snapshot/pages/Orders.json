@@ -1,4 +1,4 @@
-{
+﻿{
   "_id": "69fb954dc8eed02aabb4c92c",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
@@ -449,7 +449,7 @@
             },
             {
               "widgetName": "BtnOrderBewaar",
-              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen Ô£ô','success');},()=>showAlert('Fout bij opslaan','error'))}}",
               "buttonColor": "#03B365",
               "topRow": 89,
               "bottomRow": 95,
@@ -1070,7 +1070,7 @@
             },
             {
               "widgetName": "BtnOrderBewaar",
-              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen ✓','success');},()=>showAlert('Fout bij opslaan','error'))}}",
+              "onClick": "{{orderStatusUpdate.run(()=>{ordersGet.run();showAlert('Opgeslagen Ô£ô','success');},()=>showAlert('Fout bij opslaan','error'))}}",
               "buttonColor": "#03B365",
               "topRow": 89,
               "bottomRow": 95,

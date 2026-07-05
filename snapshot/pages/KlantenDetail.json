@@ -1,4 +1,4 @@
-{
+﻿{
   "_id": "6a023eaca02d0a78f91328e3",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
@@ -729,7 +729,7 @@
             {
               "boxShadow": "none",
               "widgetName": "BtnKDBewaar",
-              "onClick": "{{klantUpdateDetail.run(() => { showAlert('Opgeslagen ✓', 'success'); },() => { showAlert('Fout bij opslaan', 'error'); })}}",
+              "onClick": "{{klantUpdateDetail.run(() => { showAlert('Opgeslagen Ô£ô', 'success'); },() => { showAlert('Fout bij opslaan', 'error'); })}}",
               "buttonColor": "#03B365",
               "topRow": 58,
               "bottomRow": 63,
@@ -776,7 +776,7 @@
               ],
               "leftColumn": 22,
               "dynamicBindingPathList": [],
-              "text": "← Terug naar Klanten",
+              "text": "ÔåÉ Terug naar Klanten",
               "isDisabled": false,
               "labelTextSize": "0.875rem",
               "rightColumn": 40,
@@ -1566,7 +1566,7 @@
             {
               "boxShadow": "none",
               "widgetName": "BtnKDBewaar",
-              "onClick": "{{klantUpdateDetail.run(() => { showAlert('Opgeslagen ✓', 'success'); },() => { showAlert('Fout bij opslaan', 'error'); })}}",
+              "onClick": "{{klantUpdateDetail.run(() => { showAlert('Opgeslagen Ô£ô', 'success'); },() => { showAlert('Fout bij opslaan', 'error'); })}}",
               "buttonColor": "#03B365",
               "topRow": 58,
               "bottomRow": 63,
@@ -1613,7 +1613,7 @@
               ],
               "leftColumn": 22,
               "dynamicBindingPathList": [],
-              "text": "← Terug naar Klanten",
+              "text": "ÔåÉ Terug naar Klanten",
               "isDisabled": false,
               "labelTextSize": "0.875rem",
               "rightColumn": 40,

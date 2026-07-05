@@ -1,4 +1,4 @@
-{
+﻿{
   "_id": "69fc3d09c8eed02aabb4c939",
   "applicationId": "69f23d0ae8d23e3922706103",
   "unpublishedPage": {
@@ -620,7 +620,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet deze maand (€)"
+                      "text": "Omzet deze maand (Ôé¼)"
                     },
                     {
                       "widgetName": "Val_CardOmzetMaand",
@@ -720,7 +720,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet YTD (€)"
+                      "text": "Omzet YTD (Ôé¼)"
                     },
                     {
                       "widgetName": "Val_CardOmzetYTD",
@@ -1725,7 +1725,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet deze maand (€)"
+                      "text": "Omzet deze maand (Ôé¼)"
                     },
                     {
                       "widgetName": "Val_CardOmzetMaand",
@@ -1825,7 +1825,7 @@
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "fontSize": "0.875rem",
-                      "text": "Omzet YTD (€)"
+                      "text": "Omzet YTD (Ôé¼)"
                     },
                     {
                       "widgetName": "Val_CardOmzetYTD",
