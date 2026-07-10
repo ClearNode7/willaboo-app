@@ -1,167 +1,157 @@
-{
-  "_id": {
-    "$oid": "69ff8ab2c8eed02aabb4c9d6"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "productDelete",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-05-09T19:27:46.458Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.573Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fdcf5fc8eed02aabb4c9a5",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.producten\nSET deletedon = now()\nWHERE id = '{{tblProducten.selectedRow.id}}'::uuid\n  AND deletedon IS NULL;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "executeOnLoad": false,
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "tblProducten.selectedRow.id"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "deletedAt": {
-      "$date": "2026-05-12T17:25:29.573Z"
-    }
-  },
-  "publishedAction": {
-    "name": "productDelete",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-05-09T19:27:46.458Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.573Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fdcf5fc8eed02aabb4c9a5",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.producten\nSET deletedon = now()\nWHERE id = '{{tblProducten.selectedRow.id}}'::uuid\n  AND deletedon IS NULL;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "executeOnLoad": false,
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "tblProducten.selectedRow.id"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  },
-  "baseId": "69ff8ab2c8eed02aabb4c9d6",
-  "gitSyncId": "69f23d0ae8d23e3922706103_8869ca54-9196-4985-92b0-9ecc30657082",
-  "createdAt": {
-    "$date": "2026-05-09T19:27:46.458Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T17:25:29.573Z"
-  },
-  "deleted": true,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": {
-    "$date": "2026-05-12T17:25:35.949Z"
-  }
+﻿{
+    "_id":  "69ff8ab2c8eed02aabb4c9d6",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "productDelete",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "createdAt":  "2026-05-09T19:27:46.458Z",
+                                                 "updatedAt":  "2026-05-12T17:25:29.573Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69fdcf5fc8eed02aabb4c9a5",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "UPDATE public.producten\nSET deletedon = now()\nWHERE id = \u0027{{tblProducten.selectedRow.id}}\u0027::uuid\n  AND deletedon IS NULL;",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "executeOnLoad":  false,
+                              "runBehaviour":  "MANUAL",
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "tblProducten.selectedRow.id"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "deletedAt":  "2026-05-12T17:25:29.573Z"
+                          },
+    "publishedAction":  {
+                            "name":  "productDelete",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "createdAt":  "2026-05-09T19:27:46.458Z",
+                                               "updatedAt":  "2026-05-12T17:25:29.573Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "69fdcf5fc8eed02aabb4c9a5",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "UPDATE public.producten\nSET deletedon = now()\nWHERE id = \u0027{{tblProducten.selectedRow.id}}\u0027::uuid\n  AND deletedon IS NULL;",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  true
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "executeOnLoad":  false,
+                            "runBehaviour":  "MANUAL",
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "tblProducten.selectedRow.id"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false
+                        },
+    "baseId":  "69ff8ab2c8eed02aabb4c9d6",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_8869ca54-9196-4985-92b0-9ecc30657082",
+    "createdAt":  "2026-05-09T19:27:46.458Z",
+    "updatedAt":  "2026-05-12T17:25:29.573Z",
+    "deleted":  true,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction",
+    "deletedAt":  "2026-05-12T17:25:35.949Z"
 }

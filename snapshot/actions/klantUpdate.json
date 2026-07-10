@@ -1,199 +1,189 @@
-{
-  "_id": {
-    "$oid": "69f726cc65418fc157f17a52"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "klantUpdate",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.437Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69f4a8e70c9a91129f30eb6d",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.klanten SET\n  status        = CAST({{SelectStatus.selectedOptionValue}} AS public.klant_status),\n  bedrijfsnaam  = NULLIF({{InputpBedrijfsnaam.text}}, ''),\n  kvk           = NULLIF({{InputKvk.text}}, ''),\n  btwnummer     = NULLIF({{InputBtwnummer.text}}, ''),\n  titulatuur    = CAST(NULLIF({{SelectTitulatuur.selectedOptionValue}}, '') AS public.titulatuur),\n  initialen     = NULLIF({{InputInitialen.text}}, ''),\n  voornaam      = NULLIF({{InputVoornaam.text}}, ''),\n  tussenvoegsel = NULLIF({{InputTussenvoegsel.text}}, ''),\n  achternaam    = NULLIF({{InputAchternaam.text}}, ''),\n  email         = NULLIF({{InputEmail.text}}, ''),\n  telefoon      = NULLIF({{InputTelefoon.text}}, ''),\n  modifiedon    = NOW(),\n  modifiedby    = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\nRETURNING id;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "InputpBedrijfsnaam.text",
-      "appsmith.user.email",
-      "tblKlanten.selectedRow.id",
-      "InputBtwnummer.text",
-      "SelectTitulatuur.selectedOptionValue",
-      "InputEmail.text",
-      "InputInitialen.text",
-      "InputAchternaam.text",
-      "InputTelefoon.text",
-      "InputVoornaam.text",
-      "InputKvk.text",
-      "InputTussenvoegsel.text",
-      "SelectStatus.selectedOptionValue"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "deletedAt": {
-      "$date": "2026-05-12T17:25:29.437Z"
-    },
-    "createdAt": {
-      "$date": "2026-05-03T10:43:23.968Z"
-    }
-  },
-  "publishedAction": {
-    "name": "klantUpdate",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.437Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69f4a8e70c9a91129f30eb6d",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.klanten SET\n  status        = CAST({{SelectStatus.selectedOptionValue}} AS public.klant_status),\n  bedrijfsnaam  = NULLIF({{InputpBedrijfsnaam.text}}, ''),\n  kvk           = NULLIF({{InputKvk.text}}, ''),\n  btwnummer     = NULLIF({{InputBtwnummer.text}}, ''),\n  titulatuur    = CAST(NULLIF({{SelectTitulatuur.selectedOptionValue}}, '') AS public.titulatuur),\n  initialen     = NULLIF({{InputInitialen.text}}, ''),\n  voornaam      = NULLIF({{InputVoornaam.text}}, ''),\n  tussenvoegsel = NULLIF({{InputTussenvoegsel.text}}, ''),\n  achternaam    = NULLIF({{InputAchternaam.text}}, ''),\n  email         = NULLIF({{InputEmail.text}}, ''),\n  telefoon      = NULLIF({{InputTelefoon.text}}, ''),\n  modifiedon    = NOW(),\n  modifiedby    = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\nRETURNING id;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "InputpBedrijfsnaam.text",
-      "appsmith.user.email",
-      "tblKlanten.selectedRow.id",
-      "InputBtwnummer.text",
-      "SelectTitulatuur.selectedOptionValue",
-      "InputEmail.text",
-      "InputInitialen.text",
-      "InputAchternaam.text",
-      "InputTelefoon.text",
-      "InputVoornaam.text",
-      "InputKvk.text",
-      "InputTussenvoegsel.text",
-      "SelectStatus.selectedOptionValue"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-03T10:43:23.968Z"
-    }
-  },
-  "baseId": "69f726cc65418fc157f17a52",
-  "gitSyncId": "69f23d0ae8d23e3922706103_5ddb57bd-aa88-4c64-8b98-d709a5d09eea",
-  "createdAt": {
-    "$date": "2026-05-03T10:43:23.968Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T17:25:29.437Z"
-  },
-  "deleted": true,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": {
-    "$date": "2026-05-12T17:25:35.949Z"
-  }
+﻿{
+    "_id":  "69f726cc65418fc157f17a52",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "klantUpdate",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-05-12T17:25:29.437Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69f4a8e70c9a91129f30eb6d",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "UPDATE public.klanten SET\n  status        = CAST({{SelectStatus.selectedOptionValue}} AS public.klant_status),\n  bedrijfsnaam  = NULLIF({{InputpBedrijfsnaam.text}}, \u0027\u0027),\n  kvk           = NULLIF({{InputKvk.text}}, \u0027\u0027),\n  btwnummer     = NULLIF({{InputBtwnummer.text}}, \u0027\u0027),\n  titulatuur    = CAST(NULLIF({{SelectTitulatuur.selectedOptionValue}}, \u0027\u0027) AS public.titulatuur),\n  initialen     = NULLIF({{InputInitialen.text}}, \u0027\u0027),\n  voornaam      = NULLIF({{InputVoornaam.text}}, \u0027\u0027),\n  tussenvoegsel = NULLIF({{InputTussenvoegsel.text}}, \u0027\u0027),\n  achternaam    = NULLIF({{InputAchternaam.text}}, \u0027\u0027),\n  email         = NULLIF({{InputEmail.text}}, \u0027\u0027),\n  telefoon      = NULLIF({{InputTelefoon.text}}, \u0027\u0027),\n  modifiedon    = NOW(),\n  modifiedby    = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\nRETURNING id;",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "runBehaviour":  "MANUAL",
+                              "dynamicBindingPathList":  [
+                                                             {
+                                                                 "key":  "body"
+                                                             }
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "InputpBedrijfsnaam.text",
+                                                   "appsmith.user.email",
+                                                   "tblKlanten.selectedRow.id",
+                                                   "InputBtwnummer.text",
+                                                   "SelectTitulatuur.selectedOptionValue",
+                                                   "InputEmail.text",
+                                                   "InputInitialen.text",
+                                                   "InputAchternaam.text",
+                                                   "InputTelefoon.text",
+                                                   "InputVoornaam.text",
+                                                   "InputKvk.text",
+                                                   "InputTussenvoegsel.text",
+                                                   "SelectStatus.selectedOptionValue"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "deletedAt":  "2026-05-12T17:25:29.437Z",
+                              "createdAt":  "2026-05-03T10:43:23.968Z"
+                          },
+    "publishedAction":  {
+                            "name":  "klantUpdate",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-05-12T17:25:29.437Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "69f4a8e70c9a91129f30eb6d",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "UPDATE public.klanten SET\n  status        = CAST({{SelectStatus.selectedOptionValue}} AS public.klant_status),\n  bedrijfsnaam  = NULLIF({{InputpBedrijfsnaam.text}}, \u0027\u0027),\n  kvk           = NULLIF({{InputKvk.text}}, \u0027\u0027),\n  btwnummer     = NULLIF({{InputBtwnummer.text}}, \u0027\u0027),\n  titulatuur    = CAST(NULLIF({{SelectTitulatuur.selectedOptionValue}}, \u0027\u0027) AS public.titulatuur),\n  initialen     = NULLIF({{InputInitialen.text}}, \u0027\u0027),\n  voornaam      = NULLIF({{InputVoornaam.text}}, \u0027\u0027),\n  tussenvoegsel = NULLIF({{InputTussenvoegsel.text}}, \u0027\u0027),\n  achternaam    = NULLIF({{InputAchternaam.text}}, \u0027\u0027),\n  email         = NULLIF({{InputEmail.text}}, \u0027\u0027),\n  telefoon      = NULLIF({{InputTelefoon.text}}, \u0027\u0027),\n  modifiedon    = NOW(),\n  modifiedby    = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\nRETURNING id;",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  true
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "runBehaviour":  "MANUAL",
+                            "dynamicBindingPathList":  [
+                                                           {
+                                                               "key":  "body"
+                                                           }
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "InputpBedrijfsnaam.text",
+                                                 "appsmith.user.email",
+                                                 "tblKlanten.selectedRow.id",
+                                                 "InputBtwnummer.text",
+                                                 "SelectTitulatuur.selectedOptionValue",
+                                                 "InputEmail.text",
+                                                 "InputInitialen.text",
+                                                 "InputAchternaam.text",
+                                                 "InputTelefoon.text",
+                                                 "InputVoornaam.text",
+                                                 "InputKvk.text",
+                                                 "InputTussenvoegsel.text",
+                                                 "SelectStatus.selectedOptionValue"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-03T10:43:23.968Z"
+                        },
+    "baseId":  "69f726cc65418fc157f17a52",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_5ddb57bd-aa88-4c64-8b98-d709a5d09eea",
+    "createdAt":  "2026-05-03T10:43:23.968Z",
+    "updatedAt":  "2026-05-12T17:25:29.437Z",
+    "deleted":  true,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction",
+    "deletedAt":  "2026-05-12T17:25:35.949Z"
 }

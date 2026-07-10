@@ -1,159 +1,161 @@
-{
-  "_id": {
-    "$oid": "6a05da83a02d0a78f9132921"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "recenteOrders",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.494Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fc3d09c8eed02aabb4c939",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "SELECT\n  o.id::text,\n  k.bedrijfsnaam,\n  TO_CHAR(o.createdon, 'DD-MM-YYYY') AS datum,\n  o.status::text,\n  o.volgnummer::text AS referentie\nFROM orders o\nJOIN klanten k ON k.id = o.klant_id\nWHERE o.deletedon IS NULL\nORDER BY o.createdon DESC\nLIMIT 10;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "executeOnLoad": true,
-    "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-14T14:21:55.680Z"
-    }
-  },
-  "publishedAction": {
-    "name": "recenteOrders",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.494Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fc3d09c8eed02aabb4c939",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "SELECT\n  o.id::text,\n  k.bedrijfsnaam,\n  TO_CHAR(o.createdon, 'DD-MM-YYYY') AS datum,\n  o.status::text,\n  o.volgnummer::text AS referentie\nFROM orders o\nJOIN klanten k ON k.id = o.klant_id\nWHERE o.deletedon IS NULL\nORDER BY o.createdon DESC\nLIMIT 10;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "executeOnLoad": true,
-    "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-14T14:21:55.680Z"
-    }
-  },
-  "baseId": "6a05da83a02d0a78f9132921",
-  "gitSyncId": "69f23d0ae8d23e3922706103_4b7e3f96-547a-4add-baaf-c83e4341667c",
-  "createdAt": {
-    "$date": "2026-05-14T14:21:55.680Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.494Z"
-  },
-  "deleted": false,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction"
+﻿{
+    "_id":  "6a05da83a02d0a78f9132921",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "recenteOrders",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-06-12T14:39:47.494Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69fc3d09c8eed02aabb4c939",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "SELECT\n  o.id::text,\n  k.bedrijfsnaam,\n  TO_CHAR(o.createdon, \u0027DD-MM-YYYY\u0027) AS datum,\n  o.status::text,\n  o.volgnummer::text AS referentie\nFROM orders o\nJOIN klanten k ON k.id = o.klant_id\nWHERE o.deletedon IS NULL\nORDER BY o.createdon DESC\nLIMIT 10;",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "executeOnLoad":  true,
+                              "runBehaviour":  "ON_PAGE_LOAD",
+                              "dynamicBindingPathList":  [
+
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "createdAt":  "2026-05-14T14:21:55.680Z"
+                          },
+    "publishedAction":  {
+                            "name":  "recenteOrders",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-06-12T14:39:47.494Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "69fc3d09c8eed02aabb4c939",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "SELECT\n  o.id::text,\n  k.bedrijfsnaam,\n  TO_CHAR(o.createdon, \u0027DD-MM-YYYY\u0027) AS datum,\n  o.status::text,\n  o.volgnummer::text AS referentie\nFROM orders o\nJOIN klanten k ON k.id = o.klant_id\nWHERE o.deletedon IS NULL\nORDER BY o.createdon DESC\nLIMIT 10;",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  true
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "executeOnLoad":  true,
+                            "runBehaviour":  "ON_PAGE_LOAD",
+                            "dynamicBindingPathList":  [
+
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-14T14:21:55.680Z"
+                        },
+    "baseId":  "6a05da83a02d0a78f9132921",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_4b7e3f96-547a-4add-baaf-c83e4341667c",
+    "createdAt":  "2026-05-14T14:21:55.680Z",
+    "updatedAt":  "2026-06-12T14:39:47.494Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
 }

@@ -1,972 +1,1014 @@
-{
-  "_id": {
-    "$oid": "6a05ed47a02d0a78f9132937"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "unpublishedPage": {
-    "name": "Voorraad",
-    "slug": "voorraad",
-    "layouts": [
-      {
-        "_id": {
-          "$oid": "6a05ed47a02d0a78f9132936"
-        },
-        "viewMode": false,
-        "dsl": {
-          "widgetName": "MainContainer",
-          "rightColumn": 19584,
-          "snapColumns": 64,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 3680,
-          "snapRows": 319,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "version": 94,
-          "renderMode": "CANVAS",
-          "isLoading": false,
-          "parentColumnSpace": 1,
-          "leftColumn": 0,
-          "dynamicBindingPathList": [],
-          "children": [
-            {
-              "boxShadow": "none",
-              "widgetName": "txtVoorraadTitel",
-              "topRow": 8,
-              "bottomRow": 12,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 8,
-              "dynamicBindingPathList": [],
-              "text": "Voorraadbeheer",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 16,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "a39bde8436",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "version": 1,
-              "textColor": "#231F20",
-              "responsiveBehavior": "fill",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1.25rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "tblVoorraad",
-              "defaultPageSize": 12,
-              "columnOrder": [
-                "product_naam",
-                "eenheid",
-                "huidige_voorraad",
-                "min_voorraad",
-                "product_id"
-              ],
-              "dynamicPropertyPathList": [
-                {
-                  "key": "tableData"
-                }
-              ],
-              "topRow": 36,
-              "bottomRow": 81,
-              "parentRowSpace": 10,
-              "columnWidthMap": {
-                "product_naam": 220,
-                "eenheid": 100,
-                "huidige_voorraad": 150,
-                "min_voorraad": 140,
-                "product_id": 4672
-              },
-              "isSortable": true,
-              "pageSize": 12,
-              "type": "TABLE_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 8,
-              "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.huidige_voorraad.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.product_id.computedValue"
-                }
-              ],
-              "primaryColumns": {
-                "product_naam": {
-                  "index": 0,
-                  "width": 220,
-                  "id": "product_naam",
-                  "originalId": "product_naam",
-                  "alias": "product_naam",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Product",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": false,
-                  "validation": {}
-                },
-                "eenheid": {
-                  "index": 1,
-                  "width": 100,
-                  "id": "eenheid",
-                  "originalId": "eenheid",
-                  "alias": "eenheid",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Eenheid",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": false,
-                  "validation": {}
-                },
-                "huidige_voorraad": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "huidige_voorraad",
-                  "originalId": "huidige_voorraad",
-                  "alias": "huidige_voorraad",
-                  "horizontalAlignment": "RIGHT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Huidige voorraad",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": false,
-                  "cellBackground": "{{currentRow.huidige_voorraad < currentRow.min_voorraad ? '#FFDEDE' : ''}}",
-                  "dynamicProperties": {
-                    "cellBackground": true
+﻿{
+    "_id":  "6a05ed47a02d0a78f9132937",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "unpublishedPage":  {
+                            "name":  "Voorraad",
+                            "slug":  "voorraad",
+                            "layouts":  [
+                                            {
+                                                "_id":  "6a05ed47a02d0a78f9132936",
+                                                "viewMode":  false,
+                                                "dsl":  {
+                                                            "widgetName":  "MainContainer",
+                                                            "rightColumn":  19584,
+                                                            "snapColumns":  64,
+                                                            "widgetId":  "0",
+                                                            "topRow":  0,
+                                                            "bottomRow":  3680,
+                                                            "snapRows":  319,
+                                                            "parentRowSpace":  1,
+                                                            "type":  "CANVAS_WIDGET",
+                                                            "version":  94,
+                                                            "renderMode":  "CANVAS",
+                                                            "isLoading":  false,
+                                                            "parentColumnSpace":  1,
+                                                            "leftColumn":  0,
+                                                            "dynamicBindingPathList":  [
+
+                                                                                       ],
+                                                            "children":  [
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "txtVoorraadTitel",
+                                                                                 "topRow":  8,
+                                                                                 "bottomRow":  12,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "TEXT_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "overflow":  "NONE",
+                                                                                 "fontFamily":  "System Default",
+                                                                                 "leftColumn":  8,
+                                                                                 "dynamicBindingPathList":  [
+
+                                                                                                            ],
+                                                                                 "text":  "Voorraadbeheer",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "rightColumn":  16,
+                                                                                 "textAlign":  "LEFT",
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "a39bde8436",
+                                                                                 "isVisible":  true,
+                                                                                 "fontStyle":  "BOLD",
+                                                                                 "version":  1,
+                                                                                 "textColor":  "#231F20",
+                                                                                 "responsiveBehavior":  "fill",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "fontSize":  "1.25rem",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "tblVoorraad",
+                                                                                 "defaultPageSize":  12,
+                                                                                 "columnOrder":  [
+                                                                                                     "product_naam",
+                                                                                                     "eenheid",
+                                                                                                     "huidige_voorraad",
+                                                                                                     "min_voorraad",
+                                                                                                     "product_id"
+                                                                                                 ],
+                                                                                 "dynamicPropertyPathList":  [
+                                                                                                                 {
+                                                                                                                     "key":  "tableData"
+                                                                                                                 }
+                                                                                                             ],
+                                                                                 "topRow":  36,
+                                                                                 "bottomRow":  81,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "columnWidthMap":  {
+                                                                                                        "product_naam":  220,
+                                                                                                        "eenheid":  100,
+                                                                                                        "huidige_voorraad":  150,
+                                                                                                        "min_voorraad":  140,
+                                                                                                        "product_id":  4672
+                                                                                                    },
+                                                                                 "isSortable":  true,
+                                                                                 "pageSize":  12,
+                                                                                 "type":  "TABLE_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+
+                                                                                                            ],
+                                                                                 "leftColumn":  8,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "tableData"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "primaryColumns.huidige_voorraad.cellBackground"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "primaryColumns.product_id.computedValue"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "primaryColumns":  {
+                                                                                                        "product_naam":  {
+                                                                                                                             "index":  0,
+                                                                                                                             "width":  220,
+                                                                                                                             "id":  "product_naam",
+                                                                                                                             "originalId":  "product_naam",
+                                                                                                                             "alias":  "product_naam",
+                                                                                                                             "horizontalAlignment":  "LEFT",
+                                                                                                                             "verticalAlignment":  "CENTER",
+                                                                                                                             "columnType":  "text",
+                                                                                                                             "textSize":  "0.875rem",
+                                                                                                                             "enableFilter":  true,
+                                                                                                                             "enableSort":  true,
+                                                                                                                             "isVisible":  true,
+                                                                                                                             "isCellVisible":  true,
+                                                                                                                             "isDerived":  false,
+                                                                                                                             "label":  "Product",
+                                                                                                                             "computedValue":  "",
+                                                                                                                             "sticky":  "",
+                                                                                                                             "isCellEditable":  false,
+                                                                                                                             "validation":  {
+
+                                                                                                                                            }
+                                                                                                                         },
+                                                                                                        "eenheid":  {
+                                                                                                                        "index":  1,
+                                                                                                                        "width":  100,
+                                                                                                                        "id":  "eenheid",
+                                                                                                                        "originalId":  "eenheid",
+                                                                                                                        "alias":  "eenheid",
+                                                                                                                        "horizontalAlignment":  "LEFT",
+                                                                                                                        "verticalAlignment":  "CENTER",
+                                                                                                                        "columnType":  "text",
+                                                                                                                        "textSize":  "0.875rem",
+                                                                                                                        "enableFilter":  true,
+                                                                                                                        "enableSort":  true,
+                                                                                                                        "isVisible":  true,
+                                                                                                                        "isCellVisible":  true,
+                                                                                                                        "isDerived":  false,
+                                                                                                                        "label":  "Eenheid",
+                                                                                                                        "computedValue":  "",
+                                                                                                                        "sticky":  "",
+                                                                                                                        "isCellEditable":  false,
+                                                                                                                        "validation":  {
+
+                                                                                                                                       }
+                                                                                                                    },
+                                                                                                        "huidige_voorraad":  {
+                                                                                                                                 "index":  2,
+                                                                                                                                 "width":  150,
+                                                                                                                                 "id":  "huidige_voorraad",
+                                                                                                                                 "originalId":  "huidige_voorraad",
+                                                                                                                                 "alias":  "huidige_voorraad",
+                                                                                                                                 "horizontalAlignment":  "RIGHT",
+                                                                                                                                 "verticalAlignment":  "CENTER",
+                                                                                                                                 "columnType":  "number",
+                                                                                                                                 "textSize":  "0.875rem",
+                                                                                                                                 "enableFilter":  true,
+                                                                                                                                 "enableSort":  true,
+                                                                                                                                 "isVisible":  true,
+                                                                                                                                 "isCellVisible":  true,
+                                                                                                                                 "isDerived":  false,
+                                                                                                                                 "label":  "Huidige voorraad",
+                                                                                                                                 "computedValue":  "",
+                                                                                                                                 "sticky":  "",
+                                                                                                                                 "isCellEditable":  false,
+                                                                                                                                 "cellBackground":  "{{currentRow.huidige_voorraad \u003c currentRow.min_voorraad ? \u0027#FFDEDE\u0027 : \u0027\u0027}}",
+                                                                                                                                 "dynamicProperties":  {
+                                                                                                                                                           "cellBackground":  true
+                                                                                                                                                       },
+                                                                                                                                 "validation":  {
+
+                                                                                                                                                }
+                                                                                                                             },
+                                                                                                        "min_voorraad":  {
+                                                                                                                             "index":  3,
+                                                                                                                             "width":  140,
+                                                                                                                             "id":  "min_voorraad",
+                                                                                                                             "originalId":  "min_voorraad",
+                                                                                                                             "alias":  "min_voorraad",
+                                                                                                                             "horizontalAlignment":  "RIGHT",
+                                                                                                                             "verticalAlignment":  "CENTER",
+                                                                                                                             "columnType":  "number",
+                                                                                                                             "textSize":  "0.875rem",
+                                                                                                                             "enableFilter":  false,
+                                                                                                                             "enableSort":  true,
+                                                                                                                             "isVisible":  true,
+                                                                                                                             "isCellVisible":  true,
+                                                                                                                             "isDerived":  false,
+                                                                                                                             "label":  "Min. voorraad",
+                                                                                                                             "computedValue":  "",
+                                                                                                                             "sticky":  "",
+                                                                                                                             "isCellEditable":  true,
+                                                                                                                             "validation":  {
+
+                                                                                                                                            }
+                                                                                                                         },
+                                                                                                        "product_id":  {
+                                                                                                                           "allowCellWrapping":  false,
+                                                                                                                           "allowSameOptionsInNewRow":  true,
+                                                                                                                           "index":  0,
+                                                                                                                           "width":  150,
+                                                                                                                           "originalId":  "product_id",
+                                                                                                                           "id":  "product_id",
+                                                                                                                           "alias":  "product_id",
+                                                                                                                           "horizontalAlignment":  "",
+                                                                                                                           "verticalAlignment":  "",
+                                                                                                                           "columnType":  "text",
+                                                                                                                           "textColor":  "",
+                                                                                                                           "textSize":  "",
+                                                                                                                           "fontStyle":  "",
+                                                                                                                           "enableFilter":  true,
+                                                                                                                           "enableSort":  true,
+                                                                                                                           "isVisible":  true,
+                                                                                                                           "isDisabled":  false,
+                                                                                                                           "isCellEditable":  false,
+                                                                                                                           "isEditable":  false,
+                                                                                                                           "isCellVisible":  true,
+                                                                                                                           "isDerived":  false,
+                                                                                                                           "label":  "product_id",
+                                                                                                                           "isSaveVisible":  true,
+                                                                                                                           "isDiscardVisible":  true,
+                                                                                                                           "computedValue":  "{{(() =\u003e { const tableData = tblVoorraad.processedTableData || []; return tableData.length \u003e 0 ? tableData.map((currentRow, currentIndex) =\u003e (currentRow[\"product_id\"])) : product_id })()}}",
+                                                                                                                           "sticky":  "",
+                                                                                                                           "validation":  {
+
+                                                                                                                                          },
+                                                                                                                           "currencyCode":  "USD",
+                                                                                                                           "decimals":  0,
+                                                                                                                           "thousandSeparator":  true,
+                                                                                                                           "notation":  "standard",
+                                                                                                                           "cellBackground":  ""
+                                                                                                                       }
+                                                                                                    },
+                                                                                 "delimiter":  ",",
+                                                                                 "defaultSelectedRowIndex":  0,
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "canFreezeColumn":  false,
+                                                                                 "rightColumn":  45,
+                                                                                 "onSave":  "{{updateDrempel.run(() =\u003e getVoorraad.run(), () =\u003e showAlert(\u0027Fout bij opslaan\u0027, \u0027error\u0027))}}",
+                                                                                 "widgetId":  "e008fcd01b",
+                                                                                 "enableServerSideFiltering":  false,
+                                                                                 "tableData":  "{{getVoorraad.data}}",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  1,
+                                                                                 "totalRecordsCount":  0,
+                                                                                 "isLoading":  false,
+                                                                                 "borderRadius":  "0px",
+                                                                                 "columnUpdatedAt":  {
+                                                                                                         "high":  414,
+                                                                                                         "low":  662741547,
+                                                                                                         "unsigned":  false
+                                                                                                     }
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "txtFormTitel",
+                                                                                 "topRow":  232,
+                                                                                 "bottomRow":  252,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "TEXT_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "overflow":  "NONE",
+                                                                                 "fontFamily":  "System Default",
+                                                                                 "leftColumn":  8,
+                                                                                 "dynamicBindingPathList":  [
+
+                                                                                                            ],
+                                                                                 "text":  "Voorraad toevoegen (inkoop)",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "rightColumn":  140,
+                                                                                 "textAlign":  "LEFT",
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "b52e7130ec",
+                                                                                 "isVisible":  true,
+                                                                                 "fontStyle":  "BOLD",
+                                                                                 "version":  1,
+                                                                                 "textColor":  "#231F20",
+                                                                                 "isLoading":  false,
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "fontSize":  "1.125rem",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "selProduct",
+                                                                                 "dynamicPropertyPathList":  [
+                                                                                                                 {
+                                                                                                                     "key":  "sourceData"
+                                                                                                                 }
+                                                                                                             ],
+                                                                                 "topRow":  260,
+                                                                                 "bottomRow":  292,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "SELECT_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  8,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "sourceData"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "sourceData":  "{{getProductenVoorDropdown.data.map(p =\u003e ({label: p.naam, value: p.id}))}}",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  true,
+                                                                                 "rightColumn":  96,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "b0b1f2bf6a",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "optionValue":  "value",
+                                                                                 "isVisible":  true,
+                                                                                 "label":  "Product",
+                                                                                 "version":  1,
+                                                                                 "isLoading":  false,
+                                                                                 "optionLabel":  "label",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "inpAantal",
+                                                                                 "topRow":  260,
+                                                                                 "bottomRow":  292,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "INPUT_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  104,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "inputType":  "NUMBER",
+                                                                                 "placeholderText":  "bijv. 50",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  true,
+                                                                                 "rightColumn":  176,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "d06d6ed211",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "showStepArrows":  true,
+                                                                                 "isVisible":  true,
+                                                                                 "label":  "Aantal",
+                                                                                 "version":  1,
+                                                                                 "isLoading":  false,
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "inpOpmerking",
+                                                                                 "topRow":  300,
+                                                                                 "bottomRow":  332,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "INPUT_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  8,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "inputType":  "MULTI_LINE_TEXT",
+                                                                                 "placeholderText":  "bijv. Levering week 20",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  false,
+                                                                                 "rightColumn":  176,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "b25556d2ec",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "isVisible":  true,
+                                                                                 "label":  "Opmerking (optioneel)",
+                                                                                 "version":  1,
+                                                                                 "isLoading":  false,
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "btnVoorraadToevoegen",
+                                                                                 "rightColumn":  72,
+                                                                                 "onClick":  "{{insertMutatie.run(() =\u003e { getVoorraad.run(); showAlert(\u0027Voorraad bijgewerkt!\u0027, \u0027success\u0027); }, () =\u003e showAlert(\u0027Fout bij opslaan\u0027, \u0027error\u0027))}}",
+                                                                                 "buttonColor":  "#553DE9",
+                                                                                 "widgetId":  "bfd42625ea",
+                                                                                 "topRow":  340,
+                                                                                 "bottomRow":  360,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "isVisible":  true,
+                                                                                 "type":  "BUTTON_WIDGET",
+                                                                                 "version":  1,
+                                                                                 "recaptchaType":  "V3",
+                                                                                 "isLoading":  false,
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  8,
+                                                                                 "dynamicBindingPathList":  [
+
+                                                                                                            ],
+                                                                                 "borderRadius":  "0px",
+                                                                                 "buttonVariant":  "PRIMARY",
+                                                                                 "text":  "Voorraad toevoegen"
+                                                                             }
+                                                                         ]
+                                                        },
+                                                "layoutOnLoadActions":  [
+                                                                            [
+                                                                                {
+                                                                                    "_id":  "6a05ed5da02d0a78f9132938",
+                                                                                    "name":  "getVoorraad",
+                                                                                    "confirmBeforeExecute":  false,
+                                                                                    "pluginType":  "DB",
+                                                                                    "jsonPathKeys":  [
+
+                                                                                                     ],
+                                                                                    "timeoutInMillisecond":  10000
+                                                                                }
+                                                                            ],
+                                                                            [
+                                                                                {
+                                                                                    "_id":  "6a05ed5da02d0a78f9132939",
+                                                                                    "name":  "getProductenVoorDropdown",
+                                                                                    "confirmBeforeExecute":  false,
+                                                                                    "pluginType":  "DB",
+                                                                                    "jsonPathKeys":  [
+
+                                                                                                     ],
+                                                                                    "timeoutInMillisecond":  10000
+                                                                                }
+                                                                            ]
+                                                                        ],
+                                                "layoutOnLoadActionErrors":  [
+
+                                                                             ],
+                                                "widgetNames":  [
+                                                                    "txtVoorraadTitel",
+                                                                    "btnVoorraadToevoegen",
+                                                                    "tblVoorraad",
+                                                                    "selProduct",
+                                                                    "txtFormTitel",
+                                                                    "inpOpmerking",
+                                                                    "inpAantal",
+                                                                    "MainContainer"
+                                                                ],
+                                                "allOnPageLoadActionNames":  [
+
+                                                                             ],
+                                                "actionsUsedInDynamicBindings":  [
+                                                                                     "getProductenVoorDropdown",
+                                                                                     "getVoorraad"
+                                                                                 ],
+                                                "validOnPageLoadActions":  true
+                                            }
+                                        ],
+                            "deletedAt":  "2026-05-14T17:29:33.837Z"
+                        },
+    "publishedPage":  {
+                          "name":  "Voorraad",
+                          "slug":  "voorraad",
+                          "layouts":  [
+                                          {
+                                              "_id":  "6a05ed47a02d0a78f9132936",
+                                              "viewMode":  false,
+                                              "dsl":  {
+                                                          "widgetName":  "MainContainer",
+                                                          "rightColumn":  4896,
+                                                          "snapColumns":  64,
+                                                          "widgetId":  "0",
+                                                          "topRow":  0,
+                                                          "bottomRow":  3200,
+                                                          "snapRows":  89,
+                                                          "parentRowSpace":  1,
+                                                          "type":  "CANVAS_WIDGET",
+                                                          "version":  94,
+                                                          "renderMode":  "CANVAS",
+                                                          "isLoading":  false,
+                                                          "parentColumnSpace":  1,
+                                                          "leftColumn":  0,
+                                                          "dynamicBindingPathList":  [
+
+                                                                                     ],
+                                                          "children":  [
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "txtVoorraadTitel",
+                                                                               "topRow":  4,
+                                                                               "bottomRow":  20,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "TEXT_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "overflow":  "NONE",
+                                                                               "fontFamily":  "System Default",
+                                                                               "leftColumn":  4,
+                                                                               "dynamicBindingPathList":  [
+
+                                                                                                          ],
+                                                                               "text":  "Voorraadbeheer",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "rightColumn":  120,
+                                                                               "textAlign":  "LEFT",
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "12cdc793d0",
+                                                                               "isVisible":  true,
+                                                                               "fontStyle":  "BOLD",
+                                                                               "version":  1,
+                                                                               "textColor":  "#231F20",
+                                                                               "isLoading":  false,
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "fontSize":  "1.5rem",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "tblVoorraad",
+                                                                               "defaultPageSize":  12,
+                                                                               "columnOrder":  [
+                                                                                                   "product_naam",
+                                                                                                   "eenheid",
+                                                                                                   "huidige_voorraad",
+                                                                                                   "min_voorraad",
+                                                                                                   "product_id"
+                                                                                               ],
+                                                                               "dynamicPropertyPathList":  [
+                                                                                                               {
+                                                                                                                   "key":  "tableData"
+                                                                                                               }
+                                                                                                           ],
+                                                                               "topRow":  28,
+                                                                               "bottomRow":  184,
+                                                                               "parentRowSpace":  10,
+                                                                               "columnWidthMap":  {
+                                                                                                      "product_naam":  220,
+                                                                                                      "eenheid":  100,
+                                                                                                      "huidige_voorraad":  140,
+                                                                                                      "min_voorraad":  140
+                                                                                                  },
+                                                                               "isSortable":  true,
+                                                                               "pageSize":  12,
+                                                                               "type":  "TABLE_WIDGET_V2",
+                                                                               "isEditableCellsValid":  "{{Object.keys(tblVoorraad.updatedRow).length \u003e 0}}",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+
+                                                                                                          ],
+                                                                               "leftColumn":  4,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "tableData"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "primaryColumns.huidige_voorraad.cellBackground"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "primaryColumns.product_id.computedValue"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "primaryColumns":  {
+                                                                                                      "product_naam":  {
+                                                                                                                           "index":  0,
+                                                                                                                           "width":  220,
+                                                                                                                           "id":  "product_naam",
+                                                                                                                           "originalId":  "product_naam",
+                                                                                                                           "alias":  "product_naam",
+                                                                                                                           "horizontalAlignment":  "LEFT",
+                                                                                                                           "verticalAlignment":  "CENTER",
+                                                                                                                           "columnType":  "text",
+                                                                                                                           "textSize":  "0.875rem",
+                                                                                                                           "enableFilter":  true,
+                                                                                                                           "enableSort":  true,
+                                                                                                                           "isVisible":  true,
+                                                                                                                           "isCellVisible":  true,
+                                                                                                                           "isDerived":  false,
+                                                                                                                           "label":  "Product",
+                                                                                                                           "computedValue":  "",
+                                                                                                                           "sticky":  "",
+                                                                                                                           "isCellEditable":  false,
+                                                                                                                           "validation":  {
+
+                                                                                                                                          }
+                                                                                                                       },
+                                                                                                      "eenheid":  {
+                                                                                                                      "index":  1,
+                                                                                                                      "width":  100,
+                                                                                                                      "id":  "eenheid",
+                                                                                                                      "originalId":  "eenheid",
+                                                                                                                      "alias":  "eenheid",
+                                                                                                                      "horizontalAlignment":  "LEFT",
+                                                                                                                      "verticalAlignment":  "CENTER",
+                                                                                                                      "columnType":  "text",
+                                                                                                                      "textSize":  "0.875rem",
+                                                                                                                      "enableFilter":  true,
+                                                                                                                      "enableSort":  true,
+                                                                                                                      "isVisible":  true,
+                                                                                                                      "isCellVisible":  true,
+                                                                                                                      "isDerived":  false,
+                                                                                                                      "label":  "Eenheid",
+                                                                                                                      "computedValue":  "",
+                                                                                                                      "sticky":  "",
+                                                                                                                      "isCellEditable":  false,
+                                                                                                                      "validation":  {
+
+                                                                                                                                     }
+                                                                                                                  },
+                                                                                                      "huidige_voorraad":  {
+                                                                                                                               "index":  2,
+                                                                                                                               "width":  140,
+                                                                                                                               "id":  "huidige_voorraad",
+                                                                                                                               "originalId":  "huidige_voorraad",
+                                                                                                                               "alias":  "huidige_voorraad",
+                                                                                                                               "horizontalAlignment":  "RIGHT",
+                                                                                                                               "verticalAlignment":  "CENTER",
+                                                                                                                               "columnType":  "number",
+                                                                                                                               "textSize":  "0.875rem",
+                                                                                                                               "enableFilter":  true,
+                                                                                                                               "enableSort":  true,
+                                                                                                                               "isVisible":  true,
+                                                                                                                               "isCellVisible":  true,
+                                                                                                                               "isDerived":  false,
+                                                                                                                               "label":  "Huidige voorraad",
+                                                                                                                               "computedValue":  "",
+                                                                                                                               "sticky":  "",
+                                                                                                                               "isCellEditable":  false,
+                                                                                                                               "cellBackground":  "{{currentRow.huidige_voorraad \u003c currentRow.min_voorraad ? \u0027#FFDEDE\u0027 : \u0027\u0027}}",
+                                                                                                                               "dynamicProperties":  {
+                                                                                                                                                         "cellBackground":  true
+                                                                                                                                                     },
+                                                                                                                               "validation":  {
+
+                                                                                                                                              }
+                                                                                                                           },
+                                                                                                      "min_voorraad":  {
+                                                                                                                           "index":  3,
+                                                                                                                           "width":  140,
+                                                                                                                           "id":  "min_voorraad",
+                                                                                                                           "originalId":  "min_voorraad",
+                                                                                                                           "alias":  "min_voorraad",
+                                                                                                                           "horizontalAlignment":  "RIGHT",
+                                                                                                                           "verticalAlignment":  "CENTER",
+                                                                                                                           "columnType":  "number",
+                                                                                                                           "textSize":  "0.875rem",
+                                                                                                                           "enableFilter":  false,
+                                                                                                                           "enableSort":  true,
+                                                                                                                           "isVisible":  true,
+                                                                                                                           "isCellVisible":  true,
+                                                                                                                           "isDerived":  false,
+                                                                                                                           "label":  "Min. voorraad",
+                                                                                                                           "computedValue":  "",
+                                                                                                                           "sticky":  "",
+                                                                                                                           "isCellEditable":  true,
+                                                                                                                           "cellBackground":  "",
+                                                                                                                           "validation":  {
+
+                                                                                                                                          }
+                                                                                                                       },
+                                                                                                      "product_id":  {
+                                                                                                                         "allowCellWrapping":  false,
+                                                                                                                         "allowSameOptionsInNewRow":  true,
+                                                                                                                         "index":  0,
+                                                                                                                         "width":  150,
+                                                                                                                         "originalId":  "product_id",
+                                                                                                                         "id":  "product_id",
+                                                                                                                         "alias":  "product_id",
+                                                                                                                         "horizontalAlignment":  "",
+                                                                                                                         "verticalAlignment":  "",
+                                                                                                                         "columnType":  "text",
+                                                                                                                         "textColor":  "",
+                                                                                                                         "textSize":  "",
+                                                                                                                         "fontStyle":  "",
+                                                                                                                         "enableFilter":  true,
+                                                                                                                         "enableSort":  true,
+                                                                                                                         "isVisible":  true,
+                                                                                                                         "isDisabled":  false,
+                                                                                                                         "isCellEditable":  false,
+                                                                                                                         "isEditable":  false,
+                                                                                                                         "isCellVisible":  true,
+                                                                                                                         "isDerived":  false,
+                                                                                                                         "label":  "product_id",
+                                                                                                                         "isSaveVisible":  true,
+                                                                                                                         "isDiscardVisible":  true,
+                                                                                                                         "computedValue":  "{{(() =\u003e { const tableData = tblVoorraad.processedTableData || []; return tableData.length \u003e 0 ? tableData.map((currentRow, currentIndex) =\u003e (currentRow[\"product_id\"])) : product_id })()}}",
+                                                                                                                         "sticky":  "",
+                                                                                                                         "validation":  {
+
+                                                                                                                                        },
+                                                                                                                         "currencyCode":  "USD",
+                                                                                                                         "decimals":  0,
+                                                                                                                         "thousandSeparator":  true,
+                                                                                                                         "notation":  "standard",
+                                                                                                                         "cellBackground":  ""
+                                                                                                                     }
+                                                                                                  },
+                                                                               "delimiter":  ",",
+                                                                               "defaultSelectedRowIndex":  0,
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "canFreezeColumn":  false,
+                                                                               "rightColumn":  220,
+                                                                               "onSave":  "{{updateDrempel.run(() =\u003e getVoorraad.run(), () =\u003e showAlert(\u0027Fout bij opslaan drempelwaarde\u0027, \u0027error\u0027))}}",
+                                                                               "widgetId":  "bd5a6a5443",
+                                                                               "enableServerSideFiltering":  false,
+                                                                               "tableData":  "{{getVoorraad.data}}",
+                                                                               "isVisible":  true,
+                                                                               "version":  1,
+                                                                               "totalRecordsCount":  0,
+                                                                               "isLoading":  false,
+                                                                               "borderRadius":  "0px",
+                                                                               "columnUpdatedAt":  {
+                                                                                                       "high":  414,
+                                                                                                       "low":  658315365,
+                                                                                                       "unsigned":  false
+                                                                                                   },
+                                                                               "onDiscard":  "{{}}"
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "txtFormTitel",
+                                                                               "topRow":  192,
+                                                                               "bottomRow":  212,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "TEXT_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "overflow":  "NONE",
+                                                                               "fontFamily":  "System Default",
+                                                                               "leftColumn":  4,
+                                                                               "dynamicBindingPathList":  [
+
+                                                                                                          ],
+                                                                               "text":  "Voorraad toevoegen (inkoop)",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "rightColumn":  140,
+                                                                               "textAlign":  "LEFT",
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "6869664016",
+                                                                               "isVisible":  true,
+                                                                               "fontStyle":  "BOLD",
+                                                                               "version":  1,
+                                                                               "textColor":  "#231F20",
+                                                                               "isLoading":  false,
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "fontSize":  "1.125rem",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "selProduct",
+                                                                               "dynamicPropertyPathList":  [
+                                                                                                               {
+                                                                                                                   "key":  "sourceData"
+                                                                                                               }
+                                                                                                           ],
+                                                                               "topRow":  220,
+                                                                               "bottomRow":  252,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "SELECT_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  4,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "sourceData"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "sourceData":  "{{getProductenVoorDropdown.data.map(p =\u003e ({label: p.naam, value: p.id}))}}",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  true,
+                                                                               "rightColumn":  100,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "c38cde7cd9",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "optionValue":  "value",
+                                                                               "isVisible":  true,
+                                                                               "label":  "Product",
+                                                                               "version":  1,
+                                                                               "isLoading":  false,
+                                                                               "optionLabel":  "label",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "inpAantal",
+                                                                               "topRow":  220,
+                                                                               "bottomRow":  252,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "INPUT_WIDGET_V2",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  108,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "inputType":  "NUMBER",
+                                                                               "placeholderText":  "bijv. 50",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  true,
+                                                                               "rightColumn":  180,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "8f516e4c27",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "showStepArrows":  true,
+                                                                               "isVisible":  true,
+                                                                               "label":  "Aantal",
+                                                                               "version":  1,
+                                                                               "isLoading":  false,
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "inpOpmerking",
+                                                                               "topRow":  260,
+                                                                               "bottomRow":  292,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "INPUT_WIDGET_V2",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  4,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "inputType":  "MULTI_LINE_TEXT",
+                                                                               "placeholderText":  "bijv. Levering week 20",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  false,
+                                                                               "rightColumn":  180,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "a5a41547e4",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "isVisible":  true,
+                                                                               "label":  "Opmerking (optioneel)",
+                                                                               "version":  1,
+                                                                               "isLoading":  false,
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "btnVoorraadToevoegen",
+                                                                               "rightColumn":  72,
+                                                                               "onClick":  "{{insertMutatie.run(() =\u003e { getVoorraad.run(); showAlert(\u0027Voorraad bijgewerkt!\u0027, \u0027success\u0027); }, () =\u003e showAlert(\u0027Fout bij opslaan\u0027, \u0027error\u0027))}}",
+                                                                               "buttonColor":  "#553DE9",
+                                                                               "widgetId":  "7984f86315",
+                                                                               "topRow":  300,
+                                                                               "bottomRow":  320,
+                                                                               "parentRowSpace":  10,
+                                                                               "isVisible":  true,
+                                                                               "type":  "BUTTON_WIDGET",
+                                                                               "version":  1,
+                                                                               "recaptchaType":  "V3",
+                                                                               "isLoading":  false,
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  4,
+                                                                               "dynamicBindingPathList":  [
+
+                                                                                                          ],
+                                                                               "borderRadius":  "0px",
+                                                                               "buttonVariant":  "PRIMARY",
+                                                                               "text":  "Voorraad toevoegen"
+                                                                           }
+                                                                       ]
+                                                      },
+                                              "layoutOnLoadActions":  [
+                                                                          [
+                                                                              {
+                                                                                  "_id":  "6a05ed5da02d0a78f9132938",
+                                                                                  "name":  "getVoorraad",
+                                                                                  "confirmBeforeExecute":  false,
+                                                                                  "pluginType":  "DB",
+                                                                                  "jsonPathKeys":  [
+
+                                                                                                   ],
+                                                                                  "timeoutInMillisecond":  10000
+                                                                              }
+                                                                          ],
+                                                                          [
+                                                                              {
+                                                                                  "_id":  "6a05ed5da02d0a78f9132939",
+                                                                                  "name":  "getProductenVoorDropdown",
+                                                                                  "confirmBeforeExecute":  false,
+                                                                                  "pluginType":  "DB",
+                                                                                  "jsonPathKeys":  [
+
+                                                                                                   ],
+                                                                                  "timeoutInMillisecond":  10000
+                                                                              }
+                                                                          ]
+                                                                      ],
+                                              "layoutOnLoadActionErrors":  [
+
+                                                                           ],
+                                              "widgetNames":  [
+                                                                  "txtVoorraadTitel",
+                                                                  "btnVoorraadToevoegen",
+                                                                  "tblVoorraad",
+                                                                  "selProduct",
+                                                                  "txtFormTitel",
+                                                                  "inpOpmerking",
+                                                                  "inpAantal",
+                                                                  "MainContainer"
+                                                              ],
+                                              "allOnPageLoadActionNames":  [
+
+                                                                           ],
+                                              "actionsUsedInDynamicBindings":  [
+                                                                                   "getProductenVoorDropdown",
+                                                                                   "getVoorraad"
+                                                                               ],
+                                              "validOnPageLoadActions":  true
+                                          }
+                                      ]
+                      },
+    "baseId":  "6a05ed47a02d0a78f9132937",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_ef695d85-feb7-4ee8-a37d-49504936b778",
+    "createdAt":  "2026-05-14T15:41:59.946Z",
+    "updatedAt":  "2026-05-14T17:29:33.848Z",
+    "deleted":  true,
+    "policyMap":  {
+                      "read:pages":  {
+                                         "permission":  "read:pages",
+                                         "permissionGroups":  [
+                                                                  "69f23d0ae8d23e39227060ff",
+                                                                  "69f23d0ae8d23e3922706100",
+                                                                  "69f23d0ae8d23e3922706101"
+                                                              ]
+                                     },
+                      "manage:pages":  {
+                                           "permission":  "manage:pages",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "create:pageActions":  {
+                                                 "permission":  "create:pageActions",
+                                                 "permissionGroups":  [
+                                                                          "69f23d0ae8d23e39227060ff",
+                                                                          "69f23d0ae8d23e3922706100"
+                                                                      ]
+                                             },
+                      "delete:pages":  {
+                                           "permission":  "delete:pages",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       }
                   },
-                  "validation": {}
-                },
-                "min_voorraad": {
-                  "index": 3,
-                  "width": 140,
-                  "id": "min_voorraad",
-                  "originalId": "min_voorraad",
-                  "alias": "min_voorraad",
-                  "horizontalAlignment": "RIGHT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textSize": "0.875rem",
-                  "enableFilter": false,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Min. voorraad",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": true,
-                  "validation": {}
-                },
-                "product_id": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "product_id",
-                  "id": "product_id",
-                  "alias": "product_id",
-                  "horizontalAlignment": "",
-                  "verticalAlignment": "",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "product_id",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{(() => { const tableData = tblVoorraad.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"product_id\"])) : product_id })()}}",
-                  "sticky": "",
-                  "validation": {},
-                  "currencyCode": "USD",
-                  "decimals": 0,
-                  "thousandSeparator": true,
-                  "notation": "standard",
-                  "cellBackground": ""
-                }
-              },
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "labelTextSize": "0.875rem",
-              "canFreezeColumn": false,
-              "rightColumn": 45,
-              "onSave": "{{updateDrempel.run(() => getVoorraad.run(), () => showAlert('Fout bij opslaan', 'error'))}}",
-              "widgetId": "e008fcd01b",
-              "enableServerSideFiltering": false,
-              "tableData": "{{getVoorraad.data}}",
-              "isVisible": true,
-              "version": 1,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "columnUpdatedAt": 1778779202091
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "txtFormTitel",
-              "topRow": 232,
-              "bottomRow": 252,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 8,
-              "dynamicBindingPathList": [],
-              "text": "Voorraad toevoegen (inkoop)",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 140,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "b52e7130ec",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "version": 1,
-              "textColor": "#231F20",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1.125rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "selProduct",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "sourceData"
-                }
-              ],
-              "topRow": 260,
-              "bottomRow": 292,
-              "parentRowSpace": 10,
-              "type": "SELECT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 8,
-              "dynamicBindingPathList": [
-                {
-                  "key": "sourceData"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "sourceData": "{{getProductenVoorDropdown.data.map(p => ({label: p.naam, value: p.id}))}}",
-              "labelTextSize": "0.875rem",
-              "isRequired": true,
-              "rightColumn": 96,
-              "dynamicHeight": "FIXED",
-              "widgetId": "b0b1f2bf6a",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "optionValue": "value",
-              "isVisible": true,
-              "label": "Product",
-              "version": 1,
-              "isLoading": false,
-              "optionLabel": "label",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "inpAantal",
-              "topRow": 260,
-              "bottomRow": 292,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 104,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "inputType": "NUMBER",
-              "placeholderText": "bijv. 50",
-              "labelTextSize": "0.875rem",
-              "isRequired": true,
-              "rightColumn": 176,
-              "dynamicHeight": "FIXED",
-              "widgetId": "d06d6ed211",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": true,
-              "isVisible": true,
-              "label": "Aantal",
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "inpOpmerking",
-              "topRow": 300,
-              "bottomRow": 332,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 8,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "bijv. Levering week 20",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 176,
-              "dynamicHeight": "FIXED",
-              "widgetId": "b25556d2ec",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "label": "Opmerking (optioneel)",
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "labelTextSize": "0.875rem",
-              "boxShadow": "none",
-              "widgetName": "btnVoorraadToevoegen",
-              "rightColumn": 72,
-              "onClick": "{{insertMutatie.run(() => { getVoorraad.run(); showAlert('Voorraad bijgewerkt!', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
-              "buttonColor": "#553DE9",
-              "widgetId": "bfd42625ea",
-              "topRow": 340,
-              "bottomRow": 360,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "BUTTON_WIDGET",
-              "version": 1,
-              "recaptchaType": "V3",
-              "isLoading": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 8,
-              "dynamicBindingPathList": [],
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY",
-              "text": "Voorraad toevoegen"
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "_id": {
-                "$oid": "6a05ed5da02d0a78f9132938"
-              },
-              "name": "getVoorraad",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "_id": {
-                "$oid": "6a05ed5da02d0a78f9132939"
-              },
-              "name": "getProductenVoorDropdown",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "widgetNames": [
-          "txtVoorraadTitel",
-          "btnVoorraadToevoegen",
-          "tblVoorraad",
-          "selProduct",
-          "txtFormTitel",
-          "inpOpmerking",
-          "inpAantal",
-          "MainContainer"
-        ],
-        "allOnPageLoadActionNames": [],
-        "actionsUsedInDynamicBindings": [
-          "getProductenVoorDropdown",
-          "getVoorraad"
-        ],
-        "validOnPageLoadActions": true
-      }
-    ],
-    "deletedAt": {
-      "$date": "2026-05-14T17:29:33.837Z"
-    }
-  },
-  "publishedPage": {
-    "name": "Voorraad",
-    "slug": "voorraad",
-    "layouts": [
-      {
-        "_id": {
-          "$oid": "6a05ed47a02d0a78f9132936"
-        },
-        "viewMode": false,
-        "dsl": {
-          "widgetName": "MainContainer",
-          "rightColumn": 4896,
-          "snapColumns": 64,
-          "widgetId": "0",
-          "topRow": 0,
-          "bottomRow": 3200,
-          "snapRows": 89,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "version": 94,
-          "renderMode": "CANVAS",
-          "isLoading": false,
-          "parentColumnSpace": 1,
-          "leftColumn": 0,
-          "dynamicBindingPathList": [],
-          "children": [
-            {
-              "boxShadow": "none",
-              "widgetName": "txtVoorraadTitel",
-              "topRow": 4,
-              "bottomRow": 20,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 4,
-              "dynamicBindingPathList": [],
-              "text": "Voorraadbeheer",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 120,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "12cdc793d0",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "version": 1,
-              "textColor": "#231F20",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1.5rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "tblVoorraad",
-              "defaultPageSize": 12,
-              "columnOrder": [
-                "product_naam",
-                "eenheid",
-                "huidige_voorraad",
-                "min_voorraad",
-                "product_id"
-              ],
-              "dynamicPropertyPathList": [
-                {
-                  "key": "tableData"
-                }
-              ],
-              "topRow": 28,
-              "bottomRow": 184,
-              "parentRowSpace": 10,
-              "columnWidthMap": {
-                "product_naam": 220,
-                "eenheid": 100,
-                "huidige_voorraad": 140,
-                "min_voorraad": 140
-              },
-              "isSortable": true,
-              "pageSize": 12,
-              "type": "TABLE_WIDGET_V2",
-              "isEditableCellsValid": "{{Object.keys(tblVoorraad.updatedRow).length > 0}}",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 4,
-              "dynamicBindingPathList": [
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.huidige_voorraad.cellBackground"
-                },
-                {
-                  "key": "primaryColumns.product_id.computedValue"
-                }
-              ],
-              "primaryColumns": {
-                "product_naam": {
-                  "index": 0,
-                  "width": 220,
-                  "id": "product_naam",
-                  "originalId": "product_naam",
-                  "alias": "product_naam",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Product",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": false,
-                  "validation": {}
-                },
-                "eenheid": {
-                  "index": 1,
-                  "width": 100,
-                  "id": "eenheid",
-                  "originalId": "eenheid",
-                  "alias": "eenheid",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Eenheid",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": false,
-                  "validation": {}
-                },
-                "huidige_voorraad": {
-                  "index": 2,
-                  "width": 140,
-                  "id": "huidige_voorraad",
-                  "originalId": "huidige_voorraad",
-                  "alias": "huidige_voorraad",
-                  "horizontalAlignment": "RIGHT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Huidige voorraad",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": false,
-                  "cellBackground": "{{currentRow.huidige_voorraad < currentRow.min_voorraad ? '#FFDEDE' : ''}}",
-                  "dynamicProperties": {
-                    "cellBackground": true
-                  },
-                  "validation": {}
-                },
-                "min_voorraad": {
-                  "index": 3,
-                  "width": 140,
-                  "id": "min_voorraad",
-                  "originalId": "min_voorraad",
-                  "alias": "min_voorraad",
-                  "horizontalAlignment": "RIGHT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textSize": "0.875rem",
-                  "enableFilter": false,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Min. voorraad",
-                  "computedValue": "",
-                  "sticky": "",
-                  "isCellEditable": true,
-                  "cellBackground": "",
-                  "validation": {}
-                },
-                "product_id": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "product_id",
-                  "id": "product_id",
-                  "alias": "product_id",
-                  "horizontalAlignment": "",
-                  "verticalAlignment": "",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "product_id",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{(() => { const tableData = tblVoorraad.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"product_id\"])) : product_id })()}}",
-                  "sticky": "",
-                  "validation": {},
-                  "currencyCode": "USD",
-                  "decimals": 0,
-                  "thousandSeparator": true,
-                  "notation": "standard",
-                  "cellBackground": ""
-                }
-              },
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "labelTextSize": "0.875rem",
-              "canFreezeColumn": false,
-              "rightColumn": 220,
-              "onSave": "{{updateDrempel.run(() => getVoorraad.run(), () => showAlert('Fout bij opslaan drempelwaarde', 'error'))}}",
-              "widgetId": "bd5a6a5443",
-              "enableServerSideFiltering": false,
-              "tableData": "{{getVoorraad.data}}",
-              "isVisible": true,
-              "version": 1,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "columnUpdatedAt": 1778774775909,
-              "onDiscard": "{{}}"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "txtFormTitel",
-              "topRow": 192,
-              "bottomRow": 212,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 4,
-              "dynamicBindingPathList": [],
-              "text": "Voorraad toevoegen (inkoop)",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 140,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "6869664016",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "version": 1,
-              "textColor": "#231F20",
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1.125rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "selProduct",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "sourceData"
-                }
-              ],
-              "topRow": 220,
-              "bottomRow": 252,
-              "parentRowSpace": 10,
-              "type": "SELECT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 4,
-              "dynamicBindingPathList": [
-                {
-                  "key": "sourceData"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "sourceData": "{{getProductenVoorDropdown.data.map(p => ({label: p.naam, value: p.id}))}}",
-              "labelTextSize": "0.875rem",
-              "isRequired": true,
-              "rightColumn": 100,
-              "dynamicHeight": "FIXED",
-              "widgetId": "c38cde7cd9",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "optionValue": "value",
-              "isVisible": true,
-              "label": "Product",
-              "version": 1,
-              "isLoading": false,
-              "optionLabel": "label",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "inpAantal",
-              "topRow": 220,
-              "bottomRow": 252,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 108,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "inputType": "NUMBER",
-              "placeholderText": "bijv. 50",
-              "labelTextSize": "0.875rem",
-              "isRequired": true,
-              "rightColumn": 180,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8f516e4c27",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": true,
-              "isVisible": true,
-              "label": "Aantal",
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "inpOpmerking",
-              "topRow": 260,
-              "bottomRow": 292,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 4,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "bijv. Levering week 20",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 180,
-              "dynamicHeight": "FIXED",
-              "widgetId": "a5a41547e4",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "label": "Opmerking (optioneel)",
-              "version": 1,
-              "isLoading": false,
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "labelTextSize": "0.875rem",
-              "boxShadow": "none",
-              "widgetName": "btnVoorraadToevoegen",
-              "rightColumn": 72,
-              "onClick": "{{insertMutatie.run(() => { getVoorraad.run(); showAlert('Voorraad bijgewerkt!', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
-              "buttonColor": "#553DE9",
-              "widgetId": "7984f86315",
-              "topRow": 300,
-              "bottomRow": 320,
-              "parentRowSpace": 10,
-              "isVisible": true,
-              "type": "BUTTON_WIDGET",
-              "version": 1,
-              "recaptchaType": "V3",
-              "isLoading": false,
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 4,
-              "dynamicBindingPathList": [],
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY",
-              "text": "Voorraad toevoegen"
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "_id": {
-                "$oid": "6a05ed5da02d0a78f9132938"
-              },
-              "name": "getVoorraad",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "_id": {
-                "$oid": "6a05ed5da02d0a78f9132939"
-              },
-              "name": "getProductenVoorDropdown",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "widgetNames": [
-          "txtVoorraadTitel",
-          "btnVoorraadToevoegen",
-          "tblVoorraad",
-          "selProduct",
-          "txtFormTitel",
-          "inpOpmerking",
-          "inpAantal",
-          "MainContainer"
-        ],
-        "allOnPageLoadActionNames": [],
-        "actionsUsedInDynamicBindings": [
-          "getProductenVoorDropdown",
-          "getVoorraad"
-        ],
-        "validOnPageLoadActions": true
-      }
-    ]
-  },
-  "baseId": "6a05ed47a02d0a78f9132937",
-  "gitSyncId": "69f23d0ae8d23e3922706103_ef695d85-feb7-4ee8-a37d-49504936b778",
-  "createdAt": {
-    "$date": "2026-05-14T15:41:59.946Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-14T17:29:33.848Z"
-  },
-  "deleted": true,
-  "policyMap": {
-    "read:pages": {
-      "permission": "read:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:pages": {
-      "permission": "manage:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "create:pageActions": {
-      "permission": "create:pageActions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:pages": {
-      "permission": "delete:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "delete:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "manage:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "create:pageActions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewPage",
-  "deletedAt": {
-    "$date": "2026-05-14T17:40:36.364Z"
-  }
+    "policies":  [
+                     {
+                         "permission":  "delete:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "manage:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "create:pageActions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewPage",
+    "deletedAt":  "2026-05-14T17:40:36.364Z"
 }

@@ -1,150 +1,142 @@
-{
-  "_id": {
-    "$oid": "69f23ee9e8d23e392270610c"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "InsertQuery",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-04-29T17:24:57.720Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-01T13:23:29.990Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69f23d0ae8d23e3922706105",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "INSERT INTO public.\"klanten\" (\n\t\"id\",\n\t\"bedrijfsnaam\",\n\t\"kvk\",\n\t\"btwnummer\",\n\t\"createdon\",\n\t\"createdby\",\n\t\"deletedon\",\n\t\"deletedby\")\nVALUES (\n\t'{{insert_form.formData.id}}',\n\t'{{insert_form.formData.bedrijfsnaam}}',\n\t'{{insert_form.formData.kvk}}',\n\t'{{insert_form.formData.btwnummer}}',\n\t'{{insert_form.formData.createdon}}',\n\t'{{insert_form.formData.createdby}}',\n\t'{{insert_form.formData.deletedon}}',\n\t'{{insert_form.formData.deletedby}}');",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "insert_form.formData.createdby",
-      "insert_form.formData.deletedby",
-      "insert_form.formData.createdon",
-      "insert_form.formData.deletedon",
-      "insert_form.formData.id",
-      "insert_form.formData.kvk",
-      "insert_form.formData.bedrijfsnaam",
-      "insert_form.formData.btwnummer"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  },
-  "publishedAction": {
-    "datasource": {
-      "createdAt": {
-        "$date": "2026-04-29T17:24:57.720Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-01T13:23:29.990Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  },
-  "baseId": "69f23ee9e8d23e392270610c",
-  "gitSyncId": "69f23d0ae8d23e3922706103_8a8491c4-3672-4b0b-b809-eaa7a1ed70a9",
-  "createdAt": {
-    "$date": "2026-04-29T17:24:57.720Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-01T13:23:29.990Z"
-  },
-  "deleted": false,
-  "deletedAt": {
-    "$date": "2026-05-01T13:23:29.989Z"
-  },
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction"
+﻿{
+    "_id":  "69f23ee9e8d23e392270610c",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "InsertQuery",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "createdAt":  "2026-04-29T17:24:57.720Z",
+                                                 "updatedAt":  "2026-05-01T13:23:29.990Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69f23d0ae8d23e3922706105",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "INSERT INTO public.\"klanten\" (\n\t\"id\",\n\t\"bedrijfsnaam\",\n\t\"kvk\",\n\t\"btwnummer\",\n\t\"createdon\",\n\t\"createdby\",\n\t\"deletedon\",\n\t\"deletedby\")\nVALUES (\n\t\u0027{{insert_form.formData.id}}\u0027,\n\t\u0027{{insert_form.formData.bedrijfsnaam}}\u0027,\n\t\u0027{{insert_form.formData.kvk}}\u0027,\n\t\u0027{{insert_form.formData.btwnummer}}\u0027,\n\t\u0027{{insert_form.formData.createdon}}\u0027,\n\t\u0027{{insert_form.formData.createdby}}\u0027,\n\t\u0027{{insert_form.formData.deletedon}}\u0027,\n\t\u0027{{insert_form.formData.deletedby}}\u0027);",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "runBehaviour":  "MANUAL",
+                              "dynamicBindingPathList":  [
+                                                             {
+                                                                 "key":  "body"
+                                                             }
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "insert_form.formData.createdby",
+                                                   "insert_form.formData.deletedby",
+                                                   "insert_form.formData.createdon",
+                                                   "insert_form.formData.deletedon",
+                                                   "insert_form.formData.id",
+                                                   "insert_form.formData.kvk",
+                                                   "insert_form.formData.bedrijfsnaam",
+                                                   "insert_form.formData.btwnummer"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false
+                          },
+    "publishedAction":  {
+                            "datasource":  {
+                                               "createdAt":  "2026-04-29T17:24:57.720Z",
+                                               "updatedAt":  "2026-05-01T13:23:29.990Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false
+                        },
+    "baseId":  "69f23ee9e8d23e392270610c",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_8a8491c4-3672-4b0b-b809-eaa7a1ed70a9",
+    "createdAt":  "2026-04-29T17:24:57.720Z",
+    "updatedAt":  "2026-05-01T13:23:29.990Z",
+    "deleted":  false,
+    "deletedAt":  "2026-05-01T13:23:29.989Z",
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
 }

@@ -1,149 +1,151 @@
-{
-  "_id": {
-    "$oid": "69fc3d54c8eed02aabb4c93f"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "ordersStats",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.418Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fc3d09c8eed02aabb4c939",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "SELECT\n  COUNT(*) FILTER (WHERE createdon >= CURRENT_DATE) AS vandaag,\n  COUNT(*) FILTER (WHERE createdon >= date_trunc('week', CURRENT_TIMESTAMP)) AS deze_week,\n  COUNT(*) FILTER (WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)) AS deze_maand,\n  (SELECT COUNT(*) FROM klanten\n   WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)\n   AND deletedon IS NULL) AS nieuwe_klanten,\n  COUNT(*) FILTER (WHERE status IN ('concept', 'bevestigd')) AS open_orders,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)\n  )::numeric, 2), 0) AS omzet_maand,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE EXTRACT(YEAR FROM createdon) = EXTRACT(YEAR FROM CURRENT_DATE)\n  )::numeric, 2), 0) AS omzet_ytd,\n  (SELECT COUNT(*) FROM voorraad_per_product_view WHERE huidige_voorraad < 10) AS lage_voorraad\nFROM orders WHERE deletedon IS NULL;"
-    },
-    "executeOnLoad": true,
-    "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-07T07:20:52.331Z"
-    }
-  },
-  "publishedAction": {
-    "name": "ordersStats",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.418Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fc3d09c8eed02aabb4c939",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "SELECT\n  COUNT(*) FILTER (WHERE createdon >= CURRENT_DATE) AS vandaag,\n  COUNT(*) FILTER (WHERE createdon >= date_trunc('week', CURRENT_TIMESTAMP)) AS deze_week,\n  COUNT(*) FILTER (WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)) AS deze_maand,\n  (SELECT COUNT(*) FROM klanten\n   WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)\n   AND deletedon IS NULL) AS nieuwe_klanten,\n  COUNT(*) FILTER (WHERE status IN ('concept', 'bevestigd')) AS open_orders,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE createdon >= date_trunc('month', CURRENT_TIMESTAMP)\n  )::numeric, 2), 0) AS omzet_maand,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE EXTRACT(YEAR FROM createdon) = EXTRACT(YEAR FROM CURRENT_DATE)\n  )::numeric, 2), 0) AS omzet_ytd,\n  (SELECT COUNT(*) FROM voorraad_per_product_view WHERE huidige_voorraad < 10) AS lage_voorraad\nFROM orders WHERE deletedon IS NULL;"
-    },
-    "executeOnLoad": true,
-    "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-07T07:20:52.331Z"
-    }
-  },
-  "baseId": "69fc3d54c8eed02aabb4c93f",
-  "gitSyncId": "69f23d0ae8d23e3922706103_d3629cbd-aac7-4023-9774-4e111e8e580d",
-  "createdAt": {
-    "$date": "2026-05-07T07:20:52.331Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.418Z"
-  },
-  "deleted": false,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction"
+﻿{
+    "_id":  "69fc3d54c8eed02aabb4c93f",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "ordersStats",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-06-12T14:39:47.418Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69fc3d09c8eed02aabb4c939",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "SELECT\n  COUNT(*) FILTER (WHERE createdon \u003e= CURRENT_DATE) AS vandaag,\n  COUNT(*) FILTER (WHERE createdon \u003e= date_trunc(\u0027week\u0027, CURRENT_TIMESTAMP)) AS deze_week,\n  COUNT(*) FILTER (WHERE createdon \u003e= date_trunc(\u0027month\u0027, CURRENT_TIMESTAMP)) AS deze_maand,\n  (SELECT COUNT(*) FROM klanten\n   WHERE createdon \u003e= date_trunc(\u0027month\u0027, CURRENT_TIMESTAMP)\n   AND deletedon IS NULL) AS nieuwe_klanten,\n  COUNT(*) FILTER (WHERE status IN (\u0027concept\u0027, \u0027bevestigd\u0027)) AS open_orders,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE createdon \u003e= date_trunc(\u0027month\u0027, CURRENT_TIMESTAMP)\n  )::numeric, 2), 0) AS omzet_maand,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE EXTRACT(YEAR FROM createdon) = EXTRACT(YEAR FROM CURRENT_DATE)\n  )::numeric, 2), 0) AS omzet_ytd,\n  (SELECT COUNT(*) FROM voorraad_per_product_view WHERE huidige_voorraad \u003c 10) AS lage_voorraad\nFROM orders WHERE deletedon IS NULL;"
+                                                      },
+                              "executeOnLoad":  true,
+                              "runBehaviour":  "ON_PAGE_LOAD",
+                              "dynamicBindingPathList":  [
+
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "createdAt":  "2026-05-07T07:20:52.331Z"
+                          },
+    "publishedAction":  {
+                            "name":  "ordersStats",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-06-12T14:39:47.418Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "69fc3d09c8eed02aabb4c939",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "SELECT\n  COUNT(*) FILTER (WHERE createdon \u003e= CURRENT_DATE) AS vandaag,\n  COUNT(*) FILTER (WHERE createdon \u003e= date_trunc(\u0027week\u0027, CURRENT_TIMESTAMP)) AS deze_week,\n  COUNT(*) FILTER (WHERE createdon \u003e= date_trunc(\u0027month\u0027, CURRENT_TIMESTAMP)) AS deze_maand,\n  (SELECT COUNT(*) FROM klanten\n   WHERE createdon \u003e= date_trunc(\u0027month\u0027, CURRENT_TIMESTAMP)\n   AND deletedon IS NULL) AS nieuwe_klanten,\n  COUNT(*) FILTER (WHERE status IN (\u0027concept\u0027, \u0027bevestigd\u0027)) AS open_orders,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE createdon \u003e= date_trunc(\u0027month\u0027, CURRENT_TIMESTAMP)\n  )::numeric, 2), 0) AS omzet_maand,\n  COALESCE(ROUND(SUM(totaal_incl) FILTER (\n    WHERE EXTRACT(YEAR FROM createdon) = EXTRACT(YEAR FROM CURRENT_DATE)\n  )::numeric, 2), 0) AS omzet_ytd,\n  (SELECT COUNT(*) FROM voorraad_per_product_view WHERE huidige_voorraad \u003c 10) AS lage_voorraad\nFROM orders WHERE deletedon IS NULL;"
+                                                    },
+                            "executeOnLoad":  true,
+                            "runBehaviour":  "ON_PAGE_LOAD",
+                            "dynamicBindingPathList":  [
+
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-07T07:20:52.331Z"
+                        },
+    "baseId":  "69fc3d54c8eed02aabb4c93f",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_d3629cbd-aac7-4023-9774-4e111e8e580d",
+    "createdAt":  "2026-05-07T07:20:52.331Z",
+    "updatedAt":  "2026-06-12T14:39:47.418Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
 }

@@ -1,161 +1,155 @@
-{
-  "_id": {
-    "$oid": "6a2c094ec0934275fd44ba8a"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "orderInsert",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-06-11T17:57:06.044Z"
-      },
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.494Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "6a2c124c87160c133e882bf4",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "INSERT INTO public.orders (klant_id, status, createdby) VALUES ('{{SelectNieuweOrderKlant.selectedOptionValue}}', 'concept', COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)) RETURNING id",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "SelectNieuweOrderKlant.selectedOptionValue",
-      "appsmith.user.email"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  },
-  "baseId": "6a2c094ec0934275fd44ba8a",
-  "gitSyncId": "69f23d0ae8d23e3922706103_e2784dad-6772-4703-81ae-0991211d5beb",
-  "createdAt": {
-    "$date": "2026-06-12T13:27:42.898Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.494Z"
-  },
-  "deleted": false,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "publishedAction": {
-    "name": "orderInsert",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-06-11T17:57:06.044Z"
-      },
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.494Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "6a2c124c87160c133e882bf4",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "INSERT INTO public.orders (klant_id, status, createdby) VALUES ('{{SelectNieuweOrderKlant.selectedOptionValue}}', 'concept', COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)) RETURNING id",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "SelectNieuweOrderKlant.selectedOptionValue",
-      "appsmith.user.email"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  }
+﻿{
+    "_id":  "6a2c094ec0934275fd44ba8a",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "orderInsert",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "createdAt":  "2026-06-11T17:57:06.044Z",
+                                                 "updatedAt":  "2026-06-12T14:39:47.494Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "6a2c124c87160c133e882bf4",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "INSERT INTO public.orders (klant_id, status, createdby) VALUES (\u0027{{SelectNieuweOrderKlant.selectedOptionValue}}\u0027, \u0027concept\u0027, COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)) RETURNING id",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "runBehaviour":  "MANUAL",
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "SelectNieuweOrderKlant.selectedOptionValue",
+                                                   "appsmith.user.email"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false
+                          },
+    "baseId":  "6a2c094ec0934275fd44ba8a",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_e2784dad-6772-4703-81ae-0991211d5beb",
+    "createdAt":  "2026-06-12T13:27:42.898Z",
+    "updatedAt":  "2026-06-12T14:39:47.494Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction",
+    "publishedAction":  {
+                            "name":  "orderInsert",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "createdAt":  "2026-06-11T17:57:06.044Z",
+                                               "updatedAt":  "2026-06-12T14:39:47.494Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "6a2c124c87160c133e882bf4",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "INSERT INTO public.orders (klant_id, status, createdby) VALUES (\u0027{{SelectNieuweOrderKlant.selectedOptionValue}}\u0027, \u0027concept\u0027, COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)) RETURNING id",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  true
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "runBehaviour":  "MANUAL",
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "SelectNieuweOrderKlant.selectedOptionValue",
+                                                 "appsmith.user.email"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false
+                        }
 }

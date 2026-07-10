@@ -1,136 +1,130 @@
-{
-  "_id": {
-    "$oid": "6a060bb7a02d0a78f91329bc"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "_mig2",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": {
-        "$date": "2026-05-14T17:51:51.920Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-14T17:51:52.108Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fb954dc8eed02aabb4c92c",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 30000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "\nCREATE OR REPLACE FUNCTION public.fn_order_bevestigd_voorraad()\nRETURNS trigger LANGUAGE plpgsql SECURITY DEFINER AS $$\nDECLARE al_geboekt integer;\nBEGIN\n    IF NEW.status <> 'bevestigd' OR OLD.status = 'bevestigd' THEN RETURN NEW; END IF;\n    SELECT COUNT(*) INTO al_geboekt FROM public.voorraad_mutaties\n    WHERE order_id = NEW.id AND type = 'uit';\n    IF al_geboekt > 0 THEN RETURN NEW; END IF;\n    INSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\n    SELECT r.product_id, NEW.id, 'uit'::public.voorraad_mutatie_type, -r.aantal,\n           'Automatisch afgeboekt bij bevestiging order #' || NEW.volgnummer,\n           COALESCE(NEW.modifiedby, NEW.createdby)\n    FROM public.order_regels r\n    WHERE r.order_id = NEW.id AND r.deletedon IS NULL;\n    RETURN NEW;\nEND; $$\n",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  },
-  "publishedAction": {
-    "datasource": {
-      "createdAt": {
-        "$date": "2026-05-14T17:51:51.920Z"
-      },
-      "updatedAt": {
-        "$date": "2026-05-14T17:51:52.108Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false
-  },
-  "baseId": "6a060bb7a02d0a78f91329bc",
-  "gitSyncId": "69f23d0ae8d23e3922706103_afe97e17-eb7c-43ba-a4fb-4b61b70d74ba",
-  "createdAt": {
-    "$date": "2026-05-14T17:51:51.920Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-14T17:51:52.108Z"
-  },
-  "deleted": false,
-  "deletedAt": {
-    "$date": "2026-05-14T17:51:52.108Z"
-  },
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction"
+﻿{
+    "_id":  "6a060bb7a02d0a78f91329bc",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "_mig2",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "createdAt":  "2026-05-14T17:51:51.920Z",
+                                                 "updatedAt":  "2026-05-14T17:51:52.108Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69fb954dc8eed02aabb4c92c",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  30000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "\nCREATE OR REPLACE FUNCTION public.fn_order_bevestigd_voorraad()\nRETURNS trigger LANGUAGE plpgsql SECURITY DEFINER AS $$\nDECLARE al_geboekt integer;\nBEGIN\n    IF NEW.status \u003c\u003e \u0027bevestigd\u0027 OR OLD.status = \u0027bevestigd\u0027 THEN RETURN NEW; END IF;\n    SELECT COUNT(*) INTO al_geboekt FROM public.voorraad_mutaties\n    WHERE order_id = NEW.id AND type = \u0027uit\u0027;\n    IF al_geboekt \u003e 0 THEN RETURN NEW; END IF;\n    INSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\n    SELECT r.product_id, NEW.id, \u0027uit\u0027::public.voorraad_mutatie_type, -r.aantal,\n           \u0027Automatisch afgeboekt bij bevestiging order #\u0027 || NEW.volgnummer,\n           COALESCE(NEW.modifiedby, NEW.createdby)\n    FROM public.order_regels r\n    WHERE r.order_id = NEW.id AND r.deletedon IS NULL;\n    RETURN NEW;\nEND; $$\n",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "runBehaviour":  "MANUAL",
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false
+                          },
+    "publishedAction":  {
+                            "datasource":  {
+                                               "createdAt":  "2026-05-14T17:51:51.920Z",
+                                               "updatedAt":  "2026-05-14T17:51:52.108Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false
+                        },
+    "baseId":  "6a060bb7a02d0a78f91329bc",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_afe97e17-eb7c-43ba-a4fb-4b61b70d74ba",
+    "createdAt":  "2026-05-14T17:51:51.920Z",
+    "updatedAt":  "2026-05-14T17:51:52.108Z",
+    "deleted":  false,
+    "deletedAt":  "2026-05-14T17:51:52.108Z",
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
 }

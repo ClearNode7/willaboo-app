@@ -1,177 +1,167 @@
-{
-  "_id": {
-    "$oid": "69f7a14265418fc157f17a62"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "klantDeactivate",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.108Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69f4a8e70c9a91129f30eb6d",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.klanten SET\n  deletedon = NOW(),\n  deletedby = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\n  AND deletedon IS NULL\nRETURNING id;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "appsmith.user.email",
-      "tblKlanten.selectedRow.id"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": true,
-    "deletedAt": {
-      "$date": "2026-05-12T17:25:29.108Z"
-    },
-    "createdAt": {
-      "$date": "2026-05-03T19:25:54.153Z"
-    }
-  },
-  "publishedAction": {
-    "name": "klantDeactivate",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.108Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69f4a8e70c9a91129f30eb6d",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.klanten SET\n  deletedon = NOW(),\n  deletedby = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\n  AND deletedon IS NULL\nRETURNING id;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "appsmith.user.email",
-      "tblKlanten.selectedRow.id"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": true,
-    "createdAt": {
-      "$date": "2026-05-03T19:25:54.153Z"
-    }
-  },
-  "baseId": "69f7a14265418fc157f17a62",
-  "gitSyncId": "69f23d0ae8d23e3922706103_a4221d4f-c9e8-47f1-ae30-d0b8067c5a12",
-  "createdAt": {
-    "$date": "2026-05-03T19:25:54.153Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T17:25:29.108Z"
-  },
-  "deleted": true,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": {
-    "$date": "2026-05-12T17:25:35.949Z"
-  }
+﻿{
+    "_id":  "69f7a14265418fc157f17a62",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "klantDeactivate",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-05-12T17:25:29.108Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69f4a8e70c9a91129f30eb6d",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "UPDATE public.klanten SET\n  deletedon = NOW(),\n  deletedby = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\n  AND deletedon IS NULL\nRETURNING id;",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "runBehaviour":  "MANUAL",
+                              "dynamicBindingPathList":  [
+                                                             {
+                                                                 "key":  "body"
+                                                             }
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "appsmith.user.email",
+                                                   "tblKlanten.selectedRow.id"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  true,
+                              "deletedAt":  "2026-05-12T17:25:29.108Z",
+                              "createdAt":  "2026-05-03T19:25:54.153Z"
+                          },
+    "publishedAction":  {
+                            "name":  "klantDeactivate",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-05-12T17:25:29.108Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "69f4a8e70c9a91129f30eb6d",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "UPDATE public.klanten SET\n  deletedon = NOW(),\n  deletedby = public.profile_id_by_email({{appsmith.user.email}})\nWHERE id = {{tblKlanten.selectedRow.id}}\n  AND deletedon IS NULL\nRETURNING id;",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  true
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "runBehaviour":  "MANUAL",
+                            "dynamicBindingPathList":  [
+                                                           {
+                                                               "key":  "body"
+                                                           }
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "appsmith.user.email",
+                                                 "tblKlanten.selectedRow.id"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  true,
+                            "createdAt":  "2026-05-03T19:25:54.153Z"
+                        },
+    "baseId":  "69f7a14265418fc157f17a62",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_a4221d4f-c9e8-47f1-ae30-d0b8067c5a12",
+    "createdAt":  "2026-05-03T19:25:54.153Z",
+    "updatedAt":  "2026-05-12T17:25:29.108Z",
+    "deleted":  true,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction",
+    "deletedAt":  "2026-05-12T17:25:35.949Z"
 }

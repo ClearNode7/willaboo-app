@@ -1,173 +1,167 @@
-{
-  "_id": {
-    "$oid": "6a022ce4a02d0a78f9132884"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "orderRegelInsert",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.500Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "6a022cbaa02d0a78f913287e",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{appsmith.URL.queryParams.orderId}}',\n  '{{SelectNieuwProduct.selectedOptionValue}}',\n  {{InpNieuwAantal.text || 1}},\n  CAST('{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
-    },
-    "executeOnLoad": false,
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
-      "InpNieuwBtw.text || 0",
-      "appsmith.URL.queryParams.orderId",
-      "SelectNieuwProduct.selectedOptionValue",
-      "appsmith.user.email",
-      "InpNieuwAantal.text || 1",
-      "InpNieuwPrijs.text || 0"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-11T19:24:20.208Z"
-    }
-  },
-  "publishedAction": {
-    "name": "orderRegelInsert",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-06-12T14:39:47.500Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "6a022cbaa02d0a78f913287e",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{appsmith.URL.queryParams.orderId}}',\n  '{{SelectNieuwProduct.selectedOptionValue}}',\n  {{InpNieuwAantal.text || 1}},\n  CAST('{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
-    },
-    "executeOnLoad": false,
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
-      "InpNieuwBtw.text || 0",
-      "appsmith.URL.queryParams.orderId",
-      "SelectNieuwProduct.selectedOptionValue",
-      "appsmith.user.email",
-      "InpNieuwAantal.text || 1",
-      "InpNieuwPrijs.text || 0"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-11T19:24:20.208Z"
-    }
-  },
-  "baseId": "6a022ce4a02d0a78f9132884",
-  "gitSyncId": "69f23d0ae8d23e3922706103_879afb4c-921e-4e12-9022-4e7c96e59eaf",
-  "createdAt": {
-    "$date": "2026-05-11T19:24:20.208Z"
-  },
-  "updatedAt": {
-    "$date": "2026-06-12T14:39:47.500Z"
-  },
-  "deleted": false,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction"
+﻿{
+    "_id":  "6a022ce4a02d0a78f9132884",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "orderRegelInsert",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-06-12T14:39:47.500Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "6a022cbaa02d0a78f913287e",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  \u0027{{appsmith.URL.queryParams.orderId}}\u0027,\n  \u0027{{SelectNieuwProduct.selectedOptionValue}}\u0027,\n  {{InpNieuwAantal.text || 1}},\n  CAST(\u0027{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}\u0027 AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\n)"
+                                                      },
+                              "executeOnLoad":  false,
+                              "runBehaviour":  "MANUAL",
+                              "dynamicBindingPathList":  [
+                                                             {
+                                                                 "key":  "body"
+                                                             }
+                                                         ],
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
+                                                   "InpNieuwBtw.text || 0",
+                                                   "appsmith.URL.queryParams.orderId",
+                                                   "SelectNieuwProduct.selectedOptionValue",
+                                                   "appsmith.user.email",
+                                                   "InpNieuwAantal.text || 1",
+                                                   "InpNieuwPrijs.text || 0"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "createdAt":  "2026-05-11T19:24:20.208Z"
+                          },
+    "publishedAction":  {
+                            "name":  "orderRegelInsert",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-06-12T14:39:47.500Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "6a022cbaa02d0a78f913287e",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  \u0027{{appsmith.URL.queryParams.orderId}}\u0027,\n  \u0027{{SelectNieuwProduct.selectedOptionValue}}\u0027,\n  {{InpNieuwAantal.text || 1}},\n  CAST(\u0027{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}\u0027 AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email(\u0027{{appsmith.user.email}}\u0027), \u002700000000-0000-0000-0000-000000000001\u0027::uuid)\n)"
+                                                    },
+                            "executeOnLoad":  false,
+                            "runBehaviour":  "MANUAL",
+                            "dynamicBindingPathList":  [
+                                                           {
+                                                               "key":  "body"
+                                                           }
+                                                       ],
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
+                                                 "InpNieuwBtw.text || 0",
+                                                 "appsmith.URL.queryParams.orderId",
+                                                 "SelectNieuwProduct.selectedOptionValue",
+                                                 "appsmith.user.email",
+                                                 "InpNieuwAantal.text || 1",
+                                                 "InpNieuwPrijs.text || 0"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-11T19:24:20.208Z"
+                        },
+    "baseId":  "6a022ce4a02d0a78f9132884",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_879afb4c-921e-4e12-9022-4e7c96e59eaf",
+    "createdAt":  "2026-05-11T19:24:20.208Z",
+    "updatedAt":  "2026-06-12T14:39:47.500Z",
+    "deleted":  false,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction"
 }

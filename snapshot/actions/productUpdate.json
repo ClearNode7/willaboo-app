@@ -1,177 +1,167 @@
-{
-  "_id": {
-    "$oid": "69fdf918c8eed02aabb4c9a8"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "workspaceId": "69f23d0ae8d23e39227060fe",
-  "pluginType": "DB",
-  "pluginId": "69f21d005fbcf7f394507fde",
-  "unpublishedAction": {
-    "name": "productUpdate",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.850Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fdcf5fc8eed02aabb4c9a5",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.producten\nSET naam = '{{InpNaam.text}}',\n    prijs_excl = {{InpPrijs.text}}::numeric,\n    sku = NULLIF('{{InpSku.text}}',''),\n    beschrijving = NULLIF('{{InpBeschrijving.text}}',''),\n    btw_pct = {{SelectBtwPct.selectedOptionValue}}::integer,\n    modifiedon = now()\nWHERE id = '{{tblProducten.selectedRow.id}}'::uuid\n  AND deletedon IS NULL;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "executeOnLoad": false,
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "SelectBtwPct.selectedOptionValue",
-      "tblProducten.selectedRow.id",
-      "InpNaam.text",
-      "InpBeschrijving.text",
-      "InpPrijs.text",
-      "InpSku.text"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "deletedAt": {
-      "$date": "2026-05-12T17:25:29.849Z"
-    },
-    "createdAt": {
-      "$date": "2026-05-08T14:54:16.581Z"
-    }
-  },
-  "publishedAction": {
-    "name": "productUpdate",
-    "datasource": {
-      "_id": {
-        "$oid": "69f23e5ae8d23e3922706106"
-      },
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": {
-        "$date": "2026-05-12T17:25:29.850Z"
-      },
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "69fdcf5fc8eed02aabb4c9a5",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE public.producten\nSET naam = '{{InpNaam.text}}',\n    prijs_excl = {{InpPrijs.text}}::numeric,\n    sku = NULLIF('{{InpSku.text}}',''),\n    beschrijving = NULLIF('{{InpBeschrijving.text}}',''),\n    btw_pct = {{SelectBtwPct.selectedOptionValue}}::integer,\n    modifiedon = now()\nWHERE id = '{{tblProducten.selectedRow.id}}'::uuid\n  AND deletedon IS NULL;",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": true
-        }
-      ]
-    },
-    "executeOnLoad": false,
-    "runBehaviour": "MANUAL",
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "SelectBtwPct.selectedOptionValue",
-      "tblProducten.selectedRow.id",
-      "InpNaam.text",
-      "InpBeschrijving.text",
-      "InpPrijs.text",
-      "InpSku.text"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": {
-      "$date": "2026-05-08T14:54:16.581Z"
-    }
-  },
-  "baseId": "69fdf918c8eed02aabb4c9a8",
-  "gitSyncId": "69f23d0ae8d23e3922706103_d8d25a3c-58d0-423a-93d7-41d8989887dc",
-  "createdAt": {
-    "$date": "2026-05-08T14:54:16.581Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T17:25:29.850Z"
-  },
-  "deleted": true,
-  "policyMap": {
-    "read:actions": {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:actions": {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "execute:actions": {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:actions": {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "manage:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "delete:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "execute:actions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": {
-    "$date": "2026-05-12T17:25:35.949Z"
-  }
+﻿{
+    "_id":  "69fdf918c8eed02aabb4c9a8",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "workspaceId":  "69f23d0ae8d23e39227060fe",
+    "pluginType":  "DB",
+    "pluginId":  "69f21d005fbcf7f394507fde",
+    "unpublishedAction":  {
+                              "name":  "productUpdate",
+                              "datasource":  {
+                                                 "_id":  "69f23e5ae8d23e3922706106",
+                                                 "name":  "Supabase (dev)",
+                                                 "pluginId":  "69f21d005fbcf7f394507fde",
+                                                 "updatedAt":  "2026-05-12T17:25:29.850Z",
+                                                 "deleted":  false,
+                                                 "policyMap":  {
+
+                                                               },
+                                                 "policies":  [
+
+                                                              ]
+                                             },
+                              "pageId":  "69fdcf5fc8eed02aabb4c9a5",
+                              "actionConfiguration":  {
+                                                          "timeoutInMillisecond":  10000,
+                                                          "paginationType":  "NONE",
+                                                          "encodeParamsToggle":  true,
+                                                          "body":  "UPDATE public.producten\nSET naam = \u0027{{InpNaam.text}}\u0027,\n    prijs_excl = {{InpPrijs.text}}::numeric,\n    sku = NULLIF(\u0027{{InpSku.text}}\u0027,\u0027\u0027),\n    beschrijving = NULLIF(\u0027{{InpBeschrijving.text}}\u0027,\u0027\u0027),\n    btw_pct = {{SelectBtwPct.selectedOptionValue}}::integer,\n    modifiedon = now()\nWHERE id = \u0027{{tblProducten.selectedRow.id}}\u0027::uuid\n  AND deletedon IS NULL;",
+                                                          "pluginSpecifiedTemplates":  [
+                                                                                           {
+                                                                                               "value":  true
+                                                                                           }
+                                                                                       ]
+                                                      },
+                              "executeOnLoad":  false,
+                              "runBehaviour":  "MANUAL",
+                              "isValid":  true,
+                              "invalids":  [
+
+                                           ],
+                              "jsonPathKeys":  [
+                                                   "SelectBtwPct.selectedOptionValue",
+                                                   "tblProducten.selectedRow.id",
+                                                   "InpNaam.text",
+                                                   "InpBeschrijving.text",
+                                                   "InpPrijs.text",
+                                                   "InpSku.text"
+                                               ],
+                              "userSetOnLoad":  false,
+                              "confirmBeforeExecute":  false,
+                              "deletedAt":  "2026-05-12T17:25:29.849Z",
+                              "createdAt":  "2026-05-08T14:54:16.581Z"
+                          },
+    "publishedAction":  {
+                            "name":  "productUpdate",
+                            "datasource":  {
+                                               "_id":  "69f23e5ae8d23e3922706106",
+                                               "name":  "Supabase (dev)",
+                                               "pluginId":  "69f21d005fbcf7f394507fde",
+                                               "updatedAt":  "2026-05-12T17:25:29.850Z",
+                                               "deleted":  false,
+                                               "policyMap":  {
+
+                                                             },
+                                               "policies":  [
+
+                                                            ]
+                                           },
+                            "pageId":  "69fdcf5fc8eed02aabb4c9a5",
+                            "actionConfiguration":  {
+                                                        "timeoutInMillisecond":  10000,
+                                                        "paginationType":  "NONE",
+                                                        "encodeParamsToggle":  true,
+                                                        "body":  "UPDATE public.producten\nSET naam = \u0027{{InpNaam.text}}\u0027,\n    prijs_excl = {{InpPrijs.text}}::numeric,\n    sku = NULLIF(\u0027{{InpSku.text}}\u0027,\u0027\u0027),\n    beschrijving = NULLIF(\u0027{{InpBeschrijving.text}}\u0027,\u0027\u0027),\n    btw_pct = {{SelectBtwPct.selectedOptionValue}}::integer,\n    modifiedon = now()\nWHERE id = \u0027{{tblProducten.selectedRow.id}}\u0027::uuid\n  AND deletedon IS NULL;",
+                                                        "pluginSpecifiedTemplates":  [
+                                                                                         {
+                                                                                             "value":  true
+                                                                                         }
+                                                                                     ]
+                                                    },
+                            "executeOnLoad":  false,
+                            "runBehaviour":  "MANUAL",
+                            "isValid":  true,
+                            "invalids":  [
+
+                                         ],
+                            "jsonPathKeys":  [
+                                                 "SelectBtwPct.selectedOptionValue",
+                                                 "tblProducten.selectedRow.id",
+                                                 "InpNaam.text",
+                                                 "InpBeschrijving.text",
+                                                 "InpPrijs.text",
+                                                 "InpSku.text"
+                                             ],
+                            "userSetOnLoad":  false,
+                            "confirmBeforeExecute":  false,
+                            "createdAt":  "2026-05-08T14:54:16.581Z"
+                        },
+    "baseId":  "69fdf918c8eed02aabb4c9a8",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_d8d25a3c-58d0-423a-93d7-41d8989887dc",
+    "createdAt":  "2026-05-08T14:54:16.581Z",
+    "updatedAt":  "2026-05-12T17:25:29.850Z",
+    "deleted":  true,
+    "policyMap":  {
+                      "read:actions":  {
+                                           "permission":  "read:actions",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "delete:actions":  {
+                                             "permission":  "delete:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         },
+                      "execute:actions":  {
+                                              "permission":  "execute:actions",
+                                              "permissionGroups":  [
+                                                                       "69f23d0ae8d23e39227060ff",
+                                                                       "69f23d0ae8d23e3922706100",
+                                                                       "69f23d0ae8d23e3922706101"
+                                                                   ]
+                                          },
+                      "manage:actions":  {
+                                             "permission":  "manage:actions",
+                                             "permissionGroups":  [
+                                                                      "69f23d0ae8d23e39227060ff",
+                                                                      "69f23d0ae8d23e3922706100"
+                                                                  ]
+                                         }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "manage:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "delete:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "execute:actions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewAction",
+    "deletedAt":  "2026-05-12T17:25:35.949Z"
 }

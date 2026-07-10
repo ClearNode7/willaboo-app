@@ -1,942 +1,968 @@
-{
-  "_id": {
-    "$oid": "6a023eada02d0a78f91328e7"
-  },
-  "applicationId": "69f23d0ae8d23e3922706103",
-  "unpublishedPage": {
-    "name": "ProductenDetail",
-    "slug": "productendetail",
-    "layouts": [
-      {
-        "_id": {
-          "$oid": "6a023eada02d0a78f91328e6"
-        },
-        "viewMode": false,
-        "dsl": {
-          "widgetName": "MainContainer",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "pd_root",
-          "topRow": 0,
-          "bottomRow": 1440,
-          "snapRows": 111,
-          "parentRowSpace": 1,
-          "widgetSize": {
-            "height": 0,
-            "width": 0
-          },
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 94,
-          "isLoading": false,
-          "minHeight": 1440,
-          "parentColumnSpace": 1,
-          "leftColumn": 0,
-          "dynamicBindingPathList": [],
-          "children": [
-            {
-              "boxShadow": "none",
-              "widgetName": "TxtPDTitel",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "fontSize"
-                }
-              ],
-              "topRow": 2,
-              "bottomRow": 6,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 2,
-              "dynamicBindingPathList": [],
-              "truncateButtonColor": "#FFC13D",
-              "text": "Productgegevens bewerken",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 62,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "67ddd66f1",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "version": 1,
-              "textColor": "#231F20",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1.5rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "TxtPDNaam",
-              "dynamicPropertyPathList": [],
-              "topRow": 6,
-              "bottomRow": 10,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "text"
-                }
-              ],
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{productGetById.data[0]?.naam || 'Product'}}",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 62,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "883ef16e1",
-              "isVisible": true,
-              "fontStyle": "",
-              "version": 1,
-              "textColor": "#231F20",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDNaam",
-              "dynamicPropertyPathList": [],
-              "topRow": 11,
-              "bottomRow": 16,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 32,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8543ead9d",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "label": "Productnaam",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.naam || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDSku",
-              "dynamicPropertyPathList": [],
-              "topRow": 11,
-              "bottomRow": 16,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 33,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 62,
-              "dynamicHeight": "FIXED",
-              "widgetId": "f1bf451e7",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "label": "Artikelcode (SKU)",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.sku || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDPrijs",
-              "dynamicPropertyPathList": [],
-              "topRow": 17,
-              "bottomRow": 22,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "NUMBER",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 32,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8468c0663",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": true,
-              "label": "Prijs excl. BTW (Ôé¼)",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.prijs_excl || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "SelPDBtwPct",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "sourceData"
-                }
-              ],
-              "topRow": 17,
-              "bottomRow": 22,
-              "parentRowSpace": 10,
-              "type": "SELECT_WIDGET",
-              "serverSideFiltering": false,
-              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( productGetById.data[0]?.btw_pct || 21))(SelPDBtwPct.options, SelPDBtwPct.serverSideFiltering) }}",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 33,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultOptionValue"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "sourceData": [
-                {
-                  "label": "Vrijgesteld 0%",
-                  "value": 0
-                },
-                {
-                  "label": "Laag 9%",
-                  "value": 9
-                },
-                {
-                  "label": "Hoog 21%",
-                  "value": 21
-                }
-              ],
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 62,
-              "dynamicHeight": "FIXED",
-              "widgetId": "875f671fe",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "optionValue": "value",
-              "label": "BTW-tarief",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "optionLabel": "label",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDBeschrijving",
-              "dynamicPropertyPathList": [],
-              "topRow": 23,
-              "bottomRow": 32,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 62,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8e83ef208",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "label": "Beschrijving",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.beschrijving || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "BtnPDBewaar",
-              "onClick": "{{productUpdateDetail.run(() => { showAlert('Opgeslagen Ô£ô', 'success'); },() => { showAlert('Fout bij opslaan', 'error'); })}}",
-              "buttonColor": "#03B365",
-              "topRow": 34,
-              "bottomRow": 39,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 2,
-              "dynamicBindingPathList": [],
-              "text": "Bewaar",
-              "isDisabled": false,
-              "labelTextSize": "0.875rem",
-              "rightColumn": 20,
-              "widgetId": "e9a938775",
-              "isVisible": true,
-              "version": 1,
-              "recaptchaType": "V3",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "BtnPDTerug",
-              "onClick": "{{navigateTo('Producten', {}, 'SAME_WINDOW')}}",
-              "buttonColor": "#6c757d",
-              "topRow": 34,
-              "bottomRow": 39,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 22,
-              "dynamicBindingPathList": [],
-              "text": "ÔåÉ Terug naar Producten",
-              "isDisabled": false,
-              "labelTextSize": "0.875rem",
-              "rightColumn": 40,
-              "widgetId": "62dfb8fcc",
-              "isVisible": true,
-              "version": 1,
-              "recaptchaType": "V3",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY"
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "_id": {
-                "$oid": "6a023eada02d0a78f91328e8"
-              },
-              "name": "productGetById",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.URL.queryParams.productId"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "widgetNames": [
-          "TxtPDTitel",
-          "InpPDPrijs",
-          "InpPDBeschrijving",
-          "InpPDSku",
-          "SelPDBtwPct",
-          "TxtPDNaam",
-          "InpPDNaam",
-          "BtnPDTerug",
-          "MainContainer",
-          "BtnPDBewaar"
-        ],
-        "allOnPageLoadActionNames": [],
-        "actionsUsedInDynamicBindings": [
-          "productGetById"
-        ],
-        "validOnPageLoadActions": true
-      }
-    ],
-    "deletedAt": {
-      "$date": "2026-05-12T06:20:15.099Z"
-    },
-    "isHidden": true
-  },
-  "publishedPage": {
-    "name": "ProductenDetail",
-    "slug": "productendetail",
-    "layouts": [
-      {
-        "_id": {
-          "$oid": "6a023eada02d0a78f91328e6"
-        },
-        "viewMode": false,
-        "dsl": {
-          "widgetName": "MainContainer",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "pd_root",
-          "topRow": 0,
-          "bottomRow": 1440,
-          "snapRows": 111,
-          "parentRowSpace": 1,
-          "widgetSize": {
-            "height": 0,
-            "width": 0
-          },
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "version": 94,
-          "isLoading": false,
-          "minHeight": 1440,
-          "parentColumnSpace": 1,
-          "leftColumn": 0,
-          "dynamicBindingPathList": [],
-          "children": [
-            {
-              "boxShadow": "none",
-              "widgetName": "TxtPDTitel",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "fontSize"
-                }
-              ],
-              "topRow": 2,
-              "bottomRow": 6,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 2,
-              "dynamicBindingPathList": [],
-              "truncateButtonColor": "#FFC13D",
-              "text": "Productgegevens bewerken",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 62,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "67ddd66f1",
-              "isVisible": true,
-              "fontStyle": "BOLD",
-              "version": 1,
-              "textColor": "#231F20",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1.5rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "TxtPDNaam",
-              "dynamicPropertyPathList": [],
-              "topRow": 6,
-              "bottomRow": 10,
-              "parentRowSpace": 10,
-              "type": "TEXT_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "overflow": "NONE",
-              "fontFamily": "System Default",
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "text"
-                }
-              ],
-              "truncateButtonColor": "#FFC13D",
-              "text": "{{productGetById.data[0]?.naam || 'Product'}}",
-              "labelTextSize": "0.875rem",
-              "rightColumn": 62,
-              "textAlign": "LEFT",
-              "dynamicHeight": "FIXED",
-              "widgetId": "883ef16e1",
-              "isVisible": true,
-              "fontStyle": "",
-              "version": 1,
-              "textColor": "#231F20",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDNaam",
-              "dynamicPropertyPathList": [],
-              "topRow": 11,
-              "bottomRow": 16,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 32,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8543ead9d",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "label": "Productnaam",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.naam || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDSku",
-              "dynamicPropertyPathList": [],
-              "topRow": 11,
-              "bottomRow": 16,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 33,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 62,
-              "dynamicHeight": "FIXED",
-              "widgetId": "f1bf451e7",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "label": "Artikelcode (SKU)",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.sku || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDPrijs",
-              "dynamicPropertyPathList": [],
-              "topRow": 17,
-              "bottomRow": 22,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "NUMBER",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 32,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8468c0663",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": true,
-              "label": "Prijs excl. BTW (Ôé¼)",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.prijs_excl || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "SelPDBtwPct",
-              "dynamicPropertyPathList": [
-                {
-                  "key": "sourceData"
-                }
-              ],
-              "topRow": 17,
-              "bottomRow": 22,
-              "parentRowSpace": 10,
-              "type": "SELECT_WIDGET",
-              "serverSideFiltering": false,
-              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( productGetById.data[0]?.btw_pct || 21))(SelPDBtwPct.options, SelPDBtwPct.serverSideFiltering) }}",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 33,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultOptionValue"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "sourceData": [
-                {
-                  "label": "Vrijgesteld 0%",
-                  "value": 0
-                },
-                {
-                  "label": "Laag 9%",
-                  "value": 9
-                },
-                {
-                  "label": "Hoog 21%",
-                  "value": 21
-                }
-              ],
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 62,
-              "dynamicHeight": "FIXED",
-              "widgetId": "875f671fe",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "optionValue": "value",
-              "label": "BTW-tarief",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "optionLabel": "label",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "InpPDBeschrijving",
-              "dynamicPropertyPathList": [],
-              "topRow": 23,
-              "bottomRow": 32,
-              "parentRowSpace": 10,
-              "type": "INPUT_WIDGET_V2",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "leftColumn": 2,
-              "dynamicBindingPathList": [
-                {
-                  "key": "defaultText"
-                },
-                {
-                  "key": "accentColor"
-                }
-              ],
-              "labelPosition": "Top",
-              "inputType": "MULTI_LINE_TEXT",
-              "placeholderText": "",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "rightColumn": 62,
-              "dynamicHeight": "FIXED",
-              "widgetId": "8e83ef208",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "label": "Beschrijving",
-              "isVisible": true,
-              "version": 2,
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "maxDynamicHeight": 9000,
-              "isSpellCheck": false,
-              "defaultText": "{{productGetById.data[0]?.beschrijving || ''}}",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "BtnPDBewaar",
-              "onClick": "{{productUpdateDetail.run(() => { showAlert('Opgeslagen Ô£ô', 'success'); },() => { showAlert('Fout bij opslaan', 'error'); })}}",
-              "buttonColor": "#03B365",
-              "topRow": 34,
-              "bottomRow": 39,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 2,
-              "dynamicBindingPathList": [],
-              "text": "Bewaar",
-              "isDisabled": false,
-              "labelTextSize": "0.875rem",
-              "rightColumn": 20,
-              "widgetId": "e9a938775",
-              "isVisible": true,
-              "version": 1,
-              "recaptchaType": "V3",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY"
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "BtnPDTerug",
-              "onClick": "{{navigateTo('Producten', {}, 'SAME_WINDOW')}}",
-              "buttonColor": "#6c757d",
-              "topRow": 34,
-              "bottomRow": 39,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "animateLoading": true,
-              "parentColumnSpace": 19.125,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 22,
-              "dynamicBindingPathList": [],
-              "text": "ÔåÉ Terug naar Producten",
-              "isDisabled": false,
-              "labelTextSize": "0.875rem",
-              "rightColumn": 40,
-              "widgetId": "62dfb8fcc",
-              "isVisible": true,
-              "version": 1,
-              "recaptchaType": "V3",
-              "parentId": "0",
-              "isLoading": false,
-              "renderMode": "CANVAS",
-              "borderRadius": "0px",
-              "buttonVariant": "PRIMARY"
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "_id": {
-                "$oid": "6a023eada02d0a78f91328e8"
-              },
-              "name": "productGetById",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.URL.queryParams.productId"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "widgetNames": [
-          "TxtPDTitel",
-          "InpPDPrijs",
-          "InpPDBeschrijving",
-          "InpPDSku",
-          "SelPDBtwPct",
-          "TxtPDNaam",
-          "InpPDNaam",
-          "BtnPDTerug",
-          "MainContainer",
-          "BtnPDBewaar"
-        ],
-        "allOnPageLoadActionNames": [],
-        "actionsUsedInDynamicBindings": [
-          "productGetById"
-        ],
-        "validOnPageLoadActions": true
-      }
-    ],
-    "isHidden": true
-  },
-  "baseId": "6a023eada02d0a78f91328e7",
-  "gitSyncId": "69f23d0ae8d23e3922706103_17e6d715-5afe-4750-afd2-0ed496dc103e",
-  "createdAt": {
-    "$date": "2026-05-11T20:40:13.120Z"
-  },
-  "updatedAt": {
-    "$date": "2026-05-12T06:20:15.130Z"
-  },
-  "deleted": true,
-  "policyMap": {
-    "read:pages": {
-      "permission": "read:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    },
-    "manage:pages": {
-      "permission": "manage:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "create:pageActions": {
-      "permission": "create:pageActions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    "delete:pages": {
-      "permission": "delete:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    }
-  },
-  "policies": [
-    {
-      "permission": "delete:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "manage:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "create:pageActions",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100"
-      ]
-    },
-    {
-      "permission": "read:pages",
-      "permissionGroups": [
-        "69f23d0ae8d23e39227060ff",
-        "69f23d0ae8d23e3922706100",
-        "69f23d0ae8d23e3922706101"
-      ]
-    }
-  ],
-  "_class": "com.appsmith.server.domains.NewPage",
-  "deletedAt": {
-    "$date": "2026-05-12T06:21:23.819Z"
-  }
+﻿{
+    "_id":  "6a023eada02d0a78f91328e7",
+    "applicationId":  "69f23d0ae8d23e3922706103",
+    "unpublishedPage":  {
+                            "name":  "ProductenDetail",
+                            "slug":  "productendetail",
+                            "layouts":  [
+                                            {
+                                                "_id":  "6a023eada02d0a78f91328e6",
+                                                "viewMode":  false,
+                                                "dsl":  {
+                                                            "widgetName":  "MainContainer",
+                                                            "rightColumn":  1224,
+                                                            "snapColumns":  64,
+                                                            "detachFromLayout":  true,
+                                                            "widgetId":  "pd_root",
+                                                            "topRow":  0,
+                                                            "bottomRow":  1440,
+                                                            "snapRows":  111,
+                                                            "parentRowSpace":  1,
+                                                            "widgetSize":  {
+                                                                               "height":  0,
+                                                                               "width":  0
+                                                                           },
+                                                            "type":  "CANVAS_WIDGET",
+                                                            "canExtend":  true,
+                                                            "version":  94,
+                                                            "isLoading":  false,
+                                                            "minHeight":  1440,
+                                                            "parentColumnSpace":  1,
+                                                            "leftColumn":  0,
+                                                            "dynamicBindingPathList":  [
+
+                                                                                       ],
+                                                            "children":  [
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "TxtPDTitel",
+                                                                                 "dynamicPropertyPathList":  [
+                                                                                                                 {
+                                                                                                                     "key":  "fontSize"
+                                                                                                                 }
+                                                                                                             ],
+                                                                                 "topRow":  2,
+                                                                                 "bottomRow":  6,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "TEXT_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "overflow":  "NONE",
+                                                                                 "fontFamily":  "System Default",
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+
+                                                                                                            ],
+                                                                                 "truncateButtonColor":  "#FFC13D",
+                                                                                 "text":  "Productgegevens bewerken",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "rightColumn":  62,
+                                                                                 "textAlign":  "LEFT",
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "67ddd66f1",
+                                                                                 "isVisible":  true,
+                                                                                 "fontStyle":  "BOLD",
+                                                                                 "version":  1,
+                                                                                 "textColor":  "#231F20",
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "fontSize":  "1.5rem",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "TxtPDNaam",
+                                                                                 "dynamicPropertyPathList":  [
+
+                                                                                                             ],
+                                                                                 "topRow":  6,
+                                                                                 "bottomRow":  10,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "TEXT_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "overflow":  "NONE",
+                                                                                 "fontFamily":  "System Default",
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "text"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "truncateButtonColor":  "#FFC13D",
+                                                                                 "text":  "{{productGetById.data[0]?.naam || \u0027Product\u0027}}",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "rightColumn":  62,
+                                                                                 "textAlign":  "LEFT",
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "883ef16e1",
+                                                                                 "isVisible":  true,
+                                                                                 "fontStyle":  "",
+                                                                                 "version":  1,
+                                                                                 "textColor":  "#231F20",
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "fontSize":  "1rem",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "InpPDNaam",
+                                                                                 "dynamicPropertyPathList":  [
+
+                                                                                                             ],
+                                                                                 "topRow":  11,
+                                                                                 "bottomRow":  16,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "INPUT_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "defaultText"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "labelPosition":  "Top",
+                                                                                 "inputType":  "MULTI_LINE_TEXT",
+                                                                                 "placeholderText":  "",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  false,
+                                                                                 "rightColumn":  32,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "8543ead9d",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "label":  "Productnaam",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  2,
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "isSpellCheck":  false,
+                                                                                 "defaultText":  "{{productGetById.data[0]?.naam || \u0027\u0027}}",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "InpPDSku",
+                                                                                 "dynamicPropertyPathList":  [
+
+                                                                                                             ],
+                                                                                 "topRow":  11,
+                                                                                 "bottomRow":  16,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "INPUT_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  33,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "defaultText"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "labelPosition":  "Top",
+                                                                                 "inputType":  "MULTI_LINE_TEXT",
+                                                                                 "placeholderText":  "",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  false,
+                                                                                 "rightColumn":  62,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "f1bf451e7",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "label":  "Artikelcode (SKU)",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  2,
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "isSpellCheck":  false,
+                                                                                 "defaultText":  "{{productGetById.data[0]?.sku || \u0027\u0027}}",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "InpPDPrijs",
+                                                                                 "dynamicPropertyPathList":  [
+
+                                                                                                             ],
+                                                                                 "topRow":  17,
+                                                                                 "bottomRow":  22,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "INPUT_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "defaultText"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "labelPosition":  "Top",
+                                                                                 "inputType":  "NUMBER",
+                                                                                 "placeholderText":  "",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  false,
+                                                                                 "rightColumn":  32,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "8468c0663",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "showStepArrows":  true,
+                                                                                 "label":  "Prijs excl. BTW (Ôé¼)",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  2,
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "isSpellCheck":  false,
+                                                                                 "defaultText":  "{{productGetById.data[0]?.prijs_excl || \u0027\u0027}}",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "SelPDBtwPct",
+                                                                                 "dynamicPropertyPathList":  [
+                                                                                                                 {
+                                                                                                                     "key":  "sourceData"
+                                                                                                                 }
+                                                                                                             ],
+                                                                                 "topRow":  17,
+                                                                                 "bottomRow":  22,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "SELECT_WIDGET",
+                                                                                 "serverSideFiltering":  false,
+                                                                                 "defaultOptionValue":  "{{ ((options, serverSideFiltering) =\u003e ( productGetById.data[0]?.btw_pct || 21))(SelPDBtwPct.options, SelPDBtwPct.serverSideFiltering) }}",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  33,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "defaultOptionValue"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "labelPosition":  "Top",
+                                                                                 "sourceData":  [
+                                                                                                    {
+                                                                                                        "label":  "Vrijgesteld 0%",
+                                                                                                        "value":  0
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "label":  "Laag 9%",
+                                                                                                        "value":  9
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "label":  "Hoog 21%",
+                                                                                                        "value":  21
+                                                                                                    }
+                                                                                                ],
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  false,
+                                                                                 "rightColumn":  62,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "875f671fe",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "optionValue":  "value",
+                                                                                 "label":  "BTW-tarief",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  1,
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "optionLabel":  "label",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "InpPDBeschrijving",
+                                                                                 "dynamicPropertyPathList":  [
+
+                                                                                                             ],
+                                                                                 "topRow":  23,
+                                                                                 "bottomRow":  32,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "INPUT_WIDGET_V2",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "defaultText"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "key":  "accentColor"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "labelPosition":  "Top",
+                                                                                 "inputType":  "MULTI_LINE_TEXT",
+                                                                                 "placeholderText":  "",
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "isRequired":  false,
+                                                                                 "rightColumn":  62,
+                                                                                 "dynamicHeight":  "FIXED",
+                                                                                 "widgetId":  "8e83ef208",
+                                                                                 "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                                 "label":  "Beschrijving",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  2,
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "maxDynamicHeight":  9000,
+                                                                                 "isSpellCheck":  false,
+                                                                                 "defaultText":  "{{productGetById.data[0]?.beschrijving || \u0027\u0027}}",
+                                                                                 "minDynamicHeight":  4
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "BtnPDBewaar",
+                                                                                 "onClick":  "{{productUpdateDetail.run(() =\u003e { showAlert(\u0027Opgeslagen Ô£ô\u0027, \u0027success\u0027); },() =\u003e { showAlert(\u0027Fout bij opslaan\u0027, \u0027error\u0027); })}}",
+                                                                                 "buttonColor":  "#03B365",
+                                                                                 "topRow":  34,
+                                                                                 "bottomRow":  39,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "BUTTON_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "onClick"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "leftColumn":  2,
+                                                                                 "dynamicBindingPathList":  [
+
+                                                                                                            ],
+                                                                                 "text":  "Bewaar",
+                                                                                 "isDisabled":  false,
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "rightColumn":  20,
+                                                                                 "widgetId":  "e9a938775",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  1,
+                                                                                 "recaptchaType":  "V3",
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "buttonVariant":  "PRIMARY"
+                                                                             },
+                                                                             {
+                                                                                 "boxShadow":  "none",
+                                                                                 "widgetName":  "BtnPDTerug",
+                                                                                 "onClick":  "{{navigateTo(\u0027Producten\u0027, {}, \u0027SAME_WINDOW\u0027)}}",
+                                                                                 "buttonColor":  "#6c757d",
+                                                                                 "topRow":  34,
+                                                                                 "bottomRow":  39,
+                                                                                 "parentRowSpace":  10,
+                                                                                 "type":  "BUTTON_WIDGET",
+                                                                                 "animateLoading":  true,
+                                                                                 "parentColumnSpace":  19.125,
+                                                                                 "dynamicTriggerPathList":  [
+                                                                                                                {
+                                                                                                                    "key":  "onClick"
+                                                                                                                }
+                                                                                                            ],
+                                                                                 "leftColumn":  22,
+                                                                                 "dynamicBindingPathList":  [
+
+                                                                                                            ],
+                                                                                 "text":  "ÔåÉ Terug naar Producten",
+                                                                                 "isDisabled":  false,
+                                                                                 "labelTextSize":  "0.875rem",
+                                                                                 "rightColumn":  40,
+                                                                                 "widgetId":  "62dfb8fcc",
+                                                                                 "isVisible":  true,
+                                                                                 "version":  1,
+                                                                                 "recaptchaType":  "V3",
+                                                                                 "parentId":  "0",
+                                                                                 "isLoading":  false,
+                                                                                 "renderMode":  "CANVAS",
+                                                                                 "borderRadius":  "0px",
+                                                                                 "buttonVariant":  "PRIMARY"
+                                                                             }
+                                                                         ]
+                                                        },
+                                                "layoutOnLoadActions":  [
+                                                                            [
+                                                                                {
+                                                                                    "_id":  "6a023eada02d0a78f91328e8",
+                                                                                    "name":  "productGetById",
+                                                                                    "confirmBeforeExecute":  false,
+                                                                                    "pluginType":  "DB",
+                                                                                    "jsonPathKeys":  [
+                                                                                                         "appsmith.URL.queryParams.productId"
+                                                                                                     ],
+                                                                                    "timeoutInMillisecond":  10000
+                                                                                }
+                                                                            ]
+                                                                        ],
+                                                "layoutOnLoadActionErrors":  [
+
+                                                                             ],
+                                                "widgetNames":  [
+                                                                    "TxtPDTitel",
+                                                                    "InpPDPrijs",
+                                                                    "InpPDBeschrijving",
+                                                                    "InpPDSku",
+                                                                    "SelPDBtwPct",
+                                                                    "TxtPDNaam",
+                                                                    "InpPDNaam",
+                                                                    "BtnPDTerug",
+                                                                    "MainContainer",
+                                                                    "BtnPDBewaar"
+                                                                ],
+                                                "allOnPageLoadActionNames":  [
+
+                                                                             ],
+                                                "actionsUsedInDynamicBindings":  [
+                                                                                     "productGetById"
+                                                                                 ],
+                                                "validOnPageLoadActions":  true
+                                            }
+                                        ],
+                            "deletedAt":  "2026-05-12T06:20:15.099Z",
+                            "isHidden":  true
+                        },
+    "publishedPage":  {
+                          "name":  "ProductenDetail",
+                          "slug":  "productendetail",
+                          "layouts":  [
+                                          {
+                                              "_id":  "6a023eada02d0a78f91328e6",
+                                              "viewMode":  false,
+                                              "dsl":  {
+                                                          "widgetName":  "MainContainer",
+                                                          "rightColumn":  1224,
+                                                          "snapColumns":  64,
+                                                          "detachFromLayout":  true,
+                                                          "widgetId":  "pd_root",
+                                                          "topRow":  0,
+                                                          "bottomRow":  1440,
+                                                          "snapRows":  111,
+                                                          "parentRowSpace":  1,
+                                                          "widgetSize":  {
+                                                                             "height":  0,
+                                                                             "width":  0
+                                                                         },
+                                                          "type":  "CANVAS_WIDGET",
+                                                          "canExtend":  true,
+                                                          "version":  94,
+                                                          "isLoading":  false,
+                                                          "minHeight":  1440,
+                                                          "parentColumnSpace":  1,
+                                                          "leftColumn":  0,
+                                                          "dynamicBindingPathList":  [
+
+                                                                                     ],
+                                                          "children":  [
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "TxtPDTitel",
+                                                                               "dynamicPropertyPathList":  [
+                                                                                                               {
+                                                                                                                   "key":  "fontSize"
+                                                                                                               }
+                                                                                                           ],
+                                                                               "topRow":  2,
+                                                                               "bottomRow":  6,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "TEXT_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "overflow":  "NONE",
+                                                                               "fontFamily":  "System Default",
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+
+                                                                                                          ],
+                                                                               "truncateButtonColor":  "#FFC13D",
+                                                                               "text":  "Productgegevens bewerken",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "rightColumn":  62,
+                                                                               "textAlign":  "LEFT",
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "67ddd66f1",
+                                                                               "isVisible":  true,
+                                                                               "fontStyle":  "BOLD",
+                                                                               "version":  1,
+                                                                               "textColor":  "#231F20",
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "fontSize":  "1.5rem",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "TxtPDNaam",
+                                                                               "dynamicPropertyPathList":  [
+
+                                                                                                           ],
+                                                                               "topRow":  6,
+                                                                               "bottomRow":  10,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "TEXT_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "overflow":  "NONE",
+                                                                               "fontFamily":  "System Default",
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "text"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "truncateButtonColor":  "#FFC13D",
+                                                                               "text":  "{{productGetById.data[0]?.naam || \u0027Product\u0027}}",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "rightColumn":  62,
+                                                                               "textAlign":  "LEFT",
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "883ef16e1",
+                                                                               "isVisible":  true,
+                                                                               "fontStyle":  "",
+                                                                               "version":  1,
+                                                                               "textColor":  "#231F20",
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "fontSize":  "1rem",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "InpPDNaam",
+                                                                               "dynamicPropertyPathList":  [
+
+                                                                                                           ],
+                                                                               "topRow":  11,
+                                                                               "bottomRow":  16,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "INPUT_WIDGET_V2",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "defaultText"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "labelPosition":  "Top",
+                                                                               "inputType":  "MULTI_LINE_TEXT",
+                                                                               "placeholderText":  "",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  false,
+                                                                               "rightColumn":  32,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "8543ead9d",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "label":  "Productnaam",
+                                                                               "isVisible":  true,
+                                                                               "version":  2,
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "isSpellCheck":  false,
+                                                                               "defaultText":  "{{productGetById.data[0]?.naam || \u0027\u0027}}",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "InpPDSku",
+                                                                               "dynamicPropertyPathList":  [
+
+                                                                                                           ],
+                                                                               "topRow":  11,
+                                                                               "bottomRow":  16,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "INPUT_WIDGET_V2",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  33,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "defaultText"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "labelPosition":  "Top",
+                                                                               "inputType":  "MULTI_LINE_TEXT",
+                                                                               "placeholderText":  "",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  false,
+                                                                               "rightColumn":  62,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "f1bf451e7",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "label":  "Artikelcode (SKU)",
+                                                                               "isVisible":  true,
+                                                                               "version":  2,
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "isSpellCheck":  false,
+                                                                               "defaultText":  "{{productGetById.data[0]?.sku || \u0027\u0027}}",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "InpPDPrijs",
+                                                                               "dynamicPropertyPathList":  [
+
+                                                                                                           ],
+                                                                               "topRow":  17,
+                                                                               "bottomRow":  22,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "INPUT_WIDGET_V2",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "defaultText"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "labelPosition":  "Top",
+                                                                               "inputType":  "NUMBER",
+                                                                               "placeholderText":  "",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  false,
+                                                                               "rightColumn":  32,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "8468c0663",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "showStepArrows":  true,
+                                                                               "label":  "Prijs excl. BTW (Ôé¼)",
+                                                                               "isVisible":  true,
+                                                                               "version":  2,
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "isSpellCheck":  false,
+                                                                               "defaultText":  "{{productGetById.data[0]?.prijs_excl || \u0027\u0027}}",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "SelPDBtwPct",
+                                                                               "dynamicPropertyPathList":  [
+                                                                                                               {
+                                                                                                                   "key":  "sourceData"
+                                                                                                               }
+                                                                                                           ],
+                                                                               "topRow":  17,
+                                                                               "bottomRow":  22,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "SELECT_WIDGET",
+                                                                               "serverSideFiltering":  false,
+                                                                               "defaultOptionValue":  "{{ ((options, serverSideFiltering) =\u003e ( productGetById.data[0]?.btw_pct || 21))(SelPDBtwPct.options, SelPDBtwPct.serverSideFiltering) }}",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  33,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "defaultOptionValue"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "labelPosition":  "Top",
+                                                                               "sourceData":  [
+                                                                                                  {
+                                                                                                      "label":  "Vrijgesteld 0%",
+                                                                                                      "value":  0
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "label":  "Laag 9%",
+                                                                                                      "value":  9
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "label":  "Hoog 21%",
+                                                                                                      "value":  21
+                                                                                                  }
+                                                                                              ],
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  false,
+                                                                               "rightColumn":  62,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "875f671fe",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "optionValue":  "value",
+                                                                               "label":  "BTW-tarief",
+                                                                               "isVisible":  true,
+                                                                               "version":  1,
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "optionLabel":  "label",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "InpPDBeschrijving",
+                                                                               "dynamicPropertyPathList":  [
+
+                                                                                                           ],
+                                                                               "topRow":  23,
+                                                                               "bottomRow":  32,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "INPUT_WIDGET_V2",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "defaultText"
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "key":  "accentColor"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "labelPosition":  "Top",
+                                                                               "inputType":  "MULTI_LINE_TEXT",
+                                                                               "placeholderText":  "",
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "isRequired":  false,
+                                                                               "rightColumn":  62,
+                                                                               "dynamicHeight":  "FIXED",
+                                                                               "widgetId":  "8e83ef208",
+                                                                               "accentColor":  "{{appsmith.theme.colors.primaryColor}}",
+                                                                               "label":  "Beschrijving",
+                                                                               "isVisible":  true,
+                                                                               "version":  2,
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "maxDynamicHeight":  9000,
+                                                                               "isSpellCheck":  false,
+                                                                               "defaultText":  "{{productGetById.data[0]?.beschrijving || \u0027\u0027}}",
+                                                                               "minDynamicHeight":  4
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "BtnPDBewaar",
+                                                                               "onClick":  "{{productUpdateDetail.run(() =\u003e { showAlert(\u0027Opgeslagen Ô£ô\u0027, \u0027success\u0027); },() =\u003e { showAlert(\u0027Fout bij opslaan\u0027, \u0027error\u0027); })}}",
+                                                                               "buttonColor":  "#03B365",
+                                                                               "topRow":  34,
+                                                                               "bottomRow":  39,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "BUTTON_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "onClick"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "leftColumn":  2,
+                                                                               "dynamicBindingPathList":  [
+
+                                                                                                          ],
+                                                                               "text":  "Bewaar",
+                                                                               "isDisabled":  false,
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "rightColumn":  20,
+                                                                               "widgetId":  "e9a938775",
+                                                                               "isVisible":  true,
+                                                                               "version":  1,
+                                                                               "recaptchaType":  "V3",
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "buttonVariant":  "PRIMARY"
+                                                                           },
+                                                                           {
+                                                                               "boxShadow":  "none",
+                                                                               "widgetName":  "BtnPDTerug",
+                                                                               "onClick":  "{{navigateTo(\u0027Producten\u0027, {}, \u0027SAME_WINDOW\u0027)}}",
+                                                                               "buttonColor":  "#6c757d",
+                                                                               "topRow":  34,
+                                                                               "bottomRow":  39,
+                                                                               "parentRowSpace":  10,
+                                                                               "type":  "BUTTON_WIDGET",
+                                                                               "animateLoading":  true,
+                                                                               "parentColumnSpace":  19.125,
+                                                                               "dynamicTriggerPathList":  [
+                                                                                                              {
+                                                                                                                  "key":  "onClick"
+                                                                                                              }
+                                                                                                          ],
+                                                                               "leftColumn":  22,
+                                                                               "dynamicBindingPathList":  [
+
+                                                                                                          ],
+                                                                               "text":  "ÔåÉ Terug naar Producten",
+                                                                               "isDisabled":  false,
+                                                                               "labelTextSize":  "0.875rem",
+                                                                               "rightColumn":  40,
+                                                                               "widgetId":  "62dfb8fcc",
+                                                                               "isVisible":  true,
+                                                                               "version":  1,
+                                                                               "recaptchaType":  "V3",
+                                                                               "parentId":  "0",
+                                                                               "isLoading":  false,
+                                                                               "renderMode":  "CANVAS",
+                                                                               "borderRadius":  "0px",
+                                                                               "buttonVariant":  "PRIMARY"
+                                                                           }
+                                                                       ]
+                                                      },
+                                              "layoutOnLoadActions":  [
+                                                                          [
+                                                                              {
+                                                                                  "_id":  "6a023eada02d0a78f91328e8",
+                                                                                  "name":  "productGetById",
+                                                                                  "confirmBeforeExecute":  false,
+                                                                                  "pluginType":  "DB",
+                                                                                  "jsonPathKeys":  [
+                                                                                                       "appsmith.URL.queryParams.productId"
+                                                                                                   ],
+                                                                                  "timeoutInMillisecond":  10000
+                                                                              }
+                                                                          ]
+                                                                      ],
+                                              "layoutOnLoadActionErrors":  [
+
+                                                                           ],
+                                              "widgetNames":  [
+                                                                  "TxtPDTitel",
+                                                                  "InpPDPrijs",
+                                                                  "InpPDBeschrijving",
+                                                                  "InpPDSku",
+                                                                  "SelPDBtwPct",
+                                                                  "TxtPDNaam",
+                                                                  "InpPDNaam",
+                                                                  "BtnPDTerug",
+                                                                  "MainContainer",
+                                                                  "BtnPDBewaar"
+                                                              ],
+                                              "allOnPageLoadActionNames":  [
+
+                                                                           ],
+                                              "actionsUsedInDynamicBindings":  [
+                                                                                   "productGetById"
+                                                                               ],
+                                              "validOnPageLoadActions":  true
+                                          }
+                                      ],
+                          "isHidden":  true
+                      },
+    "baseId":  "6a023eada02d0a78f91328e7",
+    "gitSyncId":  "69f23d0ae8d23e3922706103_17e6d715-5afe-4750-afd2-0ed496dc103e",
+    "createdAt":  "2026-05-11T20:40:13.120Z",
+    "updatedAt":  "2026-05-12T06:20:15.130Z",
+    "deleted":  true,
+    "policyMap":  {
+                      "read:pages":  {
+                                         "permission":  "read:pages",
+                                         "permissionGroups":  [
+                                                                  "69f23d0ae8d23e39227060ff",
+                                                                  "69f23d0ae8d23e3922706100",
+                                                                  "69f23d0ae8d23e3922706101"
+                                                              ]
+                                     },
+                      "manage:pages":  {
+                                           "permission":  "manage:pages",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       },
+                      "create:pageActions":  {
+                                                 "permission":  "create:pageActions",
+                                                 "permissionGroups":  [
+                                                                          "69f23d0ae8d23e39227060ff",
+                                                                          "69f23d0ae8d23e3922706100"
+                                                                      ]
+                                             },
+                      "delete:pages":  {
+                                           "permission":  "delete:pages",
+                                           "permissionGroups":  [
+                                                                    "69f23d0ae8d23e39227060ff",
+                                                                    "69f23d0ae8d23e3922706100"
+                                                                ]
+                                       }
+                  },
+    "policies":  [
+                     {
+                         "permission":  "delete:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "manage:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "create:pageActions",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100"
+                                              ]
+                     },
+                     {
+                         "permission":  "read:pages",
+                         "permissionGroups":  [
+                                                  "69f23d0ae8d23e39227060ff",
+                                                  "69f23d0ae8d23e3922706100",
+                                                  "69f23d0ae8d23e3922706101"
+                                              ]
+                     }
+                 ],
+    "_class":  "com.appsmith.server.domains.NewPage",
+    "deletedAt":  "2026-05-12T06:21:23.819Z"
 }
