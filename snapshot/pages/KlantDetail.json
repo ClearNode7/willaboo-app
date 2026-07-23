@@ -1,290 +1,276 @@
-﻿{
-    "_id":  "69f4a9070c9a91129f30eb6f",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "unpublishedPage":  {
-                            "name":  "KlantDetail",
-                            "slug":  "klantdetail",
-                            "layouts":  [
-                                            {
-                                                "_id":  "69f4a9070c9a91129f30eb6e",
-                                                "viewMode":  false,
-                                                "dsl":  {
-                                                            "widgetName":  "MainContainer",
-                                                            "backgroundColor":  "none",
-                                                            "rightColumn":  1224,
-                                                            "snapColumns":  64,
-                                                            "detachFromLayout":  true,
-                                                            "widgetId":  "0",
-                                                            "topRow":  0,
-                                                            "bottomRow":  380,
-                                                            "containerStyle":  "none",
-                                                            "snapRows":  111,
-                                                            "parentRowSpace":  1,
-                                                            "type":  "CANVAS_WIDGET",
-                                                            "canExtend":  true,
-                                                            "version":  94,
-                                                            "minHeight":  1130,
-                                                            "parentColumnSpace":  1,
-                                                            "dynamicBindingPathList":  [
-
-                                                                                       ],
-                                                            "leftColumn":  0,
-                                                            "children":  [
-                                                                             {
-                                                                                 "needsErrorInfo":  false,
-                                                                                 "mobileBottomRow":  18,
-                                                                                 "widgetName":  "Title",
-                                                                                 "topRow":  6,
-                                                                                 "bottomRow":  10,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "TEXT_WIDGET",
-                                                                                 "mobileRightColumn":  18,
-                                                                                 "animateLoading":  true,
-                                                                                 "overflow":  "NONE",
-                                                                                 "fontFamily":  "{{appsmith.theme.fontFamily.appFont}}",
-                                                                                 "parentColumnSpace":  30.28125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  4,
-                                                                                 "dynamicBindingPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "truncateButtonColor"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "fontFamily"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "borderRadius"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "shouldTruncate":  false,
-                                                                                 "truncateButtonColor":  "{{appsmith.theme.colors.primaryColor}}",
-                                                                                 "text":  "Klantdetail",
-                                                                                 "key":  "yz3nmchopm",
-                                                                                 "rightColumn":  20,
-                                                                                 "textAlign":  "LEFT",
-                                                                                 "dynamicHeight":  "AUTO_HEIGHT",
-                                                                                 "widgetId":  "h3y1u9ebkr",
-                                                                                 "minWidth":  450,
-                                                                                 "isVisible":  true,
-                                                                                 "fontStyle":  "BOLD",
-                                                                                 "textColor":  "#231F20",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "mobileTopRow":  14,
-                                                                                 "responsiveBehavior":  "fill",
-                                                                                 "originalTopRow":  22,
-                                                                                 "borderRadius":  "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                                                                 "mobileLeftColumn":  2,
-                                                                                 "maxDynamicHeight":  9000,
-                                                                                 "originalBottomRow":  26,
-                                                                                 "fontSize":  "1.25rem",
-                                                                                 "minDynamicHeight":  4
-                                                                             },
-                                                                             {
-                                                                                 "needsErrorInfo":  false,
-                                                                                 "mobileBottomRow":  34,
-                                                                                 "widgetName":  "TextKlantId",
-                                                                                 "topRow":  14,
-                                                                                 "bottomRow":  18,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "TEXT_WIDGET",
-                                                                                 "mobileRightColumn":  23,
-                                                                                 "animateLoading":  true,
-                                                                                 "overflow":  "NONE",
-                                                                                 "fontFamily":  "{{appsmith.theme.fontFamily.appFont}}",
-                                                                                 "parentColumnSpace":  30.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  4,
-                                                                                 "dynamicBindingPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "truncateButtonColor"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "fontFamily"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "borderRadius"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "text"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "shouldTruncate":  false,
-                                                                                 "truncateButtonColor":  "{{appsmith.theme.colors.primaryColor}}",
-                                                                                 "text":  "Klant ID: {{appsmith.URL.queryParams.id}}",
-                                                                                 "key":  "d46a2oofz0",
-                                                                                 "rightColumn":  20,
-                                                                                 "textAlign":  "LEFT",
-                                                                                 "dynamicHeight":  "AUTO_HEIGHT",
-                                                                                 "widgetId":  "b5gltwt1yp",
-                                                                                 "minWidth":  450,
-                                                                                 "isVisible":  true,
-                                                                                 "fontStyle":  "BOLD",
-                                                                                 "textColor":  "#231F20",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "mobileTopRow":  30,
-                                                                                 "responsiveBehavior":  "fill",
-                                                                                 "originalTopRow":  30,
-                                                                                 "borderRadius":  "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                                                                 "mobileLeftColumn":  7,
-                                                                                 "maxDynamicHeight":  9000,
-                                                                                 "originalBottomRow":  34,
-                                                                                 "fontSize":  "1rem",
-                                                                                 "minDynamicHeight":  4
-                                                                             },
-                                                                             {
-                                                                                 "resetFormOnClick":  false,
-                                                                                 "needsErrorInfo":  false,
-                                                                                 "boxShadow":  "none",
-                                                                                 "mobileBottomRow":  42,
-                                                                                 "widgetName":  "btnTerug",
-                                                                                 "onClick":  "{{navigateTo(\u0027Klanten\u0027, {}, \u0027SAME_WINDOW\u0027);}}",
-                                                                                 "buttonColor":  "{{appsmith.theme.colors.primaryColor}}",
-                                                                                 "topRow":  21,
-                                                                                 "bottomRow":  25,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "BUTTON_WIDGET",
-                                                                                 "mobileRightColumn":  23,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  30.125,
-                                                                                 "dynamicTriggerPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "onClick"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "leftColumn":  4,
-                                                                                 "dynamicBindingPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "buttonColor"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "borderRadius"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "text":  "Terug naar klanten",
-                                                                                 "isDisabled":  false,
-                                                                                 "key":  "auo95i1f9f",
-                                                                                 "rightColumn":  11,
-                                                                                 "isDefaultClickDisabled":  true,
-                                                                                 "widgetId":  "pjwbq2aoeq",
-                                                                                 "minWidth":  120,
-                                                                                 "isVisible":  true,
-                                                                                 "recaptchaType":  "V3",
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "mobileTopRow":  38,
-                                                                                 "responsiveBehavior":  "hug",
-                                                                                 "originalTopRow":  38,
-                                                                                 "disabledWhenInvalid":  false,
-                                                                                 "borderRadius":  "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                                                                                 "mobileLeftColumn":  7,
-                                                                                 "originalBottomRow":  42,
-                                                                                 "buttonVariant":  "SECONDARY",
-                                                                                 "placement":  "CENTER"
-                                                                             }
-                                                                         ]
-                                                        },
-                                                "layoutOnLoadActions":  [
-
-                                                                        ],
-                                                "layoutOnLoadActionErrors":  [
-
-                                                                             ],
-                                                "widgetNames":  [
-                                                                    "Title",
-                                                                    "btnTerug",
-                                                                    "TextKlantId",
-                                                                    "MainContainer"
-                                                                ],
-                                                "allOnPageLoadActionNames":  [
-
-                                                                             ],
-                                                "actionsUsedInDynamicBindings":  [
-
-                                                                                 ],
-                                                "validOnPageLoadActions":  true
-                                            }
-                                        ],
-                            "isHidden":  true
-                        },
-    "baseId":  "69f4a9070c9a91129f30eb6f",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_31166e36-b0df-43c4-b1bc-ea29edd1b53a",
-    "createdAt":  "2026-05-01T13:22:15.846Z",
-    "updatedAt":  "2026-05-02T11:37:22.666Z",
-    "deleted":  false,
-    "deletedAt":  "2026-05-02T11:37:22.657Z",
-    "policyMap":  {
-                      "read:pages":  {
-                                         "permission":  "read:pages",
-                                         "permissionGroups":  [
-                                                                  "69f23d0ae8d23e39227060ff",
-                                                                  "69f23d0ae8d23e3922706100",
-                                                                  "69f23d0ae8d23e3922706101"
-                                                              ]
-                                     },
-                      "manage:pages":  {
-                                           "permission":  "manage:pages",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "create:pageActions":  {
-                                                 "permission":  "create:pageActions",
-                                                 "permissionGroups":  [
-                                                                          "69f23d0ae8d23e39227060ff",
-                                                                          "69f23d0ae8d23e3922706100"
-                                                                      ]
-                                             },
-                      "delete:pages":  {
-                                           "permission":  "delete:pages",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "delete:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "manage:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "create:pageActions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewPage"
+{
+  "_id": "69f4a9070c9a91129f30eb6f",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "unpublishedPage": {
+    "name": "KlantDetail",
+    "slug": "klantdetail",
+    "layouts": [
+      {
+        "_id": "69f4a9070c9a91129f30eb6e",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 380,
+          "containerStyle": "none",
+          "snapRows": 111,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 94,
+          "minHeight": 1130,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "needsErrorInfo": false,
+              "mobileBottomRow": 18,
+              "widgetName": "Title",
+              "topRow": 6,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "mobileRightColumn": 18,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 30.28125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 4,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Klantdetail",
+              "key": "yz3nmchopm",
+              "rightColumn": 20,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "h3y1u9ebkr",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 14,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 22,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 2,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 26,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "needsErrorInfo": false,
+              "mobileBottomRow": 34,
+              "widgetName": "TextKlantId",
+              "topRow": 14,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "mobileRightColumn": 23,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 30.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 4,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Klant ID: {{appsmith.URL.queryParams.id}}",
+              "key": "d46a2oofz0",
+              "rightColumn": 20,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "b5gltwt1yp",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 30,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 30,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 7,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 34,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "resetFormOnClick": false,
+              "needsErrorInfo": false,
+              "boxShadow": "none",
+              "mobileBottomRow": 42,
+              "widgetName": "btnTerug",
+              "onClick": "{{navigateTo('Klanten', {}, 'SAME_WINDOW');}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "topRow": 21,
+              "bottomRow": 25,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "mobileRightColumn": 23,
+              "animateLoading": true,
+              "parentColumnSpace": 30.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 4,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Terug naar klanten",
+              "isDisabled": false,
+              "key": "auo95i1f9f",
+              "rightColumn": 11,
+              "isDefaultClickDisabled": true,
+              "widgetId": "pjwbq2aoeq",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 38,
+              "responsiveBehavior": "hug",
+              "originalTopRow": 38,
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 7,
+              "originalBottomRow": 42,
+              "buttonVariant": "SECONDARY",
+              "placement": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "Title",
+          "btnTerug",
+          "TextKlantId",
+          "MainContainer"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [],
+        "validOnPageLoadActions": true
+      }
+    ],
+    "isHidden": true
+  },
+  "baseId": "69f4a9070c9a91129f30eb6f",
+  "gitSyncId": "69f23d0ae8d23e3922706103_31166e36-b0df-43c4-b1bc-ea29edd1b53a",
+  "createdAt": "2026-05-01T13:22:15.846Z",
+  "updatedAt": "2026-05-02T11:37:22.666Z",
+  "deleted": false,
+  "deletedAt": "2026-05-02T11:37:22.657Z",
+  "policyMap": {
+    "read:pages": {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:pages": {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "create:pageActions": {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:pages": {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewPage"
 }

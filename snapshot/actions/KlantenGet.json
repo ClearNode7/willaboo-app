@@ -1,163 +1,151 @@
-﻿{
-    "_id":  "69f4a9a50c9a91129f30eb72",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "KlantenGet",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "updatedAt":  "2026-06-12T14:39:47.404Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69f4a8e70c9a91129f30eb6d",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "SELECT\n  id,\n  weergave_naam,\n  klant_type::text AS klant_type,\n  status::text     AS status,\n  bedrijfsnaam,\n  kvk,\n  btwnummer,\n  geslacht::text   AS geslacht,\n  aanhef,\n  titulatuur,\n  initialen,\n  voornaam,\n  tussenvoegsel,\n  achternaam,\n  email,\n  telefoon,\n  TO_CHAR(createdon, \u0027DD-MM-YYYY HH24:MI\u0027) AS createdon,\n  TO_CHAR(modifiedon, \u0027DD-MM-YYYY HH24:MI\u0027) AS modifiedon\nFROM klanten_view\nWHERE deletedon IS NULL\nAND (\u0027{{selStatus.selectedOptionValue}}\u0027 = \u0027\u0027 OR status::text = \u0027{{selStatus.selectedOptionValue}}\u0027)\nORDER BY weergave_naam",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "ON_PAGE_LOAD",
-                              "dynamicBindingPathList":  [
-                                                             {
-                                                                 "key":  "body"
-                                                             }
-                                                         ],
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-                                                   "selStatus.selectedOptionValue"
-                                               ],
-                              "userSetOnLoad":  true,
-                              "confirmBeforeExecute":  false,
-                              "createdAt":  "2026-05-01T13:24:53.394Z"
-                          },
-    "publishedAction":  {
-                            "name":  "KlantenGet",
-                            "datasource":  {
-                                               "_id":  "69f23e5ae8d23e3922706106",
-                                               "name":  "Supabase (dev)",
-                                               "pluginId":  "69f21d005fbcf7f394507fde",
-                                               "updatedAt":  "2026-06-12T14:39:47.404Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "69f4a8e70c9a91129f30eb6d",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "SELECT\n  id,\n  weergave_naam,\n  klant_type::text AS klant_type,\n  status::text     AS status,\n  bedrijfsnaam,\n  kvk,\n  btwnummer,\n  geslacht::text   AS geslacht,\n  aanhef,\n  titulatuur,\n  initialen,\n  voornaam,\n  tussenvoegsel,\n  achternaam,\n  email,\n  telefoon,\n  TO_CHAR(createdon, \u0027DD-MM-YYYY HH24:MI\u0027) AS createdon,\n  TO_CHAR(modifiedon, \u0027DD-MM-YYYY HH24:MI\u0027) AS modifiedon\nFROM klanten_view\nWHERE deletedon IS NULL\nAND (\u0027{{selStatus.selectedOptionValue}}\u0027 = \u0027\u0027 OR status::text = \u0027{{selStatus.selectedOptionValue}}\u0027)\nORDER BY weergave_naam",
-                                                        "pluginSpecifiedTemplates":  [
-                                                                                         {
-                                                                                             "value":  true
-                                                                                         }
-                                                                                     ]
-                                                    },
-                            "runBehaviour":  "ON_PAGE_LOAD",
-                            "dynamicBindingPathList":  [
-                                                           {
-                                                               "key":  "body"
-                                                           }
-                                                       ],
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-                                                 "selStatus.selectedOptionValue"
-                                             ],
-                            "userSetOnLoad":  true,
-                            "confirmBeforeExecute":  false,
-                            "createdAt":  "2026-05-01T13:24:53.394Z"
-                        },
-    "baseId":  "69f4a9a50c9a91129f30eb72",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_7196435b-2b83-4be8-bb30-ad520dba0fa0",
-    "createdAt":  "2026-05-01T13:24:53.394Z",
-    "updatedAt":  "2026-06-12T14:39:47.404Z",
-    "deleted":  false,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction"
+{
+  "_id": "69f4a9a50c9a91129f30eb72",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "KlantenGet",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-06-12T14:39:47.404Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69f4a8e70c9a91129f30eb6d",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT\n  id,\n  weergave_naam,\n  klant_type::text AS klant_type,\n  status::text     AS status,\n  bedrijfsnaam,\n  kvk,\n  btwnummer,\n  geslacht::text   AS geslacht,\n  aanhef,\n  titulatuur,\n  initialen,\n  voornaam,\n  tussenvoegsel,\n  achternaam,\n  email,\n  telefoon,\n  TO_CHAR(createdon, 'DD-MM-YYYY HH24:MI') AS createdon,\n  TO_CHAR(modifiedon, 'DD-MM-YYYY HH24:MI') AS modifiedon\nFROM klanten_view\nWHERE deletedon IS NULL\nAND ('{{selStatus.selectedOptionValue}}' = '' OR status::text = '{{selStatus.selectedOptionValue}}')\nORDER BY weergave_naam",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "selStatus.selectedOptionValue"
+    ],
+    "userSetOnLoad": true,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-01T13:24:53.394Z"
+  },
+  "publishedAction": {
+    "name": "KlantenGet",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-06-12T14:39:47.404Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69f4a8e70c9a91129f30eb6d",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT\n  id,\n  weergave_naam,\n  klant_type::text AS klant_type,\n  status::text     AS status,\n  bedrijfsnaam,\n  kvk,\n  btwnummer,\n  geslacht::text   AS geslacht,\n  aanhef,\n  titulatuur,\n  initialen,\n  voornaam,\n  tussenvoegsel,\n  achternaam,\n  email,\n  telefoon,\n  TO_CHAR(createdon, 'DD-MM-YYYY HH24:MI') AS createdon,\n  TO_CHAR(modifiedon, 'DD-MM-YYYY HH24:MI') AS modifiedon\nFROM klanten_view\nWHERE deletedon IS NULL\nAND ('{{selStatus.selectedOptionValue}}' = '' OR status::text = '{{selStatus.selectedOptionValue}}')\nORDER BY weergave_naam",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "selStatus.selectedOptionValue"
+    ],
+    "userSetOnLoad": true,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-01T13:24:53.394Z"
+  },
+  "baseId": "69f4a9a50c9a91129f30eb72",
+  "gitSyncId": "69f23d0ae8d23e3922706103_7196435b-2b83-4be8-bb30-ad520dba0fa0",
+  "createdAt": "2026-05-01T13:24:53.394Z",
+  "updatedAt": "2026-06-12T14:39:47.404Z",
+  "deleted": false,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction"
 }

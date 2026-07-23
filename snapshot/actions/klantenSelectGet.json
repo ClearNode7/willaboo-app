@@ -1,153 +1,137 @@
-﻿{
-    "_id":  "6a2c094ec0934275fd44ba89",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "klantenSelectGet",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "createdAt":  "2026-06-11T17:57:06.044Z",
-                                                 "updatedAt":  "2026-06-12T14:39:47.488Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "6a2c124c87160c133e882bf4",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "SELECT id, COALESCE(bedrijfsnaam, voornaam || \u0027 \u0027 || achternaam) AS naam FROM public.klanten WHERE deletedon IS NULL ORDER BY naam",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "ON_PAGE_LOAD",
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false
-                          },
-    "baseId":  "6a2c094ec0934275fd44ba89",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_c1614ad4-39f8-4447-a6e8-88a8b0f95aa1",
-    "createdAt":  "2026-06-12T13:27:42.888Z",
-    "updatedAt":  "2026-06-12T14:39:47.488Z",
-    "deleted":  false,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction",
-    "publishedAction":  {
-                            "name":  "klantenSelectGet",
-                            "datasource":  {
-                                               "_id":  "69f23e5ae8d23e3922706106",
-                                               "name":  "Supabase (dev)",
-                                               "pluginId":  "69f21d005fbcf7f394507fde",
-                                               "createdAt":  "2026-06-11T17:57:06.044Z",
-                                               "updatedAt":  "2026-06-12T14:39:47.488Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "6a2c124c87160c133e882bf4",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "SELECT id, COALESCE(bedrijfsnaam, voornaam || \u0027 \u0027 || achternaam) AS naam FROM public.klanten WHERE deletedon IS NULL ORDER BY naam",
-                                                        "pluginSpecifiedTemplates":  [
-                                                                                         {
-                                                                                             "value":  true
-                                                                                         }
-                                                                                     ]
-                                                    },
-                            "runBehaviour":  "ON_PAGE_LOAD",
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-
-                                             ],
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false
-                        }
+{
+  "_id": "6a2c094ec0934275fd44ba89",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "klantenSelectGet",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-06-11T17:57:06.044Z",
+      "updatedAt": "2026-06-12T14:39:47.488Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "6a2c124c87160c133e882bf4",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT id, COALESCE(bedrijfsnaam, voornaam || ' ' || achternaam) AS naam FROM public.klanten WHERE deletedon IS NULL ORDER BY naam",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "baseId": "6a2c094ec0934275fd44ba89",
+  "gitSyncId": "69f23d0ae8d23e3922706103_c1614ad4-39f8-4447-a6e8-88a8b0f95aa1",
+  "createdAt": "2026-06-12T13:27:42.888Z",
+  "updatedAt": "2026-06-12T14:39:47.488Z",
+  "deleted": false,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction",
+  "publishedAction": {
+    "name": "klantenSelectGet",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-06-11T17:57:06.044Z",
+      "updatedAt": "2026-06-12T14:39:47.488Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "6a2c124c87160c133e882bf4",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT id, COALESCE(bedrijfsnaam, voornaam || ' ' || achternaam) AS naam FROM public.klanten WHERE deletedon IS NULL ORDER BY naam",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "ON_PAGE_LOAD",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  }
 }

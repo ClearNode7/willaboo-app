@@ -1,1244 +1,1160 @@
-﻿{
-    "_id":  "69fdcf5fc8eed02aabb4c9a5",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "unpublishedPage":  {
-                            "name":  "Producten",
-                            "slug":  "producten",
-                            "layouts":  [
-                                            {
-                                                "_id":  "6a0cb9d90daa883b44e34ae7",
-                                                "viewMode":  false,
-                                                "dsl":  {
-                                                            "widgetName":  "MainContainer",
-                                                            "rightColumn":  1224,
-                                                            "snapColumns":  64,
-                                                            "widgetId":  "0",
-                                                            "topRow":  0,
-                                                            "bottomRow":  540,
-                                                            "snapRows":  110,
-                                                            "parentRowSpace":  1,
-                                                            "type":  "CANVAS_WIDGET",
-                                                            "version":  94,
-                                                            "isLoading":  false,
-                                                            "renderMode":  "CANVAS",
-                                                            "parentColumnSpace":  1,
-                                                            "leftColumn":  0,
-                                                            "dynamicBindingPathList":  [
-
-                                                                                       ],
-                                                            "children":  [
-                                                                             {
-                                                                                 "widgetName":  "TxtProductenTitel",
-                                                                                 "topRow":  2,
-                                                                                 "bottomRow":  7,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "TEXT_WIDGET",
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "overflow":  "NONE",
-                                                                                 "fontFamily":  "System Default",
-                                                                                 "leftColumn":  2,
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "text":  "Producten",
-                                                                                 "rightColumn":  20,
-                                                                                 "textAlign":  "LEFT",
-                                                                                 "dynamicHeight":  "FIXED",
-                                                                                 "widgetId":  "f46270c30",
-                                                                                 "isVisible":  true,
-                                                                                 "fontStyle":  "BOLD",
-                                                                                 "version":  1,
-                                                                                 "textColor":  "#231F20",
-                                                                                 "responsiveBehavior":  "fill",
-                                                                                 "borderRadius":  "0px",
-                                                                                 "maxDynamicHeight":  9000,
-                                                                                 "fontSize":  "1.25rem",
-                                                                                 "minDynamicHeight":  4
-                                                                             },
-                                                                             {
-                                                                                 "boxShadow":  "none",
-                                                                                 "widgetName":  "tblProducten",
-                                                                                 "defaultPageSize":  10,
-                                                                                 "columnOrder":  [
-                                                                                                     "naam",
-                                                                                                     "prijs_excl",
-                                                                                                     "btw_pct",
-                                                                                                     "sku",
-                                                                                                     "createdon",
-                                                                                                     "btn_detail",
-                                                                                                     "btn_delete"
-                                                                                                 ],
-                                                                                 "isVisibleDownload":  true,
-                                                                                 "dynamicPropertyPathList":  [
-                                                                                                                 {
-                                                                                                                     "key":  "tableData"
-                                                                                                                 }
-                                                                                                             ],
-                                                                                 "topRow":  9,
-                                                                                 "bottomRow":  54,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isSortable":  true,
-                                                                                 "columnWidthMap":  {
-                                                                                                        "naam":  200,
-                                                                                                        "prijs_excl":  110,
-                                                                                                        "btw_pct":  80,
-                                                                                                        "sku":  120,
-                                                                                                        "createdon":  140,
-                                                                                                        "btn_detail":  120
-                                                                                                    },
-                                                                                 "type":  "TABLE_WIDGET_V2",
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.btn_detail.onClick"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "leftColumn":  2,
-                                                                                 "dynamicBindingPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "tableData"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.naam.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.prijs_excl.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.sku.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.createdon.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.beschrijving.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.id.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.btw_pct.computedValue"
-                                                                                                                },
-                                                                                                                {
-                                                                                                                    "key":  "primaryColumns.btn_detail.computedValue"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "delimiter":  ",",
-                                                                                 "primaryColumns":  {
-                                                                                                        "naam":  {
-                                                                                                                     "id":  "naam",
-                                                                                                                     "originalId":  "naam",
-                                                                                                                     "alias":  "naam",
-                                                                                                                     "columnType":  "text",
-                                                                                                                     "isVisible":  true,
-                                                                                                                     "index":  0,
-                                                                                                                     "width":  200,
-                                                                                                                     "isDerived":  false,
-                                                                                                                     "label":  "Product",
-                                                                                                                     "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"naam\"])}}",
-                                                                                                                     "isCellVisible":  true,
-                                                                                                                     "validation":  {
-
-                                                                                                                                    },
-                                                                                                                     "sticky":  "",
-                                                                                                                     "horizontalAlignment":  "LEFT",
-                                                                                                                     "isCellEditable":  false,
-                                                                                                                     "isEditable":  false,
-                                                                                                                     "allowCellWrapping":  false
-                                                                                                                 },
-                                                                                                        "prijs_excl":  {
-                                                                                                                           "id":  "prijs_excl",
-                                                                                                                           "originalId":  "prijs_excl",
-                                                                                                                           "alias":  "prijs_excl",
-                                                                                                                           "columnType":  "currency",
-                                                                                                                           "isVisible":  true,
-                                                                                                                           "index":  1,
-                                                                                                                           "width":  110,
-                                                                                                                           "isDerived":  false,
-                                                                                                                           "label":  "Prijs excl.",
-                                                                                                                           "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"prijs_excl\"])}}",
-                                                                                                                           "isCellVisible":  true,
-                                                                                                                           "validation":  {
-
-                                                                                                                                          },
-                                                                                                                           "sticky":  "",
-                                                                                                                           "horizontalAlignment":  "RIGHT",
-                                                                                                                           "isCellEditable":  false,
-                                                                                                                           "isEditable":  false,
-                                                                                                                           "allowCellWrapping":  false,
-                                                                                                                           "currencyCode":  "EUR"
-                                                                                                                       },
-                                                                                                        "sku":  {
-                                                                                                                    "id":  "sku",
-                                                                                                                    "originalId":  "sku",
-                                                                                                                    "alias":  "sku",
-                                                                                                                    "columnType":  "text",
-                                                                                                                    "isVisible":  true,
-                                                                                                                    "index":  2,
-                                                                                                                    "width":  120,
-                                                                                                                    "isDerived":  false,
-                                                                                                                    "label":  "Artikelcode",
-                                                                                                                    "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"sku\"])}}",
-                                                                                                                    "isCellVisible":  true,
-                                                                                                                    "validation":  {
-
-                                                                                                                                   },
-                                                                                                                    "sticky":  "",
-                                                                                                                    "horizontalAlignment":  "LEFT",
-                                                                                                                    "isCellEditable":  false,
-                                                                                                                    "isEditable":  false,
-                                                                                                                    "allowCellWrapping":  false
-                                                                                                                },
-                                                                                                        "createdon":  {
-                                                                                                                          "id":  "createdon",
-                                                                                                                          "originalId":  "createdon",
-                                                                                                                          "alias":  "createdon",
-                                                                                                                          "columnType":  "text",
-                                                                                                                          "isVisible":  true,
-                                                                                                                          "index":  3,
-                                                                                                                          "width":  130,
-                                                                                                                          "isDerived":  false,
-                                                                                                                          "label":  "Aangemaakt op",
-                                                                                                                          "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"createdon\"])}}",
-                                                                                                                          "isCellVisible":  true,
-                                                                                                                          "validation":  {
-
-                                                                                                                                         },
-                                                                                                                          "sticky":  "",
-                                                                                                                          "horizontalAlignment":  "LEFT",
-                                                                                                                          "isCellEditable":  false,
-                                                                                                                          "isEditable":  false,
-                                                                                                                          "allowCellWrapping":  false
-                                                                                                                      },
-                                                                                                        "beschrijving":  {
-                                                                                                                             "id":  "beschrijving",
-                                                                                                                             "originalId":  "beschrijving",
-                                                                                                                             "alias":  "beschrijving",
-                                                                                                                             "columnType":  "text",
-                                                                                                                             "isVisible":  false,
-                                                                                                                             "index":  4,
-                                                                                                                             "width":  0,
-                                                                                                                             "isDerived":  false,
-                                                                                                                             "label":  "Beschrijving",
-                                                                                                                             "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"beschrijving\"])}}",
-                                                                                                                             "isCellVisible":  true,
-                                                                                                                             "validation":  {
-
-                                                                                                                                            },
-                                                                                                                             "sticky":  "",
-                                                                                                                             "horizontalAlignment":  "LEFT",
-                                                                                                                             "isCellEditable":  false,
-                                                                                                                             "isEditable":  false,
-                                                                                                                             "allowCellWrapping":  false
-                                                                                                                         },
-                                                                                                        "id":  {
-                                                                                                                   "id":  "id",
-                                                                                                                   "originalId":  "id",
-                                                                                                                   "alias":  "id",
-                                                                                                                   "columnType":  "text",
-                                                                                                                   "isVisible":  false,
-                                                                                                                   "index":  5,
-                                                                                                                   "width":  0,
-                                                                                                                   "isDerived":  false,
-                                                                                                                   "label":  "id",
-                                                                                                                   "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"id\"])}}",
-                                                                                                                   "isCellVisible":  true,
-                                                                                                                   "validation":  {
-
-                                                                                                                                  },
-                                                                                                                   "sticky":  "",
-                                                                                                                   "horizontalAlignment":  "LEFT",
-                                                                                                                   "isCellEditable":  false,
-                                                                                                                   "isEditable":  false,
-                                                                                                                   "allowCellWrapping":  false
-                                                                                                               },
-                                                                                                        "btw_pct":  {
-                                                                                                                        "id":  "btw_pct",
-                                                                                                                        "originalId":  "btw_pct",
-                                                                                                                        "alias":  "btw_pct",
-                                                                                                                        "index":  6,
-                                                                                                                        "width":  80,
-                                                                                                                        "horizontalAlignment":  "RIGHT",
-                                                                                                                        "verticalAlignment":  "CENTER",
-                                                                                                                        "columnType":  "number",
-                                                                                                                        "textSize":  "0.875rem",
-                                                                                                                        "enableFilter":  true,
-                                                                                                                        "enableSort":  true,
-                                                                                                                        "isVisible":  true,
-                                                                                                                        "isCellVisible":  true,
-                                                                                                                        "label":  "BTW %",
-                                                                                                                        "isDerived":  false,
-                                                                                                                        "computedValue":  "{{tblProducten.processedTableData.map((r)=\u003e(r.btw_pct||0))}}"
-                                                                                                                    },
-                                                                                                        "btn_detail":  {
-                                                                                                                           "index":  7,
-                                                                                                                           "width":  110,
-                                                                                                                           "id":  "btn_detail",
-                                                                                                                           "originalId":  "btn_detail",
-                                                                                                                           "alias":  "btn_detail",
-                                                                                                                           "horizontalAlignment":  "CENTER",
-                                                                                                                           "verticalAlignment":  "CENTER",
-                                                                                                                           "columnType":  "button",
-                                                                                                                           "isVisible":  true,
-                                                                                                                           "isCellVisible":  true,
-                                                                                                                           "isDerived":  true,
-                                                                                                                           "label":  "Bewerken",
-                                                                                                                           "buttonLabel":  "Bewerken",
-                                                                                                                           "buttonColor":  "#03B365",
-                                                                                                                           "buttonVariant":  "PRIMARY",
-                                                                                                                           "borderRadius":  "4px",
-                                                                                                                           "onClick":  "{{navigateTo(\u0027ProductenDetail\u0027, {productId: currentRow.id}, \u0027SAME_WINDOW\u0027)}}",
-                                                                                                                           "computedValue":  "{{currentRow.id}}",
-                                                                                                                           "isSaveVisible":  true,
-                                                                                                                           "isDiscardVisible":  true,
-                                                                                                                           "isCellEditable":  false,
-                                                                                                                           "isEditable":  false,
-                                                                                                                           "sticky":  "",
-                                                                                                                           "validation":  {
-
-                                                                                                                                          },
-                                                                                                                           "allowCellWrapping":  false
-                                                                                                                       },
-                                                                                                        "btn_delete":  {
-                                                                                                                           "index":  8,
-                                                                                                                           "width":  110,
-                                                                                                                           "id":  "btn_delete",
-                                                                                                                           "originalId":  "btn_delete",
-                                                                                                                           "alias":  "btn_delete",
-                                                                                                                           "horizontalAlignment":  "CENTER",
-                                                                                                                           "verticalAlignment":  "CENTER",
-                                                                                                                           "columnType":  "button",
-                                                                                                                           "isVisible":  true,
-                                                                                                                           "isCellVisible":  true,
-                                                                                                                           "isDerived":  true,
-                                                                                                                           "label":  "Verwijderen",
-                                                                                                                           "buttonLabel":  "Verwijderen",
-                                                                                                                           "buttonColor":  "#E22B2B",
-                                                                                                                           "buttonVariant":  "SECONDARY",
-                                                                                                                           "borderRadius":  "4px",
-                                                                                                                           "onClick":  "{{storeValue(\u0027deleteProductId\u0027, currentRow.id).then(() =\u003e showModal(\u0027ModalConfirmDeleteProduct\u0027))}}",
-                                                                                                                           "computedValue":  "{{currentRow.id}}",
-                                                                                                                           "isSaveVisible":  true,
-                                                                                                                           "isDiscardVisible":  true,
-                                                                                                                           "isCellEditable":  false,
-                                                                                                                           "isEditable":  false,
-                                                                                                                           "sticky":  "",
-                                                                                                                           "validation":  {
-
-                                                                                                                                          },
-                                                                                                                           "allowCellWrapping":  false,
-                                                                                                                           "confirmBeforeExecute":  false
-                                                                                                                       }
-                                                                                                    },
-                                                                                 "defaultSelectedRowIndex":  "0",
-                                                                                 "canFreezeColumn":  false,
-                                                                                 "labelTextSize":  "0.875rem",
-                                                                                 "rightColumn":  40,
-                                                                                 "widgetId":  "de63351dd",
-                                                                                 "enableServerSideFiltering":  false,
-                                                                                 "isVisibleFilters":  true,
-                                                                                 "tableData":  "{{productenGet.data}}",
-                                                                                 "isVisible":  true,
-                                                                                 "version":  1,
-                                                                                 "enableClientSideSearch":  true,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "isVisibleSearch":  true,
-                                                                                 "responsiveBehavior":  "fill",
-                                                                                 "borderRadius":  "0px",
-                                                                                 "isVisiblePagination":  true,
-                                                                                 "columnUpdatedAt":  {
-                                                                                                         "high":  414,
-                                                                                                         "low":  137593847,
-                                                                                                         "unsigned":  false
-                                                                                                     },
-                                                                                 "primaryColumnId":  "id",
-                                                                                 "defaultSelectedRowIndices":  [
-                                                                                                                   0
-                                                                                                               ]
-                                                                             },
-                                                                             {
-                                                                                 "widgetName":  "BtnNieuwProduct",
-                                                                                 "onClick":  "{{navigateTo(\u0027NieuwProduct\u0027, {}, \u0027SAME_WINDOW\u0027)}}",
-                                                                                 "buttonColor":  "#03B365",
-                                                                                 "topRow":  2,
-                                                                                 "bottomRow":  7,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "type":  "BUTTON_WIDGET",
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-                                                                                                                {
-                                                                                                                    "key":  "onClick"
-                                                                                                                }
-                                                                                                            ],
-                                                                                 "leftColumn":  52,
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "text":  "Nieuw product",
-                                                                                 "key":  "n000af4maj",
-                                                                                 "rightColumn":  62,
-                                                                                 "iconName":  "add",
-                                                                                 "widgetId":  "dvikpipyjq",
-                                                                                 "isVisible":  true,
-                                                                                 "version":  1,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "isLoading":  false,
-                                                                                 "borderRadius":  "4px",
-                                                                                 "buttonVariant":  "PRIMARY",
-                                                                                 "iconAlign":  "left"
-                                                                             },
-                                                                             {
-                                                                                 "widgetName":  "ModalConfirmDeleteProduct",
-                                                                                 "rightColumn":  56,
-                                                                                 "detachFromLayout":  true,
-                                                                                 "widgetId":  "mdlcfdelp1",
-                                                                                 "topRow":  0,
-                                                                                 "bottomRow":  40,
-                                                                                 "parentRowSpace":  10,
-                                                                                 "isVisible":  false,
-                                                                                 "type":  "MODAL_WIDGET",
-                                                                                 "canOutsideClickClose":  true,
-                                                                                 "version":  1,
-                                                                                 "canEscapeKeyClose":  true,
-                                                                                 "parentId":  "0",
-                                                                                 "renderMode":  "CANVAS",
-                                                                                 "shouldScrollContents":  false,
-                                                                                 "animateLoading":  true,
-                                                                                 "parentColumnSpace":  19.125,
-                                                                                 "dynamicTriggerPathList":  [
-
-                                                                                                            ],
-                                                                                 "leftColumn":  0,
-                                                                                 "size":  "MEDIUM",
-                                                                                 "dynamicBindingPathList":  [
-
-                                                                                                            ],
-                                                                                 "children":  [
-                                                                                                  {
-                                                                                                      "widgetName":  "ModalConfirmDeleteCanvas",
-                                                                                                      "rightColumn":  1224,
-                                                                                                      "backgroundColor":  "none",
-                                                                                                      "detachFromLayout":  true,
-                                                                                                      "widgetId":  "mdlcfdelc1",
-                                                                                                      "topRow":  0,
-                                                                                                      "bottomRow":  190,
-                                                                                                      "containerStyle":  "none",
-                                                                                                      "parentRowSpace":  1,
-                                                                                                      "isVisible":  true,
-                                                                                                      "type":  "CANVAS_WIDGET",
-                                                                                                      "canExtend":  false,
-                                                                                                      "version":  1,
-                                                                                                      "parentId":  "mdlcfdelp1",
-                                                                                                      "renderMode":  "CANVAS",
-                                                                                                      "minHeight":  196,
-                                                                                                      "parentColumnSpace":  1,
-                                                                                                      "leftColumn":  0,
-                                                                                                      "dynamicBindingPathList":  [
-
-                                                                                                                                 ],
-                                                                                                      "children":  [
-                                                                                                                       {
-                                                                                                                           "widgetName":  "TxtConfirmDeleteProduct",
-                                                                                                                           "rightColumn":  54,
-                                                                                                                           "textAlign":  "LEFT",
-                                                                                                                           "widgetId":  "mdlcfdelt1",
-                                                                                                                           "topRow":  2,
-                                                                                                                           "bottomRow":  8,
-                                                                                                                           "parentRowSpace":  10,
-                                                                                                                           "isVisible":  true,
-                                                                                                                           "type":  "TEXT_WIDGET",
-                                                                                                                           "fontStyle":  "BOLD",
-                                                                                                                           "version":  1,
-                                                                                                                           "textColor":  "#231F20",
-                                                                                                                           "parentId":  "mdlcfdelc1",
-                                                                                                                           "renderMode":  "CANVAS",
-                                                                                                                           "isLoading":  false,
-                                                                                                                           "animateLoading":  true,
-                                                                                                                           "parentColumnSpace":  19.125,
-                                                                                                                           "dynamicTriggerPathList":  [
-
-                                                                                                                                                      ],
-                                                                                                                           "leftColumn":  2,
-                                                                                                                           "dynamicBindingPathList":  [
-
-                                                                                                                                                      ],
-                                                                                                                           "fontSize":  "1rem",
-                                                                                                                           "text":  "Weet je zeker dat je dit product wilt verwijderen?"
-                                                                                                                       },
-                                                                                                                       {
-                                                                                                                           "widgetName":  "BtnConfirmDeleteAnnuleren",
-                                                                                                                           "rightColumn":  26,
-                                                                                                                           "onClick":  "{{closeModal(\u0027ModalConfirmDeleteProduct\u0027)}}",
-                                                                                                                           "buttonColor":  "#6B7280",
-                                                                                                                           "dynamicPropertyPathList":  [
-                                                                                                                                                           {
-                                                                                                                                                               "key":  "onClick"
-                                                                                                                                                           }
-                                                                                                                                                       ],
-                                                                                                                           "widgetId":  "mdlcfdelb1",
-                                                                                                                           "topRow":  12,
-                                                                                                                           "bottomRow":  18,
-                                                                                                                           "parentRowSpace":  10,
-                                                                                                                           "isVisible":  true,
-                                                                                                                           "type":  "BUTTON_WIDGET",
-                                                                                                                           "version":  1,
-                                                                                                                           "parentId":  "mdlcfdelc1",
-                                                                                                                           "renderMode":  "CANVAS",
-                                                                                                                           "isLoading":  false,
-                                                                                                                           "animateLoading":  true,
-                                                                                                                           "parentColumnSpace":  19.125,
-                                                                                                                           "dynamicTriggerPathList":  [
-                                                                                                                                                          {
-                                                                                                                                                              "key":  "onClick"
-                                                                                                                                                          }
-                                                                                                                                                      ],
-                                                                                                                           "leftColumn":  2,
-                                                                                                                           "borderRadius":  "4px",
-                                                                                                                           "dynamicBindingPathList":  [
-
-                                                                                                                                                      ],
-                                                                                                                           "buttonVariant":  "SECONDARY",
-                                                                                                                           "text":  "Annuleren"
-                                                                                                                       },
-                                                                                                                       {
-                                                                                                                           "widgetName":  "BtnConfirmDeleteJa",
-                                                                                                                           "rightColumn":  54,
-                                                                                                                           "onClick":  "{{productSoftDelete.run(() =\u003e {closeModal(\u0027ModalConfirmDeleteProduct\u0027); showAlert(\u0027Product verwijderd\u0027,\u0027success\u0027); productenGet.run();}, () =\u003e showAlert(\u0027Fout bij verwijderen\u0027,\u0027error\u0027))}}",
-                                                                                                                           "buttonColor":  "#E22B2B",
-                                                                                                                           "dynamicPropertyPathList":  [
-                                                                                                                                                           {
-                                                                                                                                                               "key":  "onClick"
-                                                                                                                                                           }
-                                                                                                                                                       ],
-                                                                                                                           "widgetId":  "mdlcfdelb2",
-                                                                                                                           "topRow":  12,
-                                                                                                                           "bottomRow":  18,
-                                                                                                                           "parentRowSpace":  10,
-                                                                                                                           "isVisible":  true,
-                                                                                                                           "type":  "BUTTON_WIDGET",
-                                                                                                                           "version":  1,
-                                                                                                                           "parentId":  "mdlcfdelc1",
-                                                                                                                           "renderMode":  "CANVAS",
-                                                                                                                           "isLoading":  false,
-                                                                                                                           "animateLoading":  true,
-                                                                                                                           "parentColumnSpace":  19.125,
-                                                                                                                           "dynamicTriggerPathList":  [
-                                                                                                                                                          {
-                                                                                                                                                              "key":  "onClick"
-                                                                                                                                                          }
-                                                                                                                                                      ],
-                                                                                                                           "leftColumn":  31,
-                                                                                                                           "borderRadius":  "4px",
-                                                                                                                           "dynamicBindingPathList":  [
-
-                                                                                                                                                      ],
-                                                                                                                           "buttonVariant":  "PRIMARY",
-                                                                                                                           "text":  "Ja, verwijderen"
-                                                                                                                       }
-                                                                                                                   ]
-                                                                                                  }
-                                                                                              ],
-                                                                                 "width":  370,
-                                                                                 "height":  196
-                                                                             }
-                                                                         ]
-                                                        },
-                                                "layoutOnLoadActions":  [
-                                                                            [
-                                                                                {
-                                                                                    "_id":  "69fdf918c8eed02aabb4c9a7",
-                                                                                    "name":  "productenGet",
-                                                                                    "confirmBeforeExecute":  false,
-                                                                                    "pluginType":  "DB",
-                                                                                    "jsonPathKeys":  [
-
-                                                                                                     ],
-                                                                                    "timeoutInMillisecond":  10000
-                                                                                }
-                                                                            ]
-                                                                        ],
-                                                "layoutOnLoadActionErrors":  [
-
-                                                                             ],
-                                                "widgetNames":  [
-                                                                    "ModalConfirmDeleteProduct",
-                                                                    "BtnNieuwProduct",
-                                                                    "ModalConfirmDeleteCanvas",
-                                                                    "TxtProductenTitel",
-                                                                    "TxtConfirmDeleteProduct",
-                                                                    "BtnConfirmDeleteAnnuleren",
-                                                                    "tblProducten",
-                                                                    "MainContainer",
-                                                                    "BtnConfirmDeleteJa"
-                                                                ],
-                                                "allOnPageLoadActionNames":  [
-
-                                                                             ],
-                                                "actionsUsedInDynamicBindings":  [
-                                                                                     "productenGet"
-                                                                                 ],
-                                                "validOnPageLoadActions":  true
-                                            }
-                                        ]
-                        },
-    "publishedPage":  {
-                          "name":  "Producten",
-                          "slug":  "producten",
-                          "layouts":  [
-                                          {
-                                              "_id":  "6a0cb9d90daa883b44e34ae7",
-                                              "viewMode":  false,
-                                              "dsl":  {
-                                                          "widgetName":  "MainContainer",
-                                                          "rightColumn":  1224,
-                                                          "snapColumns":  64,
-                                                          "widgetId":  "0",
-                                                          "topRow":  0,
-                                                          "bottomRow":  540,
-                                                          "snapRows":  110,
-                                                          "parentRowSpace":  1,
-                                                          "type":  "CANVAS_WIDGET",
-                                                          "version":  94,
-                                                          "isLoading":  false,
-                                                          "renderMode":  "CANVAS",
-                                                          "parentColumnSpace":  1,
-                                                          "leftColumn":  0,
-                                                          "dynamicBindingPathList":  [
-
-                                                                                     ],
-                                                          "children":  [
-                                                                           {
-                                                                               "widgetName":  "TxtProductenTitel",
-                                                                               "topRow":  2,
-                                                                               "bottomRow":  7,
-                                                                               "parentRowSpace":  10,
-                                                                               "type":  "TEXT_WIDGET",
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "overflow":  "NONE",
-                                                                               "fontFamily":  "System Default",
-                                                                               "leftColumn":  2,
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "text":  "Producten",
-                                                                               "rightColumn":  20,
-                                                                               "textAlign":  "LEFT",
-                                                                               "dynamicHeight":  "FIXED",
-                                                                               "widgetId":  "f46270c30",
-                                                                               "isVisible":  true,
-                                                                               "fontStyle":  "BOLD",
-                                                                               "version":  1,
-                                                                               "textColor":  "#231F20",
-                                                                               "responsiveBehavior":  "fill",
-                                                                               "borderRadius":  "0px",
-                                                                               "maxDynamicHeight":  9000,
-                                                                               "fontSize":  "1.25rem",
-                                                                               "minDynamicHeight":  4
-                                                                           },
-                                                                           {
-                                                                               "boxShadow":  "none",
-                                                                               "widgetName":  "tblProducten",
-                                                                               "defaultPageSize":  10,
-                                                                               "columnOrder":  [
-                                                                                                   "naam",
-                                                                                                   "prijs_excl",
-                                                                                                   "btw_pct",
-                                                                                                   "sku",
-                                                                                                   "createdon",
-                                                                                                   "btn_detail",
-                                                                                                   "btn_delete"
-                                                                                               ],
-                                                                               "isVisibleDownload":  true,
-                                                                               "dynamicPropertyPathList":  [
-                                                                                                               {
-                                                                                                                   "key":  "tableData"
-                                                                                                               }
-                                                                                                           ],
-                                                                               "topRow":  9,
-                                                                               "bottomRow":  54,
-                                                                               "parentRowSpace":  10,
-                                                                               "isSortable":  true,
-                                                                               "columnWidthMap":  {
-                                                                                                      "naam":  200,
-                                                                                                      "prijs_excl":  110,
-                                                                                                      "btw_pct":  80,
-                                                                                                      "sku":  120,
-                                                                                                      "createdon":  140,
-                                                                                                      "btn_detail":  120
-                                                                                                  },
-                                                                               "type":  "TABLE_WIDGET_V2",
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.btn_detail.onClick"
-                                                                                                              }
-                                                                                                          ],
-                                                                               "leftColumn":  2,
-                                                                               "dynamicBindingPathList":  [
-                                                                                                              {
-                                                                                                                  "key":  "tableData"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.naam.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.prijs_excl.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.sku.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.createdon.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.beschrijving.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.id.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.btw_pct.computedValue"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "key":  "primaryColumns.btn_detail.computedValue"
-                                                                                                              }
-                                                                                                          ],
-                                                                               "delimiter":  ",",
-                                                                               "primaryColumns":  {
-                                                                                                      "naam":  {
-                                                                                                                   "id":  "naam",
-                                                                                                                   "originalId":  "naam",
-                                                                                                                   "alias":  "naam",
-                                                                                                                   "columnType":  "text",
-                                                                                                                   "isVisible":  true,
-                                                                                                                   "index":  0,
-                                                                                                                   "width":  200,
-                                                                                                                   "isDerived":  false,
-                                                                                                                   "label":  "Product",
-                                                                                                                   "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"naam\"])}}",
-                                                                                                                   "isCellVisible":  true,
-                                                                                                                   "validation":  {
-
-                                                                                                                                  },
-                                                                                                                   "sticky":  "",
-                                                                                                                   "horizontalAlignment":  "LEFT",
-                                                                                                                   "isCellEditable":  false,
-                                                                                                                   "isEditable":  false,
-                                                                                                                   "allowCellWrapping":  false
-                                                                                                               },
-                                                                                                      "prijs_excl":  {
-                                                                                                                         "id":  "prijs_excl",
-                                                                                                                         "originalId":  "prijs_excl",
-                                                                                                                         "alias":  "prijs_excl",
-                                                                                                                         "columnType":  "currency",
-                                                                                                                         "isVisible":  true,
-                                                                                                                         "index":  1,
-                                                                                                                         "width":  110,
-                                                                                                                         "isDerived":  false,
-                                                                                                                         "label":  "Prijs excl.",
-                                                                                                                         "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"prijs_excl\"])}}",
-                                                                                                                         "isCellVisible":  true,
-                                                                                                                         "validation":  {
-
-                                                                                                                                        },
-                                                                                                                         "sticky":  "",
-                                                                                                                         "horizontalAlignment":  "RIGHT",
-                                                                                                                         "isCellEditable":  false,
-                                                                                                                         "isEditable":  false,
-                                                                                                                         "allowCellWrapping":  false,
-                                                                                                                         "currencyCode":  "EUR"
-                                                                                                                     },
-                                                                                                      "sku":  {
-                                                                                                                  "id":  "sku",
-                                                                                                                  "originalId":  "sku",
-                                                                                                                  "alias":  "sku",
-                                                                                                                  "columnType":  "text",
-                                                                                                                  "isVisible":  true,
-                                                                                                                  "index":  2,
-                                                                                                                  "width":  120,
-                                                                                                                  "isDerived":  false,
-                                                                                                                  "label":  "Artikelcode",
-                                                                                                                  "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"sku\"])}}",
-                                                                                                                  "isCellVisible":  true,
-                                                                                                                  "validation":  {
-
-                                                                                                                                 },
-                                                                                                                  "sticky":  "",
-                                                                                                                  "horizontalAlignment":  "LEFT",
-                                                                                                                  "isCellEditable":  false,
-                                                                                                                  "isEditable":  false,
-                                                                                                                  "allowCellWrapping":  false
-                                                                                                              },
-                                                                                                      "createdon":  {
-                                                                                                                        "id":  "createdon",
-                                                                                                                        "originalId":  "createdon",
-                                                                                                                        "alias":  "createdon",
-                                                                                                                        "columnType":  "text",
-                                                                                                                        "isVisible":  true,
-                                                                                                                        "index":  3,
-                                                                                                                        "width":  130,
-                                                                                                                        "isDerived":  false,
-                                                                                                                        "label":  "Aangemaakt op",
-                                                                                                                        "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"createdon\"])}}",
-                                                                                                                        "isCellVisible":  true,
-                                                                                                                        "validation":  {
-
-                                                                                                                                       },
-                                                                                                                        "sticky":  "",
-                                                                                                                        "horizontalAlignment":  "LEFT",
-                                                                                                                        "isCellEditable":  false,
-                                                                                                                        "isEditable":  false,
-                                                                                                                        "allowCellWrapping":  false
-                                                                                                                    },
-                                                                                                      "beschrijving":  {
-                                                                                                                           "id":  "beschrijving",
-                                                                                                                           "originalId":  "beschrijving",
-                                                                                                                           "alias":  "beschrijving",
-                                                                                                                           "columnType":  "text",
-                                                                                                                           "isVisible":  false,
-                                                                                                                           "index":  4,
-                                                                                                                           "width":  0,
-                                                                                                                           "isDerived":  false,
-                                                                                                                           "label":  "Beschrijving",
-                                                                                                                           "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"beschrijving\"])}}",
-                                                                                                                           "isCellVisible":  true,
-                                                                                                                           "validation":  {
-
-                                                                                                                                          },
-                                                                                                                           "sticky":  "",
-                                                                                                                           "horizontalAlignment":  "LEFT",
-                                                                                                                           "isCellEditable":  false,
-                                                                                                                           "isEditable":  false,
-                                                                                                                           "allowCellWrapping":  false
-                                                                                                                       },
-                                                                                                      "id":  {
-                                                                                                                 "id":  "id",
-                                                                                                                 "originalId":  "id",
-                                                                                                                 "alias":  "id",
-                                                                                                                 "columnType":  "text",
-                                                                                                                 "isVisible":  false,
-                                                                                                                 "index":  5,
-                                                                                                                 "width":  0,
-                                                                                                                 "isDerived":  false,
-                                                                                                                 "label":  "id",
-                                                                                                                 "computedValue":  "{{tblProducten.processedTableData.map((currentRow, currentIndex) =\u003e currentRow[\"id\"])}}",
-                                                                                                                 "isCellVisible":  true,
-                                                                                                                 "validation":  {
-
-                                                                                                                                },
-                                                                                                                 "sticky":  "",
-                                                                                                                 "horizontalAlignment":  "LEFT",
-                                                                                                                 "isCellEditable":  false,
-                                                                                                                 "isEditable":  false,
-                                                                                                                 "allowCellWrapping":  false
-                                                                                                             },
-                                                                                                      "btw_pct":  {
-                                                                                                                      "id":  "btw_pct",
-                                                                                                                      "originalId":  "btw_pct",
-                                                                                                                      "alias":  "btw_pct",
-                                                                                                                      "index":  6,
-                                                                                                                      "width":  80,
-                                                                                                                      "horizontalAlignment":  "RIGHT",
-                                                                                                                      "verticalAlignment":  "CENTER",
-                                                                                                                      "columnType":  "number",
-                                                                                                                      "textSize":  "0.875rem",
-                                                                                                                      "enableFilter":  true,
-                                                                                                                      "enableSort":  true,
-                                                                                                                      "isVisible":  true,
-                                                                                                                      "isCellVisible":  true,
-                                                                                                                      "label":  "BTW %",
-                                                                                                                      "isDerived":  false,
-                                                                                                                      "computedValue":  "{{tblProducten.processedTableData.map((r)=\u003e(r.btw_pct||0))}}"
-                                                                                                                  },
-                                                                                                      "btn_detail":  {
-                                                                                                                         "index":  7,
-                                                                                                                         "width":  110,
-                                                                                                                         "id":  "btn_detail",
-                                                                                                                         "originalId":  "btn_detail",
-                                                                                                                         "alias":  "btn_detail",
-                                                                                                                         "horizontalAlignment":  "CENTER",
-                                                                                                                         "verticalAlignment":  "CENTER",
-                                                                                                                         "columnType":  "button",
-                                                                                                                         "isVisible":  true,
-                                                                                                                         "isCellVisible":  true,
-                                                                                                                         "isDerived":  true,
-                                                                                                                         "label":  "Bewerken",
-                                                                                                                         "buttonLabel":  "Bewerken",
-                                                                                                                         "buttonColor":  "#03B365",
-                                                                                                                         "buttonVariant":  "PRIMARY",
-                                                                                                                         "borderRadius":  "4px",
-                                                                                                                         "onClick":  "{{navigateTo(\u0027ProductenDetail\u0027, {productId: currentRow.id}, \u0027SAME_WINDOW\u0027)}}",
-                                                                                                                         "computedValue":  "{{currentRow.id}}",
-                                                                                                                         "isSaveVisible":  true,
-                                                                                                                         "isDiscardVisible":  true,
-                                                                                                                         "isCellEditable":  false,
-                                                                                                                         "isEditable":  false,
-                                                                                                                         "sticky":  "",
-                                                                                                                         "validation":  {
-
-                                                                                                                                        },
-                                                                                                                         "allowCellWrapping":  false
-                                                                                                                     },
-                                                                                                      "btn_delete":  {
-                                                                                                                         "index":  8,
-                                                                                                                         "width":  110,
-                                                                                                                         "id":  "btn_delete",
-                                                                                                                         "originalId":  "btn_delete",
-                                                                                                                         "alias":  "btn_delete",
-                                                                                                                         "horizontalAlignment":  "CENTER",
-                                                                                                                         "verticalAlignment":  "CENTER",
-                                                                                                                         "columnType":  "button",
-                                                                                                                         "isVisible":  true,
-                                                                                                                         "isCellVisible":  true,
-                                                                                                                         "isDerived":  true,
-                                                                                                                         "label":  "Verwijderen",
-                                                                                                                         "buttonLabel":  "Verwijderen",
-                                                                                                                         "buttonColor":  "#E22B2B",
-                                                                                                                         "buttonVariant":  "SECONDARY",
-                                                                                                                         "borderRadius":  "4px",
-                                                                                                                         "onClick":  "{{storeValue(\u0027deleteProductId\u0027, currentRow.id).then(() =\u003e showModal(\u0027ModalConfirmDeleteProduct\u0027))}}",
-                                                                                                                         "computedValue":  "{{currentRow.id}}",
-                                                                                                                         "isSaveVisible":  true,
-                                                                                                                         "isDiscardVisible":  true,
-                                                                                                                         "isCellEditable":  false,
-                                                                                                                         "isEditable":  false,
-                                                                                                                         "sticky":  "",
-                                                                                                                         "validation":  {
-
-                                                                                                                                        },
-                                                                                                                         "allowCellWrapping":  false,
-                                                                                                                         "confirmBeforeExecute":  false
-                                                                                                                     }
-                                                                                                  },
-                                                                               "defaultSelectedRowIndex":  "0",
-                                                                               "canFreezeColumn":  false,
-                                                                               "labelTextSize":  "0.875rem",
-                                                                               "rightColumn":  40,
-                                                                               "widgetId":  "de63351dd",
-                                                                               "enableServerSideFiltering":  false,
-                                                                               "isVisibleFilters":  true,
-                                                                               "tableData":  "{{productenGet.data}}",
-                                                                               "isVisible":  true,
-                                                                               "version":  1,
-                                                                               "enableClientSideSearch":  true,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "isVisibleSearch":  true,
-                                                                               "responsiveBehavior":  "fill",
-                                                                               "borderRadius":  "0px",
-                                                                               "isVisiblePagination":  true,
-                                                                               "columnUpdatedAt":  {
-                                                                                                       "high":  414,
-                                                                                                       "low":  137593847,
-                                                                                                       "unsigned":  false
-                                                                                                   },
-                                                                               "primaryColumnId":  "id",
-                                                                               "defaultSelectedRowIndices":  [
-                                                                                                                 0
-                                                                                                             ]
-                                                                           },
-                                                                           {
-                                                                               "widgetName":  "BtnNieuwProduct",
-                                                                               "onClick":  "{{navigateTo(\u0027NieuwProduct\u0027, {}, \u0027SAME_WINDOW\u0027)}}",
-                                                                               "buttonColor":  "#03B365",
-                                                                               "topRow":  2,
-                                                                               "bottomRow":  7,
-                                                                               "parentRowSpace":  10,
-                                                                               "type":  "BUTTON_WIDGET",
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-                                                                                                              {
-                                                                                                                  "key":  "onClick"
-                                                                                                              }
-                                                                                                          ],
-                                                                               "leftColumn":  52,
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "text":  "Nieuw product",
-                                                                               "key":  "n000af4maj",
-                                                                               "rightColumn":  62,
-                                                                               "iconName":  "add",
-                                                                               "widgetId":  "dvikpipyjq",
-                                                                               "isVisible":  true,
-                                                                               "version":  1,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "isLoading":  false,
-                                                                               "borderRadius":  "4px",
-                                                                               "buttonVariant":  "PRIMARY",
-                                                                               "iconAlign":  "left"
-                                                                           },
-                                                                           {
-                                                                               "widgetName":  "ModalConfirmDeleteProduct",
-                                                                               "rightColumn":  56,
-                                                                               "detachFromLayout":  true,
-                                                                               "widgetId":  "mdlcfdelp1",
-                                                                               "topRow":  0,
-                                                                               "bottomRow":  40,
-                                                                               "parentRowSpace":  10,
-                                                                               "isVisible":  false,
-                                                                               "type":  "MODAL_WIDGET",
-                                                                               "canOutsideClickClose":  true,
-                                                                               "version":  1,
-                                                                               "canEscapeKeyClose":  true,
-                                                                               "parentId":  "0",
-                                                                               "renderMode":  "CANVAS",
-                                                                               "shouldScrollContents":  false,
-                                                                               "animateLoading":  true,
-                                                                               "parentColumnSpace":  19.125,
-                                                                               "dynamicTriggerPathList":  [
-
-                                                                                                          ],
-                                                                               "leftColumn":  0,
-                                                                               "size":  "MEDIUM",
-                                                                               "dynamicBindingPathList":  [
-
-                                                                                                          ],
-                                                                               "children":  [
-                                                                                                {
-                                                                                                    "widgetName":  "ModalConfirmDeleteCanvas",
-                                                                                                    "rightColumn":  1224,
-                                                                                                    "backgroundColor":  "none",
-                                                                                                    "detachFromLayout":  true,
-                                                                                                    "widgetId":  "mdlcfdelc1",
-                                                                                                    "topRow":  0,
-                                                                                                    "bottomRow":  190,
-                                                                                                    "containerStyle":  "none",
-                                                                                                    "parentRowSpace":  1,
-                                                                                                    "isVisible":  true,
-                                                                                                    "type":  "CANVAS_WIDGET",
-                                                                                                    "canExtend":  false,
-                                                                                                    "version":  1,
-                                                                                                    "parentId":  "mdlcfdelp1",
-                                                                                                    "renderMode":  "CANVAS",
-                                                                                                    "minHeight":  196,
-                                                                                                    "parentColumnSpace":  1,
-                                                                                                    "leftColumn":  0,
-                                                                                                    "dynamicBindingPathList":  [
-
-                                                                                                                               ],
-                                                                                                    "children":  [
-                                                                                                                     {
-                                                                                                                         "widgetName":  "TxtConfirmDeleteProduct",
-                                                                                                                         "rightColumn":  54,
-                                                                                                                         "textAlign":  "LEFT",
-                                                                                                                         "widgetId":  "mdlcfdelt1",
-                                                                                                                         "topRow":  2,
-                                                                                                                         "bottomRow":  8,
-                                                                                                                         "parentRowSpace":  10,
-                                                                                                                         "isVisible":  true,
-                                                                                                                         "type":  "TEXT_WIDGET",
-                                                                                                                         "fontStyle":  "BOLD",
-                                                                                                                         "version":  1,
-                                                                                                                         "textColor":  "#231F20",
-                                                                                                                         "parentId":  "mdlcfdelc1",
-                                                                                                                         "renderMode":  "CANVAS",
-                                                                                                                         "isLoading":  false,
-                                                                                                                         "animateLoading":  true,
-                                                                                                                         "parentColumnSpace":  19.125,
-                                                                                                                         "dynamicTriggerPathList":  [
-
-                                                                                                                                                    ],
-                                                                                                                         "leftColumn":  2,
-                                                                                                                         "dynamicBindingPathList":  [
-
-                                                                                                                                                    ],
-                                                                                                                         "fontSize":  "1rem",
-                                                                                                                         "text":  "Weet je zeker dat je dit product wilt verwijderen?"
-                                                                                                                     },
-                                                                                                                     {
-                                                                                                                         "widgetName":  "BtnConfirmDeleteAnnuleren",
-                                                                                                                         "rightColumn":  26,
-                                                                                                                         "onClick":  "{{closeModal(\u0027ModalConfirmDeleteProduct\u0027)}}",
-                                                                                                                         "buttonColor":  "#6B7280",
-                                                                                                                         "dynamicPropertyPathList":  [
-                                                                                                                                                         {
-                                                                                                                                                             "key":  "onClick"
-                                                                                                                                                         }
-                                                                                                                                                     ],
-                                                                                                                         "widgetId":  "mdlcfdelb1",
-                                                                                                                         "topRow":  12,
-                                                                                                                         "bottomRow":  18,
-                                                                                                                         "parentRowSpace":  10,
-                                                                                                                         "isVisible":  true,
-                                                                                                                         "type":  "BUTTON_WIDGET",
-                                                                                                                         "version":  1,
-                                                                                                                         "parentId":  "mdlcfdelc1",
-                                                                                                                         "renderMode":  "CANVAS",
-                                                                                                                         "isLoading":  false,
-                                                                                                                         "animateLoading":  true,
-                                                                                                                         "parentColumnSpace":  19.125,
-                                                                                                                         "dynamicTriggerPathList":  [
-                                                                                                                                                        {
-                                                                                                                                                            "key":  "onClick"
-                                                                                                                                                        }
-                                                                                                                                                    ],
-                                                                                                                         "leftColumn":  2,
-                                                                                                                         "borderRadius":  "4px",
-                                                                                                                         "dynamicBindingPathList":  [
-
-                                                                                                                                                    ],
-                                                                                                                         "buttonVariant":  "SECONDARY",
-                                                                                                                         "text":  "Annuleren"
-                                                                                                                     },
-                                                                                                                     {
-                                                                                                                         "widgetName":  "BtnConfirmDeleteJa",
-                                                                                                                         "rightColumn":  54,
-                                                                                                                         "onClick":  "{{productSoftDelete.run(() =\u003e {closeModal(\u0027ModalConfirmDeleteProduct\u0027); showAlert(\u0027Product verwijderd\u0027,\u0027success\u0027); productenGet.run();}, () =\u003e showAlert(\u0027Fout bij verwijderen\u0027,\u0027error\u0027))}}",
-                                                                                                                         "buttonColor":  "#E22B2B",
-                                                                                                                         "dynamicPropertyPathList":  [
-                                                                                                                                                         {
-                                                                                                                                                             "key":  "onClick"
-                                                                                                                                                         }
-                                                                                                                                                     ],
-                                                                                                                         "widgetId":  "mdlcfdelb2",
-                                                                                                                         "topRow":  12,
-                                                                                                                         "bottomRow":  18,
-                                                                                                                         "parentRowSpace":  10,
-                                                                                                                         "isVisible":  true,
-                                                                                                                         "type":  "BUTTON_WIDGET",
-                                                                                                                         "version":  1,
-                                                                                                                         "parentId":  "mdlcfdelc1",
-                                                                                                                         "renderMode":  "CANVAS",
-                                                                                                                         "isLoading":  false,
-                                                                                                                         "animateLoading":  true,
-                                                                                                                         "parentColumnSpace":  19.125,
-                                                                                                                         "dynamicTriggerPathList":  [
-                                                                                                                                                        {
-                                                                                                                                                            "key":  "onClick"
-                                                                                                                                                        }
-                                                                                                                                                    ],
-                                                                                                                         "leftColumn":  31,
-                                                                                                                         "borderRadius":  "4px",
-                                                                                                                         "dynamicBindingPathList":  [
-
-                                                                                                                                                    ],
-                                                                                                                         "buttonVariant":  "PRIMARY",
-                                                                                                                         "text":  "Ja, verwijderen"
-                                                                                                                     }
-                                                                                                                 ]
-                                                                                                }
-                                                                                            ],
-                                                                               "width":  370,
-                                                                               "height":  196
-                                                                           }
-                                                                       ]
-                                                      },
-                                              "layoutOnLoadActions":  [
-                                                                          [
-                                                                              {
-                                                                                  "_id":  "69fdf918c8eed02aabb4c9a7",
-                                                                                  "name":  "productenGet",
-                                                                                  "confirmBeforeExecute":  false,
-                                                                                  "pluginType":  "DB",
-                                                                                  "jsonPathKeys":  [
-
-                                                                                                   ],
-                                                                                  "timeoutInMillisecond":  10000
-                                                                              }
-                                                                          ]
-                                                                      ],
-                                              "layoutOnLoadActionErrors":  [
-
-                                                                           ],
-                                              "widgetNames":  [
-                                                                  "ModalConfirmDeleteProduct",
-                                                                  "BtnNieuwProduct",
-                                                                  "ModalConfirmDeleteCanvas",
-                                                                  "TxtProductenTitel",
-                                                                  "TxtConfirmDeleteProduct",
-                                                                  "BtnConfirmDeleteAnnuleren",
-                                                                  "tblProducten",
-                                                                  "MainContainer",
-                                                                  "BtnConfirmDeleteJa"
-                                                              ],
-                                              "allOnPageLoadActionNames":  [
-
-                                                                           ],
-                                              "actionsUsedInDynamicBindings":  [
-                                                                                   "productenGet"
-                                                                               ],
-                                              "validOnPageLoadActions":  true
-                                          }
-                                      ]
-                      },
-    "baseId":  "69fdcf5fc8eed02aabb4c9a5",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_59239775-b130-452e-a3c7-92aa671cbd03",
-    "createdAt":  "2026-05-08T11:56:15.296Z",
-    "updatedAt":  "2026-06-13T14:43:50.571Z",
-    "deleted":  false,
-    "policyMap":  {
-                      "read:pages":  {
-                                         "permission":  "read:pages",
-                                         "permissionGroups":  [
-                                                                  "69f23d0ae8d23e39227060ff",
-                                                                  "69f23d0ae8d23e3922706100",
-                                                                  "69f23d0ae8d23e3922706101"
-                                                              ]
-                                     },
-                      "manage:pages":  {
-                                           "permission":  "manage:pages",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "create:pageActions":  {
-                                                 "permission":  "create:pageActions",
-                                                 "permissionGroups":  [
-                                                                          "69f23d0ae8d23e39227060ff",
-                                                                          "69f23d0ae8d23e3922706100"
-                                                                      ]
-                                             },
-                      "delete:pages":  {
-                                           "permission":  "delete:pages",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "delete:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "manage:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "create:pageActions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:pages",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewPage"
+{
+  "_id": "69fdcf5fc8eed02aabb4c9a5",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "unpublishedPage": {
+    "name": "Producten",
+    "slug": "producten",
+    "layouts": [
+      {
+        "_id": "6a0cb9d90daa883b44e34ae7",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 540,
+          "snapRows": 110,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "version": 94,
+          "isLoading": false,
+          "renderMode": "CANVAS",
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "dynamicBindingPathList": [],
+          "children": [
+            {
+              "widgetName": "TxtProductenTitel",
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "overflow": "NONE",
+              "fontFamily": "System Default",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Producten",
+              "rightColumn": 20,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "f46270c30",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "tblProducten",
+              "defaultPageSize": 10,
+              "columnOrder": [
+                "naam",
+                "prijs_excl",
+                "btw_pct",
+                "sku",
+                "createdon",
+                "btn_detail",
+                "btn_delete"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
+              "topRow": 9,
+              "bottomRow": 54,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "columnWidthMap": {
+                "naam": 200,
+                "prijs_excl": 110,
+                "btw_pct": 80,
+                "sku": 120,
+                "createdon": 140,
+                "btn_detail": 120
+              },
+              "type": "TABLE_WIDGET_V2",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.btn_detail.onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.naam.computedValue"
+                },
+                {
+                  "key": "primaryColumns.prijs_excl.computedValue"
+                },
+                {
+                  "key": "primaryColumns.sku.computedValue"
+                },
+                {
+                  "key": "primaryColumns.createdon.computedValue"
+                },
+                {
+                  "key": "primaryColumns.beschrijving.computedValue"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.btw_pct.computedValue"
+                },
+                {
+                  "key": "primaryColumns.btn_detail.computedValue"
+                }
+              ],
+              "delimiter": ",",
+              "primaryColumns": {
+                "naam": {
+                  "id": "naam",
+                  "originalId": "naam",
+                  "alias": "naam",
+                  "columnType": "text",
+                  "isVisible": true,
+                  "index": 0,
+                  "width": 200,
+                  "isDerived": false,
+                  "label": "Product",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"naam\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "prijs_excl": {
+                  "id": "prijs_excl",
+                  "originalId": "prijs_excl",
+                  "alias": "prijs_excl",
+                  "columnType": "currency",
+                  "isVisible": true,
+                  "index": 1,
+                  "width": 110,
+                  "isDerived": false,
+                  "label": "Prijs excl.",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"prijs_excl\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "RIGHT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false,
+                  "currencyCode": "EUR"
+                },
+                "sku": {
+                  "id": "sku",
+                  "originalId": "sku",
+                  "alias": "sku",
+                  "columnType": "text",
+                  "isVisible": true,
+                  "index": 2,
+                  "width": 120,
+                  "isDerived": false,
+                  "label": "Artikelcode",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"sku\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "createdon": {
+                  "id": "createdon",
+                  "originalId": "createdon",
+                  "alias": "createdon",
+                  "columnType": "text",
+                  "isVisible": true,
+                  "index": 3,
+                  "width": 130,
+                  "isDerived": false,
+                  "label": "Aangemaakt op",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"createdon\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "beschrijving": {
+                  "id": "beschrijving",
+                  "originalId": "beschrijving",
+                  "alias": "beschrijving",
+                  "columnType": "text",
+                  "isVisible": false,
+                  "index": 4,
+                  "width": 0,
+                  "isDerived": false,
+                  "label": "Beschrijving",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"beschrijving\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "id": {
+                  "id": "id",
+                  "originalId": "id",
+                  "alias": "id",
+                  "columnType": "text",
+                  "isVisible": false,
+                  "index": 5,
+                  "width": 0,
+                  "isDerived": false,
+                  "label": "id",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"id\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "btw_pct": {
+                  "id": "btw_pct",
+                  "originalId": "btw_pct",
+                  "alias": "btw_pct",
+                  "index": 6,
+                  "width": 80,
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "label": "BTW %",
+                  "isDerived": false,
+                  "computedValue": "{{tblProducten.processedTableData.map((r)=>(r.btw_pct||0))}}"
+                },
+                "btn_detail": {
+                  "index": 7,
+                  "width": 110,
+                  "id": "btn_detail",
+                  "originalId": "btn_detail",
+                  "alias": "btn_detail",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Bewerken",
+                  "buttonLabel": "Bewerken",
+                  "buttonColor": "#03B365",
+                  "buttonVariant": "PRIMARY",
+                  "borderRadius": "4px",
+                  "onClick": "{{navigateTo('ProductenDetail', {productId: currentRow.id}, 'SAME_WINDOW')}}",
+                  "computedValue": "{{currentRow.id}}",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "sticky": "",
+                  "validation": {},
+                  "allowCellWrapping": false
+                },
+                "btn_delete": {
+                  "index": 8,
+                  "width": 110,
+                  "id": "btn_delete",
+                  "originalId": "btn_delete",
+                  "alias": "btn_delete",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Verwijderen",
+                  "buttonLabel": "Verwijderen",
+                  "buttonColor": "#E22B2B",
+                  "buttonVariant": "SECONDARY",
+                  "borderRadius": "4px",
+                  "onClick": "{{storeValue('deleteProductId', currentRow.id).then(() => showModal('ModalConfirmDeleteProduct'))}}",
+                  "computedValue": "{{currentRow.id}}",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "sticky": "",
+                  "validation": {},
+                  "allowCellWrapping": false,
+                  "confirmBeforeExecute": false
+                }
+              },
+              "defaultSelectedRowIndex": "0",
+              "canFreezeColumn": false,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 40,
+              "widgetId": "de63351dd",
+              "enableServerSideFiltering": false,
+              "isVisibleFilters": true,
+              "tableData": "{{productenGet.data}}",
+              "isVisible": true,
+              "version": 1,
+              "enableClientSideSearch": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "isVisiblePagination": true,
+              "columnUpdatedAt": {
+                "high": 414,
+                "low": 137593847,
+                "unsigned": false
+              },
+              "primaryColumnId": "id",
+              "defaultSelectedRowIndices": [
+                0
+              ]
+            },
+            {
+              "widgetName": "BtnNieuwProduct",
+              "onClick": "{{navigateTo('NieuwProduct', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#03B365",
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 52,
+              "dynamicBindingPathList": [],
+              "text": "Nieuw product",
+              "key": "n000af4maj",
+              "rightColumn": 62,
+              "iconName": "add",
+              "widgetId": "dvikpipyjq",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "4px",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left"
+            },
+            {
+              "widgetName": "ModalConfirmDeleteProduct",
+              "rightColumn": 56,
+              "detachFromLayout": true,
+              "widgetId": "mdlcfdelp1",
+              "topRow": 0,
+              "bottomRow": 40,
+              "parentRowSpace": 10,
+              "isVisible": false,
+              "type": "MODAL_WIDGET",
+              "canOutsideClickClose": true,
+              "version": 1,
+              "canEscapeKeyClose": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "size": "MEDIUM",
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "ModalConfirmDeleteCanvas",
+                  "rightColumn": 1224,
+                  "backgroundColor": "none",
+                  "detachFromLayout": true,
+                  "widgetId": "mdlcfdelc1",
+                  "topRow": 0,
+                  "bottomRow": 190,
+                  "containerStyle": "none",
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "parentId": "mdlcfdelp1",
+                  "renderMode": "CANVAS",
+                  "minHeight": 196,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "TxtConfirmDeleteProduct",
+                      "rightColumn": 54,
+                      "textAlign": "LEFT",
+                      "widgetId": "mdlcfdelt1",
+                      "topRow": 2,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "TEXT_WIDGET",
+                      "fontStyle": "BOLD",
+                      "version": 1,
+                      "textColor": "#231F20",
+                      "parentId": "mdlcfdelc1",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "fontSize": "1rem",
+                      "text": "Weet je zeker dat je dit product wilt verwijderen?"
+                    },
+                    {
+                      "widgetName": "BtnConfirmDeleteAnnuleren",
+                      "rightColumn": 26,
+                      "onClick": "{{closeModal('ModalConfirmDeleteProduct')}}",
+                      "buttonColor": "#6B7280",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "widgetId": "mdlcfdelb1",
+                      "topRow": 12,
+                      "bottomRow": 18,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "BUTTON_WIDGET",
+                      "version": 1,
+                      "parentId": "mdlcfdelc1",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 2,
+                      "borderRadius": "4px",
+                      "dynamicBindingPathList": [],
+                      "buttonVariant": "SECONDARY",
+                      "text": "Annuleren"
+                    },
+                    {
+                      "widgetName": "BtnConfirmDeleteJa",
+                      "rightColumn": 54,
+                      "onClick": "{{productSoftDelete.run(() => {closeModal('ModalConfirmDeleteProduct'); showAlert('Product verwijderd','success'); productenGet.run();}, () => showAlert('Fout bij verwijderen','error'))}}",
+                      "buttonColor": "#E22B2B",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "widgetId": "mdlcfdelb2",
+                      "topRow": 12,
+                      "bottomRow": 18,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "BUTTON_WIDGET",
+                      "version": 1,
+                      "parentId": "mdlcfdelc1",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 31,
+                      "borderRadius": "4px",
+                      "dynamicBindingPathList": [],
+                      "buttonVariant": "PRIMARY",
+                      "text": "Ja, verwijderen"
+                    }
+                  ]
+                }
+              ],
+              "width": 370,
+              "height": 196
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "_id": "69fdf918c8eed02aabb4c9a7",
+              "name": "productenGet",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "ModalConfirmDeleteProduct",
+          "BtnNieuwProduct",
+          "ModalConfirmDeleteCanvas",
+          "TxtProductenTitel",
+          "TxtConfirmDeleteProduct",
+          "BtnConfirmDeleteAnnuleren",
+          "tblProducten",
+          "MainContainer",
+          "BtnConfirmDeleteJa"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [
+          "productenGet"
+        ],
+        "validOnPageLoadActions": true
+      }
+    ]
+  },
+  "publishedPage": {
+    "name": "Producten",
+    "slug": "producten",
+    "layouts": [
+      {
+        "_id": "6a0cb9d90daa883b44e34ae7",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 540,
+          "snapRows": 110,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "version": 94,
+          "isLoading": false,
+          "renderMode": "CANVAS",
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "dynamicBindingPathList": [],
+          "children": [
+            {
+              "widgetName": "TxtProductenTitel",
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "overflow": "NONE",
+              "fontFamily": "System Default",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Producten",
+              "rightColumn": 20,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "f46270c30",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "tblProducten",
+              "defaultPageSize": 10,
+              "columnOrder": [
+                "naam",
+                "prijs_excl",
+                "btw_pct",
+                "sku",
+                "createdon",
+                "btn_detail",
+                "btn_delete"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
+              "topRow": 9,
+              "bottomRow": 54,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "columnWidthMap": {
+                "naam": 200,
+                "prijs_excl": 110,
+                "btw_pct": 80,
+                "sku": 120,
+                "createdon": 140,
+                "btn_detail": 120
+              },
+              "type": "TABLE_WIDGET_V2",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.btn_detail.onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.naam.computedValue"
+                },
+                {
+                  "key": "primaryColumns.prijs_excl.computedValue"
+                },
+                {
+                  "key": "primaryColumns.sku.computedValue"
+                },
+                {
+                  "key": "primaryColumns.createdon.computedValue"
+                },
+                {
+                  "key": "primaryColumns.beschrijving.computedValue"
+                },
+                {
+                  "key": "primaryColumns.id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.btw_pct.computedValue"
+                },
+                {
+                  "key": "primaryColumns.btn_detail.computedValue"
+                }
+              ],
+              "delimiter": ",",
+              "primaryColumns": {
+                "naam": {
+                  "id": "naam",
+                  "originalId": "naam",
+                  "alias": "naam",
+                  "columnType": "text",
+                  "isVisible": true,
+                  "index": 0,
+                  "width": 200,
+                  "isDerived": false,
+                  "label": "Product",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"naam\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "prijs_excl": {
+                  "id": "prijs_excl",
+                  "originalId": "prijs_excl",
+                  "alias": "prijs_excl",
+                  "columnType": "currency",
+                  "isVisible": true,
+                  "index": 1,
+                  "width": 110,
+                  "isDerived": false,
+                  "label": "Prijs excl.",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"prijs_excl\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "RIGHT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false,
+                  "currencyCode": "EUR"
+                },
+                "sku": {
+                  "id": "sku",
+                  "originalId": "sku",
+                  "alias": "sku",
+                  "columnType": "text",
+                  "isVisible": true,
+                  "index": 2,
+                  "width": 120,
+                  "isDerived": false,
+                  "label": "Artikelcode",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"sku\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "createdon": {
+                  "id": "createdon",
+                  "originalId": "createdon",
+                  "alias": "createdon",
+                  "columnType": "text",
+                  "isVisible": true,
+                  "index": 3,
+                  "width": 130,
+                  "isDerived": false,
+                  "label": "Aangemaakt op",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"createdon\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "beschrijving": {
+                  "id": "beschrijving",
+                  "originalId": "beschrijving",
+                  "alias": "beschrijving",
+                  "columnType": "text",
+                  "isVisible": false,
+                  "index": 4,
+                  "width": 0,
+                  "isDerived": false,
+                  "label": "Beschrijving",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"beschrijving\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "id": {
+                  "id": "id",
+                  "originalId": "id",
+                  "alias": "id",
+                  "columnType": "text",
+                  "isVisible": false,
+                  "index": 5,
+                  "width": 0,
+                  "isDerived": false,
+                  "label": "id",
+                  "computedValue": "{{tblProducten.processedTableData.map((currentRow, currentIndex) => currentRow[\"id\"])}}",
+                  "isCellVisible": true,
+                  "validation": {},
+                  "sticky": "",
+                  "horizontalAlignment": "LEFT",
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "allowCellWrapping": false
+                },
+                "btw_pct": {
+                  "id": "btw_pct",
+                  "originalId": "btw_pct",
+                  "alias": "btw_pct",
+                  "index": 6,
+                  "width": 80,
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "label": "BTW %",
+                  "isDerived": false,
+                  "computedValue": "{{tblProducten.processedTableData.map((r)=>(r.btw_pct||0))}}"
+                },
+                "btn_detail": {
+                  "index": 7,
+                  "width": 110,
+                  "id": "btn_detail",
+                  "originalId": "btn_detail",
+                  "alias": "btn_detail",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Bewerken",
+                  "buttonLabel": "Bewerken",
+                  "buttonColor": "#03B365",
+                  "buttonVariant": "PRIMARY",
+                  "borderRadius": "4px",
+                  "onClick": "{{navigateTo('ProductenDetail', {productId: currentRow.id}, 'SAME_WINDOW')}}",
+                  "computedValue": "{{currentRow.id}}",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "sticky": "",
+                  "validation": {},
+                  "allowCellWrapping": false
+                },
+                "btn_delete": {
+                  "index": 8,
+                  "width": 110,
+                  "id": "btn_delete",
+                  "originalId": "btn_delete",
+                  "alias": "btn_delete",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Verwijderen",
+                  "buttonLabel": "Verwijderen",
+                  "buttonColor": "#E22B2B",
+                  "buttonVariant": "SECONDARY",
+                  "borderRadius": "4px",
+                  "onClick": "{{storeValue('deleteProductId', currentRow.id).then(() => showModal('ModalConfirmDeleteProduct'))}}",
+                  "computedValue": "{{currentRow.id}}",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "sticky": "",
+                  "validation": {},
+                  "allowCellWrapping": false,
+                  "confirmBeforeExecute": false
+                }
+              },
+              "defaultSelectedRowIndex": "0",
+              "canFreezeColumn": false,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 40,
+              "widgetId": "de63351dd",
+              "enableServerSideFiltering": false,
+              "isVisibleFilters": true,
+              "tableData": "{{productenGet.data}}",
+              "isVisible": true,
+              "version": 1,
+              "enableClientSideSearch": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "isVisiblePagination": true,
+              "columnUpdatedAt": {
+                "high": 414,
+                "low": 137593847,
+                "unsigned": false
+              },
+              "primaryColumnId": "id",
+              "defaultSelectedRowIndices": [
+                0
+              ]
+            },
+            {
+              "widgetName": "BtnNieuwProduct",
+              "onClick": "{{navigateTo('NieuwProduct', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#03B365",
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 52,
+              "dynamicBindingPathList": [],
+              "text": "Nieuw product",
+              "key": "n000af4maj",
+              "rightColumn": 62,
+              "iconName": "add",
+              "widgetId": "dvikpipyjq",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "4px",
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left"
+            },
+            {
+              "widgetName": "ModalConfirmDeleteProduct",
+              "rightColumn": 56,
+              "detachFromLayout": true,
+              "widgetId": "mdlcfdelp1",
+              "topRow": 0,
+              "bottomRow": 40,
+              "parentRowSpace": 10,
+              "isVisible": false,
+              "type": "MODAL_WIDGET",
+              "canOutsideClickClose": true,
+              "version": 1,
+              "canEscapeKeyClose": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "shouldScrollContents": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "size": "MEDIUM",
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "ModalConfirmDeleteCanvas",
+                  "rightColumn": 1224,
+                  "backgroundColor": "none",
+                  "detachFromLayout": true,
+                  "widgetId": "mdlcfdelc1",
+                  "topRow": 0,
+                  "bottomRow": 190,
+                  "containerStyle": "none",
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "parentId": "mdlcfdelp1",
+                  "renderMode": "CANVAS",
+                  "minHeight": 196,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "TxtConfirmDeleteProduct",
+                      "rightColumn": 54,
+                      "textAlign": "LEFT",
+                      "widgetId": "mdlcfdelt1",
+                      "topRow": 2,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "TEXT_WIDGET",
+                      "fontStyle": "BOLD",
+                      "version": 1,
+                      "textColor": "#231F20",
+                      "parentId": "mdlcfdelc1",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [],
+                      "fontSize": "1rem",
+                      "text": "Weet je zeker dat je dit product wilt verwijderen?"
+                    },
+                    {
+                      "widgetName": "BtnConfirmDeleteAnnuleren",
+                      "rightColumn": 26,
+                      "onClick": "{{closeModal('ModalConfirmDeleteProduct')}}",
+                      "buttonColor": "#6B7280",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "widgetId": "mdlcfdelb1",
+                      "topRow": 12,
+                      "bottomRow": 18,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "BUTTON_WIDGET",
+                      "version": 1,
+                      "parentId": "mdlcfdelc1",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 2,
+                      "borderRadius": "4px",
+                      "dynamicBindingPathList": [],
+                      "buttonVariant": "SECONDARY",
+                      "text": "Annuleren"
+                    },
+                    {
+                      "widgetName": "BtnConfirmDeleteJa",
+                      "rightColumn": 54,
+                      "onClick": "{{productSoftDelete.run(() => {closeModal('ModalConfirmDeleteProduct'); showAlert('Product verwijderd','success'); productenGet.run();}, () => showAlert('Fout bij verwijderen','error'))}}",
+                      "buttonColor": "#E22B2B",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "widgetId": "mdlcfdelb2",
+                      "topRow": 12,
+                      "bottomRow": 18,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "BUTTON_WIDGET",
+                      "version": 1,
+                      "parentId": "mdlcfdelc1",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.125,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 31,
+                      "borderRadius": "4px",
+                      "dynamicBindingPathList": [],
+                      "buttonVariant": "PRIMARY",
+                      "text": "Ja, verwijderen"
+                    }
+                  ]
+                }
+              ],
+              "width": 370,
+              "height": 196
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "_id": "69fdf918c8eed02aabb4c9a7",
+              "name": "productenGet",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "ModalConfirmDeleteProduct",
+          "BtnNieuwProduct",
+          "ModalConfirmDeleteCanvas",
+          "TxtProductenTitel",
+          "TxtConfirmDeleteProduct",
+          "BtnConfirmDeleteAnnuleren",
+          "tblProducten",
+          "MainContainer",
+          "BtnConfirmDeleteJa"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [
+          "productenGet"
+        ],
+        "validOnPageLoadActions": true
+      }
+    ]
+  },
+  "baseId": "69fdcf5fc8eed02aabb4c9a5",
+  "gitSyncId": "69f23d0ae8d23e3922706103_59239775-b130-452e-a3c7-92aa671cbd03",
+  "createdAt": "2026-05-08T11:56:15.296Z",
+  "updatedAt": "2026-06-13T14:43:50.571Z",
+  "deleted": false,
+  "policyMap": {
+    "read:pages": {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:pages": {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "create:pageActions": {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:pages": {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewPage"
 }

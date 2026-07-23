@@ -1,161 +1,141 @@
-﻿{
-    "_id":  "69f72cfe65418fc157f17a54",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "enumOptions",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "updatedAt":  "2026-05-12T17:25:28.908Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69f4a8e70c9a91129f30eb6d",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "SELECT\n  t.typname               AS enum_name,\n  e.enumlabel             AS code,\n  INITCAP(e.enumlabel)    AS name\nFROM pg_type t\nJOIN pg_enum e ON e.enumtypid = t.oid\nWHERE t.typnamespace = \u0027public\u0027::regnamespace\nORDER BY t.typname, e.enumsortorder;",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "MANUAL",
-                              "dynamicBindingPathList":  [
-
-                                                         ],
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false,
-                              "deletedAt":  "2026-05-12T17:25:28.907Z",
-                              "createdAt":  "2026-05-03T11:09:50.569Z"
-                          },
-    "publishedAction":  {
-                            "name":  "enumOptions",
-                            "datasource":  {
-                                               "_id":  "69f23e5ae8d23e3922706106",
-                                               "name":  "Supabase (dev)",
-                                               "pluginId":  "69f21d005fbcf7f394507fde",
-                                               "updatedAt":  "2026-05-12T17:25:28.908Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "69f4a8e70c9a91129f30eb6d",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "SELECT\n  t.typname               AS enum_name,\n  e.enumlabel             AS code,\n  INITCAP(e.enumlabel)    AS name\nFROM pg_type t\nJOIN pg_enum e ON e.enumtypid = t.oid\nWHERE t.typnamespace = \u0027public\u0027::regnamespace\nORDER BY t.typname, e.enumsortorder;",
-                                                        "pluginSpecifiedTemplates":  [
-                                                                                         {
-                                                                                             "value":  true
-                                                                                         }
-                                                                                     ]
-                                                    },
-                            "runBehaviour":  "MANUAL",
-                            "dynamicBindingPathList":  [
-
-                                                       ],
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-
-                                             ],
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false,
-                            "createdAt":  "2026-05-03T11:09:50.569Z"
-                        },
-    "baseId":  "69f72cfe65418fc157f17a54",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_eb4f92af-c990-4d1a-bbee-b6b205e19910",
-    "createdAt":  "2026-05-03T11:09:50.569Z",
-    "updatedAt":  "2026-05-12T17:25:28.908Z",
-    "deleted":  true,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction",
-    "deletedAt":  "2026-05-12T17:25:35.949Z"
+{
+  "_id": "69f72cfe65418fc157f17a54",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "enumOptions",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-05-12T17:25:28.908Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69f4a8e70c9a91129f30eb6d",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT\n  t.typname               AS enum_name,\n  e.enumlabel             AS code,\n  INITCAP(e.enumlabel)    AS name\nFROM pg_type t\nJOIN pg_enum e ON e.enumtypid = t.oid\nWHERE t.typnamespace = 'public'::regnamespace\nORDER BY t.typname, e.enumsortorder;",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "MANUAL",
+    "dynamicBindingPathList": [],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "deletedAt": "2026-05-12T17:25:28.907Z",
+    "createdAt": "2026-05-03T11:09:50.569Z"
+  },
+  "publishedAction": {
+    "name": "enumOptions",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-05-12T17:25:28.908Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69f4a8e70c9a91129f30eb6d",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT\n  t.typname               AS enum_name,\n  e.enumlabel             AS code,\n  INITCAP(e.enumlabel)    AS name\nFROM pg_type t\nJOIN pg_enum e ON e.enumtypid = t.oid\nWHERE t.typnamespace = 'public'::regnamespace\nORDER BY t.typname, e.enumsortorder;",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "MANUAL",
+    "dynamicBindingPathList": [],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-03T11:09:50.569Z"
+  },
+  "baseId": "69f72cfe65418fc157f17a54",
+  "gitSyncId": "69f23d0ae8d23e3922706103_eb4f92af-c990-4d1a-bbee-b6b205e19910",
+  "createdAt": "2026-05-03T11:09:50.569Z",
+  "updatedAt": "2026-05-12T17:25:28.908Z",
+  "deleted": true,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
 }

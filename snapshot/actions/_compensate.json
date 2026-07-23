@@ -1,130 +1,118 @@
-﻿{
-    "_id":  "6a060bcda02d0a78f91329c3",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "workspaceId":  "69f23d0ae8d23e39227060fe",
-    "pluginType":  "DB",
-    "pluginId":  "69f21d005fbcf7f394507fde",
-    "unpublishedAction":  {
-                              "name":  "_compensate",
-                              "datasource":  {
-                                                 "_id":  "69f23e5ae8d23e3922706106",
-                                                 "name":  "Supabase (dev)",
-                                                 "pluginId":  "69f21d005fbcf7f394507fde",
-                                                 "createdAt":  "2026-05-14T17:52:13.591Z",
-                                                 "updatedAt":  "2026-05-14T17:52:13.709Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69fb954dc8eed02aabb4c92c",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  15000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "\nINSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\nSELECT \n    r.product_id,\n    r.order_id,\n    \u0027in\u0027::public.voorraad_mutatie_type,\n    r.aantal,\n    \u0027Handmatige correctie: terugboeken verwijderde regel (Bombs ├ù3, order #151)\u0027,\n    r.modifiedby\nFROM order_regels r\nJOIN producten p ON p.id = r.product_id\nJOIN orders o ON o.id = r.order_id\nWHERE lower(p.naam) LIKE \u0027%bomb%\u0027\n  AND o.volgnummer = 151\n  AND r.deletedon IS NOT NULL\n  AND r.deletedon::date = \u00272026-05-14\u0027\n  AND NOT EXISTS (\n    SELECT 1 FROM voorraad_mutaties vm\n    WHERE vm.order_id = r.order_id\n      AND vm.product_id = r.product_id\n      AND vm.opmerking LIKE \u0027%Handmatige correctie%\u0027\n  )\n",
-                                                          "pluginSpecifiedTemplates":  [
-                                                                                           {
-                                                                                               "value":  true
-                                                                                           }
-                                                                                       ]
-                                                      },
-                              "runBehaviour":  "MANUAL",
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false
-                          },
-    "publishedAction":  {
-                            "datasource":  {
-                                               "createdAt":  "2026-05-14T17:52:13.591Z",
-                                               "updatedAt":  "2026-05-14T17:52:13.709Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false
-                        },
-    "baseId":  "6a060bcda02d0a78f91329c3",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_8ba98d1e-c261-4ccf-9bfb-d1bd3f2b82d3",
-    "createdAt":  "2026-05-14T17:52:13.591Z",
-    "updatedAt":  "2026-05-14T17:52:13.709Z",
-    "deleted":  false,
-    "deletedAt":  "2026-05-14T17:52:13.709Z",
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction"
+{
+  "_id": "6a060bcda02d0a78f91329c3",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "_compensate",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "createdAt": "2026-05-14T17:52:13.591Z",
+      "updatedAt": "2026-05-14T17:52:13.709Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 15000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "\nINSERT INTO public.voorraad_mutaties (product_id, order_id, type, aantal, opmerking, createdby)\nSELECT \n    r.product_id,\n    r.order_id,\n    'in'::public.voorraad_mutatie_type,\n    r.aantal,\n    'Handmatige correctie: terugboeken verwijderde regel (Bombs ×3, order #151)',\n    r.modifiedby\nFROM order_regels r\nJOIN producten p ON p.id = r.product_id\nJOIN orders o ON o.id = r.order_id\nWHERE lower(p.naam) LIKE '%bomb%'\n  AND o.volgnummer = 151\n  AND r.deletedon IS NOT NULL\n  AND r.deletedon::date = '2026-05-14'\n  AND NOT EXISTS (\n    SELECT 1 FROM voorraad_mutaties vm\n    WHERE vm.order_id = r.order_id\n      AND vm.product_id = r.product_id\n      AND vm.opmerking LIKE '%Handmatige correctie%'\n  )\n",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "publishedAction": {
+    "datasource": {
+      "createdAt": "2026-05-14T17:52:13.591Z",
+      "updatedAt": "2026-05-14T17:52:13.709Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "baseId": "6a060bcda02d0a78f91329c3",
+  "gitSyncId": "69f23d0ae8d23e3922706103_8ba98d1e-c261-4ccf-9bfb-d1bd3f2b82d3",
+  "createdAt": "2026-05-14T17:52:13.591Z",
+  "updatedAt": "2026-05-14T17:52:13.709Z",
+  "deleted": false,
+  "deletedAt": "2026-05-14T17:52:13.709Z",
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction"
 }

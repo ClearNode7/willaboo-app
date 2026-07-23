@@ -1,172 +1,156 @@
-﻿{
-    "_id":  "69ff8dc5c8eed02aabb4c9de",
-    "applicationId":  "69f23d0ae8d23e3922706103",
-    "pluginType":  "JS",
-    "pluginId":  "69f21d015fbcf7f394507fef",
-    "unpublishedAction":  {
-                              "name":  "run",
-                              "fullyQualifiedName":  "BoldButtons.run",
-                              "datasource":  {
-                                                 "name":  "UNUSED_DATASOURCE",
-                                                 "pluginId":  "69f21d015fbcf7f394507fef",
-                                                 "workspaceId":  "69f23d0ae8d23e39227060fe",
-                                                 "createdAt":  "2026-05-09T19:40:53.252Z",
-                                                 "updatedAt":  "2026-05-09T19:42:34.992Z",
-                                                 "deleted":  false,
-                                                 "policyMap":  {
-
-                                                               },
-                                                 "policies":  [
-
-                                                              ]
-                                             },
-                              "pageId":  "69fdcf5fc8eed02aabb4c9a5",
-                              "collectionId":  "69ff8dc5c8eed02aabb4c9df",
-                              "actionConfiguration":  {
-                                                          "timeoutInMillisecond":  10000,
-                                                          "paginationType":  "NONE",
-                                                          "encodeParamsToggle":  true,
-                                                          "body":  "async () =\u003e {\n  const id = \u0027wbBoldBtn\u0027;\n  if (document.getElementById(id)) return;\n  const el = document.createElement(\u0027style\u0027);\n  el.id = id;\n  el.textContent = \u0027.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }\u0027;\n  document.head.appendChild(el);\n}",
-                                                          "jsArguments":  [
-
-                                                                          ]
-                                                      },
-                              "executeOnLoad":  true,
-                              "runBehaviour":  "ON_PAGE_LOAD",
-                              "clientSideExecution":  true,
-                              "dynamicBindingPathList":  [
-                                                             {
-                                                                 "key":  "body"
-                                                             }
-                                                         ],
-                              "isValid":  true,
-                              "invalids":  [
-
-                                           ],
-                              "jsonPathKeys":  [
-                                                   "async () =\u003e {\n  const id = \u0027wbBoldBtn\u0027;\n  if (document.getElementById(id)) return;\n  const el = document.createElement(\u0027style\u0027);\n  el.id = id;\n  el.textContent = \u0027.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }\u0027;\n  document.head.appendChild(el);\n}"
-                                               ],
-                              "userSetOnLoad":  false,
-                              "confirmBeforeExecute":  false,
-                              "deletedAt":  "2026-05-09T19:42:34.984Z",
-                              "createdAt":  "2026-05-09T19:40:53.252Z",
-                              "updatedAt":  "2026-05-09T19:40:53.285Z"
-                          },
-    "publishedAction":  {
-                            "name":  "run",
-                            "fullyQualifiedName":  "BoldButtons.run",
-                            "datasource":  {
-                                               "name":  "UNUSED_DATASOURCE",
-                                               "pluginId":  "69f21d015fbcf7f394507fef",
-                                               "workspaceId":  "69f23d0ae8d23e39227060fe",
-                                               "createdAt":  "2026-05-09T19:40:53.252Z",
-                                               "updatedAt":  "2026-05-09T19:42:34.992Z",
-                                               "deleted":  false,
-                                               "policyMap":  {
-
-                                                             },
-                                               "policies":  [
-
-                                                            ]
-                                           },
-                            "pageId":  "69fdcf5fc8eed02aabb4c9a5",
-                            "collectionId":  "69ff8dc5c8eed02aabb4c9df",
-                            "actionConfiguration":  {
-                                                        "timeoutInMillisecond":  10000,
-                                                        "paginationType":  "NONE",
-                                                        "encodeParamsToggle":  true,
-                                                        "body":  "async () =\u003e {\n  const id = \u0027wbBoldBtn\u0027;\n  if (document.getElementById(id)) return;\n  const el = document.createElement(\u0027style\u0027);\n  el.id = id;\n  el.textContent = \u0027.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }\u0027;\n  document.head.appendChild(el);\n}",
-                                                        "jsArguments":  [
-
-                                                                        ]
-                                                    },
-                            "executeOnLoad":  true,
-                            "runBehaviour":  "ON_PAGE_LOAD",
-                            "clientSideExecution":  true,
-                            "dynamicBindingPathList":  [
-                                                           {
-                                                               "key":  "body"
-                                                           }
-                                                       ],
-                            "isValid":  true,
-                            "invalids":  [
-
-                                         ],
-                            "jsonPathKeys":  [
-                                                 "async () =\u003e {\n  const id = \u0027wbBoldBtn\u0027;\n  if (document.getElementById(id)) return;\n  const el = document.createElement(\u0027style\u0027);\n  el.id = id;\n  el.textContent = \u0027.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }\u0027;\n  document.head.appendChild(el);\n}"
-                                             ],
-                            "userSetOnLoad":  false,
-                            "confirmBeforeExecute":  false,
-                            "createdAt":  "2026-05-09T19:40:53.252Z",
-                            "updatedAt":  "2026-05-09T19:40:53.285Z"
-                        },
-    "baseId":  "69ff8dc5c8eed02aabb4c9de",
-    "gitSyncId":  "69f23d0ae8d23e3922706103_85f1d341-8333-4bef-a1bf-155417d4048c",
-    "createdAt":  "2026-05-09T19:40:53.252Z",
-    "updatedAt":  "2026-05-09T19:42:34.992Z",
-    "deleted":  true,
-    "policyMap":  {
-                      "read:actions":  {
-                                           "permission":  "read:actions",
-                                           "permissionGroups":  [
-                                                                    "69f23d0ae8d23e39227060ff",
-                                                                    "69f23d0ae8d23e3922706100"
-                                                                ]
-                                       },
-                      "delete:actions":  {
-                                             "permission":  "delete:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         },
-                      "execute:actions":  {
-                                              "permission":  "execute:actions",
-                                              "permissionGroups":  [
-                                                                       "69f23d0ae8d23e39227060ff",
-                                                                       "69f23d0ae8d23e3922706100",
-                                                                       "69f23d0ae8d23e3922706101"
-                                                                   ]
-                                          },
-                      "manage:actions":  {
-                                             "permission":  "manage:actions",
-                                             "permissionGroups":  [
-                                                                      "69f23d0ae8d23e39227060ff",
-                                                                      "69f23d0ae8d23e3922706100"
-                                                                  ]
-                                         }
-                  },
-    "policies":  [
-                     {
-                         "permission":  "manage:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "read:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "delete:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100"
-                                              ]
-                     },
-                     {
-                         "permission":  "execute:actions",
-                         "permissionGroups":  [
-                                                  "69f23d0ae8d23e39227060ff",
-                                                  "69f23d0ae8d23e3922706100",
-                                                  "69f23d0ae8d23e3922706101"
-                                              ]
-                     }
-                 ],
-    "_class":  "com.appsmith.server.domains.NewAction",
-    "deletedAt":  "2026-05-09T19:43:40.952Z"
+{
+  "_id": "69ff8dc5c8eed02aabb4c9de",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "pluginType": "JS",
+  "pluginId": "69f21d015fbcf7f394507fef",
+  "unpublishedAction": {
+    "name": "run",
+    "fullyQualifiedName": "BoldButtons.run",
+    "datasource": {
+      "name": "UNUSED_DATASOURCE",
+      "pluginId": "69f21d015fbcf7f394507fef",
+      "workspaceId": "69f23d0ae8d23e39227060fe",
+      "createdAt": "2026-05-09T19:40:53.252Z",
+      "updatedAt": "2026-05-09T19:42:34.992Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fdcf5fc8eed02aabb4c9a5",
+    "collectionId": "69ff8dc5c8eed02aabb4c9df",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "async () => {\n  const id = 'wbBoldBtn';\n  if (document.getElementById(id)) return;\n  const el = document.createElement('style');\n  el.id = id;\n  el.textContent = '.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }';\n  document.head.appendChild(el);\n}",
+      "jsArguments": []
+    },
+    "executeOnLoad": true,
+    "runBehaviour": "ON_PAGE_LOAD",
+    "clientSideExecution": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "async () => {\n  const id = 'wbBoldBtn';\n  if (document.getElementById(id)) return;\n  const el = document.createElement('style');\n  el.id = id;\n  el.textContent = '.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }';\n  document.head.appendChild(el);\n}"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "deletedAt": "2026-05-09T19:42:34.984Z",
+    "createdAt": "2026-05-09T19:40:53.252Z",
+    "updatedAt": "2026-05-09T19:40:53.285Z"
+  },
+  "publishedAction": {
+    "name": "run",
+    "fullyQualifiedName": "BoldButtons.run",
+    "datasource": {
+      "name": "UNUSED_DATASOURCE",
+      "pluginId": "69f21d015fbcf7f394507fef",
+      "workspaceId": "69f23d0ae8d23e39227060fe",
+      "createdAt": "2026-05-09T19:40:53.252Z",
+      "updatedAt": "2026-05-09T19:42:34.992Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fdcf5fc8eed02aabb4c9a5",
+    "collectionId": "69ff8dc5c8eed02aabb4c9df",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "async () => {\n  const id = 'wbBoldBtn';\n  if (document.getElementById(id)) return;\n  const el = document.createElement('style');\n  el.id = id;\n  el.textContent = '.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }';\n  document.head.appendChild(el);\n}",
+      "jsArguments": []
+    },
+    "executeOnLoad": true,
+    "runBehaviour": "ON_PAGE_LOAD",
+    "clientSideExecution": true,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "async () => {\n  const id = 'wbBoldBtn';\n  if (document.getElementById(id)) return;\n  const el = document.createElement('style');\n  el.id = id;\n  el.textContent = '.bp3-button .bp3-button-text { font-weight: 700 !important; } .ads-v2-button__content { font-weight: 700 !important; }';\n  document.head.appendChild(el);\n}"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-09T19:40:53.252Z",
+    "updatedAt": "2026-05-09T19:40:53.285Z"
+  },
+  "baseId": "69ff8dc5c8eed02aabb4c9de",
+  "gitSyncId": "69f23d0ae8d23e3922706103_85f1d341-8333-4bef-a1bf-155417d4048c",
+  "createdAt": "2026-05-09T19:40:53.252Z",
+  "updatedAt": "2026-05-09T19:42:34.992Z",
+  "deleted": true,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-09T19:43:40.952Z"
 }
