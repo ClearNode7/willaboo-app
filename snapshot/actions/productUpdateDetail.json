@@ -1,5 +1,5 @@
 {
-  "_id": "6a02c6e3a02d0a78f91328f8",
+  "_id": "6a023eada02d0a78f91328e9",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,20 +10,21 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.495Z",
+      "createdAt": "2026-05-11T20:40:13.742Z",
+      "updatedAt": "2026-05-12T06:20:15.117Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a02c6e2a02d0a78f91328f6",
+    "pageId": "6a023eada02d0a78f91328e7",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.producten SET\n  naam         = '{{InpPDNaam.text}}',\n  sku          = NULLIF('{{InpPDSku.text}}', ''),\n  beschrijving = NULLIF('{{InpPDBeschrijving.text}}', ''),\n  prijs_excl   = CASE WHEN '{{InpPDPrijs.text}}' = '' THEN prijs_excl\n                      ELSE '{{InpPDPrijs.text}}'::numeric END,\n  btw_pct      = CASE WHEN '{{SelPDBtwPct.selectedOptionValue}}' = '' THEN btw_pct\n                      ELSE '{{SelPDBtwPct.selectedOptionValue}}'::integer END,\n  modifiedon   = now(),\n  modifiedby   = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid\n  AND deletedon IS NULL",
+      "body": "UPDATE public.producten SET\n  naam         = '{{InpPDNaam.text}}',\n  sku          = NULLIF('{{InpPDSku.text}}', ''),\n  beschrijving = NULLIF('{{InpPDBeschrijving.text}}', ''),\n  prijs_excl   = {{InpPDPrijs.text}}::numeric,\n  btw_pct      = {{SelPDBtwPct.selectedOptionValue}}::integer,\n  modifiedon   = now(),\n  modifiedby   = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid\nAND deletedon IS NULL",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
@@ -46,7 +47,7 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-12T06:21:23.284Z"
+    "deletedAt": "2026-05-12T06:20:15.117Z"
   },
   "publishedAction": {
     "name": "productUpdateDetail",
@@ -54,20 +55,21 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.495Z",
+      "createdAt": "2026-05-11T20:40:13.742Z",
+      "updatedAt": "2026-05-12T06:20:15.117Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a02c6e2a02d0a78f91328f6",
+    "pageId": "6a023eada02d0a78f91328e7",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.producten SET\n  naam         = '{{InpPDNaam.text}}',\n  sku          = NULLIF('{{InpPDSku.text}}', ''),\n  beschrijving = NULLIF('{{InpPDBeschrijving.text}}', ''),\n  prijs_excl   = CASE WHEN '{{InpPDPrijs.text}}' = '' THEN prijs_excl\n                      ELSE '{{InpPDPrijs.text}}'::numeric END,\n  btw_pct      = CASE WHEN '{{SelPDBtwPct.selectedOptionValue}}' = '' THEN btw_pct\n                      ELSE '{{SelPDBtwPct.selectedOptionValue}}'::integer END,\n  modifiedon   = now(),\n  modifiedby   = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid\n  AND deletedon IS NULL",
+      "body": "UPDATE public.producten SET\n  naam         = '{{InpPDNaam.text}}',\n  sku          = NULLIF('{{InpPDSku.text}}', ''),\n  beschrijving = NULLIF('{{InpPDBeschrijving.text}}', ''),\n  prijs_excl   = {{InpPDPrijs.text}}::numeric,\n  btw_pct      = {{SelPDBtwPct.selectedOptionValue}}::integer,\n  modifiedon   = now(),\n  modifiedby   = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.productId}}'::uuid\nAND deletedon IS NULL",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
@@ -89,14 +91,13 @@
       "InpPDSku.text"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "createdAt": "2026-05-12T06:21:23.284Z"
+    "confirmBeforeExecute": false
   },
-  "baseId": "6a02c6e3a02d0a78f91328f8",
-  "gitSyncId": "69f23d0ae8d23e3922706103_f6aa4dbb-e3cb-42cd-a968-2a8551ad2b7f",
-  "createdAt": "2026-05-12T06:21:23.284Z",
-  "updatedAt": "2026-06-12T14:39:47.495Z",
-  "deleted": false,
+  "baseId": "6a023eada02d0a78f91328e9",
+  "gitSyncId": "69f23d0ae8d23e3922706103_bc9b768e-28b7-4b20-a29e-391b4fd1f044",
+  "createdAt": "2026-05-11T20:40:13.742Z",
+  "updatedAt": "2026-05-12T06:20:15.117Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -159,5 +160,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T06:21:23.809Z"
 }

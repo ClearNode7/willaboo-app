@@ -1,82 +1,88 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "6a022ce4a02d0a78f9132882",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "updateDrempel",
+    "name": "orderStatusUpdate",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "createdAt": "2026-05-11T19:24:20.082Z",
+      "updatedAt": "2026-05-12T17:49:57.231Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a022cbaa02d0a78f913287e",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "UPDATE public.orders SET\n  status     = CAST({{SelectOrderStatus.selectedOptionValue}} AS public.order_status),\n  notities   = NULLIF({{InputOrderNotities.text}}, ''),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.orderId}}'"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
-        "key": "actionConfiguration.body"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "InputOrderNotities.text",
+      "SelectOrderStatus.selectedOptionValue",
+      "appsmith.URL.queryParams.orderId",
+      "appsmith.user.email"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
+    "deletedAt": "2026-05-12T17:49:57.231Z"
   },
   "publishedAction": {
-    "name": "updateDrempel",
+    "name": "orderStatusUpdate",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "createdAt": "2026-05-11T19:24:20.082Z",
+      "updatedAt": "2026-05-12T17:49:57.231Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a022cbaa02d0a78f913287e",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "UPDATE public.orders SET\n  status     = CAST({{SelectOrderStatus.selectedOptionValue}} AS public.order_status),\n  notities   = NULLIF({{InputOrderNotities.text}}, ''),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.orderId}}'"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
-        "key": "actionConfiguration.body"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "InputOrderNotities.text",
+      "SelectOrderStatus.selectedOptionValue",
+      "appsmith.URL.queryParams.orderId",
+      "appsmith.user.email"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
+  "baseId": "6a022ce4a02d0a78f9132882",
+  "gitSyncId": "69f23d0ae8d23e3922706103_e9cf3d5b-a298-461d-ac38-4cd9a6e0557b",
+  "createdAt": "2026-05-11T19:24:20.082Z",
+  "updatedAt": "2026-05-12T17:49:57.231Z",
   "deleted": true,
   "policyMap": {
     "read:actions": {
@@ -141,5 +147,5 @@
     }
   ],
   "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "deletedAt": "2026-05-12T17:49:57.422Z"
 }

@@ -1,32 +1,33 @@
 {
-  "_id": "69fb95dbc8eed02aabb4c92e",
+  "_id": "6a022ce4a02d0a78f9132883",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "orderStatusUpdate",
+    "name": "orderRegelUpdate",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.494Z",
+      "updatedAt": "2026-06-12T14:39:47.499Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "69fb954dc8eed02aabb4c92c",
+    "pageId": "6a022cbaa02d0a78f913287e",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.orders SET\n  status     = CAST('{{SelectOrderStatus.selectedOptionValue}}' AS public.order_status),\n  notities   = NULLIF('{{InputOrderNotities.text}}', ''),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrders.selectedRow.id}}'",
+      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectBewerkProduct.selectedOptionValue}}',\n  aantal     = CASE WHEN '{{InpBewerkAantal.text}}' = '' THEN aantal\n                    ELSE '{{InpBewerkAantal.text}}'::integer END,\n  eenheid    = CAST('{{SelectBewerkEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = CASE WHEN '{{InpBewerkPrijs.text}}' = '' THEN prijs_excl\n                    ELSE '{{InpBewerkPrijs.text}}'::numeric END,\n  btw_pct    = CASE WHEN '{{InpBewerkBtw.text}}' = '' THEN btw_pct\n                    ELSE '{{InpBewerkBtw.text}}'::numeric END,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
@@ -36,38 +37,42 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblOrders.selectedRow.id",
-      "InputOrderNotities.text",
-      "SelectOrderStatus.selectedOptionValue",
-      "appsmith.user.email"
+      "SelectBewerkProduct.selectedOptionValue",
+      "InpBewerkBtw.text",
+      "InpBewerkPrijs.text",
+      "tblOrderRegels.selectedRow.id",
+      "appsmith.user.email",
+      "SelectBewerkEenheid.selectedOptionValue",
+      "InpBewerkAantal.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-06T19:26:19.220Z"
+    "createdAt": "2026-05-11T19:24:20.142Z"
   },
   "publishedAction": {
-    "name": "orderStatusUpdate",
+    "name": "orderRegelUpdate",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.494Z",
+      "updatedAt": "2026-06-12T14:39:47.499Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "69fb954dc8eed02aabb4c92c",
+    "pageId": "6a022cbaa02d0a78f913287e",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.orders SET\n  status     = CAST('{{SelectOrderStatus.selectedOptionValue}}' AS public.order_status),\n  notities   = NULLIF('{{InputOrderNotities.text}}', ''),\n  modifiedon = NOW(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrders.selectedRow.id}}'",
+      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectBewerkProduct.selectedOptionValue}}',\n  aantal     = CASE WHEN '{{InpBewerkAantal.text}}' = '' THEN aantal\n                    ELSE '{{InpBewerkAantal.text}}'::integer END,\n  eenheid    = CAST('{{SelectBewerkEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = CASE WHEN '{{InpBewerkPrijs.text}}' = '' THEN prijs_excl\n                    ELSE '{{InpBewerkPrijs.text}}'::numeric END,\n  btw_pct    = CASE WHEN '{{InpBewerkBtw.text}}' = '' THEN btw_pct\n                    ELSE '{{InpBewerkBtw.text}}'::numeric END,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL",
       "pluginSpecifiedTemplates": [
         {
           "value": false
         }
       ]
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
@@ -77,19 +82,22 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblOrders.selectedRow.id",
-      "InputOrderNotities.text",
-      "SelectOrderStatus.selectedOptionValue",
-      "appsmith.user.email"
+      "SelectBewerkProduct.selectedOptionValue",
+      "InpBewerkBtw.text",
+      "InpBewerkPrijs.text",
+      "tblOrderRegels.selectedRow.id",
+      "appsmith.user.email",
+      "SelectBewerkEenheid.selectedOptionValue",
+      "InpBewerkAantal.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-06T19:26:19.220Z"
+    "createdAt": "2026-05-11T19:24:20.142Z"
   },
-  "baseId": "69fb95dbc8eed02aabb4c92e",
-  "gitSyncId": "69f23d0ae8d23e3922706103_a48a510a-eae3-48eb-98b9-50ed9b714ad3",
-  "createdAt": "2026-05-06T19:26:19.220Z",
-  "updatedAt": "2026-06-12T14:39:47.494Z",
+  "baseId": "6a022ce4a02d0a78f9132883",
+  "gitSyncId": "69f23d0ae8d23e3922706103_ed4699bb-1c0f-4dab-97c4-e3603e60b709",
+  "createdAt": "2026-05-11T19:24:20.142Z",
+  "updatedAt": "2026-06-12T14:39:47.499Z",
   "deleted": false,
   "policyMap": {
     "read:actions": {

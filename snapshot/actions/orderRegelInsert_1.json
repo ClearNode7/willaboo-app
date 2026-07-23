@@ -1,83 +1,94 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "6a022ce4a02d0a78f9132884",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "updateDrempel",
+    "name": "orderRegelInsert",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.500Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a022cbaa02d0a78f913287e",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{appsmith.URL.queryParams.orderId}}',\n  '{{SelectNieuwProduct.selectedOptionValue}}',\n  {{InpNieuwAantal.text || 1}},\n  CAST('{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
-        "key": "actionConfiguration.body"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
+      "InpNieuwBtw.text || 0",
+      "appsmith.URL.queryParams.orderId",
+      "SelectNieuwProduct.selectedOptionValue",
+      "appsmith.user.email",
+      "InpNieuwAantal.text || 1",
+      "InpNieuwPrijs.text || 0"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
+    "createdAt": "2026-05-11T19:24:20.208Z"
   },
   "publishedAction": {
-    "name": "updateDrempel",
+    "name": "orderRegelInsert",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.500Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a022cbaa02d0a78f913287e",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{appsmith.URL.queryParams.orderId}}',\n  '{{SelectNieuwProduct.selectedOptionValue}}',\n  {{InpNieuwAantal.text || 1}},\n  CAST('{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
-        "key": "actionConfiguration.body"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
+      "InpNieuwBtw.text || 0",
+      "appsmith.URL.queryParams.orderId",
+      "SelectNieuwProduct.selectedOptionValue",
+      "appsmith.user.email",
+      "InpNieuwAantal.text || 1",
+      "InpNieuwPrijs.text || 0"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-11T19:24:20.208Z"
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
-  "deleted": true,
+  "baseId": "6a022ce4a02d0a78f9132884",
+  "gitSyncId": "69f23d0ae8d23e3922706103_879afb4c-921e-4e12-9022-4e7c96e59eaf",
+  "createdAt": "2026-05-11T19:24:20.208Z",
+  "updatedAt": "2026-06-12T14:39:47.500Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -140,6 +151,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

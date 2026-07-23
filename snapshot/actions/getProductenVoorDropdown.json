@@ -1,5 +1,5 @@
 {
-  "_id": "6a06064ea02d0a78f9132990",
+  "_id": "6a05ed5da02d0a78f9132939",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,27 +10,27 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.421Z",
+      "updatedAt": "2026-05-14T17:29:33.844Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a06063ea02d0a78f913298f",
+    "pageId": "6a05ed47a02d0a78f9132937",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT id, naam FROM producten ORDER BY naam ASC"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-14T17:28:46.023Z"
+    "deletedAt": "2026-05-14T17:29:33.844Z",
+    "createdAt": "2026-05-14T15:42:21.618Z"
   },
   "publishedAction": {
     "name": "getProductenVoorDropdown",
@@ -38,33 +38,32 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.421Z",
+      "updatedAt": "2026-05-14T17:29:33.844Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a06063ea02d0a78f913298f",
+    "pageId": "6a05ed47a02d0a78f9132937",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "SELECT id, naam FROM producten ORDER BY naam ASC"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-14T17:28:46.023Z"
+    "createdAt": "2026-05-14T15:42:21.618Z"
   },
-  "baseId": "6a06064ea02d0a78f9132990",
-  "gitSyncId": "69f23d0ae8d23e3922706103_fd01a6aa-b2e7-4d7e-bf8c-c55f44ded813",
-  "createdAt": "2026-05-14T17:28:46.023Z",
-  "updatedAt": "2026-06-12T14:39:47.421Z",
-  "deleted": false,
+  "baseId": "6a05ed5da02d0a78f9132939",
+  "gitSyncId": "69f23d0ae8d23e3922706103_1ff42bbf-0ba9-47a4-8747-46f8e6199fb3",
+  "createdAt": "2026-05-14T15:42:21.618Z",
+  "updatedAt": "2026-05-14T17:29:33.844Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -127,5 +126,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-14T17:40:36.361Z"
 }

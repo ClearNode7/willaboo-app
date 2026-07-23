@@ -1,5 +1,5 @@
 {
-  "_id": "6a022ce3a02d0a78f9132880",
+  "_id": "69fc797dc8eed02aabb4c95f",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,20 +10,25 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.419Z",
+      "updatedAt": "2026-05-12T17:25:28.582Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT id, product_id, product_naam, aantal, eenheid::text, prijs_excl, btw_pct,\n       regel_totaal_excl, regel_totaal_incl\nFROM public.order_regels_view\nWHERE order_id = '{{appsmith.URL.queryParams.orderId}}'\n  AND deletedon IS NULL\nORDER BY createdon"
+      "body": "SELECT id, product_id, product_naam, aantal, eenheid::text, prijs_excl, btw_pct, regel_totaal_excl, regel_totaal_incl\nFROM public.order_regels_view\nWHERE order_id = '{{Acties.selectedRow.id}}'\n  AND deletedon IS NULL\nORDER BY createdon",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "executeOnLoad": true,
-    "runBehaviour": "ON_PAGE_LOAD",
+    "executeOnLoad": false,
+    "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,11 +37,12 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "appsmith.URL.queryParams.orderId"
+      "Acties.selectedRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:19.962Z"
+    "deletedAt": "2026-05-12T17:25:28.581Z",
+    "createdAt": "2026-05-07T11:37:33.273Z"
   },
   "publishedAction": {
     "name": "orderRegelsGet",
@@ -44,20 +50,25 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.419Z",
+      "updatedAt": "2026-05-12T17:25:28.582Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT id, product_id, product_naam, aantal, eenheid::text, prijs_excl, btw_pct,\n       regel_totaal_excl, regel_totaal_incl\nFROM public.order_regels_view\nWHERE order_id = '{{appsmith.URL.queryParams.orderId}}'\n  AND deletedon IS NULL\nORDER BY createdon"
+      "body": "SELECT id, product_id, product_naam, aantal, eenheid::text, prijs_excl, btw_pct, regel_totaal_excl, regel_totaal_incl\nFROM public.order_regels_view\nWHERE order_id = '{{Acties.selectedRow.id}}'\n  AND deletedon IS NULL\nORDER BY createdon",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "executeOnLoad": true,
-    "runBehaviour": "ON_PAGE_LOAD",
+    "executeOnLoad": false,
+    "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -66,17 +77,17 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "appsmith.URL.queryParams.orderId"
+      "Acties.selectedRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:19.962Z"
+    "createdAt": "2026-05-07T11:37:33.273Z"
   },
-  "baseId": "6a022ce3a02d0a78f9132880",
-  "gitSyncId": "69f23d0ae8d23e3922706103_4eb43e42-052b-4d5c-a291-37ebe91e7d24",
-  "createdAt": "2026-05-11T19:24:19.962Z",
-  "updatedAt": "2026-06-12T14:39:47.419Z",
-  "deleted": false,
+  "baseId": "69fc797dc8eed02aabb4c95f",
+  "gitSyncId": "69f23d0ae8d23e3922706103_0ec65881-f66d-4d91-8172-57ee4dcf38b4",
+  "createdAt": "2026-05-07T11:37:33.273Z",
+  "updatedAt": "2026-05-12T17:25:28.582Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -139,5 +150,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
 }

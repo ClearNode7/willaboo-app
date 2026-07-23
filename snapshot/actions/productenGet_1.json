@@ -1,83 +1,78 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "69fdf918c8eed02aabb4c9a7",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "updateDrempel",
+    "name": "productenGet",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.404Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "69fdcf5fc8eed02aabb4c9a5",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "SELECT p.id, p.naam, p.sku, p.prijs_excl, p.btw_pct, p.beschrijving,\n  TO_CHAR(p.createdon, 'DD-MM-YYYY') AS createdon\nFROM public.producten p\nWHERE p.deletedon IS NULL\nORDER BY p.naam;",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "actionConfiguration.body"
-      }
-    ],
+    "executeOnLoad": true,
+    "runBehaviour": "ON_PAGE_LOAD",
     "isValid": true,
     "invalids": [],
-    "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
+    "createdAt": "2026-05-08T14:54:16.494Z"
   },
   "publishedAction": {
-    "name": "updateDrempel",
+    "name": "productenGet",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.404Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "69fdcf5fc8eed02aabb4c9a5",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "SELECT p.id, p.naam, p.sku, p.prijs_excl, p.btw_pct, p.beschrijving,\n  TO_CHAR(p.createdon, 'DD-MM-YYYY') AS createdon\nFROM public.producten p\nWHERE p.deletedon IS NULL\nORDER BY p.naam;",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "actionConfiguration.body"
-      }
-    ],
+    "executeOnLoad": true,
+    "runBehaviour": "ON_PAGE_LOAD",
     "isValid": true,
     "invalids": [],
-    "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-08T14:54:16.494Z"
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
-  "deleted": true,
+  "baseId": "69fdf918c8eed02aabb4c9a7",
+  "gitSyncId": "69f23d0ae8d23e3922706103_89265f69-2d80-48f5-a686-86c1dae328a2",
+  "createdAt": "2026-05-08T14:54:16.494Z",
+  "updatedAt": "2026-06-12T14:39:47.404Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -140,6 +135,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

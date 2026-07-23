@@ -1,5 +1,5 @@
 {
-  "_id": "6a06064ea02d0a78f9132992",
+  "_id": "6a05ed5da02d0a78f9132938",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,27 +10,27 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.496Z",
+      "updatedAt": "2026-05-14T17:29:33.842Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a06063ea02d0a78f913298f",
+    "pageId": "6a05ed47a02d0a78f9132937",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n  v.product_naam,\n  v.eenheid,\n  v.huidige_voorraad,\n  COALESCE(p.min_voorraad, 10) AS min_voorraad,\n  v.product_id\nFROM voorraad_per_product_view v\nJOIN producten p ON p.id = v.product_id\nWHERE p.deletedon IS NULL\nORDER BY v.product_naam ASC"
+      "body": "SELECT \n  v.product_id,\n  v.product_naam,\n  v.eenheid,\n  v.huidige_voorraad,\n  COALESCE(p.min_voorraad, 10) AS min_voorraad\nFROM voorraad_per_product_view v\nJOIN producten p ON p.id = v.product_id\nWHERE p.deletedon IS NULL\nORDER BY v.product_naam ASC"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-14T17:28:46.141Z"
+    "deletedAt": "2026-05-14T17:29:33.842Z",
+    "createdAt": "2026-05-14T15:42:21.564Z"
   },
   "publishedAction": {
     "name": "getVoorraad",
@@ -38,33 +38,32 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.496Z",
+      "updatedAt": "2026-05-14T17:29:33.842Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a06063ea02d0a78f913298f",
+    "pageId": "6a05ed47a02d0a78f9132937",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n  v.product_naam,\n  v.eenheid,\n  v.huidige_voorraad,\n  COALESCE(p.min_voorraad, 10) AS min_voorraad,\n  v.product_id\nFROM voorraad_per_product_view v\nJOIN producten p ON p.id = v.product_id\nWHERE p.deletedon IS NULL\nORDER BY v.product_naam ASC"
+      "body": "SELECT \n  v.product_id,\n  v.product_naam,\n  v.eenheid,\n  v.huidige_voorraad,\n  COALESCE(p.min_voorraad, 10) AS min_voorraad\nFROM voorraad_per_product_view v\nJOIN producten p ON p.id = v.product_id\nWHERE p.deletedon IS NULL\nORDER BY v.product_naam ASC"
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "runBehaviour": "ON_PAGE_LOAD",
-    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-14T17:28:46.141Z"
+    "createdAt": "2026-05-14T15:42:21.564Z"
   },
-  "baseId": "6a06064ea02d0a78f9132992",
-  "gitSyncId": "69f23d0ae8d23e3922706103_6d1304af-425d-4be4-8fc6-f0250876a93e",
-  "createdAt": "2026-05-14T17:28:46.141Z",
-  "updatedAt": "2026-06-12T14:39:47.496Z",
-  "deleted": false,
+  "baseId": "6a05ed5da02d0a78f9132938",
+  "gitSyncId": "69f23d0ae8d23e3922706103_c58cf57b-d526-4261-bb97-9156f0587ebf",
+  "createdAt": "2026-05-14T15:42:21.564Z",
+  "updatedAt": "2026-05-14T17:29:33.842Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -127,5 +126,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-14T17:40:36.361Z"
 }

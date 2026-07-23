@@ -1,5 +1,5 @@
 {
-  "_id": "6a022ce4a02d0a78f9132884",
+  "_id": "69fc7da0c8eed02aabb4c969",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,39 +10,34 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.500Z",
+      "updatedAt": "2026-05-12T17:25:28.244Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{appsmith.URL.queryParams.orderId}}',\n  '{{SelectNieuwProduct.selectedOptionValue}}',\n  {{InpNieuwAantal.text || 1}},\n  CAST('{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
+      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{tblOrders.selectedRow.id}}',\n  '{{SelectModalProduct.selectedOptionValue}}',\n  {{InpModalAantal.text || 1}},\n  CAST('{{SelectModalEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpModalPrijs.text || 0}}::numeric,\n  {{InpModalBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
     },
-    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
-      "InpNieuwBtw.text || 0",
-      "appsmith.URL.queryParams.orderId",
-      "SelectNieuwProduct.selectedOptionValue",
+      "InpModalAantal.text || 1",
+      "SelectModalEenheid.selectedOptionValue || \"doos\"",
+      "tblOrders.selectedRow.id",
+      "SelectModalProduct.selectedOptionValue",
+      "InpModalPrijs.text || 0",
       "appsmith.user.email",
-      "InpNieuwAantal.text || 1",
-      "InpNieuwPrijs.text || 0"
+      "InpModalBtw.text || 0"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.208Z"
+    "deletedAt": "2026-05-12T17:25:28.244Z",
+    "createdAt": "2026-05-07T11:55:12.398Z"
   },
   "publishedAction": {
     "name": "orderRegelInsert",
@@ -50,45 +45,39 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.500Z",
+      "updatedAt": "2026-05-12T17:25:28.244Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{appsmith.URL.queryParams.orderId}}',\n  '{{SelectNieuwProduct.selectedOptionValue}}',\n  {{InpNieuwAantal.text || 1}},\n  CAST('{{SelectNieuwEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpNieuwPrijs.text || 0}}::numeric,\n  {{InpNieuwBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
+      "body": "INSERT INTO public.order_regels (order_id, product_id, aantal, eenheid, prijs_excl, btw_pct, createdby)\nVALUES (\n  '{{tblOrders.selectedRow.id}}',\n  '{{SelectModalProduct.selectedOptionValue}}',\n  {{InpModalAantal.text || 1}},\n  CAST('{{SelectModalEenheid.selectedOptionValue || \"doos\"}}' AS public.product_eenheid),\n  {{InpModalPrijs.text || 0}}::numeric,\n  {{InpModalBtw.text || 0}}::numeric,\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
     },
-    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "SelectNieuwEenheid.selectedOptionValue || \"doos\"",
-      "InpNieuwBtw.text || 0",
-      "appsmith.URL.queryParams.orderId",
-      "SelectNieuwProduct.selectedOptionValue",
+      "InpModalAantal.text || 1",
+      "SelectModalEenheid.selectedOptionValue || \"doos\"",
+      "tblOrders.selectedRow.id",
+      "SelectModalProduct.selectedOptionValue",
+      "InpModalPrijs.text || 0",
       "appsmith.user.email",
-      "InpNieuwAantal.text || 1",
-      "InpNieuwPrijs.text || 0"
+      "InpModalBtw.text || 0"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.208Z"
+    "createdAt": "2026-05-07T11:55:12.398Z"
   },
-  "baseId": "6a022ce4a02d0a78f9132884",
-  "gitSyncId": "69f23d0ae8d23e3922706103_879afb4c-921e-4e12-9022-4e7c96e59eaf",
-  "createdAt": "2026-05-11T19:24:20.208Z",
-  "updatedAt": "2026-06-12T14:39:47.500Z",
-  "deleted": false,
+  "baseId": "69fc7da0c8eed02aabb4c969",
+  "gitSyncId": "69f23d0ae8d23e3922706103_ea566088-5147-4c44-88c9-0bda45d64c00",
+  "createdAt": "2026-05-07T11:55:12.398Z",
+  "updatedAt": "2026-05-12T17:25:28.244Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -151,5 +140,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
 }

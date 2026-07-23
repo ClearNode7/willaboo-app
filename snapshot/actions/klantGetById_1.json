@@ -1,83 +1,90 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "6a02c6e1a02d0a78f91328f3",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "updateDrempel",
+    "name": "klantGetById",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.417Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a02c69fa02d0a78f91328f2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "SELECT id, weergave_naam,\n  klant_type::text AS klant_type, status::text AS status,\n  bedrijfsnaam, kvk, btwnummer, aanhef::text AS aanhef,\n  titulatuur::text AS titulatuur, initialen, voornaam,\n  tussenvoegsel, achternaam, email, telefoon\nFROM klanten_view\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\n  AND deletedon IS NULL",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "dynamicBindingPathList": [
       {
-        "key": "actionConfiguration.body"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "appsmith.URL.queryParams.klantId"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
+    "createdAt": "2026-05-12T06:21:21.839Z"
   },
   "publishedAction": {
-    "name": "updateDrempel",
+    "name": "klantGetById",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.417Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a02c69fa02d0a78f91328f2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "SELECT id, weergave_naam,\n  klant_type::text AS klant_type, status::text AS status,\n  bedrijfsnaam, kvk, btwnummer, aanhef::text AS aanhef,\n  titulatuur::text AS titulatuur, initialen, voornaam,\n  tussenvoegsel, achternaam, email, telefoon\nFROM klanten_view\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\n  AND deletedon IS NULL",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "dynamicBindingPathList": [
       {
-        "key": "actionConfiguration.body"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "appsmith.URL.queryParams.klantId"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-12T06:21:21.839Z"
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
-  "deleted": true,
+  "baseId": "6a02c6e1a02d0a78f91328f3",
+  "gitSyncId": "69f23d0ae8d23e3922706103_984acf9e-d361-4d89-b631-3a4fb78a9d04",
+  "createdAt": "2026-05-12T06:21:21.839Z",
+  "updatedAt": "2026-06-12T14:39:47.417Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -140,6 +147,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

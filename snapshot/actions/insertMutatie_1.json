@@ -1,28 +1,28 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "6a06064ea02d0a78f9132991",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "updateDrempel",
+    "name": "insertMutatie",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.495Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a06063ea02d0a78f913298f",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "INSERT INTO voorraad_mutaties (product_id, type, aantal, opmerking, createdby)\nVALUES (\n  '{{selProduct.selectedOptionValue}}'::uuid,\n  'in',\n  {{inpAantal.text}}::numeric,\n  '{{inpOpmerking.text}}',\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
@@ -32,32 +32,34 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "inpOpmerking.text",
+      "inpAantal.text",
+      "appsmith.user.email",
+      "selProduct.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
+    "createdAt": "2026-05-14T17:28:46.080Z"
   },
   "publishedAction": {
-    "name": "updateDrempel",
+    "name": "insertMutatie",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.495Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a06063ea02d0a78f913298f",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "INSERT INTO voorraad_mutaties (product_id, type, aantal, opmerking, createdby)\nVALUES (\n  '{{selProduct.selectedOptionValue}}'::uuid,\n  'in',\n  {{inpAantal.text}}::numeric,\n  '{{inpOpmerking.text}}',\n  COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\n)"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
@@ -67,17 +69,20 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "inpOpmerking.text",
+      "inpAantal.text",
+      "appsmith.user.email",
+      "selProduct.selectedOptionValue"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-14T17:28:46.080Z"
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
-  "deleted": true,
+  "baseId": "6a06064ea02d0a78f9132991",
+  "gitSyncId": "69f23d0ae8d23e3922706103_21802cc8-2e6a-41f6-bf16-8c7b1e666bee",
+  "createdAt": "2026-05-14T17:28:46.080Z",
+  "updatedAt": "2026-06-12T14:39:47.495Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -140,6 +145,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

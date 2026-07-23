@@ -1,83 +1,57 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "6a060b52a02d0a78f91329b7",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
   "pluginId": "69f21d005fbcf7f394507fde",
   "unpublishedAction": {
-    "name": "updateDrempel",
+    "name": "_diag",
     "datasource": {
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "createdAt": "2026-05-14T17:50:10.404Z",
+      "updatedAt": "2026-05-14T17:50:10.521Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 15000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "\nSELECT\n  (SELECT COUNT(*) FROM information_schema.triggers \n   WHERE trigger_name = 'trg_orderregel_insert_voorraad') AS insert_trigger,\n  (SELECT COUNT(*) FROM information_schema.triggers \n   WHERE trigger_name = 'trg_orderregel_delete_voorraad') AS delete_trigger,\n  (SELECT COUNT(*) FROM information_schema.triggers \n   WHERE trigger_name = 'trg_orderregel_update_voorraad') AS update_trigger\n",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ]
     },
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "actionConfiguration.body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
-    "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
-    ],
-    "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
-  },
-  "publishedAction": {
-    "name": "updateDrempel",
-    "datasource": {
-      "_id": "69f23e5ae8d23e3922706106",
-      "name": "Supabase (dev)",
-      "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
-      "deleted": false,
-      "policyMap": {},
-      "policies": []
-    },
-    "pageId": "6a05ed47a02d0a78f9132937",
-    "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
-      "paginationType": "NONE",
-      "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
-    },
-    "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "actionConfiguration.body"
-      }
-    ],
-    "isValid": true,
-    "invalids": [],
-    "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
-  "deleted": true,
+  "publishedAction": {
+    "datasource": {
+      "createdAt": "2026-05-14T17:50:10.404Z",
+      "updatedAt": "2026-05-14T17:50:10.521Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false
+  },
+  "baseId": "6a060b52a02d0a78f91329b7",
+  "gitSyncId": "69f23d0ae8d23e3922706103_962c0a95-577c-47ec-9271-b21a97749009",
+  "createdAt": "2026-05-14T17:50:10.404Z",
+  "updatedAt": "2026-05-14T17:50:10.521Z",
+  "deleted": false,
+  "deletedAt": "2026-05-14T17:50:10.521Z",
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -140,6 +114,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

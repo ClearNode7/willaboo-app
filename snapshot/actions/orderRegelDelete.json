@@ -1,5 +1,5 @@
 {
-  "_id": "6a022ce4a02d0a78f9132885",
+  "_id": "69fc7da0c8eed02aabb4c968",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,25 +10,19 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.500Z",
+      "updatedAt": "2026-05-12T17:25:28.116Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE public.order_regels SET\n  deletedon = now(),\n  deletedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
     },
-    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
@@ -37,7 +31,8 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.265Z"
+    "deletedAt": "2026-05-12T17:25:28.116Z",
+    "createdAt": "2026-05-07T11:55:12.326Z"
   },
   "publishedAction": {
     "name": "orderRegelDelete",
@@ -45,25 +40,19 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.500Z",
+      "updatedAt": "2026-05-12T17:25:28.116Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "UPDATE public.order_regels SET\n  deletedon = now(),\n  deletedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
     },
-    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
@@ -72,13 +61,13 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.265Z"
+    "createdAt": "2026-05-07T11:55:12.326Z"
   },
-  "baseId": "6a022ce4a02d0a78f9132885",
-  "gitSyncId": "69f23d0ae8d23e3922706103_d1f6cc50-153f-4d4b-9083-000597d9535c",
-  "createdAt": "2026-05-11T19:24:20.265Z",
-  "updatedAt": "2026-06-12T14:39:47.500Z",
-  "deleted": false,
+  "baseId": "69fc7da0c8eed02aabb4c968",
+  "gitSyncId": "69f23d0ae8d23e3922706103_cee62da0-c6ae-49b8-a8a8-5fe261d86ea6",
+  "createdAt": "2026-05-07T11:55:12.326Z",
+  "updatedAt": "2026-05-12T17:25:28.116Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -141,5 +130,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
 }

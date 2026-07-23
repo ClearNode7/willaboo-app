@@ -1,5 +1,5 @@
 {
-  "_id": "6a06064ea02d0a78f9132991",
+  "_id": "6a05ed5da02d0a78f913293a",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,12 +10,12 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.495Z",
+      "updatedAt": "2026-05-14T17:29:33.844Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a06063ea02d0a78f913298f",
+    "pageId": "6a05ed47a02d0a78f9132937",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -39,7 +39,8 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-14T17:28:46.080Z"
+    "deletedAt": "2026-05-14T17:29:33.843Z",
+    "createdAt": "2026-05-14T15:42:21.671Z"
   },
   "publishedAction": {
     "name": "insertMutatie",
@@ -47,12 +48,12 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.495Z",
+      "updatedAt": "2026-05-14T17:29:33.844Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a06063ea02d0a78f913298f",
+    "pageId": "6a05ed47a02d0a78f9132937",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -76,13 +77,13 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-14T17:28:46.080Z"
+    "createdAt": "2026-05-14T15:42:21.671Z"
   },
-  "baseId": "6a06064ea02d0a78f9132991",
-  "gitSyncId": "69f23d0ae8d23e3922706103_21802cc8-2e6a-41f6-bf16-8c7b1e666bee",
-  "createdAt": "2026-05-14T17:28:46.080Z",
-  "updatedAt": "2026-06-12T14:39:47.495Z",
-  "deleted": false,
+  "baseId": "6a05ed5da02d0a78f913293a",
+  "gitSyncId": "69f23d0ae8d23e3922706103_8f0e76db-6fca-4ed2-8cc6-f27ee04c2258",
+  "createdAt": "2026-05-14T15:42:21.671Z",
+  "updatedAt": "2026-05-14T17:29:33.844Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -145,5 +146,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-14T17:40:36.361Z"
 }

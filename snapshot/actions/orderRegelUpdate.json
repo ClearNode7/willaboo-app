@@ -1,5 +1,5 @@
 {
-  "_id": "6a022ce4a02d0a78f9132883",
+  "_id": "69fc7da0c8eed02aabb4c96a",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,44 +10,34 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.499Z",
+      "updatedAt": "2026-05-12T17:25:28.410Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectBewerkProduct.selectedOptionValue}}',\n  aantal     = CASE WHEN '{{InpBewerkAantal.text}}' = '' THEN aantal\n                    ELSE '{{InpBewerkAantal.text}}'::integer END,\n  eenheid    = CAST('{{SelectBewerkEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = CASE WHEN '{{InpBewerkPrijs.text}}' = '' THEN prijs_excl\n                    ELSE '{{InpBewerkPrijs.text}}'::numeric END,\n  btw_pct    = CASE WHEN '{{InpBewerkBtw.text}}' = '' THEN btw_pct\n                    ELSE '{{InpBewerkBtw.text}}'::numeric END,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": false
-        }
-      ]
+      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectModalProduct.selectedOptionValue}}',\n  aantal     = {{InpModalAantal.text}}::integer,\n  eenheid    = CAST('{{SelectModalEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = {{InpModalPrijs.text}}::numeric,\n  btw_pct    = {{InpModalBtw.text}}::numeric,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
     },
-    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "SelectBewerkProduct.selectedOptionValue",
-      "InpBewerkBtw.text",
-      "InpBewerkPrijs.text",
+      "SelectModalProduct.selectedOptionValue",
+      "InpModalAantal.text",
+      "SelectModalEenheid.selectedOptionValue",
+      "InpModalBtw.text",
       "tblOrderRegels.selectedRow.id",
       "appsmith.user.email",
-      "SelectBewerkEenheid.selectedOptionValue",
-      "InpBewerkAantal.text"
+      "InpModalPrijs.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.142Z"
+    "deletedAt": "2026-05-12T17:25:28.410Z",
+    "createdAt": "2026-05-07T11:55:12.406Z"
   },
   "publishedAction": {
     "name": "orderRegelUpdate",
@@ -55,50 +45,39 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-06-12T14:39:47.499Z",
+      "updatedAt": "2026-05-12T17:25:28.410Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a022cbaa02d0a78f913287e",
+    "pageId": "69fb954dc8eed02aabb4c92c",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectBewerkProduct.selectedOptionValue}}',\n  aantal     = CASE WHEN '{{InpBewerkAantal.text}}' = '' THEN aantal\n                    ELSE '{{InpBewerkAantal.text}}'::integer END,\n  eenheid    = CAST('{{SelectBewerkEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = CASE WHEN '{{InpBewerkPrijs.text}}' = '' THEN prijs_excl\n                    ELSE '{{InpBewerkPrijs.text}}'::numeric END,\n  btw_pct    = CASE WHEN '{{InpBewerkBtw.text}}' = '' THEN btw_pct\n                    ELSE '{{InpBewerkBtw.text}}'::numeric END,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL",
-      "pluginSpecifiedTemplates": [
-        {
-          "value": false
-        }
-      ]
+      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectModalProduct.selectedOptionValue}}',\n  aantal     = {{InpModalAantal.text}}::integer,\n  eenheid    = CAST('{{SelectModalEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = {{InpModalPrijs.text}}::numeric,\n  btw_pct    = {{InpModalBtw.text}}::numeric,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
     },
-    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "SelectBewerkProduct.selectedOptionValue",
-      "InpBewerkBtw.text",
-      "InpBewerkPrijs.text",
+      "SelectModalProduct.selectedOptionValue",
+      "InpModalAantal.text",
+      "SelectModalEenheid.selectedOptionValue",
+      "InpModalBtw.text",
       "tblOrderRegels.selectedRow.id",
       "appsmith.user.email",
-      "SelectBewerkEenheid.selectedOptionValue",
-      "InpBewerkAantal.text"
+      "InpModalPrijs.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T19:24:20.142Z"
+    "createdAt": "2026-05-07T11:55:12.406Z"
   },
-  "baseId": "6a022ce4a02d0a78f9132883",
-  "gitSyncId": "69f23d0ae8d23e3922706103_ed4699bb-1c0f-4dab-97c4-e3603e60b709",
-  "createdAt": "2026-05-11T19:24:20.142Z",
-  "updatedAt": "2026-06-12T14:39:47.499Z",
-  "deleted": false,
+  "baseId": "69fc7da0c8eed02aabb4c96a",
+  "gitSyncId": "69f23d0ae8d23e3922706103_0fc355d3-7079-4de7-9fe3-893e1357ebfc",
+  "createdAt": "2026-05-07T11:55:12.406Z",
+  "updatedAt": "2026-05-12T17:25:28.410Z",
+  "deleted": true,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -161,5 +140,6 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction"
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
 }
