@@ -1,5 +1,5 @@
 {
-  "_id": "6a023eaca02d0a78f91328e4",
+  "_id": "6a02c6e1a02d0a78f91328f3",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,17 +10,17 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-05-12T06:20:14.962Z",
+      "updatedAt": "2026-06-12T14:39:47.417Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a023eaca02d0a78f91328e3",
+    "pageId": "6a02c69fa02d0a78f91328f2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\n  id,\n  weergave_naam,\n  klant_type::text AS klant_type,\n  status::text     AS status,\n  bedrijfsnaam, kvk, btwnummer,\n  aanhef::text AS aanhef,\n  titulatuur::text AS titulatuur,\n  initialen, voornaam, tussenvoegsel, achternaam,\n  email, telefoon\nFROM klanten_view\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\nAND deletedon IS NULL",
+      "body": "SELECT id, weergave_naam,\n  klant_type::text AS klant_type, status::text AS status,\n  bedrijfsnaam, kvk, btwnummer, aanhef::text AS aanhef,\n  titulatuur::text AS titulatuur, initialen, voornaam,\n  tussenvoegsel, achternaam, email, telefoon\nFROM klanten_view\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\n  AND deletedon IS NULL",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -40,8 +40,7 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-12T06:20:14.962Z",
-    "createdAt": "2026-05-11T20:40:12.618Z"
+    "createdAt": "2026-05-12T06:21:21.839Z"
   },
   "publishedAction": {
     "name": "klantGetById",
@@ -49,17 +48,17 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "updatedAt": "2026-05-12T06:20:14.962Z",
+      "updatedAt": "2026-06-12T14:39:47.417Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a023eaca02d0a78f91328e3",
+    "pageId": "6a02c69fa02d0a78f91328f2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\n  id,\n  weergave_naam,\n  klant_type::text AS klant_type,\n  status::text     AS status,\n  bedrijfsnaam, kvk, btwnummer,\n  aanhef::text AS aanhef,\n  titulatuur::text AS titulatuur,\n  initialen, voornaam, tussenvoegsel, achternaam,\n  email, telefoon\nFROM klanten_view\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\nAND deletedon IS NULL",
+      "body": "SELECT id, weergave_naam,\n  klant_type::text AS klant_type, status::text AS status,\n  bedrijfsnaam, kvk, btwnummer, aanhef::text AS aanhef,\n  titulatuur::text AS titulatuur, initialen, voornaam,\n  tussenvoegsel, achternaam, email, telefoon\nFROM klanten_view\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\n  AND deletedon IS NULL",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -79,13 +78,13 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "createdAt": "2026-05-11T20:40:12.618Z"
+    "createdAt": "2026-05-12T06:21:21.839Z"
   },
-  "baseId": "6a023eaca02d0a78f91328e4",
-  "gitSyncId": "69f23d0ae8d23e3922706103_5caa1952-c122-4cdd-a0ca-4a147dfb492a",
-  "createdAt": "2026-05-11T20:40:12.618Z",
-  "updatedAt": "2026-05-12T06:20:14.962Z",
-  "deleted": true,
+  "baseId": "6a02c6e1a02d0a78f91328f3",
+  "gitSyncId": "69f23d0ae8d23e3922706103_984acf9e-d361-4d89-b631-3a4fb78a9d04",
+  "createdAt": "2026-05-12T06:21:21.839Z",
+  "updatedAt": "2026-06-12T14:39:47.417Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -148,6 +147,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-12T06:21:23.809Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

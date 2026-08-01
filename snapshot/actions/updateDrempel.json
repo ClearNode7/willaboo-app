@@ -1,5 +1,5 @@
 {
-  "_id": "6a05efc6a02d0a78f9132945",
+  "_id": "6a06064ea02d0a78f9132993",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,19 +10,19 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.497Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a06063ea02d0a78f913298f",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "UPDATE producten\nSET min_voorraad = {{inpDrempel.text}}::numeric\nWHERE id = '{{tblVoorraad.selectedRow.product_id}}'::uuid"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "inpDrempel.text",
+      "tblVoorraad.selectedRow.product_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-14T17:29:33.843Z"
+    "createdAt": "2026-05-14T17:28:46.198Z"
   },
   "publishedAction": {
     "name": "updateDrempel",
@@ -45,19 +45,19 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-14T15:52:38.329Z",
-      "updatedAt": "2026-05-14T17:29:33.843Z",
+      "updatedAt": "2026-06-12T14:39:47.497Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a05ed47a02d0a78f9132937",
+    "pageId": "6a06063ea02d0a78f913298f",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE producten\nSET min_voorraad = {{tblVoorraad.updatedRow.min_voorraad}}::numeric\nWHERE id = '{{tblVoorraad.updatedRow.product_id}}'::uuid"
+      "body": "UPDATE producten\nSET min_voorraad = {{inpDrempel.text}}::numeric\nWHERE id = '{{tblVoorraad.selectedRow.product_id}}'::uuid"
     },
+    "executeOnLoad": false,
     "runBehaviour": "MANUAL",
     "dynamicBindingPathList": [
       {
@@ -67,17 +67,18 @@
     "isValid": true,
     "invalids": [],
     "jsonPathKeys": [
-      "tblVoorraad.updatedRow.min_voorraad",
-      "tblVoorraad.updatedRow.product_id"
+      "inpDrempel.text",
+      "tblVoorraad.selectedRow.product_id"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-14T17:28:46.198Z"
   },
-  "baseId": "6a05efc6a02d0a78f9132945",
-  "gitSyncId": "69f23d0ae8d23e3922706103_c84bcb08-3741-472c-b405-aac6c51c0f1f",
-  "createdAt": "2026-05-14T15:52:38.329Z",
-  "updatedAt": "2026-05-14T17:29:33.843Z",
-  "deleted": true,
+  "baseId": "6a06064ea02d0a78f9132993",
+  "gitSyncId": "69f23d0ae8d23e3922706103_95c0e9bd-1088-473f-8a7f-b675487c2401",
+  "createdAt": "2026-05-14T17:28:46.198Z",
+  "updatedAt": "2026-06-12T14:39:47.497Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -140,6 +141,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-14T17:40:36.361Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }

@@ -1,5 +1,5 @@
 {
-  "_id": "6a023eaca02d0a78f91328e5",
+  "_id": "6a02c6e2a02d0a78f91328f4",
   "applicationId": "69f23d0ae8d23e3922706103",
   "workspaceId": "69f23d0ae8d23e39227060fe",
   "pluginType": "DB",
@@ -10,18 +10,17 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-11T20:40:12.676Z",
-      "updatedAt": "2026-05-12T06:20:14.961Z",
+      "updatedAt": "2026-06-12T14:39:47.492Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a023eaca02d0a78f91328e3",
+    "pageId": "6a02c69fa02d0a78f91328f2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.klanten SET\n  klant_type    = CAST('{{SelKlantType.selectedOptionValue}}' AS public.klant_type),\n  status        = CAST('{{SelKlantStatus.selectedOptionValue}}' AS public.klant_status),\n  bedrijfsnaam  = NULLIF('{{InpBedrijfsnaam.text}}', ''),\n  kvk           = NULLIF('{{InpKvk.text}}', ''),\n  btwnummer     = NULLIF('{{InpBtwnummer.text}}', ''),\n  aanhef        = CAST(NULLIF('{{SelAanhef.selectedOptionValue}}', '') AS public.aanhef),\n  titulatuur    = CAST(NULLIF('{{SelTitulatuur.selectedOptionValue}}', '') AS public.titulatuur),\n  initialen     = NULLIF('{{InpInitialen.text}}', ''),\n  voornaam      = NULLIF('{{InpVoornaam.text}}', ''),\n  tussenvoegsel = NULLIF('{{InpTussenvoegsel.text}}', ''),\n  achternaam    = NULLIF('{{InpAchternaam.text}}', ''),\n  email         = NULLIF('{{InpEmail.text}}', ''),\n  telefoon      = NULLIF('{{InpTelefoon.text}}', ''),\n  modifiedon    = NOW(),\n  modifiedby    = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\nRETURNING id",
+      "body": "UPDATE public.klanten SET\n  klant_type    = CAST('{{SelKlantType.selectedOptionValue}}' AS public.klant_type),\n  status        = CAST('{{SelKlantStatus.selectedOptionValue}}' AS public.klant_status),\n  bedrijfsnaam  = NULLIF('{{InpBedrijfsnaam.text}}', ''),\n  kvk           = NULLIF('{{InpKvk.text}}', ''),\n  btwnummer     = NULLIF('{{InpBtwnummer.text}}', ''),\n  aanhef        = CAST(NULLIF('{{SelAanhef.selectedOptionValue}}', '') AS public.aanhef),\n  titulatuur    = CAST(NULLIF('{{SelTitulatuur.selectedOptionValue}}', '') AS public.titulatuur),\n  initialen     = NULLIF('{{InpInitialen.text}}', ''),\n  voornaam      = NULLIF('{{InpVoornaam.text}}', ''),\n  tussenvoegsel = NULLIF('{{InpTussenvoegsel.text}}', ''),\n  achternaam    = NULLIF('{{InpAchternaam.text}}', ''),\n  email         = NULLIF('{{InpEmail.text}}', ''),\n  telefoon      = NULLIF('{{InpTelefoon.text}}', ''),\n  modifiedon    = NOW(),\n  modifiedby    = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid RETURNING id",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -55,7 +54,7 @@
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
-    "deletedAt": "2026-05-12T06:20:14.961Z"
+    "createdAt": "2026-05-12T06:21:22.050Z"
   },
   "publishedAction": {
     "name": "klantUpdateDetail",
@@ -63,18 +62,17 @@
       "_id": "69f23e5ae8d23e3922706106",
       "name": "Supabase (dev)",
       "pluginId": "69f21d005fbcf7f394507fde",
-      "createdAt": "2026-05-11T20:40:12.676Z",
-      "updatedAt": "2026-05-12T06:20:14.961Z",
+      "updatedAt": "2026-06-12T14:39:47.492Z",
       "deleted": false,
       "policyMap": {},
       "policies": []
     },
-    "pageId": "6a023eaca02d0a78f91328e3",
+    "pageId": "6a02c69fa02d0a78f91328f2",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.klanten SET\n  klant_type    = CAST('{{SelKlantType.selectedOptionValue}}' AS public.klant_type),\n  status        = CAST('{{SelKlantStatus.selectedOptionValue}}' AS public.klant_status),\n  bedrijfsnaam  = NULLIF('{{InpBedrijfsnaam.text}}', ''),\n  kvk           = NULLIF('{{InpKvk.text}}', ''),\n  btwnummer     = NULLIF('{{InpBtwnummer.text}}', ''),\n  aanhef        = CAST(NULLIF('{{SelAanhef.selectedOptionValue}}', '') AS public.aanhef),\n  titulatuur    = CAST(NULLIF('{{SelTitulatuur.selectedOptionValue}}', '') AS public.titulatuur),\n  initialen     = NULLIF('{{InpInitialen.text}}', ''),\n  voornaam      = NULLIF('{{InpVoornaam.text}}', ''),\n  tussenvoegsel = NULLIF('{{InpTussenvoegsel.text}}', ''),\n  achternaam    = NULLIF('{{InpAchternaam.text}}', ''),\n  email         = NULLIF('{{InpEmail.text}}', ''),\n  telefoon      = NULLIF('{{InpTelefoon.text}}', ''),\n  modifiedon    = NOW(),\n  modifiedby    = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid\nRETURNING id",
+      "body": "UPDATE public.klanten SET\n  klant_type    = CAST('{{SelKlantType.selectedOptionValue}}' AS public.klant_type),\n  status        = CAST('{{SelKlantStatus.selectedOptionValue}}' AS public.klant_status),\n  bedrijfsnaam  = NULLIF('{{InpBedrijfsnaam.text}}', ''),\n  kvk           = NULLIF('{{InpKvk.text}}', ''),\n  btwnummer     = NULLIF('{{InpBtwnummer.text}}', ''),\n  aanhef        = CAST(NULLIF('{{SelAanhef.selectedOptionValue}}', '') AS public.aanhef),\n  titulatuur    = CAST(NULLIF('{{SelTitulatuur.selectedOptionValue}}', '') AS public.titulatuur),\n  initialen     = NULLIF('{{InpInitialen.text}}', ''),\n  voornaam      = NULLIF('{{InpVoornaam.text}}', ''),\n  tussenvoegsel = NULLIF('{{InpTussenvoegsel.text}}', ''),\n  achternaam    = NULLIF('{{InpAchternaam.text}}', ''),\n  email         = NULLIF('{{InpEmail.text}}', ''),\n  telefoon      = NULLIF('{{InpTelefoon.text}}', ''),\n  modifiedon    = NOW(),\n  modifiedby    = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'),\n                           '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{appsmith.URL.queryParams.klantId}}'::uuid RETURNING id",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -107,13 +105,14 @@
       "InpBtwnummer.text"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-12T06:21:22.050Z"
   },
-  "baseId": "6a023eaca02d0a78f91328e5",
-  "gitSyncId": "69f23d0ae8d23e3922706103_4c70b1b4-65fd-4121-b0e2-8354cdf856ac",
-  "createdAt": "2026-05-11T20:40:12.676Z",
-  "updatedAt": "2026-05-12T06:20:14.961Z",
-  "deleted": true,
+  "baseId": "6a02c6e2a02d0a78f91328f4",
+  "gitSyncId": "69f23d0ae8d23e3922706103_febe9e87-3b8f-43f4-a3e7-ef47592852a0",
+  "createdAt": "2026-05-12T06:21:22.050Z",
+  "updatedAt": "2026-06-12T14:39:47.492Z",
+  "deleted": false,
   "policyMap": {
     "read:actions": {
       "permission": "read:actions",
@@ -176,6 +175,5 @@
       ]
     }
   ],
-  "_class": "com.appsmith.server.domains.NewAction",
-  "deletedAt": "2026-05-12T06:21:23.809Z"
+  "_class": "com.appsmith.server.domains.NewAction"
 }
