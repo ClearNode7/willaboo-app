@@ -1,0 +1,135 @@
+{
+  "_id": "69fc7da0c8eed02aabb4c968",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "orderRegelDelete",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-05-12T17:25:28.116Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.order_regels SET\n  deletedon = now(),\n  deletedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "tblOrderRegels.selectedRow.id",
+      "appsmith.user.email"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "deletedAt": "2026-05-12T17:25:28.116Z",
+    "createdAt": "2026-05-07T11:55:12.326Z"
+  },
+  "publishedAction": {
+    "name": "orderRegelDelete",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-05-12T17:25:28.116Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.order_regels SET\n  deletedon = now(),\n  deletedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "tblOrderRegels.selectedRow.id",
+      "appsmith.user.email"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-07T11:55:12.326Z"
+  },
+  "baseId": "69fc7da0c8eed02aabb4c968",
+  "gitSyncId": "69f23d0ae8d23e3922706103_cee62da0-c6ae-49b8-a8a8-5fe261d86ea6",
+  "createdAt": "2026-05-07T11:55:12.326Z",
+  "updatedAt": "2026-05-12T17:25:28.116Z",
+  "deleted": true,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
+}

@@ -1,0 +1,1134 @@
+{
+  "_id": "6a06063ea02d0a78f913298f",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "unpublishedPage": {
+    "name": "Voorraad",
+    "slug": "voorraad",
+    "layouts": [
+      {
+        "_id": "6a0cb9d90daa883b44e34aeb",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 860,
+          "snapRows": 110,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "version": 94,
+          "isLoading": false,
+          "renderMode": "CANVAS",
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "dynamicBindingPathList": [],
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "txtVoorraadTitel",
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "overflow": "NONE",
+              "dynamicTriggerPathList": [],
+              "fontFamily": "System Default",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Voorraadbeheer",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 20,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "9ef692c7b",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "tblVoorraad",
+              "defaultPageSize": 12,
+              "columnOrder": [
+                "product_naam",
+                "eenheid",
+                "huidige_voorraad",
+                "min_voorraad",
+                "product_id"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
+              "topRow": 9,
+              "bottomRow": 56,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "pageSize": 12,
+              "columnWidthMap": {
+                "product_naam": 220,
+                "eenheid": 100,
+                "huidige_voorraad": 150,
+                "min_voorraad": 135,
+                "product_id": 60
+              },
+              "type": "TABLE_WIDGET_V2",
+              "isEditableCellsValid": true,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
+              "delimiter": ",",
+              "primaryColumns": {
+                "product_naam": {
+                  "index": 0,
+                  "width": 220,
+                  "id": "product_naam",
+                  "originalId": "product_naam",
+                  "alias": "product_naam",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                },
+                "eenheid": {
+                  "index": 1,
+                  "width": 100,
+                  "id": "eenheid",
+                  "originalId": "eenheid",
+                  "alias": "eenheid",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Eenheid",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                },
+                "huidige_voorraad": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "huidige_voorraad",
+                  "originalId": "huidige_voorraad",
+                  "alias": "huidige_voorraad",
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Huidige voorraad",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false,
+                  "cellBackground": "{{currentRow.huidige_voorraad < currentRow.min_voorraad ? '#FFDEDE' : ''}}",
+                  "dynamicProperties": {
+                    "cellBackground": true
+                  }
+                },
+                "min_voorraad": {
+                  "index": 3,
+                  "width": 140,
+                  "id": "min_voorraad",
+                  "originalId": "min_voorraad",
+                  "alias": "min_voorraad",
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": false,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Min. voorraad",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                },
+                "product_id": {
+                  "index": 4,
+                  "width": 0,
+                  "id": "product_id",
+                  "originalId": "product_id",
+                  "alias": "product_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": false,
+                  "enableSort": false,
+                  "isVisible": false,
+                  "isCellVisible": false,
+                  "isDerived": false,
+                  "label": "product_id",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                }
+              },
+              "defaultSelectedRowIndex": 0,
+              "canFreezeColumn": false,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 34,
+              "widgetId": "4fa47f733",
+              "enableServerSideFiltering": false,
+              "isVisibleFilters": true,
+              "tableData": "{{getVoorraad.data}}",
+              "isVisible": true,
+              "version": 1,
+              "enableClientSideSearch": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "isVisiblePagination": true,
+              "columnUpdatedAt": {
+                "high": 414,
+                "low": 137593847,
+                "unsigned": false
+              },
+              "primaryColumnId": "id",
+              "defaultSelectedRowIndices": [
+                0
+              ]
+            },
+            {
+              "widgetName": "lblDrempelTitel",
+              "topRow": 58,
+              "bottomRow": 63,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "topRowBeforeCollapse": 58,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 36,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "text": "Min. voorraad voor: **{{tblVoorraad.selectedRow?.product_naam}}**",
+              "rightColumn": 45,
+              "textAlign": "LEFT",
+              "widgetId": "184ca1b4e",
+              "bottomRowBeforeCollapse": 63,
+              "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 58,
+              "originalBottomRow": 63,
+              "fontSize": "0.875rem"
+            },
+            {
+              "widgetName": "inpDrempel",
+              "topRow": 64,
+              "bottomRow": 72,
+              "parentRowSpace": 10,
+              "type": "INPUT_WIDGET_V2",
+              "topRowBeforeCollapse": 65,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 36,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "inputType": "NUMBER",
+              "placeholderText": "bijv. 10",
+              "rightColumn": 48,
+              "widgetId": "991420906",
+              "bottomRowBeforeCollapse": 73,
+              "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+              "label": "",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 65,
+              "originalBottomRow": 73,
+              "shouldAllowAutofill": false,
+              "defaultText": "{{tblVoorraad.selectedRow?.min_voorraad}}"
+            },
+            {
+              "widgetName": "btnDrempelOpslaan",
+              "onClick": "{{updateDrempel.run(() => { getVoorraad.run(); showAlert('Drempelwaarde opgeslagen ✓', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+              "buttonColor": "#22c55e",
+              "dynamicPropertyPathList": [],
+              "topRow": 64,
+              "bottomRow": 68,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "topRowBeforeCollapse": 65,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 49,
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "text": "Opslaan",
+              "rightColumn": 54,
+              "widgetId": "0720ed90c",
+              "bottomRowBeforeCollapse": 73,
+              "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 65,
+              "borderRadius": "4px",
+              "originalBottomRow": 73,
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "widgetName": "lblInkoopTitel",
+              "rightColumn": 11,
+              "textAlign": "LEFT",
+              "widgetId": "41692d1a0",
+              "topRow": 58,
+              "bottomRow": 63,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "TEXT_WIDGET",
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "originalTopRow": 76,
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "originalBottomRow": 81,
+              "fontSize": "0.875rem",
+              "text": "Voorraad toevoegen (inkoop)"
+            },
+            {
+              "widgetName": "selProduct",
+              "topRow": 65,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "SELECT_WIDGET",
+              "defaultOptionValue": "{{tblOrders.selectedRow?.status || 'concept'}}",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "sourceData"
+                }
+              ],
+              "placeholderText": "",
+              "sourceData": "{{getProductenVoorDropdown.data.map(p => ({label: p.naam, value: p.id}))}}",
+              "isRequired": true,
+              "rightColumn": 17,
+              "widgetId": "858698a40",
+              "optionValue": "value",
+              "label": "Product",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "optionLabel": "label",
+              "originalTopRow": 83,
+              "originalBottomRow": 91
+            },
+            {
+              "widgetName": "inpAantal",
+              "topRow": 65,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 18,
+              "dynamicBindingPathList": [],
+              "inputType": "NUMBER",
+              "placeholderText": "bijv. 50",
+              "isRequired": true,
+              "rightColumn": 34,
+              "widgetId": "d3544ea0b",
+              "isVisible": true,
+              "label": "Aantal",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 83,
+              "originalBottomRow": 91,
+              "shouldAllowAutofill": false,
+              "defaultText": ""
+            },
+            {
+              "widgetName": "inpOpmerking",
+              "topRow": 70,
+              "bottomRow": 78,
+              "parentRowSpace": 10,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "inputType": "TEXT",
+              "placeholderText": "bijv. Levering week 20",
+              "isRequired": false,
+              "rightColumn": 34,
+              "widgetId": "98e7900ed",
+              "isVisible": true,
+              "label": "Opmerking (optioneel)",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 93,
+              "originalBottomRow": 101,
+              "shouldAllowAutofill": false,
+              "defaultText": ""
+            },
+            {
+              "widgetName": "btnVoorraadToevoegen",
+              "onClick": "{{insertMutatie.run(() => { getVoorraad.run(); showAlert('Voorraad bijgewerkt!', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+              "buttonColor": "#22c55e",
+              "topRow": 80,
+              "bottomRow": 86,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Voorraad toevoegen",
+              "rightColumn": 8,
+              "iconName": "add",
+              "widgetId": "1e0845897",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 103,
+              "borderRadius": "4px",
+              "originalBottomRow": 109,
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "_id": "6a06064ea02d0a78f9132992",
+              "name": "getVoorraad",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "_id": "6a06064ea02d0a78f9132990",
+              "name": "getProductenVoorDropdown",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "txtVoorraadTitel",
+          "lblDrempelTitel",
+          "btnVoorraadToevoegen",
+          "tblVoorraad",
+          "lblInkoopTitel",
+          "selProduct",
+          "inpDrempel",
+          "inpOpmerking",
+          "btnDrempelOpslaan",
+          "inpAantal",
+          "MainContainer"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [
+          "getProductenVoorDropdown",
+          "getVoorraad"
+        ],
+        "validOnPageLoadActions": true
+      }
+    ]
+  },
+  "publishedPage": {
+    "name": "Voorraad",
+    "slug": "voorraad",
+    "layouts": [
+      {
+        "_id": "6a0cb9d90daa883b44e34aeb",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 860,
+          "snapRows": 110,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "version": 94,
+          "isLoading": false,
+          "renderMode": "CANVAS",
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "dynamicBindingPathList": [],
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "txtVoorraadTitel",
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "overflow": "NONE",
+              "dynamicTriggerPathList": [],
+              "fontFamily": "System Default",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Voorraadbeheer",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 20,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "9ef692c7b",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "tblVoorraad",
+              "defaultPageSize": 12,
+              "columnOrder": [
+                "product_naam",
+                "eenheid",
+                "huidige_voorraad",
+                "min_voorraad",
+                "product_id"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
+              "topRow": 9,
+              "bottomRow": 56,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "pageSize": 12,
+              "columnWidthMap": {
+                "product_naam": 220,
+                "eenheid": 100,
+                "huidige_voorraad": 150,
+                "min_voorraad": 135,
+                "product_id": 60
+              },
+              "type": "TABLE_WIDGET_V2",
+              "isEditableCellsValid": true,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                }
+              ],
+              "delimiter": ",",
+              "primaryColumns": {
+                "product_naam": {
+                  "index": 0,
+                  "width": 220,
+                  "id": "product_naam",
+                  "originalId": "product_naam",
+                  "alias": "product_naam",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                },
+                "eenheid": {
+                  "index": 1,
+                  "width": 100,
+                  "id": "eenheid",
+                  "originalId": "eenheid",
+                  "alias": "eenheid",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Eenheid",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                },
+                "huidige_voorraad": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "huidige_voorraad",
+                  "originalId": "huidige_voorraad",
+                  "alias": "huidige_voorraad",
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Huidige voorraad",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false,
+                  "cellBackground": "{{currentRow.huidige_voorraad < currentRow.min_voorraad ? '#FFDEDE' : ''}}",
+                  "dynamicProperties": {
+                    "cellBackground": true
+                  }
+                },
+                "min_voorraad": {
+                  "index": 3,
+                  "width": 140,
+                  "id": "min_voorraad",
+                  "originalId": "min_voorraad",
+                  "alias": "min_voorraad",
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": false,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Min. voorraad",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                },
+                "product_id": {
+                  "index": 4,
+                  "width": 0,
+                  "id": "product_id",
+                  "originalId": "product_id",
+                  "alias": "product_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": false,
+                  "enableSort": false,
+                  "isVisible": false,
+                  "isCellVisible": false,
+                  "isDerived": false,
+                  "label": "product_id",
+                  "computedValue": "",
+                  "sticky": "",
+                  "isCellEditable": false
+                }
+              },
+              "defaultSelectedRowIndex": 0,
+              "canFreezeColumn": false,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 34,
+              "widgetId": "4fa47f733",
+              "enableServerSideFiltering": false,
+              "isVisibleFilters": true,
+              "tableData": "{{getVoorraad.data}}",
+              "isVisible": true,
+              "version": 1,
+              "enableClientSideSearch": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "borderRadius": "0px",
+              "isVisiblePagination": true,
+              "columnUpdatedAt": {
+                "high": 414,
+                "low": 137593847,
+                "unsigned": false
+              },
+              "primaryColumnId": "id",
+              "defaultSelectedRowIndices": [
+                0
+              ]
+            },
+            {
+              "widgetName": "lblDrempelTitel",
+              "topRow": 58,
+              "bottomRow": 63,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "topRowBeforeCollapse": 58,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 36,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "text": "Min. voorraad voor: **{{tblVoorraad.selectedRow?.product_naam}}**",
+              "rightColumn": 45,
+              "textAlign": "LEFT",
+              "widgetId": "184ca1b4e",
+              "bottomRowBeforeCollapse": 63,
+              "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 58,
+              "originalBottomRow": 63,
+              "fontSize": "0.875rem"
+            },
+            {
+              "widgetName": "inpDrempel",
+              "topRow": 64,
+              "bottomRow": 72,
+              "parentRowSpace": 10,
+              "type": "INPUT_WIDGET_V2",
+              "topRowBeforeCollapse": 65,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 36,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "inputType": "NUMBER",
+              "placeholderText": "bijv. 10",
+              "rightColumn": 48,
+              "widgetId": "991420906",
+              "bottomRowBeforeCollapse": 73,
+              "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+              "label": "",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 65,
+              "originalBottomRow": 73,
+              "shouldAllowAutofill": false,
+              "defaultText": "{{tblVoorraad.selectedRow?.min_voorraad}}"
+            },
+            {
+              "widgetName": "btnDrempelOpslaan",
+              "onClick": "{{updateDrempel.run(() => { getVoorraad.run(); showAlert('Drempelwaarde opgeslagen ✓', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+              "buttonColor": "#22c55e",
+              "dynamicPropertyPathList": [],
+              "topRow": 64,
+              "bottomRow": 68,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "topRowBeforeCollapse": 65,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 49,
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
+              "text": "Opslaan",
+              "rightColumn": 54,
+              "widgetId": "0720ed90c",
+              "bottomRowBeforeCollapse": 73,
+              "isVisible": "{{!!tblVoorraad.selectedRow?.product_id}}",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 65,
+              "borderRadius": "4px",
+              "originalBottomRow": 73,
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "widgetName": "lblInkoopTitel",
+              "rightColumn": 11,
+              "textAlign": "LEFT",
+              "widgetId": "41692d1a0",
+              "topRow": 58,
+              "bottomRow": 63,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "TEXT_WIDGET",
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "originalTopRow": 76,
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "originalBottomRow": 81,
+              "fontSize": "0.875rem",
+              "text": "Voorraad toevoegen (inkoop)"
+            },
+            {
+              "widgetName": "selProduct",
+              "topRow": 65,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "SELECT_WIDGET",
+              "defaultOptionValue": "{{tblOrders.selectedRow?.status || 'concept'}}",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "sourceData"
+                }
+              ],
+              "placeholderText": "",
+              "sourceData": "{{getProductenVoorDropdown.data.map(p => ({label: p.naam, value: p.id}))}}",
+              "isRequired": true,
+              "rightColumn": 17,
+              "widgetId": "858698a40",
+              "optionValue": "value",
+              "label": "Product",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "optionLabel": "label",
+              "originalTopRow": 83,
+              "originalBottomRow": 91
+            },
+            {
+              "widgetName": "inpAantal",
+              "topRow": 65,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 18,
+              "dynamicBindingPathList": [],
+              "inputType": "NUMBER",
+              "placeholderText": "bijv. 50",
+              "isRequired": true,
+              "rightColumn": 34,
+              "widgetId": "d3544ea0b",
+              "isVisible": true,
+              "label": "Aantal",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 83,
+              "originalBottomRow": 91,
+              "shouldAllowAutofill": false,
+              "defaultText": ""
+            },
+            {
+              "widgetName": "inpOpmerking",
+              "topRow": 70,
+              "bottomRow": 78,
+              "parentRowSpace": 10,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "inputType": "TEXT",
+              "placeholderText": "bijv. Levering week 20",
+              "isRequired": false,
+              "rightColumn": 34,
+              "widgetId": "98e7900ed",
+              "isVisible": true,
+              "label": "Opmerking (optioneel)",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 93,
+              "originalBottomRow": 101,
+              "shouldAllowAutofill": false,
+              "defaultText": ""
+            },
+            {
+              "widgetName": "btnVoorraadToevoegen",
+              "onClick": "{{insertMutatie.run(() => { getVoorraad.run(); showAlert('Voorraad bijgewerkt!', 'success'); }, () => showAlert('Fout bij opslaan', 'error'))}}",
+              "buttonColor": "#22c55e",
+              "topRow": 80,
+              "bottomRow": 86,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Voorraad toevoegen",
+              "rightColumn": 8,
+              "iconName": "add",
+              "widgetId": "1e0845897",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 103,
+              "borderRadius": "4px",
+              "originalBottomRow": 109,
+              "buttonVariant": "PRIMARY",
+              "iconAlign": "left"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "_id": "6a06064ea02d0a78f9132992",
+              "name": "getVoorraad",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "_id": "6a06064ea02d0a78f9132990",
+              "name": "getProductenVoorDropdown",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "txtVoorraadTitel",
+          "lblDrempelTitel",
+          "btnVoorraadToevoegen",
+          "tblVoorraad",
+          "lblInkoopTitel",
+          "selProduct",
+          "inpDrempel",
+          "inpOpmerking",
+          "btnDrempelOpslaan",
+          "inpAantal",
+          "MainContainer"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [
+          "getProductenVoorDropdown",
+          "getVoorraad"
+        ],
+        "validOnPageLoadActions": true
+      }
+    ]
+  },
+  "baseId": "6a06063ea02d0a78f913298f",
+  "gitSyncId": "69f23d0ae8d23e3922706103_bd6ae723-19fa-45b8-9c08-e2d052e71209",
+  "createdAt": "2026-05-14T17:28:30.689Z",
+  "updatedAt": "2026-06-12T14:39:47.370Z",
+  "deleted": false,
+  "policyMap": {
+    "read:pages": {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:pages": {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "create:pageActions": {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:pages": {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewPage"
+}

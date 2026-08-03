@@ -1,0 +1,145 @@
+{
+  "_id": "69fc7da0c8eed02aabb4c96a",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "workspaceId": "69f23d0ae8d23e39227060fe",
+  "pluginType": "DB",
+  "pluginId": "69f21d005fbcf7f394507fde",
+  "unpublishedAction": {
+    "name": "orderRegelUpdate",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-05-12T17:25:28.410Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectModalProduct.selectedOptionValue}}',\n  aantal     = {{InpModalAantal.text}}::integer,\n  eenheid    = CAST('{{SelectModalEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = {{InpModalPrijs.text}}::numeric,\n  btw_pct    = {{InpModalBtw.text}}::numeric,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "SelectModalProduct.selectedOptionValue",
+      "InpModalAantal.text",
+      "SelectModalEenheid.selectedOptionValue",
+      "InpModalBtw.text",
+      "tblOrderRegels.selectedRow.id",
+      "appsmith.user.email",
+      "InpModalPrijs.text"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "deletedAt": "2026-05-12T17:25:28.410Z",
+    "createdAt": "2026-05-07T11:55:12.406Z"
+  },
+  "publishedAction": {
+    "name": "orderRegelUpdate",
+    "datasource": {
+      "_id": "69f23e5ae8d23e3922706106",
+      "name": "Supabase (dev)",
+      "pluginId": "69f21d005fbcf7f394507fde",
+      "updatedAt": "2026-05-12T17:25:28.410Z",
+      "deleted": false,
+      "policyMap": {},
+      "policies": []
+    },
+    "pageId": "69fb954dc8eed02aabb4c92c",
+    "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
+      "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.order_regels SET\n  product_id = '{{SelectModalProduct.selectedOptionValue}}',\n  aantal     = {{InpModalAantal.text}}::integer,\n  eenheid    = CAST('{{SelectModalEenheid.selectedOptionValue}}' AS public.product_eenheid),\n  prijs_excl = {{InpModalPrijs.text}}::numeric,\n  btw_pct    = {{InpModalBtw.text}}::numeric,\n  modifiedon = now(),\n  modifiedby = COALESCE(public.profile_id_by_email('{{appsmith.user.email}}'), '00000000-0000-0000-0000-000000000001'::uuid)\nWHERE id = '{{tblOrderRegels.selectedRow.id}}'\n  AND deletedon IS NULL"
+    },
+    "runBehaviour": "MANUAL",
+    "isValid": true,
+    "invalids": [],
+    "jsonPathKeys": [
+      "SelectModalProduct.selectedOptionValue",
+      "InpModalAantal.text",
+      "SelectModalEenheid.selectedOptionValue",
+      "InpModalBtw.text",
+      "tblOrderRegels.selectedRow.id",
+      "appsmith.user.email",
+      "InpModalPrijs.text"
+    ],
+    "userSetOnLoad": false,
+    "confirmBeforeExecute": false,
+    "createdAt": "2026-05-07T11:55:12.406Z"
+  },
+  "baseId": "69fc7da0c8eed02aabb4c96a",
+  "gitSyncId": "69f23d0ae8d23e3922706103_0fc355d3-7079-4de7-9fe3-893e1357ebfc",
+  "createdAt": "2026-05-07T11:55:12.406Z",
+  "updatedAt": "2026-05-12T17:25:28.410Z",
+  "deleted": true,
+  "policyMap": {
+    "read:actions": {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:actions": {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "execute:actions": {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:actions": {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "manage:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "delete:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "execute:actions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewAction",
+  "deletedAt": "2026-05-12T17:25:35.949Z"
+}

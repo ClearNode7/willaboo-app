@@ -1,0 +1,107 @@
+{
+  "_id": "6a02418ba02d0a78f91328ee",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "unpublishedPage": {
+    "name": "KlantenDetail",
+    "slug": "klantendetail",
+    "layouts": [
+      {
+        "_id": "6a02418ba02d0a78f91328ed",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1440,
+          "snapRows": 111,
+          "parentRowSpace": 1,
+          "widgetSize": {
+            "height": 0,
+            "width": 0
+          },
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 94,
+          "isLoading": false,
+          "minHeight": 1440,
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "children": []
+        },
+        "validOnPageLoadActions": true
+      }
+    ]
+  },
+  "baseId": "6a02418ba02d0a78f91328ee",
+  "gitSyncId": "69f23d0ae8d23e3922706103_7e452a0a-e07c-4e3e-a69e-78e8bd383032",
+  "createdAt": "2026-05-11T20:52:27.648Z",
+  "updatedAt": "2026-05-12T06:20:15.251Z",
+  "deleted": false,
+  "deletedAt": "2026-05-12T06:20:15.229Z",
+  "policyMap": {
+    "read:pages": {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:pages": {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "create:pageActions": {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:pages": {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewPage"
+}

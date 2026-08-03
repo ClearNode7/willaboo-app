@@ -1,0 +1,770 @@
+{
+  "_id": "6a02c6e2a02d0a78f91328f6",
+  "applicationId": "69f23d0ae8d23e3922706103",
+  "unpublishedPage": {
+    "name": "ProductenDetail",
+    "slug": "productendetail",
+    "layouts": [
+      {
+        "_id": "6a0cb9d90daa883b44e34aea",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 420,
+          "snapRows": 111,
+          "parentRowSpace": 1,
+          "widgetSize": {
+            "height": 0,
+            "width": 0
+          },
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 94,
+          "isLoading": false,
+          "minHeight": 1440,
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "TxtPDTitel",
+              "topRow": 2,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Productgegevens bewerken",
+              "rightColumn": 62,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "fa2b00ded",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "widgetName": "TxtPDNaam",
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "text": "{{productGetById.data[0]?.naam || 'Product'}}",
+              "rightColumn": 62,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "da9f5569e",
+              "isVisible": true,
+              "fontStyle": "",
+              "version": 1,
+              "textColor": "#555555",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDNaam",
+              "rightColumn": 31,
+              "widgetId": "aae920868",
+              "topRow": 13,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Productnaam",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.naam || ''}}",
+              "inputType": "TEXT"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDSku",
+              "rightColumn": 62,
+              "widgetId": "3a93e71d9",
+              "topRow": 13,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Artikelcode (SKU)",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 33,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.sku || ''}}",
+              "inputType": "TEXT"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDPrijs",
+              "rightColumn": 31,
+              "widgetId": "920e7efe3",
+              "topRow": 20,
+              "bottomRow": 25,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Prijs excl. BTW (€)",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.prijs_excl || ''}}",
+              "inputType": "NUMBER"
+            },
+            {
+              "widgetName": "SelPDBtwPct",
+              "topRow": 20,
+              "bottomRow": 25,
+              "labelText": "BTW tarief",
+              "parentRowSpace": 10,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "defaultOptionValue": "{{String(productGetById.data[0]?.btw_pct ?? 21)}}",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 33,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "labelPosition": "Top",
+              "sourceData": [
+                {
+                  "label": "Vrijgesteld 0%",
+                  "value": "0"
+                },
+                {
+                  "label": "Laag 9%",
+                  "value": "9"
+                },
+                {
+                  "label": "Hoog 21%",
+                  "value": "21"
+                }
+              ],
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "rightColumn": 62,
+              "widgetId": "fbc325ebc",
+              "optionValue": "value",
+              "isVisible": true,
+              "label": "BTW-tarief",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "optionLabel": "label"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDBeschrijving",
+              "rightColumn": 62,
+              "widgetId": "997f801ff",
+              "topRow": 27,
+              "bottomRow": 32,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Beschrijving",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.beschrijving || ''}}",
+              "inputType": "TEXT"
+            },
+            {
+              "widgetName": "BtnPDBewaar",
+              "rightColumn": 13,
+              "onClick": "{{productUpdateDetail.run(() => showAlert('Opgeslagen ✓','success'), () => showAlert('Fout','error'))}}",
+              "buttonColor": "#03B365",
+              "widgetId": "201ddcc7c",
+              "topRow": 37,
+              "bottomRow": 42,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "BUTTON_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "borderRadius": "4px",
+              "buttonVariant": "PRIMARY",
+              "text": "Bewaar"
+            },
+            {
+              "widgetName": "BtnPDTerug",
+              "rightColumn": 24,
+              "onClick": "{{navigateTo('Producten', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#6c757d",
+              "widgetId": "3e600e990",
+              "topRow": 37,
+              "bottomRow": 42,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "BUTTON_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 14,
+              "dynamicBindingPathList": [],
+              "borderRadius": "4px",
+              "buttonVariant": "SECONDARY",
+              "text": "← Terug naar Producten"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "_id": "6a02c6e3a02d0a78f91328f7",
+              "name": "productGetById",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.productId"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "TxtPDTitel",
+          "InpPDPrijs",
+          "InpPDBeschrijving",
+          "InpPDSku",
+          "SelPDBtwPct",
+          "TxtPDNaam",
+          "InpPDNaam",
+          "BtnPDTerug",
+          "MainContainer",
+          "BtnPDBewaar"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [
+          "productGetById"
+        ],
+        "validOnPageLoadActions": true
+      }
+    ],
+    "isHidden": true
+  },
+  "publishedPage": {
+    "name": "ProductenDetail",
+    "slug": "productendetail",
+    "layouts": [
+      {
+        "_id": "6a0cb9d90daa883b44e34aea",
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 420,
+          "snapRows": 111,
+          "parentRowSpace": 1,
+          "widgetSize": {
+            "height": 0,
+            "width": 0
+          },
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 94,
+          "isLoading": false,
+          "minHeight": 1440,
+          "parentColumnSpace": 1,
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "TxtPDTitel",
+              "topRow": 2,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "text": "Productgegevens bewerken",
+              "rightColumn": 62,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "fa2b00ded",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "version": 1,
+              "textColor": "#231F20",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "widgetName": "TxtPDNaam",
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "overflow": "NONE",
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "text"
+                }
+              ],
+              "text": "{{productGetById.data[0]?.naam || 'Product'}}",
+              "rightColumn": 62,
+              "textAlign": "LEFT",
+              "dynamicHeight": "FIXED",
+              "widgetId": "da9f5569e",
+              "isVisible": true,
+              "fontStyle": "",
+              "version": 1,
+              "textColor": "#555555",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "maxDynamicHeight": 9000,
+              "fontSize": "1.25rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDNaam",
+              "rightColumn": 31,
+              "widgetId": "aae920868",
+              "topRow": 13,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Productnaam",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.naam || ''}}",
+              "inputType": "TEXT"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDSku",
+              "rightColumn": 62,
+              "widgetId": "3a93e71d9",
+              "topRow": 13,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Artikelcode (SKU)",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 33,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.sku || ''}}",
+              "inputType": "TEXT"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDPrijs",
+              "rightColumn": 31,
+              "widgetId": "920e7efe3",
+              "topRow": 20,
+              "bottomRow": 25,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Prijs excl. BTW (€)",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.prijs_excl || ''}}",
+              "inputType": "NUMBER"
+            },
+            {
+              "widgetName": "SelPDBtwPct",
+              "topRow": 20,
+              "bottomRow": 25,
+              "labelText": "BTW tarief",
+              "parentRowSpace": 10,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "defaultOptionValue": "{{String(productGetById.data[0]?.btw_pct ?? 21)}}",
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 33,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "labelPosition": "Top",
+              "sourceData": [
+                {
+                  "label": "Vrijgesteld 0%",
+                  "value": "0"
+                },
+                {
+                  "label": "Laag 9%",
+                  "value": "9"
+                },
+                {
+                  "label": "Hoog 21%",
+                  "value": "21"
+                }
+              ],
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "rightColumn": 62,
+              "widgetId": "fbc325ebc",
+              "optionValue": "value",
+              "isVisible": true,
+              "label": "BTW-tarief",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "optionLabel": "label"
+            },
+            {
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "widgetName": "InpPDBeschrijving",
+              "rightColumn": 62,
+              "widgetId": "997f801ff",
+              "topRow": 27,
+              "bottomRow": 32,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "label": "Beschrijving",
+              "type": "INPUT_WIDGET_V2",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "defaultText"
+                }
+              ],
+              "labelPosition": "Top",
+              "isSpellCheck": false,
+              "defaultText": "{{productGetById.data[0]?.beschrijving || ''}}",
+              "inputType": "TEXT"
+            },
+            {
+              "widgetName": "BtnPDBewaar",
+              "rightColumn": 13,
+              "onClick": "{{productUpdateDetail.run(() => showAlert('Opgeslagen ✓','success'), () => showAlert('Fout','error'))}}",
+              "buttonColor": "#03B365",
+              "widgetId": "201ddcc7c",
+              "topRow": 37,
+              "bottomRow": 42,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "BUTTON_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [],
+              "borderRadius": "4px",
+              "buttonVariant": "PRIMARY",
+              "text": "Bewaar"
+            },
+            {
+              "widgetName": "BtnPDTerug",
+              "rightColumn": 24,
+              "onClick": "{{navigateTo('Producten', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "#6c757d",
+              "widgetId": "3e600e990",
+              "topRow": 37,
+              "bottomRow": 42,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "BUTTON_WIDGET",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 19.125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 14,
+              "dynamicBindingPathList": [],
+              "borderRadius": "4px",
+              "buttonVariant": "SECONDARY",
+              "text": "← Terug naar Producten"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "_id": "6a02c6e3a02d0a78f91328f7",
+              "name": "productGetById",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.productId"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "widgetNames": [
+          "TxtPDTitel",
+          "InpPDPrijs",
+          "InpPDBeschrijving",
+          "InpPDSku",
+          "SelPDBtwPct",
+          "TxtPDNaam",
+          "InpPDNaam",
+          "BtnPDTerug",
+          "MainContainer",
+          "BtnPDBewaar"
+        ],
+        "allOnPageLoadActionNames": [],
+        "actionsUsedInDynamicBindings": [
+          "productGetById"
+        ],
+        "validOnPageLoadActions": true
+      }
+    ],
+    "isHidden": true
+  },
+  "baseId": "6a02c6e2a02d0a78f91328f6",
+  "gitSyncId": "69f23d0ae8d23e3922706103_2b41bcbd-416a-4745-94c7-151099018938",
+  "createdAt": "2026-05-12T06:21:22.566Z",
+  "updatedAt": "2026-06-12T14:39:47.372Z",
+  "deleted": false,
+  "policyMap": {
+    "read:pages": {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    },
+    "manage:pages": {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "create:pageActions": {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    "delete:pages": {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    }
+  },
+  "policies": [
+    {
+      "permission": "delete:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "manage:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "create:pageActions",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100"
+      ]
+    },
+    {
+      "permission": "read:pages",
+      "permissionGroups": [
+        "69f23d0ae8d23e39227060ff",
+        "69f23d0ae8d23e3922706100",
+        "69f23d0ae8d23e3922706101"
+      ]
+    }
+  ],
+  "_class": "com.appsmith.server.domains.NewPage"
+}
